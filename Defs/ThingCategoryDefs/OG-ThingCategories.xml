@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========================= Adeptus Mechanicus - Tau Weapon Catagories ==========================-->
+	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+		<defName>OGTWeapons</defName>
+		<label>Tau Weapons</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGTRanged</defName>
+		<label>Tau Ranged Weapons</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGTMelee</defName>
+		<label>Tau Melee Weapons</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGTGrens</defName>
+		<label>Tau Grenades</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKRanged</defName>
+		<label>Kroot Ranged Weapons</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
+	
+	<!--========================= Adeptus Mechanicus - Tau Gear Catagories ==========================-->
+	<!--========================= Adeptus Mechanicus - Tau Armour Catagories ==========================-->
+	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+		<defName>OGTArmour</defName>
+		<label>Tau Armour</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<!--========================= Adeptus Mechanicus - Tau Gear Catagories ==========================-->
+		<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+		<defName>OGTHeadgear</defName>
+		<label>Tau Headgear</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+		  
+</Defs>

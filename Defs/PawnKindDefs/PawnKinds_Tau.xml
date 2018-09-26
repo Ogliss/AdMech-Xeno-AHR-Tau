@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ============================ Tau Base ========================== -->
+  <PawnKindDef Name="TauBase" Abstract="True">
+    <defaultFactionType>TauFaction</defaultFactionType>
+	<!-- 
+    <race>Alien_Tau</race>
+	<backstoryCategories>
+			<li>Tau_Standard</li>
+  	</backstoryCategories>
+	-->
+    <chemicalAddictionChance>0.035</chemicalAddictionChance>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+  </PawnKindDef>
+  
+  <!-- ============================ Tau Civilian Base ========================== -->
+  <PawnKindDef Name="TauCivBase" ParentName="TauBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Tau</race>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>500</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>Gun</li>
+		<li>TPulseCarbine</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+ 
+  <!-- ============================ Kroot Civilian Base ========================== -->
+  <PawnKindDef Name="KrootCivBase" ParentName="TauBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Alien_Kroot</race>
+    <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>KrootClothBasic</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>100</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>TKrootRifle</li>
+     	<li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+ 
+  <!-- ============================ Gue'vesa Civilian Base ========================== -->
+  <PawnKindDef Name="GuevesaCivBase" ParentName="TauBase" Abstract="True">
+    <combatPower>25</combatPower>
+	<race>Human</race>
+    <baseRecruitDifficulty>0.45</baseRecruitDifficulty>
+    <itemQuality>Normal</itemQuality>
+    <isFighter>false</isFighter>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>900</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>100</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>TBasicGun</li>
+     	<li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.51</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.75</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <choiceChance>90</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>25</min>
+            <max>70</max>
+          </countRange>
+        </li>
+        <li>
+          <choiceChance>10</choiceChance>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>700</min>
+            <max>1000</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Tau Civilians ========================== -->
+  <PawnKindDef ParentName="TauCivBase">
+    <defName>TauFactionEthereal</defName>
+    <label>Aun'Va</label>
+    <labelPlural>Aun'Vai</labelPlural>
+    <factionLeader>true</factionLeader>
+    <isFighter>true</isFighter>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>1000</min>
+      <max>5000</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>10000</min>
+      <max>15500</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>THonourBlade</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>300</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+	<backstoryCategories>
+			<li>Tau_AUN</li>
+  	</backstoryCategories>
+	<minGenerationAge>60</minGenerationAge>
+	<maxGenerationAge>600</maxGenerationAge>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TauCivBase">
+    <defName>TauTrader</defName>
+    <label>Tau trader</label>
+    <trader>true</trader>
+	<backstoryCategories>
+			<li>Tau_POR</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TauCivBase">
+    <defName>TauColonist</defName>
+    <label>Tau colonist</label>
+	<backstoryCategories>
+			<li>Tau_POR</li>
+			<li>Tau_FIO</li>
+			<li>Tau_KOR</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="TauCivBase">
+    <defName>TauSlave</defName>
+    <label>Tau slave</label>
+	<backstoryCategories>
+			<li>Tau_Slave</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+ 
+  <!-- ============================ Kroot Civilians ========================== -->
+  <PawnKindDef ParentName="KrootCivBase">
+    <defName>KrootTrader</defName>
+    <label>Kroot trader</label>
+    <trader>true</trader>
+	<backstoryCategories>
+			<li>Tau_Kroot</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="KrootCivBase">
+    <defName>KrootColonist</defName>
+    <label>Kroot colonist</label>
+	<backstoryCategories>
+			<li>Tau_Kroot</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="KrootCivBase">
+    <defName>KrootSlave</defName>
+    <label>Kroot slave</label>
+	<backstoryCategories>
+			<li>Tau_Kroot</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+ 
+  <!-- ============================ Gue'vesa Civilians ========================== -->
+  <PawnKindDef ParentName="GuevesaCivBase">
+    <defName>GuevesaColonist</defName>
+    <label>Gue'vesa colonist</label>
+	<backstoryCategories>
+			<li>Civil</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="GuevesaCivBase">
+    <defName>GuevesaSlave</defName>
+    <label>Gue'vesa slave</label>
+	<backstoryCategories>
+			<li>Raider</li>
+  	</backstoryCategories>
+  </PawnKindDef>
+ 
+  <!-- ============================ Tau Security ========================== -->
+  <PawnKindDef ParentName="TauCivBase">
+    <defName>TauCadet</defName>
+    <label>Tau Shas Cadet</label>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>10</maxGenerationAge>
+	<backstoryCategories>
+			<li>Tau_SHAS</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>1500</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+      <li>TauMilitary</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>200</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+	
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+   
+  <!-- ============================ Gue'vesa Security ========================== -->
+  <PawnKindDef ParentName="GuevesaCivBase">
+    <defName>GuevesaCadet</defName>
+    <label>Gue'vesa Cadet</label>
+    <combatPower>50</combatPower>
+    <maxGenerationAge>10</maxGenerationAge>
+	<backstoryCategories>
+			<li>Civil</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>300</min>
+      <max>1500</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+      <li>Neolithic</li>
+      <li>TauMilitary</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>200</min>
+      <max>1500</max>
+    </weaponMoney>
+    <weaponTags>
+	
+    </weaponTags>
+    <techHediffsMoney>
+      <min>200</min>
+      <max>500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.20</techHediffsChance>
+    <invNutrition>2.55</invNutrition>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <thingDef>Silver</thingDef>
+      <countRange>
+        <min>30</min>
+        <max>100</max>
+      </countRange>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- ============================ Tau Military Base ========================== -->
+  <PawnKindDef Name="TauMilBase" ParentName="TauBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+	<race>Alien_Tau</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>10</minGenerationAge>
+    <maxGenerationAge>300</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>Military</li>
+      <li>TauMilitary</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1750</min>
+      <max>5500</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="KrootMilBase" ParentName="TauBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+	<race>Alien_Kroot</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>10</minGenerationAge>
+    <maxGenerationAge>300</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>KrootClothBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>750</min>
+      <max>2500</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef Name="GuevesaMilBase" ParentName="TauBase" Abstract="True">
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>true</isFighter>
+	<race>Human</race>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+	<minGenerationAge>10</minGenerationAge>
+    <maxGenerationAge>300</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Outlander</li>
+      <li>Military</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>2250</min>
+      <max>4500</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <!-- ============================ Tau Military ========================== -->  
+  <!-- ============================ Tau Fire Caste (Shas) ========================== -->
+  <PawnKindDef Name="TauFireCasteLa" ParentName="TauMilBase" Abstract="True">
+    <label>Tau Fire Caste (Shas'La)</label>
+    <combatPower>70</combatPower>
+	<backstoryCategories>
+			<li>Tau_SHAS</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>TauBasic</li>
+    </apparelTags>
+  </PawnKindDef>  
+
+  <!-- ============================ Tau Pathfinder (la) ========================== -->
+  <PawnKindDef ParentName="TauFireCasteLa">
+    <defName>TauPathFinder</defName>
+    <label>Tau Patherfinder Shas'La</label>
+	<backstoryCategories>
+			<li>Tau_PATHFINDER</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TPathfinderGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Tau Firewarrior (la) ========================== -->
+  <PawnKindDef ParentName="TauFireCasteLa">
+    <defName>TauFireWarrior</defName>
+    <label>Tau Firewarrior Shas'La</label>
+	<backstoryCategories>
+			<li>Tau_FIREWARRIOR</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TBasicGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Tau Fire Caste (Shas'Ui) ========================== -->
+  <PawnKindDef Name="TauFireCasteUi" ParentName="TauMilBase" Abstract="True">
+    <label>Tau Fire Caste (Shas'Ui)</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>19</minGenerationAge>
+	<backstoryCategories>
+			<li>Tau_SHAS</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+		<li>TauMilitary</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1500</min>
+      <max>2500</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>3550</min>
+      <max>5800</max>
+    </weaponMoney>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.73</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Tau Pathfinder (Ui) ========================== -->
+  <PawnKindDef ParentName="TauFireCasteUi">
+    <defName>TauPathFinderSgt</defName>
+    <label>Tau Patherfinder Shas'Ui</label>
+	<backstoryCategories>
+			<li>Tau_PATHFINDERSGT</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TPathfinderGun</li>
+	  <li>TIonRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Tau Firewarrior (Ui) ========================== -->
+  <PawnKindDef ParentName="TauFireCasteUi">
+    <defName>TauFireWarriorSgt</defName>
+    <label>Tau Firewarrior Shas'Ui</label>
+	<backstoryCategories>
+			<li>Tau_FIREWARRIORSGT</li>
+  	</backstoryCategories>
+    <weaponTags>
+	  <li>TBasicGun</li>
+	  <li>THeavyGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Tau Ethereal ========================== -->
+  <PawnKindDef ParentName="TauMilBase">
+     <defName>TauEthereal</defName>
+    <label>Tau Ethereal</label>
+    <combatPower>250</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+	<backstoryCategories>
+			<li>Tau_AUN</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>3000</min>
+      <max>9000</max>
+    </apparelMoney>
+    <apparelTags>
+    </apparelTags>
+    <weaponMoney>
+      <min>10000</min>
+      <max>15500</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>THonourBlade</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  <!-- ============================ Kroot Kabal Warrior ========================== -->
+  <PawnKindDef Name="TauKrootKabal" ParentName="KrootMilBase" Abstract="True">
+    <label>Kroot Kabal Warrior</label>
+    <combatPower>70</combatPower>
+	<backstoryCategories>
+			<li>Raider</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>KrootBasic</li>
+    </apparelTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Kroot Warrior ========================== -->
+  <PawnKindDef ParentName="TauKrootKabal">
+    <defName>KrootWarrior</defName>
+    <label>Kroot Warrior</label>
+	<backstoryCategories>
+	
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TKrootRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Kroot Shaper ========================== -->
+  <PawnKindDef ParentName="TauKrootKabal">
+    <defName>KrootShaper</defName>
+    <label>Kroot Shaper</label>
+	<backstoryCategories>
+	
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TPulseRifle</li>
+	  <li>TKrootRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Gue'vesa Warriors ========================== -->
+  <PawnKindDef Name="TauGuevesaWarrior" ParentName="GuevesaMilBase" Abstract="True">
+    <label>Gue'vesa Warrior</label>
+    <combatPower>70</combatPower>
+	<backstoryCategories>
+			<li>Civil</li>
+			<li>Raider</li>
+  	</backstoryCategories>
+    <apparelTags>
+      <li>KrootBasic</li>
+    </apparelTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Gue'vesa Soldier ========================== -->
+  <PawnKindDef ParentName="TauGuevesaWarrior">
+    <defName>GuevesaSoldier</defName>
+    <label>Gue'vesa Soldier</label>
+	<backstoryCategories>
+	
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TBasicGun</li>
+		<li>GuevesaPistol</li>
+		<li>GuevesaGun</li>
+    </weaponTags>
+  </PawnKindDef>
+    
+  <!-- ============================ Gue'vesa Heavy Weapons Trooper ========================== -->
+  <PawnKindDef ParentName="TauGuevesaWarrior">
+    <defName>GuevesaSoldierHW</defName>
+    <label>Gue'vesa Soldier</label>
+	<backstoryCategories>
+	
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TBasicGun</li>
+		<li>GuevesaPistol</li>
+		<li>GuevesaGun</li>
+		<li>GuevesaHeavyGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Gue'vesa Special weapons Trooper ========================== -->
+  <PawnKindDef ParentName="TauGuevesaWarrior">
+    <defName>GuevesaSoldierSW</defName>
+    <label>Gue'vesa Soldier</label>
+	<backstoryCategories>
+	
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TBasicGun</li>
+		<li>GuevesaPistol</li>
+		<li>GuevesaGun</li>
+		<li>GuevesaSpecialGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <!-- ============================ Gue'vesa Sargent ========================== -->
+  <PawnKindDef ParentName="TauGuevesaWarrior">
+    <defName>GuevesaSargent</defName>
+    <label>Gue'vesa Sargent</label>
+	<backstoryCategories>
+	
+  	</backstoryCategories>
+    <weaponTags>
+      <li>TBasicGun</li>
+		<li>GuevesaPistol</li>
+		<li>GuevesaAdvPistol</li>
+		<li>GuevesaGun</li>
+		<li>GuevesaAdvGun</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- ============================ Tau Battlesuits La ========================== -->
+  <!--
+    <PawnKindDef Name="TauBattlesuitLa" ParentName="TauMilBase" Abstract="True">
+    <label>Tau Nob</label>
+    <combatPower>135</combatPower>
+    <minGenerationAge>50</minGenerationAge>
+	<backstoryCategories>
+			<li>Tau_Nob</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>TauBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2600</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1500</min>
+      <max>6500</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>OICunningGun</li>
+      <li>OMekTekGun</li>
+		<li>OEBrutalityMelee</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.88</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>180</min>
+            <max>400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  -->
+  <!-- ============================ Crisis Battlesuit La ========================== -->
+  <!--
+    <PawnKindDef ParentName="TauBattlesuitLa">
+    <defName>TauChoppaNob</defName>
+    <label>Tau Choppa Nob</label>
+	<backstoryCategories>
+			<li>Tau_ChoppaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OEBrutalityMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  -->
+  <!-- ============================ Broadside Battlesuit La ========================== -->
+  <!--
+    <PawnKindDef ParentName="TauBattlesuitLa">
+    <defName>TauSluggaNob</defName>
+    <label>Tau Slugga Nob</label>
+	<backstoryCategories>
+			<li>Tau_SluggaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  -->
+  <!-- ============================ Tau Battlesuits Ui ========================== -->
+  <!--
+    <PawnKindDef Name="TauBattlesuitUi" ParentName="TauMilBase" Abstract="True">
+    <label>Tau Eavy Nob</label>
+    <combatPower>220</combatPower>
+    <minGenerationAge>26</minGenerationAge>
+	<backstoryCategories>
+			<li>Tau_Nob</li>
+  	</backstoryCategories>
+    <gearHealthRange>
+      <min>0.8</min>
+      <max>3.5</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Military</li>
+      <li>Spacer</li>
+      <li>TauHeavy</li>
+      <li>TauMega</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>2500</min>
+      <max>4200</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>6000</min>
+      <max>8000</max>
+    </weaponMoney>
+    <weaponTags>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.80</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.8</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>120</min>
+            <max>480</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  -->
+  <!-- ============================ Crisis Battlesuit  ========================== -->
+  <!--
+    <PawnKindDef ParentName="TauBattlesuitUi">
+    <defName>TauEavyChoppaNob</defName>
+    <label>Tau Eavy Choppa Nob</label>
+	<backstoryCategories>
+			<li>Tau_ChoppaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OEBrutalityMelee</li>
+      <li>OPowerMelee</li>
+    </weaponTags>
+  </PawnKindDef>
+  -->
+  <!-- ============================ Broadside Battlesuit  ========================== -->
+  <!--
+    <PawnKindDef ParentName="TauBattlesuitUi">
+    <defName>TauEavySluggaNob</defName>
+    <label>Tau Eavy Slugga Nob</label>
+	<backstoryCategories>
+			<li>Tau_SluggaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  -->
+  <!-- ============================ Commander Battlesuit ========================== -->
+  <!--
+  <PawnKindDef ParentName="TauBattlesuitUi">
+    <defName>TauEavyShootaNob</defName>
+    <label>Tau Eavy Shoota Nob</label>
+	<backstoryCategories>
+			<li>Tau_ShootaNob</li>
+  	</backstoryCategories>
+    <weaponTags>
+      <li>OMekTekGun</li>
+      <li>OBigMekGun</li>
+    </weaponTags>
+  </PawnKindDef>
+  -->
+</Defs>
