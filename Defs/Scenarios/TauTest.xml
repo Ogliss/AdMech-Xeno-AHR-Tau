@@ -69,7 +69,7 @@
 			</li>
 			<li Class="ScenPart_StartingAnimal">
 				<def>StartingAnimal</def>
-				<animalKind>Squig</animalKind>
+				<animalKind>Kroothound</animalKind>
 				<count>3</count>
 				<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
 			</li>

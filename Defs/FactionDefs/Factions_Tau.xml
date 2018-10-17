@@ -102,8 +102,9 @@
       </li>
 	  <li>
       <kindDef>Trader</kindDef>
-        <traders>
+        <traders> 
           <KrootTrader>1</KrootTrader>
+          <TauTrader>1</TauTrader>
         </traders>
         <carriers>
           <Krootox>6</Krootox>
@@ -152,7 +153,7 @@
       </li>
     </pawnGroupMakers>
     <homeIconPath>Icons/TauIcon</homeIconPath>
-	<expandingIconTexture>Icons/TauIcon</expandingIconTexture>
+	<expandingIconTexture>Icons/TauIconB</expandingIconTexture>
   </FactionDef>
 
 </Defs>

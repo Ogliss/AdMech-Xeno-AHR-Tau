@@ -3,16 +3,17 @@
 
   <HairDef>
     <label>Kroot Quills</label>
-    <hairGender>Male</hairGender>
+    <hairGender>Any</hairGender>
     <texPath>Things/Tau/Hair/Kroot_Average</texPath>
     <defName>KrootQuills</defName>
 		<hairTags>
 			<li>KrootHair</li>
 		</hairTags>
   </HairDef>
+  
   <HairDef>
     <label>Tau Bald</label>
-    <hairGender>Male</hairGender>
+    <hairGender>Any</hairGender>
     <texPath>Things/Tau/Hair/TauBald</texPath>
     <defName>TauBald</defName>
 		<hairTags>

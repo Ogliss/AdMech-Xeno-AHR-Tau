@@ -113,7 +113,7 @@
 <AlienRace.ThingDef_AlienRace ParentName="BaseTauPawn">
     <defName>Alien_Tau</defName>
     <label>Tau</label>
-    <description>The pinnacle of the Tau species: A fully grown Tau.</description>
+    <description>The Tau are the central figures of the T'au Empire, an interstellar polity which is composed of several different intelligent species, primarily the Kroot of Pech, the Vespids of the world of Vespid and the nomadic Nicassar, though there are now several human Tau Septs derived from conquered Imperial humans or humans who voluntarily joined the T'au Empire because they were impressed by the concept of the Greater Good. These people are known as Gue'vesa in the Tau Lexicon and they are considered amongst the most vile of Traitors and Heretics within the Imperium of Man./n/nThe Tau are a relatively young race (it has been only 6,000 Terran years since Imperial Inquisitors first noted that the Tau had only just mastered fire and the wheel), and they have evolved rapidly over the past few millennia. Unlike other young intelligent races of the galaxy, the Tau have made remarkable leaps in technology and now represent a real threat to Imperial domination in their region of the galaxy.</description>
     <alienRace>
         <generalSettings>
 			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
@@ -234,7 +234,6 @@
 				<li>KnowPrisonerDiedInnocent</li>
 				<li>SoldPrisoner</li>
 				<li>ExecutedPrisoner</li>
-				<li>AteRawHumanlikeMeat</li>
 				<li>KnowPrisonerSold</li>
 				<li>SleptInBarracks</li>
             </cannotReceiveThoughts>
@@ -570,6 +569,7 @@
 				<li>KnowPrisonerDiedInnocent</li>
 				<li>NeedRoomSize</li>
 				<li>NeedBeauty</li>
+				<li>AteCorpse</li>
 				<li>Disfigured</li>
 				<li>Pretty</li>
 				<li>Ugly</li>
@@ -717,7 +717,7 @@
       <meatColor>(0, 0, 128)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
-      <foodType>OmnivoreHuman</foodType>
+      <foodType>OmnivoreHuman, CarnivoreAnimal, OvivoreAnimal</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
         <points>

@@ -22,7 +22,7 @@
 			<li>Tau_Standard</li>
 			<li>Tau_Kroot</li>
   	</backstoryCategories>
-    <homeIconPath>World/TauBaseIcon</homeIconPath>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
     <expandingIconTexture>World/TauBaseIcon</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
@@ -51,11 +51,11 @@
   </FactionDef>
   
     <FactionDef Parent="TauFactionBase">
-    <defName>TauPlayerColonyTribal</defName>
-    <label>Tau Tribal</label>
-    <description>Tau Tribal Start.</description>
+    <defName>KrootPlayerColonyTribal</defName>
+    <label>Kroot Tribal</label>
+    <description>Kroot Tribal Start.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Tau</basicMemberKind>
+    <basicMemberKind>Kroot</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerOGTauFaction</factionNameMaker>
