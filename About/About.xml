@@ -2,9 +2,38 @@
 <ModMetaData>
 	<name>Adeptus Mechanicus Magos Xenobiologis (Playable Tau)</name>
 	<author>Ogliss</author>
-	<targetVersion>0.19.2009</targetVersion>
-	<description>V1.0
-	Requires new start or  one of those faction managers.
+	<supportedVersions>
+        <li>1.0</li>
+	</supportedVersions>
+	<description>V1.1
 	Adds plyable WH40k Tau
+	Requires new start or a faction manager mod to have faction bases on the world map.
+
+	Contents
+	Races:
+	Tau - Humanlike
+	Gue'vesa - Humanlike
+	Kroot - Humanlike
+	Kroothound - Animal
+	Krootox - Animal
+	Knarloc - Animal
+	
+	Apparel:
+	Tau Combat Armour
+	Tau Combat Helmet
+	Kroot Tribalwear
+	Kroot Tribal Headdress
+	
+	Wargear:
+	Grenade Packs (Frag, EMP, Photon)
+	Drones (Shield, Markerlight)
+	
+	Resources:
+	Fio'Tak - a crafting material used in the almost all tau construction
+	Tau component - Tau component counterpart
+	Mor'tonium - advanced Tau crafting material
+	
+	Mechanics:
+	Kroot Adaptability - All Kroot posess an ability that gives them a small chance to absorb traits from humanlike corpses by eating them(Max 4, respects MaxTraitSlots mod limit)
 		</description>
 </ModMetaData>

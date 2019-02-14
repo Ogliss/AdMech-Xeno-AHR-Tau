@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- OGTekLab locked-->
 	<!--OG==================== Adeptus Mechanicus Armoury Mod - Research Imperial Weapons =========================OG-->
 
 	<ResearchProjectDef>
 		<tab>OGAMA_RTab</tab>
 		<defName>TauTechBase</defName>
 		<label>The Greater Good</label>
-		<description>Allows you to create basic Tau melee weapons</description>
+		<description>Basic understanding of Tau Culture and the Greater Good</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
 		
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
-
-
-
-  <researchViewX>0.00</researchViewX>
-  <researchViewY>7.50</researchViewY>
+		<tags>
+		  <li>TauStart</li>
+		  <li>TribalKrootStart</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>7.50</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -30,8 +30,8 @@
 			<li>TauTechBase</li>
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
-  <researchViewX>1.00</researchViewX>
-  <researchViewY>7.50</researchViewY>
+	    <researchViewX>0.75</researchViewX>
+	    <researchViewY>7.50</researchViewY>
 	</ResearchProjectDef>	
 	
 	<ResearchProjectDef>
@@ -44,8 +44,8 @@
 			<li>TauTechBase</li>
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
-  <researchViewX>1.00</researchViewX>
-  <researchViewY>8.25</researchViewY>
+		<researchViewX>0.75</researchViewX>
+		<researchViewY>8.0</researchViewY>
 	</ResearchProjectDef>
 	
 	<!--OG==================== Adeptus Mechanicus Armoury Mod - Imperium Weapons =========================OG-->
@@ -62,8 +62,23 @@
 			<li>TauPlasmaTech</li>
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
-  <researchViewX>1.75</researchViewX>
+  <researchViewX>1.5</researchViewX>
   <researchViewY>7.50</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<tab>OGAMA_RTab</tab>
+		<defName>TauDroneTech</defName>
+		<label>Tau Drone Tech</label>
+		<description>Basic understanding of Tau Drone technology, allows you to build basic drones</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>TauTechBase</li>
+		</prerequisites>
+		<techLevel>Spacer</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+  <researchViewX>0.75</researchViewX>
+  <researchViewY>7.00</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -73,11 +88,11 @@
 		<description>Allows you to Sheild drones</description>
 		<baseCost>1500</baseCost>
 		<prerequisites>
-			<li>TauTechBase</li>
+			<li>TauDroneTech</li>
 		</prerequisites>
 		<techLevel>Spacer</techLevel>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-  <researchViewX>1.00</researchViewX>
+  <researchViewX>1.5</researchViewX>
   <researchViewY>7.00</researchViewY>
 	</ResearchProjectDef>
 	
@@ -97,7 +112,7 @@
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
-  <researchViewX>2.50</researchViewX>
+  <researchViewX>2.250</researchViewX>
   <researchViewY>7.50</researchViewY>
 	</ResearchProjectDef>
 	

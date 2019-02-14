@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--========================= Adeptus Mechanicus - Tau Weapon Catagories ==========================-->
-	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+	<!-- ========================= Adeptus Mechanicus - Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Tau Gear Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Tau Weapon Catagories ========================== -->
+	<ThingCategoryDef>
 		<defName>OGTWeapons</defName>
 		<label>Tau Weapons</label>
 		<parent>Weapons</parent>
@@ -9,6 +11,12 @@
 	
 	<ThingCategoryDef>
 		<defName>OGTRanged</defName>
+		<label>Tau Ranged Weapons</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKRanged</defName>
 		<label>Tau Ranged Weapons</label>
 		<parent>OGTWeapons</parent>
 	</ThingCategoryDef>
@@ -23,27 +31,57 @@
 		<defName>OGTGrens</defName>
 		<label>Tau Grenades</label>
 		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>	
+			
+	<!-- ========================= Adeptus Mechanicus - Tau Armour Catagories ========================== -->
+	<ThingCategoryDef>
+		<defName>OGTSub</defName>
+		<label>Tau</label>
+		<parent>Apparel</parent>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
-		<defName>OGKRanged</defName>
-		<label>Kroot Ranged Weapons</label>
-		<parent>OGTWeapons</parent>
+		<defName>OGTApparel</defName>
+		<label>Tau Apparel</label>
+		<parent>OGTSub</parent>
 	</ThingCategoryDef>
 	
-	<!--========================= Adeptus Mechanicus - Tau Gear Catagories ==========================-->
-	<!--========================= Adeptus Mechanicus - Tau Armour Catagories ==========================-->
-	<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+	<ThingCategoryDef>
 		<defName>OGTArmour</defName>
 		<label>Tau Armour</label>
-		<parent>Apparel</parent>
+		<parent>OGTSub</parent>
 	</ThingCategoryDef>
 	
-	<!--========================= Adeptus Mechanicus - Tau Gear Catagories ==========================-->
-		<ThingCategoryDef>					<!-- DO NOT CHANGE DEF NAME -->
+	<ThingCategoryDef>
 		<defName>OGTHeadgear</defName>
 		<label>Tau Headgear</label>
-		<parent>Apparel</parent>
+		<parent>OGTSub</parent>
 	</ThingCategoryDef>
-		  
+	  	
+	<ThingCategoryDef>
+		<defName>OGTAddons</defName>
+		<label>Tau Armour Addons</label>
+		<parent>OGTSub</parent>
+	</ThingCategoryDef>
+		
+	<ThingCategoryDef>
+		<defName>OGTWargear</defName>
+		<label>Tau Wargear</label>
+		<parent>OGTSub</parent>
+	</ThingCategoryDef>
+  
+	<!-- ========================= Adeptus Mechanicus - Tau Corpse Catagories ========================== -->
+<!--
+    <ThingCategoryDef>
+    <defName>CorpsesTau</defName>
+    <label>tau corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+    <defName>CorpsesKroot</defName>
+    <label>kroot corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+-->
 </Defs>

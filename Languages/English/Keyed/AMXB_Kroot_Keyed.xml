@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!-- Xenobiologis Playable Orkz Mod -->
+  <OGKroot_Genetic_Absorb_Add>{0} gained the {1} trait from {2}'s corpse</OGKroot_Genetic_Absorb_Add>
+  <OGKroot_Genetic_Absorb_Replace>{0} gained the {1} trait from {2}'s corpse, it replaced their {3} trait</OGKroot_Genetic_Absorb_Replace>
+</LanguageData>

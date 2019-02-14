@@ -12,24 +12,23 @@
     <label>Tau Colony</label>
     <description>Your own community.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Tau</basicMemberKind>
+    <basicMemberKind>TauFio</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerOGTauFaction</factionNameMaker>
     <settlementNameMaker>NamerOGTauBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
-			<li>Tau_Standard</li>
-			<li>Tau_Kroot</li>
+			<li>Civil</li>
   	</backstoryCategories>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
-    <expandingIconTexture>World/TauBaseIcon</expandingIconTexture>
+    <expandingIconTexture>Icons/TauIcon</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
     <hairTags>
-		<li>TauHair</li>
-		<li>KrootHair</li>
+		<li>Civil</li>
+		<li>Rural</li>
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>
@@ -52,8 +51,8 @@
   
     <FactionDef Parent="TauFactionBase">
     <defName>KrootPlayerColonyTribal</defName>
-    <label>Kroot Tribal</label>
-    <description>Kroot Tribal Start.</description>
+    <label>Kroot Kindred</label>
+    <description>Kroot Tribal Kindred Start.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Kroot</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
@@ -62,21 +61,20 @@
     <settlementNameMaker>NamerOGTauBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
-			<li>Tau_Standard</li>
-			<li>Tau_Kroot</li>
+			<li>Kroot_Standard</li>
+			<li>Kroot_Psyker</li>
   	</backstoryCategories>
-    <homeIconPath>World/TauBaseIcon</homeIconPath>
-    <expandingIconTexture>World/TauBaseIcon</expandingIconTexture>
+    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+    <expandingIconTexture>Icons/KrootIcon</expandingIconTexture>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
     <hairTags>
-		<li>TauHair</li>
-		<li>GrotHair</li>
+		<li>KrootHair</li>
     </hairTags>
     <apparelStuffFilter>
       <thingDefs>
-        <li>Synthread</li>
+        <li>Cloth</li>
       </thingDefs>
     </apparelStuffFilter>
     <colorSpectrum>

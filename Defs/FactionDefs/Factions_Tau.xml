@@ -24,12 +24,15 @@
   <backstoryCategories>
 			<li>Tau_Aun</li>
 			<li>Tau_Shas</li>
-			<li>Tau_Standard</li>
-			<li>Tau_Gretchin</li>
+			<li>Tau_POR</li>
+			<li>Tau_FIO</li>
+			<li>Tau_KOR</li>
+			<li>Civil</li>
   	</backstoryCategories>
 			<hairTags>
 			<li>Civil</li>
 			<li>Raider</li>
+			<li>Rural</li>
 			</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>
@@ -63,46 +66,48 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <Kroothound>100</Kroothound>
-          <KrootShaper>100</KrootShaper>
-          <KrootWarrior>130</KrootWarrior>
-          <TauFireWarriorSgt>50</TauFireWarriorSgt>
-          <TauFireWarrior>90</TauFireWarrior>
-          <GuevesaSargent>50</GuevesaSargent>
-          <GuevesaSoldierHW>50</GuevesaSoldierHW>
-          <GuevesaSoldierSW>50</GuevesaSoldierSW>
-          <GuevesaSoldier>90</GuevesaSoldier>
-          <TauFactionEthereal>250</TauFactionEthereal>
-          <TauEthereal>250</TauEthereal>
-          <TauPathFinderSgt>100</TauPathFinderSgt>
+          <TauFactionEthereal>5</TauFactionEthereal>
+          <TauEthereal>1</TauEthereal>
+          <TauFireWarriorSgt>10</TauFireWarriorSgt>
+          <TauFireWarrior>100</TauFireWarrior>
+          <TauPathFinderSgt>25</TauPathFinderSgt>
           <TauPathFinder>100</TauPathFinder>
+          <GuevesaSargent>10</GuevesaSargent>
+          <GuevesaSoldierHW>25</GuevesaSoldierHW>
+          <GuevesaSoldierSW>25</GuevesaSoldierSW>
+          <GuevesaSoldier>90</GuevesaSoldier>
+          <KrootShaper>10</KrootShaper>
+          <KrootWarrior>100</KrootWarrior>
+          <KindredKroothound>75</KindredKroothound> 
         </options>
       </li>
         <li>
         <kindDef>Peaceful</kindDef>
         <options>
+          <TauFactionEthereal>5</TauFactionEthereal>
           <TauColonist>50</TauColonist>
           <GuevesaColonist>50</GuevesaColonist>
           <KrootColonist>50</KrootColonist>
           <GuevesaCadet>90</GuevesaCadet>
           <TauCadet>90</TauCadet>
-          <Kroothound>100</Kroothound>
-          <KrootShaper>100</KrootShaper>
-          <KrootWarrior>130</KrootWarrior>
-          <TauFireWarriorSgt>50</TauFireWarriorSgt>
-          <TauFireWarrior>90</TauFireWarrior>
-          <TauEthereal>250</TauEthereal>
-          <TauPathFinderSgt>100</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
-          <GuevesaSargent>50</GuevesaSargent>
-          <GuevesaSoldierHW>50</GuevesaSoldierHW>
-          <GuevesaSoldierSW>50</GuevesaSoldierSW>
+          <Kroothound>50</Kroothound>
+          <KrootShaper>10</KrootShaper>
+          <KrootWarrior>100</KrootWarrior>
+          <TauFireWarriorSgt>10</TauFireWarriorSgt>
+          <TauFireWarrior>100</TauFireWarrior>
+          <GuevesaSargent>10</GuevesaSargent>
+          <GuevesaSoldierHW>25</GuevesaSoldierHW>
+          <GuevesaSoldierSW>25</GuevesaSoldierSW>
           <GuevesaSoldier>90</GuevesaSoldier>
+          <TauEthereal>1</TauEthereal>
+          <TauPathFinderSgt>25</TauPathFinderSgt>
+          <TauPathFinder>100</TauPathFinder>
         </options>
       </li>
 	  <li>
       <kindDef>Trader</kindDef>
         <traders> 
+          <TauFactionEthereal>5</TauFactionEthereal>
           <KrootTrader>1</KrootTrader>
           <TauTrader>1</TauTrader>
         </traders>
@@ -110,45 +115,49 @@
           <Krootox>6</Krootox>
         </carriers>
         <guards>
+          <TauFactionEthereal>5</TauFactionEthereal>
           <Kroothound>4</Kroothound>
           <GuevesaColonist>50</GuevesaColonist>
           <TauColonist>50</TauColonist>
           <KrootColonist>50</KrootColonist>
           <GuevesaCadet>90</GuevesaCadet>
           <TauCadet>90</TauCadet>
-          <KrootShaper>100</KrootShaper>
-          <KrootWarrior>130</KrootWarrior>
-          <TauFireWarriorSgt>50</TauFireWarriorSgt>
-          <TauFireWarrior>90</TauFireWarrior>
-          <TauEthereal>250</TauEthereal>
-          <TauPathFinderSgt>100</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
-          <GuevesaSargent>50</GuevesaSargent>
-          <GuevesaSoldierHW>50</GuevesaSoldierHW>
-          <GuevesaSoldierSW>50</GuevesaSoldierSW>
+          <KrootShaper>10</KrootShaper>
+          <KrootWarrior>100</KrootWarrior>
+          <TauFireWarriorSgt>10</TauFireWarriorSgt>
+          <TauFireWarrior>100</TauFireWarrior>
+          <GuevesaSargent>10</GuevesaSargent>
+          <GuevesaSoldierHW>25</GuevesaSoldierHW>
+          <GuevesaSoldierSW>25</GuevesaSoldierSW>
           <GuevesaSoldier>90</GuevesaSoldier>
+          <TauEthereal>1</TauEthereal>
+          <TauPathFinderSgt>25</TauPathFinderSgt>
+          <TauPathFinder>100</TauPathFinder>
         </guards>
       </li>
 	  <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Kroothound>4</Kroothound>
+          <TauFactionEthereal>5</TauFactionEthereal>
+          <Kroothound>5</Kroothound>
+          <KindredKroothound>10</KindredKroothound>
           <GuevesaColonist>50</GuevesaColonist>
           <TauColonist>50</TauColonist>
           <KrootColonist>50</KrootColonist>
           <TauCadet>90</TauCadet>
           <GuevesaCadet>90</GuevesaCadet>
-          <KrootShaper>100</KrootShaper>
-          <KrootWarrior>130</KrootWarrior>
-          <TauFireWarriorSgt>50</TauFireWarriorSgt>
-          <TauFireWarrior>90</TauFireWarrior>
-          <TauEthereal>250</TauEthereal>
-          <TauPathFinderSgt>100</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
-          <GuevesaSargent>50</GuevesaSargent>
-          <GuevesaSoldierHW>50</GuevesaSoldierHW>
-          <GuevesaSoldierSW>50</GuevesaSoldierSW>
+          <KrootShaper>10</KrootShaper>
+          <KrootWarrior>100</KrootWarrior>
+          <TauFireWarriorSgt>10</TauFireWarriorSgt>
+          <TauFireWarrior>100</TauFireWarrior>
+          <GuevesaSargent>10</GuevesaSargent>
+          <GuevesaSoldierHW>25</GuevesaSoldierHW>
+          <GuevesaSoldierSW>25</GuevesaSoldierSW>
           <GuevesaSoldier>90</GuevesaSoldier>
+          <TauFactionEthereal>1</TauFactionEthereal>
+          <TauEthereal>2</TauEthereal>
+          <TauPathFinderSgt>25</TauPathFinderSgt>
+          <TauPathFinder>100</TauPathFinder>
         </options>
       </li>
     </pawnGroupMakers>

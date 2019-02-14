@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--
+  <FleshTypeDef>
+    <defName>TauFlesh</defName>
+    <corpseCategory>CorpsesTau</corpseCategory>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+        <color>0.0,0.0,0.30</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+        <color>0.0,0.0,0.30</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+        <color>0.0,0.0,0.30</color>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+
+  <FleshTypeDef>
+    <defName>KrootFlesh</defName>
+    <corpseCategory>CorpsesKroot</corpseCategory>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+-->
+
+</Defs>

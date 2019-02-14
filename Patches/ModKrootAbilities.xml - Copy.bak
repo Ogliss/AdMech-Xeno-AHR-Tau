@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	<success>Never</success>
+		<operations>			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/TraitDef[defName = "Gifted"]</xpath>
+				<!--  <success>Always</success>  --> 
+			</li>
+			<li Class="PatchOperationAdd"> <!-- Adds magic abilities to Kroot Shaman -->
+				<xpath>/Defs/AlienRace.BackstoryDef[defName = "Kroot_SHAMAN"]/forcedTraits</xpath>
+					<value>	
+							<li>
+								<defName>Gifted</defName>
+								<degree>2</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>InnerFire</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>HeartOfFrost</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>StormBorn</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Arcanist</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Druid</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Paladin</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Summoner</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Necromancer</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Lich</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Priest</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Geomancer</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Technomancer</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Succubus</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>Warlock</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>TM_Psionic</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+							<li>
+								<defName>DeathKnight</defName>
+								<degree>4</degree>
+								<chance>25</chance>
+							</li>
+					</value>
+			</li>
+		</operations>	
+	</Operation>
+</Patch>

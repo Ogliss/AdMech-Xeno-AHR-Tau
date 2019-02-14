@@ -8,7 +8,7 @@
                     <kindDefs>
                         <li>Guevesa</li>
                         <li>TauAun</li>
-                        <li>Tau</li>
+                        <li>TauShas</li>
                         <li>TauPor</li>
                         <li>TauFio</li>
                         <li>TauKor</li>
@@ -16,13 +16,20 @@
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
+                <li>
+                    <kindDefs>
+                        <li>Guevesa</li>
+						<li>Kroot</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
             </alienslavekinds>
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
                         <li>Guevesa</li>
                         <li>TauAun</li>
-                        <li>Tau</li>
+                        <li>TauShas</li>
                         <li>TauPor</li>
                         <li>TauFio</li>
                         <li>TauKor</li>
@@ -36,18 +43,18 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
-                        <li>Tau</li>
+                        <li>Guevesa</li>
+						<li>Kroot</li>
                     </kindDefs>
-                    <chance>10.0</chance>
+                    <chance>12.50</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>Guevesa</li>
                         <li>TauAun</li>
+                        <li>TauShas</li>
                         <li>TauPor</li>
                         <li>TauFio</li>
                         <li>TauKor</li>
-						<li>Kroot</li>
                     </kindDefs>
                     <chance>50.0</chance>
 					</li>
@@ -62,13 +69,13 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-								<li>Guevesa</li>
-								<li>TauAun</li>
-								<li>Tau</li>
-								<li>TauPor</li>
-								<li>TauFio</li>
-								<li>TauKor</li>
-								<li>Kroot</li>
+                        <li>Guevesa</li>
+                        <li>TauAun</li>
+                        <li>TauShas</li>
+                        <li>TauPor</li>
+                        <li>TauFio</li>
+                        <li>TauKor</li>
+						<li>Kroot</li>
                             </kindDefs>
                             <chance>50.0</chance>
                         </li>
@@ -113,7 +120,7 @@
 <AlienRace.ThingDef_AlienRace ParentName="BaseTauPawn">
     <defName>Alien_Tau</defName>
     <label>Tau</label>
-    <description>The Tau are the central figures of the T'au Empire, an interstellar polity which is composed of several different intelligent species, primarily the Kroot of Pech, the Vespids of the world of Vespid and the nomadic Nicassar, though there are now several human Tau Septs derived from conquered Imperial humans or humans who voluntarily joined the T'au Empire because they were impressed by the concept of the Greater Good. These people are known as Gue'vesa in the Tau Lexicon and they are considered amongst the most vile of Traitors and Heretics within the Imperium of Man./n/nThe Tau are a relatively young race (it has been only 6,000 Terran years since Imperial Inquisitors first noted that the Tau had only just mastered fire and the wheel), and they have evolved rapidly over the past few millennia. Unlike other young intelligent races of the galaxy, the Tau have made remarkable leaps in technology and now represent a real threat to Imperial domination in their region of the galaxy.</description>
+    <description>The Tau are the central figures of the T'au Empire, an interstellar polity which is composed of several different intelligent species, primarily the Kroot of Pech, the Vespids of the world of Vespid and the nomadic Nicassar, though there are now several human Tau Septs derived from conquered Imperial humans or humans who voluntarily joined the T'au Empire because they were impressed by the concept of the Greater Good. These people are known as Gue'vesa in the Tau Lexicon and they are considered amongst the most vile of Traitors and Heretics within the Imperium of Man.\n\nThe Tau are a relatively young race (it has been only 6,000 Terran years since Imperial Inquisitors first noted that the Tau had only just mastered fire and the wheel), and they have evolved rapidly over the past few millennia. Unlike other young intelligent races of the galaxy, the Tau have made remarkable leaps in technology and now represent a real threat to Imperial domination in their region of the galaxy.</description>
     <alienRace>
         <generalSettings>
 			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
@@ -135,7 +142,9 @@
             </disallowedTraits>
             <alienPartGenerator>
                 <aliencrowntypes>
-                    <li>Average_Tau</li>
+                    <li>Narrow_Normal</li>
+                    <li>Narrow_Pointy</li>
+                    <li>Narrow_Wide</li>
                 </aliencrowntypes>
                 <alienbodytypes>
                 <li>Thin</li>
@@ -147,31 +156,31 @@
                                <options>
             <li>
                 <weight>10</weight>
-				<only>RGBA(1.0,1.0,1.0,1)</only>
+				<only>RGBA(0.545,0.545,0.69,1)</only>
             </li>
 			<li>
                 <weight>8</weight>
-                <only>RGBA(0.874,0.874,0.874,1)</only>
+                <only>RGBA(0.545,0.545,0.706,1)</only>
             </li>
 			<li>
                 <weight>8</weight>
-                <only>RGBA(0.925,0.925,0.925,1)</only>
+                <only>RGBA(0.412,0.412,0.706,1)</only>
             </li>
 			<li>
                 <weight>8</weight>
-                <only>RGBA(0.952,0.952,0.952,1)</only>
+                <only>RGBA(0.412,0.412,0.62,1)</only>
             </li>
 			<li>
                 <weight>8</weight>
-                <only>RGBA(0.831,0.831,0.831,1)</only>
+                <only>RGBA(0.412,0.412,0.522,1)</only>
             </li>
 			<li>
                 <weight>8</weight>
-                <only>RGBA(0.982,0.982,0.982,1)</only>
+                <only>RGBA(0.678,0.678,0.98,1)</only>
             </li>
 			<li>
                 <weight>8</weight>
-                <only>RGBA(0.690,0.690,0.690,1)</only>
+                <only>RGBA(0.678,0.678,0.882,1)</only>
             </li>
 			<!--
             <li>
@@ -213,6 +222,92 @@
 		   <notXenophobistTowards>
               <li>Alien_Kroot</li>
            </notXenophobistTowards>
+		<factionRelations>
+                <li>
+                    <factions>
+                       <li>OrkFaction</li>
+                       <li>FeralOrkFaction</li>
+					   <li>OrkPlayerColony</li>
+					   <li>OrkPlayerColonyTribal</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+					   <li>PlayerColony</li>
+					   <li>PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>10</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>EldarFaction</li>
+					   <li>EldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>DarkEldarFaction</li>
+					   <li>DarkEldarPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>TauFaction</li>
+                       <li>KrootFaction</li>
+					   <li>TauPlayerColony</li>
+					   <li>KrootPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>30</min>
+                       <max>100</max>
+                    </goodwill>
+                </li>  
+				<li>
+                    <factions>
+                       <li>ImperialMechanicusFaction</li>
+					   <li>ImperialMechanicusPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-25</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>ImperialHumanFaction</li>
+					   <li>ImperialHumanPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>0</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>ImperialAstartesFaction</li>
+					   <li>ImperialAstartesPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-25</max>
+                    </goodwill>
+                </li>
+		</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -257,6 +352,7 @@
 						<li>TauTechBase</li>
 						<li>TauArmour</li>
 						<li>TauAdvancedWeapons</li>
+						<li>TauDroneTech</li>
 						<li>TauShieldTech</li>
 						<li>TauIonTech</li>
                     </projects>
@@ -265,14 +361,24 @@
             <recipeList>
                 <li>OGT_CombatArmour</li>
                 <li>OGT_CombatHelmet</li>
+                <li>OGT_Wargear_ShieldDrone</li>
+                <li>OGT_Wargear_MarkerDrone</li>
+                <li>OGT_GrenadePack_EMP</li>
+                <li>OGT_GrenadePack_Photon</li>
+                <li>OGT_Gun_TPulsePistol</li>
                 <li>OGT_Gun_TPulseCarbine</li>
+                <li>OGT_Gun_TPulseBlaster</li>
                 <li>OGT_Gun_TPulseRifle</li>
                 <li>OGT_Gun_TRailRifle</li>
-                <li>OGt_Gun_TIonRifle</li>
-                <li>OGt_Gun_TBurstCannon</li>
+                <li>OGT_Gun_TIonRifle</li>
+                <li>OGT_Gun_TBurstCannon</li>
                 <li>OGT_Gun_TKrootRifle</li>
                 <li>OGT_Gun_TNeutronBlaster</li>
+                <li>OGT_Melee_HonorBlade</li>
             </recipeList>
+			<buildingList>
+                <li>OGT_TableMachining</li>
+            </buildingList>
         </raceRestriction>
     </alienRace>
 	<statBases>
@@ -312,7 +418,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>5</power>
         <cooldownTime>1.6</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -329,7 +435,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>5</power>
         <cooldownTime>1.6</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <surpriseAttack>
@@ -346,7 +452,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>4</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <chanceFactor>0.2</chanceFactor>
@@ -405,361 +511,7 @@
                     <li>(30,100)</li>
                     <li>(40,12)</li>
                     <li>(50,6)</li>
-					<li>(120,1)</li>
-					<li>(140,1)</li>
-                    <li>(200,0)</li>
-        </points>
-      </ageGenerationCurve>
-      <hediffGiverSets>
-        <li>OrganicStandard</li>
-      </hediffGiverSets>
-    </race>
-    <recipes>
-       <li>InstallArchotechEye</li>
-      <li>InstallArchotechArm</li>
-      <li>InstallArchotechLeg</li>
-      <li>InstallPowerClaw</li>
-      <li>InstallBionicEye</li>
-      <li>InstallBionicArm</li>
-      <li>InstallBionicLeg</li>
-      <li>InstallBionicSpine</li>
-      <li>InstallBionicHeart</li>
-      <li>InstallBionicStomach</li>
-      <li>InstallBionicEar</li>
-      <li>InstallSimpleProstheticArm</li>
-      <li>InstallSimpleProstheticLeg</li>
-      <li>InstallSimpleProstheticHeart</li>
-      <li>InstallCochlearImplant</li>
-      <li>InstallPegLeg</li>
-      <li>InstallDenture</li>
-      <li>InstallJoywire</li>
-      <li>InstallPainstopper</li>
-      <li>InstallNaturalHeart</li>
-      <li>InstallNaturalLung</li>
-      <li>InstallNaturalKidney</li>
-      <li>InstallNaturalLiver</li>
-      <li>ExciseCarcinoma</li>
-      <li>RemoveBodyPart</li>
-      <li>Euthanize</li>
-      <li>Anesthetize</li>
-    </recipes>
-</AlienRace.ThingDef_AlienRace>
-
-<AlienRace.ThingDef_AlienRace ParentName="BaseTauPawn">
-    <defName>Alien_Kroot</defName>
-    <label>Kroot</label>
-    <description>The Pinicle of the Krootoid species: A fully grown Kroot.</description>
-    <alienRace>
-        <generalSettings>
-			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
-            <maleGenderProbability>0.5</maleGenderProbability>
-            <immuneToAge>false</immuneToAge>
-            <forcedRaceTraitEntries>
-                <li>
-                    <defName>Tough</defName>
-                    <degree>0</degree>
-                    <chance>50</chance>
-                </li>
-            </forcedRaceTraitEntries>
-			<disallowedTraits>
-			
-               <li>Gay</li>
-			   
-            </disallowedTraits>
-            <alienPartGenerator>
-                <aliencrowntypes>
-                    <li>Average_Kroot</li>
-                </aliencrowntypes>
-                <alienbodytypes>
-                <li>Thin</li>
-                </alienbodytypes>
-               <alienskincolorgen Class="ColorGenerator_Options">
-                               <options>
-            <li>
-                <weight>10</weight>
-				<only>RGBA(1.0,1.0,1.0,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.874,0.16,0.16,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.925,0.247,0.901,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.349,0.368,0.952,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.349,0.831,0.952,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.349,0.952,0.450,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.69,0.952,0.349,1)</only>
-            </li>
-            <li>
-                <weight>8</weight>
-                <only>RGBA(0.952,0.913,0.349,1)</only>
-            </li>
-            <li>
-                <weight>8</weight>
-                <only>RGBA(0.980,0.631,0.227,1)</only>
-            </li>
-			<li>
-                <weight>6</weight>
-                <only>RGBA(0.980,0.227,0.227,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.282,0.894,0.525,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.886,0.756,0.56,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.415,0.25,0.474,1)</only>
-            </li>
-             <li>
-                <weight>7</weight>
-                <only>RGBA(0.25,0.274,0.474,1)</only>
-            </li>
-            </options>
-                </alienskincolorgen>
-				<useSkincolorForHair>true</useSkincolorForHair>
-            </alienPartGenerator>
-			<chemicalSettings>	
-		    </chemicalSettings>
-            <humanRecipeImport>true</humanRecipeImport>
-		   <notXenophobistTowards>
-              <li>Alien_Tau</li>
-           </notXenophobistTowards>
-        </generalSettings>
-        <graphicPaths>
-            <li>
-                <body>Things/Tau/Bodies/Kroot/</body>
-                <head>Things/Tau/HeadsBase/</head>
-            </li>
-        </graphicPaths>
-        <hairSettings>
-            <hasHair>true</hasHair>
-            <getsGreyAt>200</getsGreyAt> 
-            <hairTags>
-                 <li>KrootHair</li>
-            </hairTags>
-        </hairSettings>
-        <thoughtSettings>
-			<cannotReceiveThoughts>
-                <li>ButcheredHumanlikeCorpse</li>
-				<li>KnowButcheredHumanlikeCorpse</li>
-                <li>AteHumanlikeMeatDirect</li>
-                <li>AteHumanlikeMeatAsIngredient</li>
-				<li>ColonistLeftUnburied</li>
-				<li>Naked</li>
-				<li>ApparelDamaged</li>
-				<li>DeadMansApparel</li>
-				<li>KnowGuestExecuted</li>
-				<li>KnowPrisonerDiedInnocent</li>
-				<li>NeedRoomSize</li>
-				<li>NeedBeauty</li>
-				<li>AteCorpse</li>
-				<li>Disfigured</li>
-				<li>Pretty</li>
-				<li>Ugly</li>
-				<li>SoldPrisoner</li>
-				<li>ExecutedPrisoner</li>
-				<li>AteRawHumanlikeMeat</li>
-				<li>AteWithoutTable</li>
-				<li>SleepDisturbed</li>
-				<li>KnowPrisonerSold</li>
-				<li>KnowGuestOrganHarvested</li>
-				<li>ObservedLayingCorpse</li>
-				<li>SleptInBarracks</li>
-            </cannotReceiveThoughts>
-        </thoughtSettings>
-        <relationSettings>
-            <relationChanceModifierParent>1</relationChanceModifierParent>
-            <relationChanceModifierChild>1</relationChanceModifierChild>
-            <relationChanceModifierSibling>3</relationChanceModifierSibling>
-			
-            <relationChanceModifierLover>1</relationChanceModifierLover>
-            <relationChanceModifierExLover>1</relationChanceModifierExLover>
-			
-            <relationChanceModifierFiance>1</relationChanceModifierFiance>
-            <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
-            <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
-			   <renamer>
-               <li>
-                  <relation>Sibling</relation>
-                  <label>Kinsmen</label>
-                  <femaleLabel>Kinsmen</femaleLabel>
-               </li>
-               <li>
-                  <relation>Parent</relation>
-                  <label>Shaper</label>
-                  <femaleLabel>Shaperess</femaleLabel>
-               </li>
-               <li>
-                  <relation>Child</relation>
-                  <label>Kindred</label>
-                  <femaleLabel>Kindred</femaleLabel>
-               </li>
-            </renamer>
-        </relationSettings>
-        <raceRestriction>
-            <researchList>
-                <li>
-                    <projects>
-						<li>TauTechBase</li>
-                    </projects>
-                </li>
-            </researchList>
-            <recipeList>
-                <li>Apparel_TribalKroot</li>
-                <li>OGT_Gun_TKrootRifle</li>
-            </recipeList>
-            <apparelList>
-                <li>Apparel_TribalKroot</li>
-            </apparelList>
-        </raceRestriction>
-    </alienRace>
-	<statBases>
-      <MarketValue>2000</MarketValue>
-      <MoveSpeed>5</MoveSpeed>
-      <Flammability>0.3</Flammability>
-      <ComfyTemperatureMin>6</ComfyTemperatureMin>
-      <ComfyTemperatureMax>35</ComfyTemperatureMax>
-      <LeatherAmount>65</LeatherAmount>
-      <CarryingCapacity>110</CarryingCapacity>
-	  <MiningSpeed>1.0</MiningSpeed>
-	  <ShootingAccuracyPawn>0.70</ShootingAccuracyPawn>
-	  <AimingDelayFactor>1.15</AimingDelayFactor>
-	  <MentalBreakThreshold>0.045</MentalBreakThreshold>
-	  <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
-      <PainShockThreshold>0.9</PainShockThreshold>
-      <ForagedNutritionPerDay>2.5</ForagedNutritionPerDay>
-      <GlobalLearningFactor>0.95</GlobalLearningFactor>
-      <MeleeDodgeChance>1.25</MeleeDodgeChance>
-      <MeleeHitChance>1.25</MeleeHitChance>
-      <UnskilledLaborSpeed>1.25</UnskilledLaborSpeed>
-      <ButcheryFleshSpeed>1.75</ButcheryFleshSpeed>
-      <ButcheryFleshEfficiency>1.75</ButcheryFleshEfficiency>
-      <SmeltingSpeed>0.85</SmeltingSpeed>
-      <SmithingSpeed>0.85</SmithingSpeed>
-      <TailoringSpeed>1.05</TailoringSpeed>
-      <NegotiationAbility>0.85</NegotiationAbility>
-      <SocialImpact>0.85</SocialImpact>
-      <TradePriceImprovement>0.85</TradePriceImprovement>
-    </statBases>
-  <tools>
-      <li>
-        <label>left fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>3</power>
-        <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>11</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>right fist</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>3</power>
-        <cooldownTime>1.6</cooldownTime>
-        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>11</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>1.8</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
-    <race>
-      <thinkTreeMain>Humanlike</thinkTreeMain>
-      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
-      <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>300</lifeExpectancy>
-      <leatherDef>Leather_Kroot</leatherDef>
-      <nameGenerator>NamerPersonKroot</nameGenerator>
-      <body>Human</body>
-      <bloodDef>FilthBloodKroot</bloodDef>	
-      <meatColor>(0, 0, 128)</meatColor>
-      <baseBodySize>1</baseBodySize>
-      <baseHealthScale>1.05</baseHealthScale>
-      <foodType>OmnivoreHuman, CarnivoreAnimal, OvivoreAnimal</foodType>
-      <gestationPeriodDays>45</gestationPeriodDays>
-      <litterSizeCurve>
-        <points>
-          <li>(0.5, 0)</li>
-          <li>(1, 1)</li>
-          <li>(1.01, 0.02)</li>
-          <li>(3.5, 0)</li>
-        </points>
-      </litterSizeCurve>
-      <lifeStageAges>
-        <li>
-          <def>HumanlikeBaby</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
-          <def>HumanlikeTeenager</def>
-          <minAge>14</minAge>
-        </li>
-        <li>
-          <def>HumanlikeAdult</def>
-          <minAge>18</minAge>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
-      <specialShadowData>
-        <volume>(0.3, 0.8, 0.4)</volume>
-        <offset>(0,0,-0.3)</offset>
-      </specialShadowData>
-      <ageGenerationCurve>
-        <points>
-                    <li>(16,0)</li>
-                    <li>(17,200)</li>
-                    <li>(18,250)</li>
-                    <li>(20,150)</li>
-                    <li>(30,100)</li>
-                    <li>(40,12)</li>
-                    <li>(50,6)</li>
-					<li>(120,1)</li>
-					<li>(140,1)</li>
-                    <li>(200,0)</li>
+					<li>(70,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>

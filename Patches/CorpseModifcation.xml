@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- Kroot Corpse Thing -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationTest">
+      <xpath>/Defs/ThingDef[starts-with(*,'Corpse_')]/ingestible</xpath>
+    </li>
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[starts-with(*,'Corpse_')]/ingestible/outcomeDoers</xpath>
+      <value>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.15</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+      </outcomeDoers>
+	  </value>
+    </li>
+    <li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[starts-with(*,'Corpse_')]/comps</xpath>
+      <value>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+	  </value>
+    </li>
+  </operations>
+</Operation>
+
+</Patch>
