@@ -191,6 +191,7 @@
   <ThingDef ParentName="KnarlocBase">
     <defName>KindredKrootKnarloc</defName>
 	<race>
+	  <useMeatFrom>KrootKnarloc</useMeatFrom>
       <intelligence>ToolUser</intelligence>
     </race>
     <tradeTags Inherit="false"> </tradeTags>

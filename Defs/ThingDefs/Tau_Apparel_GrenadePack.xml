@@ -30,7 +30,7 @@
 		</recipeMaker>
 		<comps>  
 			<li Class="AbilityUser.CompProperties_AbilityItem">
-				<AbilityUserClass>AbilityUser.GenericCompAbilityUser</AbilityUserClass>
+				<AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass>
 				<Abilities>
 					<li>OGT_Ability_ThrowEMP</li>
 				</Abilities>
@@ -88,7 +88,7 @@
 		</recipeMaker>
 		<comps>  
 			<li Class="AbilityUser.CompProperties_AbilityItem">
-				<AbilityUserClass>AbilityUser.GenericCompAbilityUser</AbilityUserClass>
+				<AbilityUserClass>AbilityUser.GenericCompAbilityItem</AbilityUserClass>
 				<Abilities>
 					<li>OGT_Ability_ThrowPhoton</li>
 				</Abilities>

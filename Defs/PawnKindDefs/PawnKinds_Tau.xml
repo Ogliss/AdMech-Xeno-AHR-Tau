@@ -110,8 +110,8 @@
 	<backstoryCategories>
 			<li>Tau_AUN</li>
   	</backstoryCategories>
-	<minGenerationAge>60</minGenerationAge>
-	<maxGenerationAge>600</maxGenerationAge>
+	<minGenerationAge>30</minGenerationAge>
+	<maxGenerationAge>70</maxGenerationAge>
   </PawnKindDef>
 
   <!-- ============================ Tau Trader ========================== -->
