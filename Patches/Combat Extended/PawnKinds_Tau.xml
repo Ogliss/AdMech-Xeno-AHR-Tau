@@ -10,7 +10,7 @@
     </li>
 	
     <li Class="PatchOperationAddModExtension">
-    <xpath>/Defs/PawnKindDef[defName="TauBase" or defName="KrootBase" or defName="GuevesaBase"]</xpath>
+    <xpath>/Defs/PawnKindDef[defName="TauBase" or defName="KrootBase" or defName="OG_Guevesa_Base_KindDef"]</xpath>
 		<value>
 		  <li Class="CombatExtended.LoadoutPropertiesExtension">
 			<primaryMagazineCount>

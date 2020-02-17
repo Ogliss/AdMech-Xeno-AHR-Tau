@@ -2,7 +2,7 @@
 <Defs>
 
 	<ScenarioDef>
-	<defName>TauCrashlanded</defName>
+	<defName>OG_Tau_Crashlanded</defName>
 		<label>Tau Survivors</label>
 		<description>When your freighter was attacked by pirates, you knew you had to take your chances in the escape pods, or be ransomed to slavery...</description>
 		<scenario>
@@ -71,7 +71,7 @@
 				</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>
-					<animalKind>Kroothound</animalKind>
+					<animalKind>OG_Kroot_Hound</animalKind>
 					<count>3</count>
 					<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
 				</li>
@@ -128,7 +128,7 @@
 	</ScenarioDef>
 
 	<ScenarioDef>
-		<defName>KrootLostTribe</defName>
+		<defName>OG_Kroot_Lost_Tribe</defName>
 		<label>Lost Kindred</label>
 		<description>Your kindred was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</description>
 		<scenario>
@@ -233,7 +233,6 @@
 					<text>The gods were very angry. The blood machines came at night. They swept through your village, cutting and burning your people with their blades and devil-fire.\n\nOnly a few of you escaped. Now, after a harrowing journey on foot, with no close friends to turn to, you must build a new home in the wilderness, like your ancestors did.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
-
 			</parts>
 		</scenario>
 	</ScenarioDef>

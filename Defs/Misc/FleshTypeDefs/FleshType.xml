@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-<!--
+<!-- Tau Empre Fleshtypes -->
+<!-- Tau Fleshtype -->
   <FleshTypeDef>
-    <defName>TauFlesh</defName>
-    <corpseCategory>CorpsesTau</corpseCategory>
+    <defName>OG_Flesh_Tau</defName>
+    <corpseCategory>OG_Corpses_Tau</corpseCategory>
     <wounds>
       <li>
         <texture>Things/Pawn/Wounds/WoundA</texture>
@@ -21,9 +22,10 @@
     </wounds>
   </FleshTypeDef>
 
+<!-- Kroot Fleshtype -->
   <FleshTypeDef>
-    <defName>KrootFlesh</defName>
-    <corpseCategory>CorpsesKroot</corpseCategory>
+    <defName>OG_Flesh_Kroot</defName>
+    <corpseCategory>OG_Corpses_Kroot</corpseCategory>
     <wounds>
       <li>
         <texture>Things/Pawn/Wounds/WoundA</texture>
@@ -39,6 +41,26 @@
       </li>
     </wounds>
   </FleshTypeDef>
--->
+  
+<!-- Vespid Fleshtype -->
+  <FleshTypeDef>
+    <defName>OG_Flesh_Vespid</defName>
+    <corpseCategory>OG_Corpses_Vespid</corpseCategory>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+  
 
 </Defs>

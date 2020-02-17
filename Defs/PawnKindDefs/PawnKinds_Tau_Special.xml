@@ -10,7 +10,7 @@
     <minGenerationAge>20</minGenerationAge>
     <maxGenerationAge>50</maxGenerationAge>
     <isFighter>true</isFighter>
-    <race>Alien_Tau</race>
+    <race>OG_Alien_Tau</race>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
     <backstoryCategories>

@@ -3,7 +3,7 @@
 
   <RecipeDef Name="SurgeryKroot" ParentName="SurgeryFlesh" Abstract="True">
   <recipeUsers>
-  <li>Alien_Kroot</li>
+  <li>OG_Alien_Kroot</li>
   </recipeUsers>
   </RecipeDef>
   
@@ -29,7 +29,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>HyperactiveNymuneOrgan</li>
+            <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -40,13 +40,13 @@
         <li>Medicine</li>
       </categories>
       <thingDefs>
-        <li>HyperactiveNymuneOrgan</li>
+        <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>NymuneOrgan</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>HyperactiveNymuneOrgan</addsHediff>
+    <addsHediff>OG_Kroot_Mutation_HyperactiveNymuneOrgan</addsHediff>
   </RecipeDef>
 
 </Defs>

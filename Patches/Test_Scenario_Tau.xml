@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+  <operations>
+  
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/ScenarioDef[defName = "OG_WeaponsTest_Tau"]/scenario/parts</xpath>
+                <success>Always</success>
+                <match Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ScenarioDef[defName = "OG_WeaponsTest_Tau"]/scenario/parts</xpath>
+                    <value>
+						<!-- Tau Animls -->
+						<li Class="ScenPart_StartingAnimalofGender">
+							<def>StartingAnimal</def>
+							<animalKind>OG_Kroot_Hound</animalKind>
+							<gender>Male</gender>
+							<count>2</count>
+							<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+						</li>
+						<li Class="ScenPart_StartingAnimalofGender">
+							<def>StartingAnimal</def>
+							<animalKind>OG_Kroot_Hound</animalKind>
+							<gender>Female</gender>
+							<count>2</count>
+							<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+						</li>
+                    </value>
+                </match>
+            </li>
+	
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/ScenarioDef[defName = "OG_WeaponsTest_Tau"]/scenario/playerFaction/factionDef</xpath>
+                <success>Always</success>
+                <match Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ScenarioDef[defName = "OG_WeaponsTest_Tau"]/scenario/playerFaction/factionDef</xpath>
+                    <value>
+						<factionDef>OG_Tau_Player</factionDef>
+                    </value>
+                </match>
+            </li>
+	
+  </operations>
+</Operation>
+
+</Patch>

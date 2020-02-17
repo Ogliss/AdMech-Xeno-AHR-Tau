@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--========================= Tau - Kroot Rags ==========================-->
+	<!--========================= Kroot -  Rags ==========================-->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>Apparel_TribalKroot</defName>
+		<defName>OGK_Apparel_TribalKroot</defName>
 		<label>Kroot tribalwear</label>
 		<description>A full-body garment. While it may look primitive, it is effective at insulating the wearer.</description>
 		<graphicData>
-			<texPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth</texPath>
+			<texPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
 		<costStuffCount>60</costStuffCount>
@@ -32,7 +33,6 @@
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
-				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth</wornGraphicPath>
 			<layers>
@@ -54,22 +54,35 @@
 				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
+    <comps>
+      <li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
+        <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+			<PauldronEntries>
 				<li>
-					<weight>10</weight>
-					<only>(0.4,0.3,0.15)</only>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<commonality>10</commonality>
 				</li>
 				<li>
-					<weight>15</weight>
-					<only>(0.6,0.45,0.18)</only>
+					<shoulderPadType>Right</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<commonality>10</commonality>
 				</li>
 				<li>
-					<weight>20</weight>
-					<only>(0.8,0.6,0.23)</only>
+					<shoulderPadType>Left</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<commonality>10</commonality>
 				</li>
-			</options>
-		</colorGenerator>
+			</PauldronEntries>
+			<NorthOffset>0.5</NorthOffset>
+			<SouthOffset>-0.001</SouthOffset>
+			<EastOffset>0.35</EastOffset>
+			<WestOffset>0.35</WestOffset>
+      </li>
+    </comps>
 	</ThingDef>
 	
 	

@@ -279,7 +279,7 @@
 	<maleCommonality>0.5</maleCommonality>
     <femaleCommonality>0.5</femaleCommonality>
     <forcedHediffs>
-      <li>HyperactiveNymuneOrgan</li>
+      <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
     </forcedHediffs>
     <spawnCategories Inherit="true">
 	
@@ -434,7 +434,7 @@
     <maleCommonality>1</maleCommonality>
     <femaleCommonality>1</femaleCommonality>
     <forcedHediffs>
-      <li>HyperactiveNymuneOrgan</li>
+      <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
     </forcedHediffs>
     <spawnCategories Inherit="true">
 	

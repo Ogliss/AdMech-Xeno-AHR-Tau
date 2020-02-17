@@ -4,29 +4,63 @@
     <defName>Kroot_Settings</defName>
     <pawnKindSettings>
             <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Colonist_OG_TauShas</li>
+						<li>Colonist_OG_TauPor</li>
+						<li>Colonist_OG_TauFio</li>
+						<li>Colonist_OG_TauKor</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Colonist_OG_Guevesa</li>
+						<li>Colonist_OG_TauAun</li>
+					</kindDefs>
+					<chance>1.0</chance>
+				</li>
                 <li>
                     <kindDefs>
-						<li>Kroot</li>
+						<li>Colonist_OG_Kroot</li>
+						<li>Slave_OG_Kroot</li>
                     </kindDefs>
-                    <chance>40.0</chance>
+                    <chance>80.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-						<li>KrootPsyker</li>
+						<li>Colonist_OG_KrootPsyker</li>
                     </kindDefs>
                     <chance>5.0</chance>
                 </li>
             </alienslavekinds>
             <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>Colonist_OG_TauShas</li>
+						<li>Colonist_OG_TauPor</li>
+						<li>Colonist_OG_TauFio</li>
+						<li>Colonist_OG_TauKor</li>
+					</kindDefs>
+					<chance>10.0</chance>
+				</li>
+				<li>
+					<kindDefs>
+						<li>Colonist_OG_Guevesa</li>
+						<li>Colonist_OG_TauAun</li>
+					</kindDefs>
+					<chance>1.0</chance>
+				</li>
                 <li>
                     <kindDefs>
-						<li>Kroot</li>
+						<li>Colonist_OG_Kroot</li>
+						<li>Slave_OG_Kroot</li>
                     </kindDefs>
-                    <chance>50.0</chance>
+                    <chance>80.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-						<li>KrootPsyker</li>
+						<li>Colonist_OG_KrootPsyker</li>
                     </kindDefs>
                     <chance>5.0</chance>
                 </li>
@@ -36,18 +70,19 @@
 				<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>KrootPsyker</li>
+							<li>Colonist_OG_KrootPsyker</li>
 						</kindDefs>
 						<chance>5.0</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>Kroot</li>
+                        <li>Colonist_OG_Kroot</li>
                     </kindDefs>
                     <chance>50.0</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
+					<li>OG_Kroot_Player_Tribal</li> 
 					<li>KrootPlayerColonyTribal</li> 
 				</factionDefs>
 				</li>
@@ -57,32 +92,45 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                        <li>Guevesa</li>
-                        <li>TauAun</li>
-                        <li>TauShas</li>
-                        <li>TauPor</li>
-                        <li>TauFio</li>
-                        <li>TauKor</li>
-						<li>Kroot</li>
+								<li>Colonist_OG_TauShas</li>
+								<li>Colonist_OG_TauPor</li>
+								<li>Colonist_OG_TauFio</li>
+								<li>Colonist_OG_TauKor</li>
                             </kindDefs>
-                            <chance>50.0</chance>
+                            <chance>10.0</chance>
                         </li>
-					<li>
-						<kindDefs>
-							<li>KrootPsyker</li>
-						</kindDefs>
-						<chance>5.0</chance>
-					</li>
+                        <li>
+                            <kindDefs>
+								<li>Colonist_OG_Guevesa</li>
+								<li>Colonist_OG_TauAun</li>
+                            </kindDefs>
+                            <chance>1.0</chance>
+                        </li>
+                        <li>
+                            <kindDefs>
+								<li>Slave_OG_Kroot</li>
+								<li>Colonist_OG_Kroot</li>
+                            </kindDefs>
+                            <chance>80.0</chance>
+                        </li>
+						<li>
+							<kindDefs>
+								<li>Colonist_OG_KrootPsyker</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>TauPlayerColony</li> 
+                        <li>OG_Kroot_Player_Tribal</li> 
+                        <li>KrootPlayerColonyTribal</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
         </pawnKindSettings>
   </AlienRace.RaceSettings>
 
-<ThingDef Name="BaseKrootPawn" Abstract="True">
+<ThingDef ParentName="BasePawn" Name="OG_Kroot_Pawn_Base" Abstract="True">
+	<!--
     <thingClass>Pawn</thingClass>
     <category>Pawn</category>
     <selectable>true</selectable>
@@ -103,10 +151,9 @@
         <li>ITab_Pawn_Log</li>
         <li>ITab_Pawn_FormingCaravan</li>
     </inspectorTabs>
+    <drawGUIOverlay>true</drawGUIOverlay>
+	-->
     <comps>
-        <li>
-            <compClass>CompAttachBase</compClass>
-        </li>
       <li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
 		<Poisonable>true</Poisonable>
 		<FoodTypeFlags>
@@ -124,11 +171,9 @@
 		</FoodPoisonCause>
       </li>
     </comps>
-    <drawGUIOverlay>true</drawGUIOverlay>
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="BaseKrootPawn">
-    <defName>Alien_Kroot</defName>
+<AlienRace.ThingDef_AlienRace ParentName="OG_Kroot_Pawn_Base" Name="OG_Alien_Kroot_Base" Abstract="True">
     <label>Kroot</label>
     <description>The Kroot originated on the world of Pech and, though their physiology is humanoid, there is evidence to suggest that the roots of their evolution may be avian in origin. They retain vestigial beaks and have a light, almost hollow bone structure, with four digits on each hand and foot. Their skin is rough with small, barbed spines, similar to the elongated quills on their heads, protruding from various locations on their flesh. Skin pigmentation ranges from earthy brown colours and dappled greens to vibrant oranges and everything in between. Depending on the feeding directions of the Kroot Shapers, the colouration of each kindred can vary quite considerably. It is also common for Kroot from each kindred to have particular tribal markings painted onto their skin. Kroot mature quickly, with their most rapid period of growth occurring in the first ten years of their lives. By the age of twelve they are considered adults and it is not unknown for Kroot to live to over a hundred years old, their skin becoming increasingly pitted and leathery in their last few years of life</description>
     <alienRace>
@@ -142,6 +187,13 @@
                     <degree>0</degree>
                     <chance>50</chance>
                 </li>
+				<!--
+                <li>
+                    <defName>Cannibal</defName>
+                    <degree>0</degree>
+                    <chance>100</chance>
+                </li>
+				-->
             </forcedRaceTraitEntries>
 			<disallowedTraits>
 			
@@ -149,15 +201,17 @@
 			   
             </disallowedTraits>
             <alienPartGenerator>
-				<customDrawSize>(1.0, 1.0)</customDrawSize>
-				<customHeadDrawSize>(0.5, 0.5)</customHeadDrawSize>
-				<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize>
+				<customDrawSize>(0.750, 1.0)</customDrawSize>
+				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+				<customPortraitDrawSize>(0.750, 1.0)</customPortraitDrawSize>
+				<customPortraitHeadDrawSize>(0.75, 0.75)</customPortraitHeadDrawSize>
                 <aliencrowntypes>
                     <li>Average_Kroot</li>
                 </aliencrowntypes>
                 <alienbodytypes>
                 <li>Thin</li>
+                <li>Male</li>
+                <li>Female</li>
                 </alienbodytypes>
                 <alienskincolorgen Class="ColorGenerator_Options">
 					<options>
@@ -329,9 +383,42 @@
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
-              <li>Alien_Tau</li>
+              <li>OG_Alien_Tau</li>
               <li>Alien_Vespid</li>
            </notXenophobistTowards>
+		<factionRelations>
+                <li>
+                    <factions>
+                       <li>OG_Kroot_Faction</li>
+                       <li>KrootPlayerColonyTribal</li>
+                       <li>TauFaction</li>
+                       <li>TauPlayerColony</li>
+                    </factions>
+                    <goodwill>
+                       <min>-10</min>
+                       <max>100</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+					   <li>PlayerColony</li>
+					   <li>PlayerTribe</li>
+                    </factions>
+                    <goodwill>
+                       <min>-50</min>
+                       <max>50</max>
+                    </goodwill>
+                </li>
+				<li>
+                    <factions>
+                       <li>RRY_Yautja_BadBloodFaction</li>
+                    </factions>
+                    <goodwill>
+                       <min>-100</min>
+                       <max>-50</max>
+                    </goodwill>
+                </li>
+		</factionRelations>
         </generalSettings>
         <graphicPaths>
             <li>
@@ -347,19 +434,197 @@
             </hairTags>
         </hairSettings>
         <thoughtSettings>
+		
+            <butcherThoughtGeneral>
+                <thought>ButcheredHumanlikeCorpse_OGKroot</thought>
+                <knowThought>KnowButcheredHumanlikeCorpse_OGKroot</knowThought>
+            </butcherThoughtGeneral>
+			
+            <ateThoughtGeneral>
+                <thought>AteHumanlikeMeatDirect_OGKroot</thought>
+                <ingredientThought>AteHumanlikeMeatAsIngredient_OGKroot</ingredientThought>
+                <thoughtCannibal>AteHumanlikeMeatDirectCannibal_OGKroot</thoughtCannibal> 
+                <ingredientThoughtCannibal>AteHumanlikeMeatAsIngredientCannibal_OGKroot</ingredientThoughtCannibal> 
+            </ateThoughtGeneral>
+			<!-- -->
+			<butcherThoughtSpecific>
+                <li>
+                    <raceList>
+                        <li>OG_Alien_Tau</li>
+                    </raceList>
+                    <thought>ButcheredHumanlikeCorpse_OGKrootTau</thought>
+                    <knowThought>KnowButcheredHumanlikeCorpse_OGKrootTau</knowThought>
+                </li>
+            </butcherThoughtSpecific>
+            <ateThoughtSpecific>
+                <li>
+                    <raceList>
+                        <li>OG_Alien_Tau</li>
+                    </raceList>
+                    <thought>AteHumanlikeMeatDirect_OGKrootTau</thought>
+                    <ingredientThought>AteHumanlikeMeatAsIngredient_OGKrootTau</ingredientThought>
+					<thoughtCannibal>AteHumanlikeMeatDirect_OGKrootTau</thoughtCannibal> 
+					<ingredientThoughtCannibal>AteHumanlikeMeatAsIngredient_OGKrootTau</ingredientThoughtCannibal> 
+                </li>
+            </ateThoughtSpecific>
+			<!-- -->
+			<replacerList>
+				<!-- 
+                <li>
+                    <original>EnvironmentDark</original>
+                    <replacer>EnvironmentDark_OGKroot</replacer> 
+                </li>
+				-->
+                <li>
+                    <original>Greedy</original>
+                    <replacer>Greedy_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>ApparelDamaged</original>
+                    <replacer>ApparelDamaged_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>DeadMansApparel</original>
+                    <replacer>DeadMansApparel_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>HumanLeatherApparelSad</original>
+                    <replacer>HumanLeatherApparelSad_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>HumanLeatherApparelHappy</original>
+                    <replacer>HumanLeatherApparelHappy_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>ButcheredHumanlikeCorpseOpinion</original>
+                    <replacer>ButcheredHumanlikeCorpseOpinion_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>AteRawHumanlikeMeat</original>
+                    <replacer>AteRawHumanlikeMeat_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>BrawlerUnhappy</original>
+                    <replacer>BrawlerUnhappy_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>ColonistLeftUnburied</original>
+                    <replacer>ColonistLeftUnburied_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>AteWithoutTable</original>
+                    <replacer>AteWithoutTable_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>SleptOutside</original>
+                    <replacer>SleptOutside_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>SleptOnGround</original>
+                    <replacer>SleptOnGround_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>SleptInCold</original>
+                    <replacer>SleptInCold_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>SleptInHeat</original>
+                    <replacer>SleptInHeat_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>KnowPrisonerSold</original>
+                    <replacer>KnowPrisonerSold_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>KnowBuriedInSarcophagus</original>
+                    <replacer>KnowBuriedInSarcophagus_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>SoakingWet</original>
+                    <replacer>SoakingWet_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>ObservedLayingCorpse</original>
+                    <replacer>ObservedLayingCorpse_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>ObservedLayingRottingCorpse</original>
+                    <replacer>ObservedLayingRottingCorpse_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>WitnessedDeathNonAlly</original>
+                    <replacer>WitnessedDeathNonAlly_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>WitnessedDeathFamily</original>
+                    <replacer>WitnessedDeathFamily_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>WitnessedDeathBloodlust</original>
+                    <replacer>WitnessedDeathBloodlust_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>KilledHumanlikeBloodlust</original>
+                    <replacer>KilledHumanlikeBloodlust_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>DefeatedHostileFactionLeader</original>
+                    <replacer>DefeatedHostileFactionLeader_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>DefeatedHostileFactionLeaderOpinion</original>
+                    <replacer>DefeatedHostileFactionLeaderOpinion_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>AteInsectMeatDirect</original>
+                    <replacer>AteInsectMeatDirect_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>AteInsectMeatAsIngredient</original>
+                    <replacer>AteInsectMeatAsIngredient_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>AteCorpse</original>
+                    <replacer>AteCorpse_OGKroot</replacer> 
+                </li>
+                <li>
+                    <original>AteKibble</original>
+                    <replacer>AteKibble_OGKroot</replacer> 
+                </li>
+            </replacerList>
+            <restrictedThoughts>
+                <li>Greedy_OGKroot</li>
+                <li>ApparelDamaged_OGKroot</li>
+                <li>EnvironmentDark_OGKroot</li>
+                <li>ObservedLayingCorpse_OGKroot</li>
+                <li>ObservedLayingRottingCorpse_OGKroot</li>
+                <li>WitnessedDeathAlly_OGKroot</li>
+                <li>WitnessedDeathNonAlly_OGKroot</li>
+                <li>WitnessedDeathFamily_OGKroot</li>
+                <li>WitnessedDeathBloodlust_OGKroot</li>
+                <li>KilledHumanlikeBloodlust_OGKroot</li>
+                <li>DefeatedHostileFactionLeader_OGKroot</li>
+                <li>DefeatedHostileFactionLeaderOpinion_OGKroot</li>
+            </restrictedThoughts>
 			<cannotReceiveThoughts>
-				<li>ObservedLayingCorpse</li>
+				<!--
                 <li>ButcheredHumanlikeCorpse</li>
 				<li>KnowButcheredHumanlikeCorpse</li>
-				<li>AteWithoutTable</li>
 				<li>AteRawHumanlikeMeat</li>
                 <li>AteHumanlikeMeatDirect</li>
                 <li>AteHumanlikeMeatAsIngredient</li>
+				
+				<li>ObservedLayingCorpse</li>
+				<li>AteWithoutTable</li>
 				<li>AteCorpse</li>
 				<li>ColonistLeftUnburied</li>
-				<li>Naked</li>
-				<li>ApparelDamaged</li>
 				<li>DeadMansApparel</li>
+				<li>ApparelDamaged</li>
+				
+				<li>AteRawFood</li>
+				<li>Naked</li>
+				-->
+				<li>EnvironmentDark</li>
 				<li>KnowGuestExecuted</li>
 				<li>KnowPrisonerDiedInnocent</li>
 				<li>NeedRoomSize</li>
@@ -413,12 +678,17 @@
                 </li>
             </researchList>
             <recipeList>
-                <li>Apparel_TribalKroot</li>
+                <li>OGK_Apparel_TribalKroot</li>
+                <li>OGT_Gun_TKrootPistol</li>
                 <li>OGT_Gun_TKrootRifle</li>
+                <li>OGT_Gun_TKrootHunterRifle</li>
             </recipeList>
             <apparelList>
-                <li>Apparel_TribalKroot</li>
+                <li>OGK_Apparel_TribalKroot</li>
             </apparelList>
+			<buildingList>
+                <li>OGT_TableMachining</li>
+            </buildingList>
         </raceRestriction>
     </alienRace>
 	<statBases>
@@ -502,9 +772,10 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>300</lifeExpectancy>
       <leatherDef>Leather_Kroot</leatherDef>
-      <nameGenerator>NamerPersonKroot</nameGenerator>
-      <body>Kroot</body>
-      <bloodDef>FilthBloodKroot</bloodDef>	
+      <nameGenerator>OG_NamerPersonKroot_Male</nameGenerator>
+      <nameGeneratorFemale>OG_NamerPersonKroot_Female</nameGeneratorFemale>
+      <body>OG_Kroot</body>
+      <bloodDef>OG_FilthBlood_Kroot</bloodDef>	
       <meatColor>(35, 56, 0)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
@@ -524,12 +795,20 @@
           <minAge>0</minAge>
         </li>
         <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
           <def>HumanlikeTeenager</def>
-          <minAge>10</minAge>
+          <minAge>12</minAge>
         </li>
         <li>
           <def>HumanlikeAdult</def>
-          <minAge>12</minAge>
+          <minAge>16</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -591,10 +870,14 @@
     </recipes>
 </AlienRace.ThingDef_AlienRace>
 
-  <!-- ============================ Aun ========================== -->
-  <!--
-  <AlienRace.ThingDef_AlienRace ParentName="BaseTau">
-    <defName>Alien_TauEthereal</defName>
+  <!-- ============================ Kroot ========================== -->
+
+  <AlienRace.ThingDef_AlienRace ParentName="OG_Alien_Kroot_Base">
+    <defName>OG_Alien_Kroot</defName>
   </AlienRace.ThingDef_AlienRace>
-  -->
+  
+  <AlienRace.ThingDef_AlienRace ParentName="OG_Alien_Kroot_Base">
+    <defName>Alien_Kroot</defName>
+  </AlienRace.ThingDef_AlienRace>
+
 </Defs>

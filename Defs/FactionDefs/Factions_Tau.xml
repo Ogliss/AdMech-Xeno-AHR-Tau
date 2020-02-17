@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef>
-		<defName>TauFaction</defName>
+  <FactionDef Name="OG_Tau_Faction_Base" Abstract="True">
 		<label>Tau Cadre</label>
     <description>The Tau, known in their own language as the T'au, are a young, humanoid and technologically-advanced intelligent race native to the Eastern Fringes of the Milky Way Galaxy who are fighting to expand their interstellar empire and extend a philosophical concept they call the "Greater Good" (Tau'va in the Tau Lexicon) to all the intelligent species of the galaxy. 
 	The Tau claim to be a peaceful race when possible, asking if others will join their cause voluntarily instead of fighting against them. However, if their peaceful overtures are refused, the Tau may well decide to conquer a planet and add it to their growing interstellar empire for the Greater Good, searing the flesh from the bones of anyone who stands against their benign intentions.</description>
     <pawnsPlural>Tau</pawnsPlural>
+    <basicMemberKind>Colonist_OG_Tau</basicMemberKind>
     <listOrderPriority>30</listOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -66,98 +66,96 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <TauFactionEthereal>5</TauFactionEthereal>
-          <TauEthereal>1</TauEthereal>
-          <TauFireWarriorSgt>10</TauFireWarriorSgt>
-          <TauFireWarrior>100</TauFireWarrior>
-          <TauPathFinderSgt>25</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
-          <GuevesaSargent>10</GuevesaSargent>
-          <GuevesaSoldierHW>25</GuevesaSoldierHW>
-          <GuevesaSoldierSW>25</GuevesaSoldierSW>
-          <GuevesaSoldier>90</GuevesaSoldier>
-          <KrootShaper>10</KrootShaper>
-          <KrootWarrior>100</KrootWarrior>
-          <KindredKroothound>75</KindredKroothound> 
+          <OG_Guevesa_Sgt>10</OG_Guevesa_Sgt>
+          <OG_Guevesa_Soldier_HW>25</OG_Guevesa_Soldier_HW>
+          <OG_Guevesa_Soldier_SW>25</OG_Guevesa_Soldier_SW>
+          <OG_Guevesa_Soldier>90</OG_Guevesa_Soldier>
+          <OG_Kroot_Shaper>10</OG_Kroot_Shaper>
+          <OG_Kroot_Warrior>100</OG_Kroot_Warrior>
+          <OG_Kroot_Hound_Trained>75</OG_Kroot_Hound_Trained> 
+          <OG_Tau_Firewarrior_Sgt>10</OG_Tau_Firewarrior_Sgt>
+          <OG_Tau_Firewarrior>100</OG_Tau_Firewarrior>
+          <OG_Tau_Pathfinder_Sgt>25</OG_Tau_Pathfinder_Sgt>
+          <OG_Tau_Pathfinder>100</OG_Tau_Pathfinder>
+          <OG_Tau_Faction_Ethereal>5</OG_Tau_Faction_Ethereal>
+          <OG_Tau_Ethereal>1</OG_Tau_Ethereal>
         </options>
       </li>
         <li>
         <kindDef>Peaceful</kindDef>
         <options>
-          <TauFactionEthereal>5</TauFactionEthereal>
-          <TauColonist>50</TauColonist>
-          <GuevesaColonist>50</GuevesaColonist>
-          <KrootColonist>50</KrootColonist>
-          <GuevesaCadet>90</GuevesaCadet>
-          <TauCadet>90</TauCadet>
-          <Kroothound>50</Kroothound>
-          <KrootShaper>10</KrootShaper>
-          <KrootWarrior>100</KrootWarrior>
-          <TauFireWarriorSgt>10</TauFireWarriorSgt>
-          <TauFireWarrior>100</TauFireWarrior>
-          <GuevesaSargent>10</GuevesaSargent>
-          <GuevesaSoldierHW>25</GuevesaSoldierHW>
-          <GuevesaSoldierSW>25</GuevesaSoldierSW>
-          <GuevesaSoldier>90</GuevesaSoldier>
-          <TauEthereal>1</TauEthereal>
-          <TauPathFinderSgt>25</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
+          <Colonist_OG_Guevesa>50</Colonist_OG_Guevesa>
+          <OG_Guevesa_Cadet>90</OG_Guevesa_Cadet>
+          <OG_Guevesa_Sgt>10</OG_Guevesa_Sgt>
+          <OG_Guevesa_Soldier_HW>25</OG_Guevesa_Soldier_HW>
+          <OG_Guevesa_Soldier_SW>25</OG_Guevesa_Soldier_SW>
+          <OG_Guevesa_Soldier>90</OG_Guevesa_Soldier>
+          <Colonist_OG_Kroot>50</Colonist_OG_Kroot>
+          <OG_Kroot_Hound>50</OG_Kroot_Hound>
+          <OG_Kroot_Shaper>10</OG_Kroot_Shaper>
+          <OG_Kroot_Warrior>100</OG_Kroot_Warrior>
+          <Colonist_OG_Tau>50</Colonist_OG_Tau>
+          <OG_Tau_Cadet>90</OG_Tau_Cadet>
+          <OG_Tau_Firewarrior_Sgt>10</OG_Tau_Firewarrior_Sgt>
+          <OG_Tau_Firewarrior>100</OG_Tau_Firewarrior>
+          <OG_Tau_Pathfinder_Sgt>25</OG_Tau_Pathfinder_Sgt>
+          <OG_Tau_Pathfinder>100</OG_Tau_Pathfinder>
+          <OG_Tau_Ethereal>1</OG_Tau_Ethereal>
+          <OG_Tau_Faction_Ethereal>5</OG_Tau_Faction_Ethereal>
         </options>
       </li>
 	  <li>
       <kindDef>Trader</kindDef>
-        <traders> 
-          <TauFactionEthereal>5</TauFactionEthereal>
-          <KrootTrader>1</KrootTrader>
-          <TauTrader>1</TauTrader>
+        <traders>
+          <OG_Tau_Trader>1</OG_Tau_Trader>
         </traders>
         <carriers>
-          <Krootox>6</Krootox>
+			<Muffalo>2</Muffalo>
+			<!--
+			<Krootox>2</Krootox>
+			-->
         </carriers>
         <guards>
-          <TauFactionEthereal>5</TauFactionEthereal>
-          <Kroothound>4</Kroothound>
-          <GuevesaColonist>50</GuevesaColonist>
-          <TauColonist>50</TauColonist>
-          <KrootColonist>50</KrootColonist>
-          <GuevesaCadet>90</GuevesaCadet>
-          <TauCadet>90</TauCadet>
-          <KrootShaper>10</KrootShaper>
-          <KrootWarrior>100</KrootWarrior>
-          <TauFireWarriorSgt>10</TauFireWarriorSgt>
-          <TauFireWarrior>100</TauFireWarrior>
-          <GuevesaSargent>10</GuevesaSargent>
-          <GuevesaSoldierHW>25</GuevesaSoldierHW>
-          <GuevesaSoldierSW>25</GuevesaSoldierSW>
-          <GuevesaSoldier>90</GuevesaSoldier>
-          <TauEthereal>1</TauEthereal>
-          <TauPathFinderSgt>25</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
+          <OG_Tau_Firewarrior_Sgt>10</OG_Tau_Firewarrior_Sgt>
+          <OG_Tau_Firewarrior>100</OG_Tau_Firewarrior>
+          <OG_Tau_Cadet>90</OG_Tau_Cadet>
+		  <!--
+          <OG_Guevesa_Cadet>90</OG_Guevesa_Cadet>
+          <OG_Guevesa_Sgt>10</OG_Guevesa_Sgt>
+          <OG_Guevesa_Soldier_HW>25</OG_Guevesa_Soldier_HW>
+          <OG_Guevesa_Soldier_SW>25</OG_Guevesa_Soldier_SW>
+          <OG_Guevesa_Soldier>90</OG_Guevesa_Soldier>
+          <OG_Kroot_Hound_Trained>5</OG_Kroot_Hound_Trained>
+          <Slave_OG_Kroot>13</Slave_OG_Kroot>
+          <OG_Kroot_Shaman>1</OG_Kroot_Shaman>
+          <OG_Kroot_Shaper>2</OG_Kroot_Shaper>
+          <OG_Kroot_Warrior>10</OG_Kroot_Warrior>
+          <OG_Kroot_Hunter>6</OG_Kroot_Hunter>
+		  -->
         </guards>
       </li>
 	  <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <TauFactionEthereal>5</TauFactionEthereal>
-          <Kroothound>5</Kroothound>
-          <KindredKroothound>10</KindredKroothound>
-          <GuevesaColonist>50</GuevesaColonist>
-          <TauColonist>50</TauColonist>
-          <KrootColonist>50</KrootColonist>
-          <TauCadet>90</TauCadet>
-          <GuevesaCadet>90</GuevesaCadet>
-          <KrootShaper>10</KrootShaper>
-          <KrootWarrior>100</KrootWarrior>
-          <TauFireWarriorSgt>10</TauFireWarriorSgt>
-          <TauFireWarrior>100</TauFireWarrior>
-          <GuevesaSargent>10</GuevesaSargent>
-          <GuevesaSoldierHW>25</GuevesaSoldierHW>
-          <GuevesaSoldierSW>25</GuevesaSoldierSW>
-          <GuevesaSoldier>90</GuevesaSoldier>
-          <TauFactionEthereal>1</TauFactionEthereal>
-          <TauEthereal>2</TauEthereal>
-          <TauPathFinderSgt>25</TauPathFinderSgt>
-          <TauPathFinder>100</TauPathFinder>
+          <OG_Kroot_Hound>5</OG_Kroot_Hound>
+          <OG_Kroot_Hound_Trained>10</OG_Kroot_Hound_Trained>
+          <Colonist_OG_Kroot>50</Colonist_OG_Kroot>
+          <OG_Kroot_Shaper>10</OG_Kroot_Shaper>
+          <OG_Kroot_Warrior>100</OG_Kroot_Warrior>
+          <Colonist_OG_Guevesa>50</Colonist_OG_Guevesa>
+          <OG_Guevesa_Cadet>90</OG_Guevesa_Cadet>
+          <OG_Guevesa_Sgt>10</OG_Guevesa_Sgt>
+          <OG_Guevesa_Soldier_HW>25</OG_Guevesa_Soldier_HW>
+          <OG_Guevesa_Soldier_SW>25</OG_Guevesa_Soldier_SW>
+          <OG_Guevesa_Soldier>90</OG_Guevesa_Soldier>
+          <Colonist_OG_Tau>50</Colonist_OG_Tau>
+          <OG_Tau_Cadet>90</OG_Tau_Cadet>
+          <OG_Tau_Firewarrior_Sgt>10</OG_Tau_Firewarrior_Sgt>
+          <OG_Tau_Firewarrior>100</OG_Tau_Firewarrior>
+          <OG_Tau_Faction_Ethereal>1</OG_Tau_Faction_Ethereal>
+          <OG_Tau_Pathfinder_Sgt>25</OG_Tau_Pathfinder_Sgt>
+          <OG_Tau_Pathfinder>100</OG_Tau_Pathfinder>
+          <OG_Tau_Ethereal>2</OG_Tau_Ethereal>
         </options>
       </li>
     </pawnGroupMakers>
@@ -165,4 +163,12 @@
 	<expandingIconTexture>Icons/TauIconB</expandingIconTexture>
   </FactionDef>
 
+  <FactionDef ParentName="OG_Tau_Faction_Base">
+    <defName>OG_Tau_Faction</defName>
+  </FactionDef>
+
+  <FactionDef ParentName="OG_Tau_Faction_Base">
+    <defName>TauFaction</defName>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+  </FactionDef>
 </Defs>

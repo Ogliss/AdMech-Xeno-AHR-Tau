@@ -13,7 +13,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BodyPartNaturalBase">
-    <defName>HyperactiveNymuneOrgan</defName>
+    <defName>OG_Kroot_Mutation_HyperactiveNymuneOrgan</defName>
     <label>hyperactive nymune organ</label>
     <description>Hyperactive Nymune Organs are a Kroot organ that stores great amounts of energy, which increases the speed of the Kroot’s metabolism, improving his raw muscle speed, reflexes, and reaction time.\n\nIt is not only purebred Kroots but also other Kroot-based organisms (like a Great Knarlocs, for example) can have this organ.</description>
     <statBases>

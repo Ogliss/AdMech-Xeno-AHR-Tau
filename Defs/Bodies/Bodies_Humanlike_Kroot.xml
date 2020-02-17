@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <BodyDef>
-    <defName>Kroot</defName>
+    <defName>OG_Kroot</defName>
     <label>kroot</label>
     <corePart>
       <def>Torso</def>
@@ -126,7 +126,7 @@
               <groups>
                 <li>UpperHead</li>
                 <li>FullHead</li>
-								<li>HeadAttackTool</li>
+				<li>HeadAttackTool</li>
               </groups>
               <parts>
                 <li>

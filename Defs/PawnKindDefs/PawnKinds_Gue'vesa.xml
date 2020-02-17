@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- ============================ Gue'vesa Base ========================== -->
-  <PawnKindDef Name="GuevesaBase" Abstract="True">
-    <defaultFactionType>TauFaction</defaultFactionType>
+  <PawnKindDef Name="OG_Guevesa_Base_KindDef" Abstract="True">
+    <defaultFactionType>OG_Tau_Player</defaultFactionType>
 	<!-- 
-    <race>Alien_Tau</race>
+    <race>OG_Alien_Tau</race>
 	<backstoryCategories>
 			<li>Tau_Standard</li>
   	</backstoryCategories>
@@ -15,7 +15,7 @@
   </PawnKindDef>
 
   <!-- ============================ Gue'vesa Civilian Base ========================== -->
-  <PawnKindDef Name="GuevesaCivBase" ParentName="GuevesaBase" Abstract="True">
+  <PawnKindDef Name="OG_Guevesa_Civ_Base" ParentName="OG_Guevesa_Base_KindDef" Abstract="True">
     <combatPower>25</combatPower>
 	<race>Human</race>
     <baseRecruitDifficulty>0.45</baseRecruitDifficulty>
@@ -74,7 +74,7 @@
   
   <!-- ============================ Gue'vesa Civilians ========================== -->
   <!-- ============================ Gue'vesa Faction Leader ========================== -->
-  <PawnKindDef ParentName="GuevesaCivBase">
+  <PawnKindDef ParentName="OG_Guevesa_Civ_Base">
     <defName>TauFactionGuevesa</defName>
     <label>Commander</label>
     <labelPlural>Commanders</labelPlural>
@@ -114,26 +114,17 @@
   </PawnKindDef>
 
   <!-- ============================ Gue'vesa Trader ========================== -->
-  <PawnKindDef ParentName="GuevesaCivBase">
-    <defName>GuevesaTrader</defName>
+  <PawnKindDef ParentName="OG_Guevesa_Civ_Base">
+    <defName>OG_Guevesa_Trader</defName>
     <label>Gue'vesa trader</label>
 	<backstoryCategories>
 			<li>Civil</li>
   	</backstoryCategories>
   </PawnKindDef>  
   
-  <!-- ============================ Gue'vesa Colonist ========================== -->
-  <PawnKindDef ParentName="GuevesaCivBase">
-    <defName>GuevesaColonist</defName>
-    <label>Gue'vesa colonist</label>
-	<backstoryCategories>
-			<li>Civil</li>
-  	</backstoryCategories>
-  </PawnKindDef>
-  
   <!-- ============================ Gue'vesa Slave ========================== -->
-  <PawnKindDef ParentName="GuevesaCivBase">
-    <defName>GuevesaSlave</defName>
+  <PawnKindDef ParentName="OG_Guevesa_Civ_Base">
+    <defName>Slave_OG_Guevesa</defName>
     <label>Gue'vesa slave</label>
 	<backstoryCategories>
 			<li>Raider</li>
@@ -141,8 +132,8 @@
   </PawnKindDef>
     
   <!-- ============================ Gue'vesa Security ========================== -->
-  <PawnKindDef ParentName="GuevesaCivBase">
-    <defName>GuevesaCadet</defName>
+  <PawnKindDef ParentName="OG_Guevesa_Civ_Base">
+    <defName>OG_Guevesa_Cadet</defName>
     <label>Gue'vesa Cadet</label>
     <combatPower>50</combatPower>
     <maxGenerationAge>10</maxGenerationAge>
@@ -189,7 +180,7 @@
   </PawnKindDef>
 
   <!-- ============================ Gue'vesa Military Base ========================== -->
-  <PawnKindDef Name="GuevesaMilBase" ParentName="GuevesaBase" Abstract="True">
+  <PawnKindDef Name="OG_Guevesa_Mil_Base" ParentName="OG_Guevesa_Base_KindDef" Abstract="True">
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <isFighter>true</isFighter>
 	<race>Human</race>
@@ -239,7 +230,7 @@
   </PawnKindDef>
 
   <!-- ============================ Gue'vesa Warriors ========================== -->
-  <PawnKindDef Name="TauGuevesaWarrior" ParentName="GuevesaMilBase" Abstract="True">
+  <PawnKindDef Name="OG_Tau_Guevesa_Warrior" ParentName="OG_Guevesa_Mil_Base" Abstract="True">
     <label>Gue'vesa Warrior</label>
     <combatPower>70</combatPower>
 	<backstoryCategories>
@@ -252,8 +243,8 @@
   </PawnKindDef>
   
   <!-- ============================ Gue'vesa Soldier ========================== -->
-  <PawnKindDef ParentName="TauGuevesaWarrior">
-    <defName>GuevesaSoldier</defName>
+  <PawnKindDef ParentName="OG_Tau_Guevesa_Warrior">
+    <defName>OG_Guevesa_Soldier</defName>
     <label>Gue'vesa Soldier</label>
 	<backstoryCategories>
 	
@@ -266,8 +257,8 @@
   </PawnKindDef>
     
   <!-- ============================ Gue'vesa Heavy Weapons Trooper ========================== -->
-  <PawnKindDef ParentName="TauGuevesaWarrior">
-    <defName>GuevesaSoldierHW</defName>
+  <PawnKindDef ParentName="OG_Tau_Guevesa_Warrior">
+    <defName>OG_Guevesa_Soldier_HW</defName>
     <label>Gue'vesa Soldier</label>
 	<backstoryCategories>
 	
@@ -281,8 +272,8 @@
   </PawnKindDef>
   
   <!-- ============================ Gue'vesa Special weapons Trooper ========================== -->
-  <PawnKindDef ParentName="TauGuevesaWarrior">
-    <defName>GuevesaSoldierSW</defName>
+  <PawnKindDef ParentName="OG_Tau_Guevesa_Warrior">
+    <defName>OG_Guevesa_Soldier_SW</defName>
     <label>Gue'vesa Soldier</label>
 	<backstoryCategories>
 	
@@ -296,8 +287,8 @@
   </PawnKindDef>
   
   <!-- ============================ Gue'vesa Sargent ========================== -->
-  <PawnKindDef ParentName="TauGuevesaWarrior">
-    <defName>GuevesaSargent</defName>
+  <PawnKindDef ParentName="OG_Tau_Guevesa_Warrior">
+    <defName>OG_Guevesa_Sgt</defName>
     <label>Gue'vesa Sargent</label>
 	<backstoryCategories>
 	

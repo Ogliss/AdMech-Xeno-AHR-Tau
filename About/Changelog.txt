@@ -1,0 +1,8 @@
+22/12/2019 
+Finally started a changelog.
+Retexured Combat Armour, Combat Helmet.
+Added Apparel (Pathfinder Armour, Pathfinder Helmet).
+Added Female & Male Bodytypes for Kroot.
+
+
+Probobly a bunch of other crap i cant remember too.

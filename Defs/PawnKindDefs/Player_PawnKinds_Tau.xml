@@ -2,7 +2,7 @@
 <Defs>
 
   <PawnKindDef Abstract="True" Name="BaseTauPawnKind">
-    <race>Alien_Tau</race>
+    <race>OG_Alien_Tau</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
     <isFighter>false</isFighter>
@@ -24,7 +24,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseTauPawnKind" Name="TauBaseColonist" Abstract="True">
-    <defName>Tau</defName>
+    <defName>Colonist_OG_Tau</defName>
     <label>Tau colonist</label>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>
@@ -42,7 +42,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TauBaseColonist">
-    <defName>TauAun</defName>
+    <defName>Colonist_OG_TauAun</defName>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>
 			<li>Tau_AUN</li>
@@ -59,7 +59,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TauBaseColonist">
-    <defName>TauShas</defName>
+    <defName>Colonist_OG_TauShas</defName>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>
 			<li>Tau_SHAS</li>
@@ -76,7 +76,7 @@
   </PawnKindDef>
   
   <PawnKindDef ParentName="TauBaseColonist">
-    <defName>TauPor</defName>
+    <defName>Colonist_OG_TauPor</defName>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>
 			<li>Tau_POR</li>
@@ -93,7 +93,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TauBaseColonist">
-    <defName>TauFio</defName>
+    <defName>Colonist_OG_TauFio</defName>
     <label>Tau colonist</label>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>
@@ -111,7 +111,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TauBaseColonist">
-    <defName>TauKor</defName>
+    <defName>Colonist_OG_TauKor</defName>
     <label>Tau colonist</label>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>
@@ -129,7 +129,7 @@
   </PawnKindDef>
 
   <PawnKindDef Abstract="True" Name="BaseKrootPawnKind">
-    <race>Alien_Kroot</race>
+    <race>OG_Alien_Kroot</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>0.55</baseRecruitDifficulty>
     <isFighter>true</isFighter>
@@ -151,7 +151,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseKrootPawnKind">
-    <defName>Kroot</defName>
+    <defName>Colonist_OG_Kroot</defName>
     <label>Kroot colonist</label>
     <defaultFactionType>KrootPlayerColonyTribal</defaultFactionType>
     <backstoryCategories>
@@ -169,7 +169,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseKrootPawnKind">
-    <defName>KrootPsyker</defName>
+    <defName>Colonist_OG_KrootPsyker</defName>
     <label>Kroot colonist</label>
     <defaultFactionType>KrootPlayerColonyTribal</defaultFactionType>
     <backstoryCategories>
@@ -209,7 +209,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseGuevesaPawnKind">
-    <defName>Guevesa</defName>
+    <defName>Colonist_OG_Guevesa</defName>
     <label>Gue'vesa colonist</label>
     <defaultFactionType>TauPlayerColony</defaultFactionType>
     <backstoryCategories>

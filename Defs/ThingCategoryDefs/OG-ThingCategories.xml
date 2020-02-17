@@ -71,17 +71,26 @@
 	</ThingCategoryDef>
   
 	<!-- ========================= Adeptus Mechanicus - Tau Corpse Catagories ========================== -->
-<!--
+
+	<!-- Tau Corpse -->
     <ThingCategoryDef>
-    <defName>CorpsesTau</defName>
-    <label>tau corpses</label>
+      <defName>OG_Corpses_Tau</defName>
+      <label>tau corpses</label>
       <parent>CorpsesHumanlike</parent>
     </ThingCategoryDef>
-  
+	
+<!-- Kroot Corpse -->
     <ThingCategoryDef>
-    <defName>CorpsesKroot</defName>
-    <label>kroot corpses</label>
+      <defName>OG_Corpses_Kroot</defName>
+      <label>kroot corpses</label>
       <parent>CorpsesHumanlike</parent>
     </ThingCategoryDef>
--->
+	
+<!-- Vespid Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Vespid</defName>
+      <label>vespid corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+	
 </Defs>

@@ -4,7 +4,7 @@
   <PawnKindDef Name="TauBase" Abstract="True">
     <defaultFactionType>TauFaction</defaultFactionType>
 	<!-- 
-    <race>Alien_Tau</race>
+    <race>OG_Alien_Tau</race>
 	<backstoryCategories>
 			<li>Tau_Standard</li>
   	</backstoryCategories>
@@ -17,7 +17,7 @@
   <!-- ============================ Tau Civilian Base ========================== -->
   <PawnKindDef Name="TauCivBase" ParentName="TauBase" Abstract="True">
     <combatPower>25</combatPower>
-	<race>Alien_Tau</race>
+	<race>OG_Alien_Tau</race>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>
@@ -76,7 +76,7 @@
   <!-- ============================ Tau Civilians ========================== -->
   <!-- ============================ Tau Faction Leader ========================== -->
   <PawnKindDef ParentName="TauCivBase">
-    <defName>TauFactionEthereal</defName>
+    <defName>OG_Tau_Faction_Ethereal</defName>
     <label>Aun'Va</label>
     <labelPlural>Aun'Vai</labelPlural>
     <factionLeader>true</factionLeader>
@@ -116,7 +116,7 @@
 
   <!-- ============================ Tau Trader ========================== -->
   <PawnKindDef ParentName="TauCivBase">
-    <defName>TauTrader</defName>
+    <defName>OG_Tau_Trader</defName>
     <label>Tau trader</label>
     <trader>true</trader>
 	<backstoryCategories>
@@ -126,7 +126,7 @@
   
   <!-- ============================ Tau Colonist ========================== -->
   <PawnKindDef ParentName="TauCivBase">
-    <defName>TauColonist</defName>
+    <defName>Colonist_OG_Tau</defName>
     <label>Tau colonist</label>
 	<backstoryCategories>
 			<li>Tau_POR</li>
@@ -137,7 +137,7 @@
   
   <!-- ============================ Tau Slave ========================== -->
   <PawnKindDef ParentName="TauCivBase">
-    <defName>TauSlave</defName>
+    <defName>Slave_OG_Tau</defName>
     <label>Tau slave</label>
 	<backstoryCategories>
 			<li>Tau_Slave</li>
@@ -146,7 +146,7 @@
  
   <!-- ============================ Tau Security ========================== -->
   <PawnKindDef ParentName="TauCivBase">
-    <defName>TauCadet</defName>
+    <defName>OG_Tau_Cadet</defName>
     <label>Tau Shas Cadet</label>
     <combatPower>50</combatPower>
 	<backstoryCategories>
@@ -197,7 +197,7 @@
   <PawnKindDef Name="TauMilBase" ParentName="TauBase" Abstract="True">
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <isFighter>true</isFighter>
-	<race>Alien_Tau</race>
+	<race>OG_Alien_Tau</race>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
     <gearHealthRange>
@@ -259,7 +259,7 @@
 
   <!-- ============================ Tau Pathfinder (la) ========================== -->
   <PawnKindDef ParentName="TauFireCasteLa">
-    <defName>TauPathFinder</defName>
+    <defName>OG_Tau_Pathfinder</defName>
     <label>Tau Patherfinder Shas'La</label>
 	<backstoryCategories>
 			<li>Tau_PATHFINDER</li>
@@ -271,7 +271,7 @@
   
   <!-- ============================ Tau Firewarrior (la) ========================== -->
   <PawnKindDef ParentName="TauFireCasteLa">
-    <defName>TauFireWarrior</defName>
+    <defName>OG_Tau_Firewarrior</defName>
     <label>Tau Firewarrior Shas'La</label>
 	<backstoryCategories>
 			<li>Tau_FIREWARRIOR</li>
@@ -340,7 +340,7 @@
   
   <!-- ============================ Tau Pathfinder (Ui) ========================== -->
   <PawnKindDef ParentName="TauFireCasteUi">
-    <defName>TauPathFinderSgt</defName>
+    <defName>OG_Tau_Pathfinder_Sgt</defName>
     <label>Tau Patherfinder Shas'Ui</label>
 	<backstoryCategories>
 			<li>Tau_PATHFINDERSGT</li>
@@ -353,7 +353,7 @@
   
   <!-- ============================ Tau Firewarrior (Ui) ========================== -->
   <PawnKindDef ParentName="TauFireCasteUi">
-    <defName>TauFireWarriorSgt</defName>
+    <defName>OG_Tau_Firewarrior_Sgt</defName>
     <label>Tau Firewarrior Shas'Ui</label>
 	<backstoryCategories>
 			<li>Tau_FIREWARRIORSGT</li>
@@ -366,7 +366,7 @@
   
   <!-- ============================ Tau Ethereal ========================== -->
   <PawnKindDef ParentName="TauMilBase">
-     <defName>TauEthereal</defName>
+     <defName>OG_Tau_Ethereal</defName>
     <label>Tau Ethereal</label>
     <combatPower>250</combatPower>
     <minGenerationAge>26</minGenerationAge>

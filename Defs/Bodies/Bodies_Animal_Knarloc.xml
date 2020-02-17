@@ -2,20 +2,20 @@
 <Defs>
   
   <BodyPartGroupDef>
-    <defName>LeftFootClaws</defName>
+    <defName>OG_Knarloc_LeftFootClaws</defName>
     <label>left claws</label>
     <labelShort>claws</labelShort>
   </BodyPartGroupDef>
   
   <BodyPartGroupDef>
-    <defName>RightFootClaws</defName>
+    <defName>OG_Knarloc_RightFootClaws</defName>
     <label>right claws</label>
     <labelShort>claws</labelShort>
   </BodyPartGroupDef>
 
   
   <BodyDef>
-    <defName>Knarloc</defName>
+    <defName>OG_Knarloc</defName>
     <label>knarloc</label>
     <corePart>
       <def>Body</def>
@@ -135,7 +135,7 @@
               <coverage>0.5</coverage>
               <groups>
                 <li>Feet</li>
-				<li>LeftFootClaws</li>
+				<li>OG_Knarloc_LeftFootClaws</li>
               </groups>
             </li>
           </parts>
@@ -152,7 +152,7 @@
               <coverage>0.5</coverage>
               <groups>
                 <li>Feet</li>
-				<li>RightFootClaws</li>
+				<li>OG_Knarloc_RightFootClaws</li>
               </groups>
             </li>
           </parts>

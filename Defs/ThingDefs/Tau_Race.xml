@@ -6,20 +6,20 @@
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>Guevesa</li>
-                        <li>TauAun</li>
-                        <li>TauShas</li>
-                        <li>TauPor</li>
-                        <li>TauFio</li>
-                        <li>TauKor</li>
-						<li>Kroot</li>
+                        <li>Colonist_OG_Guevesa</li>
+                        <li>Colonist_OG_TauAun</li>
+                        <li>Colonist_OG_TauShas</li>
+                        <li>Colonist_OG_TauPor</li>
+                        <li>Colonist_OG_TauFio</li>
+                        <li>Colonist_OG_TauKor</li>
+						<li>Colonist_OG_Kroot</li>
                     </kindDefs>
                     <chance>40.0</chance>
                 </li>
                 <li>
                     <kindDefs>
-                        <li>Guevesa</li>
-						<li>Kroot</li>
+                        <li>Colonist_OG_Guevesa</li>
+						<li>Colonist_OG_Kroot</li>
                     </kindDefs>
                     <chance>10.0</chance>
                 </li>
@@ -27,13 +27,13 @@
             <alienrefugeekinds>
                 <li>
                     <kindDefs>
-                        <li>Guevesa</li>
-                        <li>TauAun</li>
-                        <li>TauShas</li>
-                        <li>TauPor</li>
-                        <li>TauFio</li>
-                        <li>TauKor</li>
-						<li>Kroot</li>
+                        <li>Colonist_OG_Guevesa</li>
+                        <li>Colonist_OG_TauAun</li>
+                        <li>Colonist_OG_TauShas</li>
+                        <li>Colonist_OG_TauPor</li>
+                        <li>Colonist_OG_TauFio</li>
+                        <li>Colonist_OG_TauKor</li>
+						<li>Colonist_OG_Kroot</li>
                     </kindDefs>
                     <chance>50.0</chance>
                 </li>
@@ -43,23 +43,24 @@
 				<pawnKindEntries>
 					<li>
                     <kindDefs>
-                        <li>Guevesa</li>
-						<li>Kroot</li>
+                        <li>Colonist_OG_Guevesa</li>
+						<li>Colonist_OG_Kroot</li>
                     </kindDefs>
                     <chance>12.50</chance>
 					</li>
 					<li>
                     <kindDefs>
-                        <li>TauAun</li>
-                        <li>TauShas</li>
-                        <li>TauPor</li>
-                        <li>TauFio</li>
-                        <li>TauKor</li>
+                        <li>Colonist_OG_TauAun</li>
+                        <li>Colonist_OG_TauShas</li>
+                        <li>Colonist_OG_TauPor</li>
+                        <li>Colonist_OG_TauFio</li>
+                        <li>Colonist_OG_TauKor</li>
                     </kindDefs>
                     <chance>50.0</chance>
 					</li>
 				</pawnKindEntries>
 					<factionDefs>
+						<li>OG_Tau_Player</li> 
 						<li>TauPlayerColony</li> 
 					</factionDefs>
 				</li>
@@ -69,18 +70,19 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                        <li>Guevesa</li>
-                        <li>TauAun</li>
-                        <li>TauShas</li>
-                        <li>TauPor</li>
-                        <li>TauFio</li>
-                        <li>TauKor</li>
-						<li>Kroot</li>
+                        <li>Colonist_OG_Guevesa</li>
+                        <li>Colonist_OG_TauAun</li>
+                        <li>Colonist_OG_TauShas</li>
+                        <li>Colonist_OG_TauPor</li>
+                        <li>Colonist_OG_TauFio</li>
+                        <li>Colonist_OG_TauKor</li>
+						<li>Colonist_OG_Kroot</li>
                             </kindDefs>
                             <chance>50.0</chance>
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
+                        <li>OG_Tau_Player</li> 
                         <li>TauPlayerColony</li> 
                     </factionDefs>
                 </li>
@@ -88,7 +90,8 @@
         </pawnKindSettings>
   </AlienRace.RaceSettings>
 
-<ThingDef Name="BaseTauPawn" Abstract="True">
+<ThingDef ParentName="BasePawn" Name="OG_Tau_Pawn_Base" Abstract="True">
+	<!--
     <thingClass>Pawn</thingClass>
     <category>Pawn</category>
     <selectable>true</selectable>
@@ -115,10 +118,10 @@
         </li>
     </comps>
     <drawGUIOverlay>true</drawGUIOverlay>
+	-->
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="BaseTauPawn">
-    <defName>Alien_Tau</defName>
+<AlienRace.ThingDef_AlienRace ParentName="OG_Tau_Pawn_Base" Name="OG_Alien_Tau_Base" Abstract="True">
     <label>Tau</label>
     <description>The Tau are the central figures of the T'au Empire, an interstellar polity which is composed of several different intelligent species, primarily the Kroot of Pech, the Vespids of the world of Vespid and the nomadic Nicassar, though there are now several human Tau Septs derived from conquered Imperial humans or humans who voluntarily joined the T'au Empire because they were impressed by the concept of the Greater Good. These people are known as Gue'vesa in the Tau Lexicon and they are considered amongst the most vile of Traitors and Heretics within the Imperium of Man.\n\nThe Tau are a relatively young race (it has been only 6,000 Terran years since Imperial Inquisitors first noted that the Tau had only just mastered fire and the wheel), and they have evolved rapidly over the past few millennia. Unlike other young intelligent races of the galaxy, the Tau have made remarkable leaps in technology and now represent a real threat to Imperial domination in their region of the galaxy.</description>
     <alienRace>
@@ -220,13 +223,13 @@
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
-              <li>Alien_Kroot</li>
+              <li>OG_Alien_Kroot</li>
            </notXenophobistTowards>
 		<factionRelations>
                 <li>
                     <factions>
-                       <li>OrkFaction</li>
-                       <li>FeralOrkFaction</li>
+                       <li>OG_Ork_Tek_Faction</li>
+                       <li>OG_Ork_Feral_Faction</li>
 					   <li>OrkPlayerColony</li>
 					   <li>OrkPlayerColonyTribal</li>
                     </factions>
@@ -247,7 +250,7 @@
                 </li>
 				<li>
                     <factions>
-                       <li>EldarFaction</li>
+                       <li>OG_Eldar_Craftworld_Faction</li>
 					   <li>EldarPlayerColony</li>
                     </factions>
                     <goodwill>
@@ -268,7 +271,7 @@
 				<li>
                     <factions>
                        <li>TauFaction</li>
-                       <li>KrootFaction</li>
+                       <li>OG_Kroot_Faction</li>
 					   <li>TauPlayerColony</li>
 					   <li>KrootPlayerColony</li>
                     </factions>
@@ -467,7 +470,7 @@
       <leatherDef>Leather_Tau</leatherDef>
       <nameGenerator>NamerOGTauPawns</nameGenerator>
       <body>Human</body>
-      <bloodDef>FilthBloodTau</bloodDef>	
+      <bloodDef>OG_FilthBlood_Tau</bloodDef>	
       <meatColor>(200,135,100)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.25</baseHealthScale>
@@ -548,6 +551,16 @@
       <li>Anesthetize</li>
     </recipes>
 </AlienRace.ThingDef_AlienRace>
+
+  <!-- ============================ Tau ========================== -->
+
+  <AlienRace.ThingDef_AlienRace ParentName="OG_Alien_Tau_Base">
+    <defName>OG_Alien_Tau</defName>
+  </AlienRace.ThingDef_AlienRace>
+  
+  <AlienRace.ThingDef_AlienRace ParentName="OG_Alien_Tau_Base">
+    <defName>Alien_Tau</defName>
+  </AlienRace.ThingDef_AlienRace>
 
   <!-- ============================ Aun ========================== -->
   <!--
