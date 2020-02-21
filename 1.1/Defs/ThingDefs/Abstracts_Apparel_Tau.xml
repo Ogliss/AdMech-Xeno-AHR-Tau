@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ========================= Tau ========================== -->
+    <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
+	<ThingDef Name="OGTApparelBase" ParentName="OGApparelBase" Abstract="True">
+		<apparel>
+			<tags>
+				<li>TauApparel</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTSub</li>
+		</thingCategories>
+	</ThingDef>
+	
+    <!-- ========================= Tau - Clothes Base - Apparel Makable Base ========================== -->
+	<ThingDef Name="OGTApparelMakeableBase" ParentName="OGTApparelBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>TauTechBase</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+		
+    <!-- ========================= Tau - Clothes - Apparel Makable ========================== -->
+	<ThingDef Name="OGTApparelMakeable" ParentName="OGTApparelMakeableBase" Abstract="True">
+		<apparel>
+			<tags>
+				<li>TauClothing</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTApparel</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<!-- ========================= Tau - Headgear - Hat Makable ========================== -->
+	<ThingDef Name="OGTHatMakeable" ParentName="OGTApparelMakeableBase" Abstract="True">
+		<apparel>
+			<tags>
+				<li>TauHat</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTHeadgear</li>
+		</thingCategories>
+    <statBases>
+      <Mass>0.15</Mass>
+    </statBases>
+	</ThingDef>
+	
+    <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
+	<ThingDef Name="OGTArmorBase" ParentName="OGApparelBase" Abstract="True">
+		<apparel>
+			<tags>
+				<li>TauApparel</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTSub</li>
+		</thingCategories>
+	</ThingDef>
+
+    <!-- ========================= Tau - Apparel Armor Makable Base ========================== -->
+	<ThingDef Name="OGTArmorMakeableBase" ParentName="OGTArmorBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>OGT_TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>TauTechBase</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+    <!-- ========================= Tau - Apparel Armor Makable Base ========================== -->
+	<ThingDef Name="OGTArmorMakeable" ParentName="OGTArmorMakeableBase" Abstract="True">
+				<apparel>
+			<tags>
+				<li>TauArmour</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTArmour</li>
+		</thingCategories>
+	</ThingDef>	
+		
+	<!-- ========================= Tau - Headgear Base - Helmet Makable Base ========================== -->
+	<ThingDef Name="OGTHelmetMakeable" ParentName="OGTArmorMakeableBase" Abstract="True">
+		<apparel>
+			<tags>
+				<li>TauHelmet</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTHeadgear</li>
+		</thingCategories>
+    <statBases>
+      <Mass>0.35</Mass>
+    </statBases>
+	</ThingDef>
+			
+	<!-- ========================= Tau - Apparel Wargear Base ========================== -->
+	<ThingDef Name="OGTWargearBase" ParentName="OGApparelBase" Abstract="True">
+		<apparel>
+			<tags>
+				<li>TauWargear</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTWargear</li>
+		</thingCategories>
+	</ThingDef>	
+	
+	<!-- ========================= Tau - Apparel Wargear Makable Base ========================== -->
+	<ThingDef Name="OGTWargearMakeable" ParentName="OGTWargearBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>OGT_TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>TauTechBase</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>	
+</Defs>

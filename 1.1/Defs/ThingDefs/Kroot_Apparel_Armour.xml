@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========================= Kroot -  Rags ==========================-->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>OGK_Apparel_TribalKroot</defName>
+		<label>Kroot tribalwear</label>
+		<description>A full-body garment. While it may look primitive, it is effective at insulating the wearer.</description>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>1800</WorkToMake>
+			<Mass>0.4</Mass>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>OGTApparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>KrootClothBasic</li>
+				<li>KrootClothBody</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+    <comps>
+      <li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
+        <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+			<PauldronEntries>
+				<li>
+					<shoulderPadType>Both</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Right</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<commonality>10</commonality>
+				</li>
+				<li>
+					<shoulderPadType>Left</shoulderPadType>
+					<shaderType>CutoutComplex</shaderType>
+					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<commonality>10</commonality>
+				</li>
+			</PauldronEntries>
+			<NorthOffset>0.5</NorthOffset>
+			<SouthOffset>-0.001</SouthOffset>
+			<EastOffset>0.35</EastOffset>
+			<WestOffset>0.35</WestOffset>
+      </li>
+    </comps>
+	</ThingDef>
+	
+	
+	<!--========================= Tau - Kroot Helmet ==========================-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_TribalKrootHeaddress</defName>
+    <label>Kroot headdress</label>
+    <description>Elegant traditional garb, often with religious significance. Improves social impact.</description>
+    <recipeMaker>
+      <researchPrerequisite />
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Item/Apparel/Tau/KrootHeaddress/KrootHeaddress</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <techLevel>Neolithic</techLevel>
+    <costStuffCount>30</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>0.11</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.2</EquipDelay>
+    </statBases>
+    <thingCategories>
+	  <li>OGTApparel</li>
+    </thingCategories>
+    <equippedStatOffsets>
+      <SocialImpact>0.15</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Item/Apparel/Tau/KrootHeaddress/KrootHeaddress</wornGraphicPath>
+	  <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>	
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>KrootClothBasic</li>
+        <li>KrootClothHead</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+
+</Defs>
