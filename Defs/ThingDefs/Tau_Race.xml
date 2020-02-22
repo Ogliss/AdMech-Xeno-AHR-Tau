@@ -380,7 +380,7 @@
                 <li>OGT_Melee_HonorBlade</li>
             </recipeList>
 			<buildingList>
-                <li>OGT_TableMachining</li>
+                <li>OG_Tau_TableMachining</li>
             </buildingList>
         </raceRestriction>
     </alienRace>

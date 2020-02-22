@@ -592,7 +592,7 @@
                 <li>OGK_Apparel_TribalKroot</li>
             </apparelList>
 			<buildingList>
-                <li>OGT_TableMachining</li>
+                <li>OG_Tau_TableMachining</li>
             </buildingList>
         </raceRestriction>
     </alienRace>
