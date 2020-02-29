@@ -13,10 +13,20 @@
     <race>OG_Alien_Kroot</race>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-    <backstoryCategories>
-      <li>Kroot_Standard</li>
-      <li>Kroot_Psyker</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+		  <li>Kroot_Standard</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+		  <li>Kroot_Psyker</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+    </backstoryFiltersOverride>
     <invNutrition>10.0</invNutrition>
     <inventoryOptions>
       <subOptionsChooseOne>
@@ -49,7 +59,6 @@
     <apparelColor>(58,58,58)</apparelColor>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>

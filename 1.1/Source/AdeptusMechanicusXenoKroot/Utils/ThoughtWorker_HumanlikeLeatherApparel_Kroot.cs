@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
             List<Apparel> wornApparel = p.apparel.WornApparel;
             for (int i = 0; i < wornApparel.Count; i++)
             {
-                if (wornApparel[i].Stuff == OGKrootDefOf.Alien_Tau.race.leatherDef || wornApparel[i].Stuff == OGKrootDefOf.Alien_Kroot.race.leatherDef)
+                if (wornApparel[i].Stuff == OGKrootDefOf.OG_Alien_Tau.race.leatherDef || wornApparel[i].Stuff == OGKrootDefOf.OG_Alien_Kroot.race.leatherDef)
                 {
                     if (text == null)
                     {

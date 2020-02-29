@@ -37,5 +37,27 @@
 	
 	Mechanics:
 	Kroot Adaptability - All Kroot posess an ability that gives them a small chance to absorb traits from humanlike corpses by eating them(Max 4, respects MaxTraitSlots mod limit)
-		</description>
+	</description>
+    <modDependencies>
+      <li>
+        <packageId>Ogliss.AdMech.Armoury</packageId>
+        <displayName>Adeptus Mechanicus: Armoury R1.1</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/1541438614</steamWorkshopUrl>
+        <downloadUrl>https://github.com/Ogliss/AdMechArmoury</downloadUrl>
+      </li>
+      <li>
+        <packageId>erdelf.HumanoidAlienRaces</packageId>
+        <displayName>Humanoid Alien Races 2.0</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/839005762</steamWorkshopUrl>
+        <downloadUrl>https://github.com/RimWorld-CCL-Reborn/AlienRaces</downloadUrl>
+      </li>
+    </modDependencies>
+  <loadBefore>
+  
+  </loadBefore>
+  <loadAfter>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>Ogliss.AdMech.Armoury</li>
+    <li>Ogliss.AdMech.Xenobiologis</li>
+  </loadAfter>
 </ModMetaData>

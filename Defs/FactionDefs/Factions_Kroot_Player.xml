@@ -3,7 +3,7 @@
 
   <FactionDef Parent="PlayerFactionBase" Name="OG_Kroot_Player_Base" Abstract="True">
     <label>Kroot Kindred</label>
-    <description>Kroot Tribal Kindred Start.</description>
+    <description>Kroot Kindred Start.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Colonist_OG_Kroot</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
@@ -16,8 +16,8 @@
 			<li>Kroot_Standard</li>
 			<li>Kroot_Psyker</li>
   	</backstoryCategories>
+    <expandingIconTexture>Icons/Icon_Kroot</expandingIconTexture>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
-    <expandingIconTexture>Icons/KrootIcon</expandingIconTexture>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
@@ -48,11 +48,13 @@
   </FactionDef>
 
   <FactionDef ParentName="OG_Kroot_Player_Base">
-    <defName>OG_Kroot_Player_Tribal</defName>
+    <defName>OG_Kroot_PlayerTribe</defName>
+    <label>Kroot Tribal Kindred</label>
+    <description>Kroot Tribal Kindred Start.</description>
+    <startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
   </FactionDef>
 
-  <FactionDef ParentName="OG_Kroot_Player_Base">
-    <defName>KrootPlayerColonyTribal</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
 </Defs>

@@ -60,8 +60,8 @@
 					</li>
 				</pawnKindEntries>
 					<factionDefs>
-						<li>OG_Tau_Player</li> 
-						<li>TauPlayerColony</li> 
+						<li>OG_Tau_PlayerColony</li> 
+						<li>OG_Tau_PlayerColony</li> 
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -82,8 +82,8 @@
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>OG_Tau_Player</li> 
-                        <li>TauPlayerColony</li> 
+                        <li>OG_Tau_PlayerColony</li> 
+                        <li>OG_Tau_PlayerColony</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
@@ -271,7 +271,7 @@
                     <factions>
                        <li>TauFaction</li>
                        <li>OG_Kroot_Faction</li>
-					   <li>TauPlayerColony</li>
+					   <li>OG_Tau_PlayerColony</li>
 					   <li>KrootPlayerColony</li>
                     </factions>
                     <goodwill>
@@ -351,12 +351,14 @@
             <researchList>
                 <li>
                     <projects>
+						<!--
 						<li>TauTechBase</li>
 						<li>TauArmour</li>
 						<li>TauAdvancedWeapons</li>
 						<li>TauDroneTech</li>
 						<li>TauShieldTech</li>
 						<li>TauIonTech</li>
+						-->
                     </projects>
                 </li>
             </researchList>

@@ -37,7 +37,7 @@
                     <success>Always</success>
                     <xpath>Defs/ScenarioDef[defName = "OG_WeaponsTest_Tau"]/scenario/playerFaction/factionDef</xpath>
                     <value>
-						<factionDef>OG_Tau_Player</factionDef>
+						<factionDef>OG_Tau_PlayerColony</factionDef>
                     </value>
                 </match>
             </li>

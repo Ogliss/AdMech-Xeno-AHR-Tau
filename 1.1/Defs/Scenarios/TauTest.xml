@@ -9,7 +9,7 @@
 			<summary>Five Tau survivors attempt to build a colony. Difficult.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>TauPlayerColony</factionDef>
+				<factionDef>OG_Tau_PlayerColony</factionDef>
 			</playerFaction>
 			<parts>
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -137,7 +137,7 @@
 			<summary>Five Kroot survivors attempt to rebuild. Difficult.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>KrootPlayerColonyTribal</factionDef>
+				<factionDef>OG_Kroot_PlayerTribe</factionDef>
 			</playerFaction>
 			<parts>
 

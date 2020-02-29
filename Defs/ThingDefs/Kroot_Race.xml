@@ -82,8 +82,8 @@
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
-					<li>OG_Kroot_Player_Tribal</li> 
-					<li>KrootPlayerColonyTribal</li> 
+					<li>OG_Kroot_PlayerTribe</li> 
+					<li>OG_Kroot_PlayerTribe</li> 
 				</factionDefs>
 				</li>
 			</startingColonists>
@@ -121,8 +121,8 @@
 						</li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>OG_Kroot_Player_Tribal</li> 
-                        <li>KrootPlayerColonyTribal</li> 
+                        <li>OG_Kroot_PlayerTribe</li> 
+                        <li>OG_Kroot_PlayerTribe</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
@@ -390,9 +390,9 @@
                 <li>
                     <factions>
                        <li>OG_Kroot_Faction</li>
-                       <li>KrootPlayerColonyTribal</li>
+                       <li>OG_Kroot_PlayerTribe</li>
                        <li>TauFaction</li>
-                       <li>TauPlayerColony</li>
+                       <li>OG_Tau_PlayerColony</li>
                     </factions>
                     <goodwill>
                        <min>-10</min>

@@ -233,6 +233,10 @@
     <spawnCategories>
       <li>Tau_SHASC</li>
       <li>Tau_SHAS</li>
+      <li>Tau_FIREWARRIOR</li>
+      <li>Tau_FIREWARRIORSGT</li>
+      <li>Tau_PATHFINDER</li>
+      <li>Tau_PATHFINDERSGT</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
 

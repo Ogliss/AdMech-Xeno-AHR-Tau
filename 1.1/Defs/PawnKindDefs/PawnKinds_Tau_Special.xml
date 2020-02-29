@@ -13,9 +13,13 @@
     <race>OG_Alien_Tau</race>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-    <backstoryCategories>
-      <li>Tau_SHAS</li>
-    </backstoryCategories>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Tau_SHAS</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <invNutrition>10.0</invNutrition>
     <inventoryOptions>
       <subOptionsChooseOne>

@@ -5,22 +5,22 @@
     <label>Tau Colony</label>
     <description>Your own community.</description>
     <isPlayer>true</isPlayer>
-    <basicMemberKind>Colonist_OG_TauFio</basicMemberKind>
+    <basicMemberKind>Colonist_OG_Tau</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerOGTauFaction</factionNameMaker>
     <settlementNameMaker>NamerOGTauBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryCategories>
-			<li>Civil</li>
+			<li>Outlander</li>
   	</backstoryCategories>
-    <factionIconPath>World/WorldObjects/DefaultSettlement</factionIconPath>
-    <settlementTexturePath>Icons/TauIcon</settlementTexturePath>
+    <factionIconPath>Icons/Icon_Tau</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
     <hairTags>
-		<li>Civil</li>
+		<li>Outlander</li>
 		<li>Rural</li>
     </hairTags>
     <apparelStuffFilter>
@@ -43,12 +43,7 @@
   </FactionDef>
   
   <FactionDef ParentName="OG_Tau_Player_Base">
-    <defName>OG_Tau_Player</defName>
+    <defName>OG_Tau_PlayerColony</defName>
   </FactionDef>
 
-  <FactionDef ParentName="OG_Tau_Player_Base">
-    <defName>TauPlayerColony</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
-  
 </Defs>

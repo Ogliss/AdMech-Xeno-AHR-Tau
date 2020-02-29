@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Abstract="True" Name="BaseTauPawnKind">
+  <PawnKindDef Abstract="True" Name="OG_Tau_Base_PawnKind">
     <race>OG_Alien_Tau</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
@@ -23,13 +23,32 @@
     </lifeStages>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseTauPawnKind" Name="TauBaseColonist" Abstract="True">
+  <PawnKindDef ParentName="OG_Tau_Base_PawnKind" Name="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_Tau</defName>
     <label>Tau colonist</label>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-	
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Tau_POR</li>
+          <li>Tau_FIO</li>
+          <li>Tau_KOR</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Tau_SHAS</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Tau_AUN</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>
@@ -41,12 +60,16 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TauBaseColonist">
+  <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauAun</defName>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-			<li>Tau_AUN</li>
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_AUN</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>
@@ -58,12 +81,16 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TauBaseColonist">
+  <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauShas</defName>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-			<li>Tau_SHAS</li>
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_SHAS</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>
@@ -75,12 +102,16 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="TauBaseColonist">
+  <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauPor</defName>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-			<li>Tau_POR</li>
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_POR</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>
@@ -92,13 +123,17 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TauBaseColonist">
+  <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauFio</defName>
     <label>Tau colonist</label>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-			<li>Tau_FIO</li>
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_FIO</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>
@@ -110,13 +145,17 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="TauBaseColonist">
+  <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauKor</defName>
     <label>Tau colonist</label>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-			<li>Tau_KOR</li>
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_KOR</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>
@@ -128,7 +167,7 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef Abstract="True" Name="BaseKrootPawnKind">
+  <PawnKindDef Abstract="True" Name="OG_Kroot_BasePlayer_PawnKind">
     <race>OG_Alien_Kroot</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>0.55</baseRecruitDifficulty>
@@ -150,16 +189,20 @@
     </lifeStages>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseKrootPawnKind">
+  <PawnKindDef ParentName="OG_Kroot_BasePlayer_PawnKind">
     <defName>Colonist_OG_Kroot</defName>
     <label>Kroot colonist</label>
-    <defaultFactionType>KrootPlayerColonyTribal</defaultFactionType>
-    <backstoryCategories>
+    <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
 			<li>Kroot_Standard</li>
-  	</backstoryCategories>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
 		<li>KrootClothBody</li>
-				<li>TribalCloak</li>
+		<li>TribalCloak</li>
     </apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -168,16 +211,20 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseKrootPawnKind">
+  <PawnKindDef ParentName="OG_Kroot_BasePlayer_PawnKind">
     <defName>Colonist_OG_KrootPsyker</defName>
     <label>Kroot colonist</label>
-    <defaultFactionType>KrootPlayerColonyTribal</defaultFactionType>
-    <backstoryCategories>
+    <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
 			<li>Kroot_Psyker</li>
-  	</backstoryCategories>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
 		<li>KrootClothBody</li>
-				<li>TribalCloak</li>
+		<li>TribalCloak</li>
     </apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -186,13 +233,23 @@
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
   </PawnKindDef>
 
-  <PawnKindDef Abstract="True" Name="BaseGuevesaPawnKind">
+  <PawnKindDef Abstract="True" Name="OG_Guevesa_Base_PawnKind">
     <race>Human</race>
     <combatPower>40</combatPower>
     <baseRecruitDifficulty>0.45</baseRecruitDifficulty>
     <isFighter>false</isFighter>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Outlander</li>
+			<li>Offworlder</li>
+			<li>Pirate</li>
+			<li>ImperialFighter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <forceNormalGearQuality>true</forceNormalGearQuality>
 	    <lifeStages>
       <li>
@@ -208,14 +265,10 @@
     </lifeStages>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BaseGuevesaPawnKind">
+  <PawnKindDef ParentName="OG_Guevesa_Base_PawnKind">
     <defName>Colonist_OG_Guevesa</defName>
     <label>Gue'vesa colonist</label>
-    <defaultFactionType>TauPlayerColony</defaultFactionType>
-    <backstoryCategories>
-			<li>Civil</li>
-			<li>Raider</li>
-  	</backstoryCategories>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
     <apparelTags>
       <li>Spacer</li>
       <li>IndustrialBasic</li>

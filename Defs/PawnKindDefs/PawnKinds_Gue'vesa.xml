@@ -2,7 +2,7 @@
 <Defs>
   <!-- ============================ Gue'vesa Base ========================== -->
   <PawnKindDef Name="OG_Guevesa_Base_KindDef" Abstract="True">
-    <defaultFactionType>OG_Tau_Player</defaultFactionType>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
 	<!-- 
     <race>OG_Alien_Tau</race>
 	<backstoryCategories>
@@ -75,7 +75,7 @@
   <!-- ============================ Gue'vesa Civilians ========================== -->
   <!-- ============================ Gue'vesa Faction Leader ========================== -->
   <PawnKindDef ParentName="OG_Guevesa_Civ_Base">
-    <defName>TauFactionGuevesa</defName>
+    <defName>OG_Guevesa_Commander_Faction</defName>
     <label>Commander</label>
     <labelPlural>Commanders</labelPlural>
     <factionLeader>true</factionLeader>

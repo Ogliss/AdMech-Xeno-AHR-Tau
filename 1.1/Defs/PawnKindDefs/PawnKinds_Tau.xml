@@ -3,18 +3,23 @@
   <!-- ============================ Tau Base ========================== -->
   <PawnKindDef Name="TauBase" Abstract="True">
     <defaultFactionType>TauFaction</defaultFactionType>
-	<!-- 
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_POR</li>
+          <li>Tau_FIO</li>
+          <li>Tau_KOR</li>
+          <li>Tau_SHAS</li>
+          <li>Tau_AUN</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <race>OG_Alien_Tau</race>
-	<backstoryCategories>
-			<li>Tau_Standard</li>
-  	</backstoryCategories>
-	-->
     <chemicalAddictionChance>0.035</chemicalAddictionChance>
     <baseRecruitDifficulty>1</baseRecruitDifficulty>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>
@@ -27,6 +32,15 @@
 	<race>OG_Alien_Tau</race>
     <itemQuality>Normal</itemQuality>
     <isFighter>false</isFighter>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_POR</li>
+          <li>Tau_FIO</li>
+          <li>Tau_KOR</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.2</min>
       <max>2.0</max>
@@ -88,6 +102,15 @@
     <labelPlural>Aun'Vai</labelPlural>
     <factionLeader>true</factionLeader>
     <isFighter>true</isFighter>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_AUN</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+	<minGenerationAge>30</minGenerationAge>
+	<maxGenerationAge>70</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>2.0</max>
@@ -114,11 +137,6 @@
     <techHediffsTags>
       <li>Advanced</li>
     </techHediffsTags>
-	<backstoryCategories>
-			<li>Tau_AUN</li>
-  	</backstoryCategories>
-	<minGenerationAge>30</minGenerationAge>
-	<maxGenerationAge>70</maxGenerationAge>
   </PawnKindDef>
 
   <!-- ============================ Tau Trader ========================== -->
@@ -126,29 +144,26 @@
     <defName>OG_Tau_Trader</defName>
     <label>Tau trader</label>
     <trader>true</trader>
-	<backstoryCategories>
-			<li>Tau_POR</li>
-  	</backstoryCategories>
-  </PawnKindDef>
-  
-  <!-- ============================ Tau Colonist ========================== -->
-  <PawnKindDef ParentName="TauCivBase">
-    <defName>Colonist_OG_Tau</defName>
-    <label>Tau colonist</label>
-	<backstoryCategories>
-			<li>Tau_POR</li>
-			<li>Tau_FIO</li>
-			<li>Tau_KOR</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_POR</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
   </PawnKindDef>
   
   <!-- ============================ Tau Slave ========================== -->
   <PawnKindDef ParentName="TauCivBase">
     <defName>Slave_OG_Tau</defName>
     <label>Tau slave</label>
-	<backstoryCategories>
-			<li>Tau_Slave</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_Slave</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
   </PawnKindDef>
  
   <!-- ============================ Tau Security ========================== -->
@@ -156,9 +171,13 @@
     <defName>OG_Tau_Cadet</defName>
     <label>Tau Shas Cadet</label>
     <combatPower>50</combatPower>
-	<backstoryCategories>
-			<li>Tau_SHAS</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_SHAS</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.8</max>
@@ -256,9 +275,13 @@
   <PawnKindDef Name="TauFireCasteLa" ParentName="TauMilBase" Abstract="True">
     <label>Tau Fire Caste (Shas'La)</label>
     <combatPower>100</combatPower>
-	<backstoryCategories>
-			<li>Tau_SHAS</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_SHAS</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <apparelTags>
       <li>TauBasic</li>
     </apparelTags>
@@ -268,9 +291,13 @@
   <PawnKindDef ParentName="TauFireCasteLa">
     <defName>OG_Tau_Pathfinder</defName>
     <label>Tau Patherfinder Shas'La</label>
-	<backstoryCategories>
-			<li>Tau_PATHFINDER</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_PATHFINDER</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <weaponTags>
       <li>TPathfinderGun</li>
     </weaponTags>
@@ -280,9 +307,13 @@
   <PawnKindDef ParentName="TauFireCasteLa">
     <defName>OG_Tau_Firewarrior</defName>
     <label>Tau Firewarrior Shas'La</label>
-	<backstoryCategories>
-			<li>Tau_FIREWARRIOR</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_FIREWARRIOR</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <weaponTags>
       <li>TBasicGun</li>
     </weaponTags>
@@ -292,9 +323,6 @@
   <PawnKindDef Name="TauFireCasteUi" ParentName="TauMilBase" Abstract="True">
     <label>Tau Fire Caste (Shas'Ui)</label>
     <combatPower>125</combatPower>
-	<backstoryCategories>
-			<li>Tau_SHAS</li>
-  	</backstoryCategories>
     <gearHealthRange>
       <min>0.7</min>
       <max>2.3</max>
@@ -349,9 +377,13 @@
   <PawnKindDef ParentName="TauFireCasteUi">
     <defName>OG_Tau_Pathfinder_Sgt</defName>
     <label>Tau Patherfinder Shas'Ui</label>
-	<backstoryCategories>
-			<li>Tau_PATHFINDERSGT</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_PATHFINDERSGT</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <weaponTags>
       <li>TPathfinderGun</li>
 	  <li>TIonRifle</li>
@@ -362,9 +394,13 @@
   <PawnKindDef ParentName="TauFireCasteUi">
     <defName>OG_Tau_Firewarrior_Sgt</defName>
     <label>Tau Firewarrior Shas'Ui</label>
-	<backstoryCategories>
-			<li>Tau_FIREWARRIORSGT</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_FIREWARRIORSGT</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <weaponTags>
 	  <li>TBasicGun</li>
 	  <li>THeavyGun</li>
@@ -377,9 +413,13 @@
     <label>Tau Ethereal</label>
     <combatPower>250</combatPower>
     <minGenerationAge>26</minGenerationAge>
-	<backstoryCategories>
-			<li>Tau_AUN</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_AUN</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <gearHealthRange>
       <min>0.8</min>
       <max>3.5</max>

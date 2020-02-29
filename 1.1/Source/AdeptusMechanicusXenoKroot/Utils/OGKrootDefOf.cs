@@ -17,11 +17,9 @@ namespace RimWorld
         public static BodyDef OG_Kroot;
         public static BodyDef OG_Tau;
 
-
-        public static ThingDef Alien_Tau;
+        
         public static ThingDef OG_Alien_Tau;
         //    public static ThingDef OG_Alien_Vespid;
-        public static ThingDef Alien_Kroot;
         public static ThingDef OG_Alien_Kroot;
         public static ThingDef KrootHound;
         public static ThingDef KrootOx;

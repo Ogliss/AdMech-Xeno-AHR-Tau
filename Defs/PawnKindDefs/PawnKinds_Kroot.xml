@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- ============================ Kroot Base ========================== -->
-    <PawnKindDef Name="KrootBase" Abstract="True">
+    <PawnKindDef Name="OG_Kroot_Base_PawnKind" Abstract="True">
     <defaultFactionType>OG_Kroot_Faction</defaultFactionType>
 	<!-- 
     <race>OG_Alien_Kroot</race>
@@ -15,7 +15,7 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Civilian Base ========================== -->
-  <PawnKindDef Name="KrootCivBase" ParentName="KrootBase" Abstract="True">
+  <PawnKindDef Name="OG_Kroot_Civ_Base" ParentName="OG_Kroot_Base_PawnKind" Abstract="True">
     <combatPower>25</combatPower>
 	<race>OG_Alien_Kroot</race>
     <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
@@ -74,7 +74,7 @@
  
   <!-- ============================ Kroot Civilians ========================== -->
   <!-- ============================ Kroot Faction Leader ========================== -->
- <PawnKindDef ParentName="KrootCivBase">
+ <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>OG_Kroot_Faction_Shaper</defName>
     <label>Grandmaster Shaper</label>
     <labelPlural>Grandmaster Shapers</labelPlural>
@@ -114,7 +114,7 @@
   </PawnKindDef>
 
   <!-- ============================ Kroot Trader ========================== -->
-  <PawnKindDef ParentName="KrootCivBase">
+  <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>OG_Kroot_Trader</defName>
     <label>Kroot trader</label>
     <trader>true</trader>
@@ -124,7 +124,7 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Colonist ========================== -->
-  <PawnKindDef ParentName="KrootCivBase">
+  <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>Colonist_OG_Kroot</defName>
     <label>Kroot colonist</label>
 	<backstoryCategories>
@@ -133,7 +133,7 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Slave ========================== -->
-  <PawnKindDef ParentName="KrootCivBase">
+  <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>Slave_OG_Kroot</defName>
     <label>Kroot slave</label>
 	<backstoryCategories>
@@ -142,7 +142,7 @@
   </PawnKindDef>
  
   <!-- ============================ Kroot Military Base ========================== -->
-  <PawnKindDef Name="KrootMilBase" ParentName="KrootBase" Abstract="True">
+  <PawnKindDef Name="OG_Kroot_Mil_Base" ParentName="OG_Kroot_Base_PawnKind" Abstract="True">
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <isFighter>true</isFighter>
 	<race>OG_Alien_Kroot</race>
@@ -191,7 +191,7 @@
   </PawnKindDef>
 
   <!-- ============================ Kroot Kabal Warrior ========================== -->
-  <PawnKindDef Name="TauKrootKabal" ParentName="KrootMilBase" Abstract="True">
+  <PawnKindDef Name="OG_Kroot_Kabal_Base" ParentName="OG_Kroot_Mil_Base" Abstract="True">
     <label>Kroot Kabal Warrior</label>
     <combatPower>70</combatPower>
 	<backstoryCategories>
@@ -203,7 +203,7 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Warrior ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Warrior</defName>
     <label>Kroot Warrior</label>
 	<backstoryCategories>
@@ -216,7 +216,7 @@
   </PawnKindDef>
     
   <!-- ============================ Kroot Hunter ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Hunter</defName>
     <label>Kroot Hunter</label>
 	<backstoryCategories>
@@ -229,7 +229,7 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Shaper ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Shaper</defName>
     <label>Kroot Shaper</label>
 	<backstoryCategories>
@@ -241,7 +241,7 @@
   </PawnKindDef>
 
   <!-- ============================ Kroot Shaman ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Shaman</defName>
     <label>Kroot Shaman</label>
 	<backstoryCategories Inherit="false">

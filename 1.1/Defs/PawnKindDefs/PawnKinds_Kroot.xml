@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- ============================ Kroot Base ========================== -->
-    <PawnKindDef Name="KrootBase" Abstract="True">
+    <PawnKindDef Name="OG_Kroot_Base_PawnKind" Abstract="True">
     <defaultFactionType>OG_Kroot_Faction</defaultFactionType>
-	<!-- 
     <race>OG_Alien_Kroot</race>
-	<backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
 			<li>Kroot_Standard</li>
-  	</backstoryCategories>
-	-->
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <chemicalAddictionChance>0.035</chemicalAddictionChance>
     <baseRecruitDifficulty>1</baseRecruitDifficulty>
     <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 	<modExtensions>
 	  <li Class="AlienRace.Info">
-		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
 		<allowHumanBios>false</allowHumanBios>
 		<maleGenderProbability>0.5</maleGenderProbability>
 	  </li>
@@ -22,7 +23,7 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Civilian Base ========================== -->
-  <PawnKindDef Name="KrootCivBase" ParentName="KrootBase" Abstract="True">
+  <PawnKindDef Name="OG_Kroot_Civ_Base" ParentName="OG_Kroot_Base_PawnKind" Abstract="True">
     <combatPower>25</combatPower>
 	<race>OG_Alien_Kroot</race>
     <baseRecruitDifficulty>0.25</baseRecruitDifficulty>
@@ -81,7 +82,7 @@
  
   <!-- ============================ Kroot Civilians ========================== -->
   <!-- ============================ Kroot Faction Leader ========================== -->
- <PawnKindDef ParentName="KrootCivBase">
+ <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>OG_Kroot_Faction_Shaper</defName>
     <label>Grandmaster Shaper</label>
     <labelPlural>Grandmaster Shapers</labelPlural>
@@ -113,34 +114,32 @@
     <techHediffsTags>
       <li>Advanced</li>
     </techHediffsTags>
-	<backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
 			<li>Kroot_Shaper</li>
-  	</backstoryCategories>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
 	<minGenerationAge>60</minGenerationAge>
 	<maxGenerationAge>600</maxGenerationAge>
   </PawnKindDef>
 
   <!-- ============================ Kroot Trader ========================== -->
-  <PawnKindDef ParentName="KrootCivBase">
+  <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>OG_Kroot_Trader</defName>
     <label>Kroot trader</label>
     <trader>true</trader>
-	<backstoryCategories>
-			<li>Kroot_Standard</li>
-  	</backstoryCategories>
   </PawnKindDef>
   
   <!-- ============================ Kroot Slave ========================== -->
-  <PawnKindDef ParentName="KrootCivBase">
+  <PawnKindDef ParentName="OG_Kroot_Civ_Base">
     <defName>Slave_OG_Kroot</defName>
     <label>Kroot slave</label>
-	<backstoryCategories>
-			<li>Kroot_Standard</li>
-  	</backstoryCategories>
   </PawnKindDef>
  
   <!-- ============================ Kroot Military Base ========================== -->
-  <PawnKindDef Name="KrootMilBase" ParentName="KrootBase" Abstract="True">
+  <PawnKindDef Name="OG_Kroot_Mil_Base" ParentName="OG_Kroot_Base_PawnKind" Abstract="True">
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <isFighter>true</isFighter>
 	<race>OG_Alien_Kroot</race>
@@ -189,24 +188,18 @@
   </PawnKindDef>
 
   <!-- ============================ Kroot Kabal Warrior ========================== -->
-  <PawnKindDef Name="TauKrootKabal" ParentName="KrootMilBase" Abstract="True">
+  <PawnKindDef Name="OG_Kroot_Kabal_Base" ParentName="OG_Kroot_Mil_Base" Abstract="True">
     <label>Kroot Kabal Warrior</label>
     <combatPower>70</combatPower>
-	<backstoryCategories>
-			<li>Kroot_Standard</li>
-  	</backstoryCategories>
     <apparelTags>
       <li>KrootBasic</li>
     </apparelTags>
   </PawnKindDef>
   
   <!-- ============================ Kroot Warrior ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Warrior</defName>
     <label>Kroot Warrior</label>
-	<backstoryCategories>
-	  <li>Kroot_Standard</li>
-  	</backstoryCategories>
     <weaponTags>
 	  <li>KrootGun</li>
 	  <li>KPowerSword</li>
@@ -214,12 +207,9 @@
   </PawnKindDef>
     
   <!-- ============================ Kroot Hunter ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Hunter</defName>
     <label>Kroot Hunter</label>
-	<backstoryCategories>
-	  <li>Kroot_Standard</li>
-  	</backstoryCategories>
     <weaponTags>
       <li>TKrootRifle</li>
 	  <li>TKrootHuntingRifle</li>
@@ -227,24 +217,32 @@
   </PawnKindDef>
   
   <!-- ============================ Kroot Shaper ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Shaper</defName>
     <label>Kroot Shaper</label>
-	<backstoryCategories>
-      <li>Kroot_Shaper</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Kroot_Shaper</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <weaponTags>
 	  <li>KrootGun</li>
     </weaponTags>
   </PawnKindDef>
 
   <!-- ============================ Kroot Shaman ========================== -->
-  <PawnKindDef ParentName="TauKrootKabal">
+  <PawnKindDef ParentName="OG_Kroot_Kabal_Base">
     <defName>OG_Kroot_Shaman</defName>
     <label>Kroot Shaman</label>
-	<backstoryCategories Inherit="false">
-      <li>Kroot_Psyker</li>
-  	</backstoryCategories>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Kroot_Psyker</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
     <weaponMoney>
       <min>1750</min>
       <max>2500</max>
