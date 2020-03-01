@@ -351,14 +351,12 @@
             <researchList>
                 <li>
                     <projects>
-						<!--
 						<li>TauTechBase</li>
 						<li>TauArmour</li>
 						<li>TauAdvancedWeapons</li>
 						<li>TauDroneTech</li>
 						<li>TauShieldTech</li>
 						<li>TauIonTech</li>
-						-->
                     </projects>
                 </li>
             </researchList>
