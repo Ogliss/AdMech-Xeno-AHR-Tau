@@ -87,7 +87,7 @@
     <defName>Kroot_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
-	<linkedBackstory>Kroot_Base_Child</linkedBackstory>
+	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
     <baseDescription>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
@@ -115,7 +115,7 @@
     <defName>Kroot_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
-	<linkedBackstory>Kroot_Base_Child</linkedBackstory>
+	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
     <baseDescription>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
@@ -163,7 +163,7 @@
     <defName>Kroot_Base_Builder</defName>
     <title>Kroot Builder</title>
     <titleShort>Builder</titleShort>
-	<linkedBackstory>Kroot_Base_Child</linkedBackstory>
+	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
     <baseDescription>[PAWN_nameDef] became a builder within the tau workforce.</baseDescription>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <bodyTypeMale>Male</bodyTypeMale>
@@ -187,7 +187,7 @@
     <defName>Kroot_Base_Craftsman</defName>
     <title>Kroot Artisan</title>
     <titleShort>Artisan</titleShort>
-	<linkedBackstory>Kroot_Base_Child</linkedBackstory>
+	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
     <baseDescription>[PAWN_nameDef] became an Artisan for the Tau empire to create needed goods.</baseDescription>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <bodyTypeMale>Male</bodyTypeMale>
@@ -211,7 +211,7 @@
     <defName>Kroot_Base_Shaper</defName>
     <title>Kroot Shaper</title>
     <titleShort>Shaper</titleShort>
-	<linkedBackstory>Kroot_Base_Child</linkedBackstory>
+	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> --> 
     <baseDescription>[PAWN_nameDef] is a Shaper, The Shapers are the military and spiritual leaders of the Kroot. Shapers ensure the Kroot inherit only the good traits and that they do not reach an evolutionary dead end.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
