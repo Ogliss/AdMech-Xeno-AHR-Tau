@@ -2,6 +2,10 @@
 <Configuration>
   <Excluded>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\.git</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusKroot.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusKrootMechanics.dll.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusTau.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusVespid.pdb</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs.7z</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source</exclude>
