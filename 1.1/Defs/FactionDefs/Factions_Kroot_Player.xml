@@ -12,10 +12,15 @@
 		<factionNameMaker>NamerOGKrootFaction</factionNameMaker>
     <settlementNameMaker>NamerOGKrootBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
-    <backstoryCategories>
-			<li>Kroot_Standard</li>
-			<li>Kroot_Psyker</li>
-  	</backstoryCategories>
+    <backstoryFilters>
+      <li>
+        <categories>
+		<li>Pirate</li>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
     <factionIconPath>Icons/Icon_Kroot</factionIconPath>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <startingResearchTags>
@@ -51,6 +56,15 @@
     <defName>OG_Kroot_PlayerTribe</defName>
     <label>Kroot Tribal Kindred</label>
     <description>Kroot Tribal Kindred Start.</description>
+    <backstoryFilters>
+      <li>
+        <categories>
+		<li>Pirate</li>
+		<li>Tribal</li>
+		<li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>

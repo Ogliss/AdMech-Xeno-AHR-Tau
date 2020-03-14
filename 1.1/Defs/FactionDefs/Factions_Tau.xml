@@ -21,19 +21,19 @@
 	<factionNameMaker>NamerOGTauFaction</factionNameMaker>
 	<settlementNameMaker>NamerOGTauBases</settlementNameMaker>
 	<techLevel>Spacer</techLevel>
-  <backstoryCategories>
-			<li>Tau_Aun</li>
-			<li>Tau_Shas</li>
-			<li>Tau_POR</li>
-			<li>Tau_FIO</li>
-			<li>Tau_KOR</li>
+    <backstoryFilters>
+      <li>
+        <categories>
+			<li>Offworlder</li>
 			<li>Outlander</li>
-  	</backstoryCategories>
-			<hairTags>
-			<li>Outlander</li>
-			<li>Pirate</li>
-			<li>Rural</li>
-			</hairTags>
+        </categories>
+      </li>
+    </backstoryFilters>
+	<hairTags>
+		<li>Outlander</li>
+		<li>Pirate</li>
+		<li>Rural</li>
+	</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>
       <max>60</max>
@@ -167,8 +167,4 @@
     <defName>OG_Tau_Faction</defName>
   </FactionDef>
 
-  <FactionDef ParentName="OG_Tau_Faction_Base">
-    <defName>TauFaction</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
 </Defs>

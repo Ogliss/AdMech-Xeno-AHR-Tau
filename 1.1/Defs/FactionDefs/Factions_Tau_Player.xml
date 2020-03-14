@@ -11,9 +11,14 @@
 		<factionNameMaker>NamerOGTauFaction</factionNameMaker>
     <settlementNameMaker>NamerOGTauBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
-    <backstoryCategories>
-			<li>Outlander</li>
-  	</backstoryCategories>
+    <backstoryFilters>
+      <li>
+        <categories>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
     <factionIconPath>Icons/Icon_Tau</factionIconPath>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <startingResearchTags>

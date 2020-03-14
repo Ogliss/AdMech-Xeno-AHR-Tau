@@ -106,7 +106,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Tau_AUNC</li>
       <li>Tau_AUN</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -231,7 +230,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Tau_SHASC</li>
       <li>Tau_SHAS</li>
       <li>Tau_FIREWARRIOR</li>
       <li>Tau_FIREWARRIORSGT</li>
@@ -439,7 +437,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Tau_PORC</li>
       <li>Tau_POR</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -575,7 +572,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Tau_FIOC</li>
       <li>Tau_FIO</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -739,7 +735,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Tau_KORC</li>
       <li>Tau_KOR</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -749,7 +744,7 @@
     <defName>Tau_Kor_Medic</defName>
     <title>Kor'La Medic</title>
     <titleShort>Medic</titleShort>
-	<linkedBackstory>Tau_Kor_Child</linkedBackstory>
+	<!-- <linkedBackstory>Tau_Kor_Child</linkedBackstory> -->
     <baseDescription>[PAWN_nameDef] became a medic within the tau navy.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
@@ -764,7 +759,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-			<li>Tau_Standard</li>
       <li>Tau_KOR</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
@@ -774,7 +768,7 @@
     <defName>Tau_Kor_Researcher</defName>
     <title>Kor'Ui Science Officer</title>
     <titleShort>Scientist</titleShort>
-	<linkedBackstory>Tau_Kor_Child</linkedBackstory>
+	<!-- <linkedBackstory>Tau_Kor_Child</linkedBackstory> -->
     <baseDescription>[PAWN_nameDef] became a science officer for the Tau empire to conduct research exchanges.</baseDescription>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
@@ -789,7 +783,6 @@
       </li>
     </skillGains>
     <spawnCategories>
-			<li>Tau_Standard</li>
       <li>Tau_KOR</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>
