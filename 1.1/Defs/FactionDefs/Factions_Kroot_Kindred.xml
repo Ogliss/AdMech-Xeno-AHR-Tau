@@ -21,10 +21,15 @@
 	<factionNameMaker>NamerOGKrootFaction</factionNameMaker>
 	<settlementNameMaker>NamerOGKrootBases</settlementNameMaker>
 	<techLevel>Neolithic</techLevel>
-  <backstoryCategories>
-			<li>Kroot_Standard</li>
-			<li>Kroot_Psyker</li>
-  	</backstoryCategories>
+	<backstoryFilters>
+	  <li>
+		<categories>
+		<li>Pirate</li>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+		</categories>
+	  </li>
+	</backstoryFilters>
 			<hairTags>
 			<li>Outlander</li>
 			<li>Pirate</li>
@@ -130,11 +135,6 @@
 
   <FactionDef ParentName="OG_Kroot_Faction_Base">
     <defName>OG_Kroot_Faction</defName>
-  </FactionDef>
-
-  <FactionDef ParentName="OG_Kroot_Faction_Base">
-    <defName>KrootFaction</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
   </FactionDef>
 
 </Defs>

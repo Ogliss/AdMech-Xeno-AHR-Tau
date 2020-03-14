@@ -2,7 +2,7 @@
 <Defs>
   <!-- ============================ Tau Base ========================== -->
   <PawnKindDef Name="TauBase" Abstract="True">
-    <defaultFactionType>TauFaction</defaultFactionType>
+    <defaultFactionType>OG_Tau_Faction</defaultFactionType>
     <backstoryFiltersOverride Inherit="false">
       <li>
         <categories>

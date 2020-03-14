@@ -10,6 +10,7 @@
 			<texPath>Things/Item/Apparel/Tau/TauScoutSuit/TauScoutSuit_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<color>199,132,1</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>1500</MarketValue>
@@ -38,6 +39,7 @@
 			<researchPrerequisite>TauArmour</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
@@ -64,7 +66,6 @@
 		</tradeTags>
 	<!--
 	
-	-->
     <colorGenerator Class="ColorGenerator_Options">
       <options>
 		<li>
@@ -74,6 +75,8 @@
 		</li>
       </options>
     </colorGenerator>
+	
+	-->
 	</ThingDef>
 
 	<!--========================= Tau - Pathfinder Helmet ==========================-->
@@ -85,6 +88,7 @@
 		<texPath>Things/Item/Apparel/Tau/TauScoutHelmet/ScoutHelmet</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<color>199,132,1</color>
 		</graphicData>
 		<statBases>
 			<Mass>1</Mass>
@@ -113,6 +117,7 @@
 			<researchPrerequisite>TauArmour</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -142,6 +147,8 @@
 		  <Chance>1</Chance>
 		</li>
 	</comps>
+	<!--
+	
     <colorGenerator Class="ColorGenerator_Options">
       <options>
 		<li>
@@ -151,6 +158,8 @@
 		</li>
       </options>
     </colorGenerator>
+	
+	-->
 	</ThingDef>
 	
 	<!--========================= Tau - Combat Suit ==========================-->
@@ -162,6 +171,7 @@
 			<texPath>Things/Item/Apparel/Tau/TauCombatSuit/TauCombatSuit_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<color>199,132,1</color>
 		</graphicData>
 		<statBases>
 			<MarketValue>1500</MarketValue>
@@ -190,6 +200,7 @@
 			<researchPrerequisite>TauArmour</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
@@ -233,7 +244,6 @@
     </comps>
 	<!--
 	
-	-->
     <colorGenerator Class="ColorGenerator_Options">
       <options>
 		<li>
@@ -243,6 +253,8 @@
 		</li>
       </options>
     </colorGenerator>
+	
+	-->
 	</ThingDef>
 
 	<!--========================= Tau - Combat Helmet ==========================-->
@@ -254,6 +266,7 @@
 		<texPath>Things/Item/Apparel/Tau/TauCombatSuitHelmet/CombatHelmet</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<color>199,132,1</color>
 		</graphicData>
 		<statBases>
 			<Mass>1</Mass>
@@ -282,6 +295,7 @@
 			<researchPrerequisite>TauArmour</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -311,6 +325,8 @@
 		  <Chance>1</Chance>
 		</li>
 	</comps>
+	<!--
+	
     <colorGenerator Class="ColorGenerator_Options">
       <options>
 		<li>
@@ -320,6 +336,8 @@
 		</li>
       </options>
     </colorGenerator>
+	
+	-->
 	</ThingDef>
 	
 </Defs>

@@ -26,8 +26,8 @@ namespace AdeptusMechanicus.settings
         {
             base.ExposeData();
             Scribe_Values.Look(ref this.ShowKroot, "AMXB_AllowImperial", false);
-            Scribe_Values.Look(ref this.AllowKrootTrait, "AMXB_AllowAdeptusAstartes", false && AMASettings.Instance.AllowImperialWeapons);
-            Scribe_Values.Look(ref this.AllowKrootMutations, "AMXB_AllowAdeptusMechanicus", true && AMASettings.Instance.AllowMechanicusWeapons);
+            Scribe_Values.Look(ref this.AllowKrootTrait, "AMXB_AllowAdeptusAstartes", false && AMSettings.Instance.AllowImperialWeapons);
+            Scribe_Values.Look(ref this.AllowKrootMutations, "AMXB_AllowAdeptusMechanicus", true && AMSettings.Instance.AllowMechanicusWeapons);
         }
 
 

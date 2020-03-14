@@ -61,7 +61,6 @@
 				</pawnKindEntries>
 					<factionDefs>
 						<li>OG_Tau_PlayerColony</li> 
-						<li>OG_Tau_PlayerColony</li> 
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -82,7 +81,6 @@
                         </li>
                     </pawnKindEntries>
                     <factionDefs>
-                        <li>OG_Tau_PlayerColony</li> 
                         <li>OG_Tau_PlayerColony</li> 
                     </factionDefs>
                 </li>
@@ -313,7 +311,6 @@
         </generalSettings>
         <graphicPaths>
             <li>
-                <body>Things/Tau/Bodies/</body>
                 <head>Things/Tau/HeadsBase/</head>
             </li>
         </graphicPaths>
@@ -353,6 +350,7 @@
                     <projects>
 						<li>TauTechBase</li>
 						<li>TauArmour</li>
+						<li>TauPlasmaTech</li>
 						<li>TauAdvancedWeapons</li>
 						<li>TauDroneTech</li>
 						<li>TauShieldTech</li>
@@ -361,8 +359,10 @@
                 </li>
             </researchList>
             <recipeList>
-                <li>OGT_CombatArmour</li>
-                <li>OGT_CombatHelmet</li>
+                <li>OGT_Apparel_CombatArmour</li>
+                <li>OGT_Apparel_CombatHelmet</li>
+                <li>OGT_Apparel_PathfinderArmour</li>
+                <li>OGT_Apparel_PathfinderHelmet</li>
                 <li>OGT_Wargear_ShieldDrone</li>
                 <li>OGT_Wargear_MarkerDrone</li>
                 <li>OGT_GrenadePack_EMP</li>
@@ -463,7 +463,7 @@
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
-      <lifeExpectancy>70</lifeExpectancy>
+      <lifeExpectancy>45</lifeExpectancy>
       <leatherDef>Leather_Tau</leatherDef>
       <nameGenerator>NamerOGTauPawns</nameGenerator>
       <body>Human</body>
@@ -487,12 +487,20 @@
           <minAge>0</minAge>
         </li>
         <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
           <def>HumanlikeTeenager</def>
-          <minAge>14</minAge>
+          <minAge>7</minAge>
         </li>
         <li>
           <def>HumanlikeAdult</def>
-          <minAge>18</minAge>
+          <minAge>14</minAge>
         </li>
       </lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -504,14 +512,14 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-                    <li>(16,0)</li>
-                    <li>(17,200)</li>
-                    <li>(18,250)</li>
-                    <li>(20,150)</li>
-                    <li>(30,100)</li>
-                    <li>(40,12)</li>
-                    <li>(50,6)</li>
-					<li>(70,0)</li>
+			<li>(10,0)</li>
+			<li>(14,200)</li>
+			<li>(18,250)</li>
+			<li>(20,150)</li>
+			<li>(30,100)</li>
+			<li>(40,12)</li>
+			<li>(50,6)</li>
+			<li>(70,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>

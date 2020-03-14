@@ -296,12 +296,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Settings\AMXBT_AMAMod_ModOptions_Patches.cs" />
     <Compile Include="Utils\OGTauDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Harmony\" />
-    <Folder Include="Settings\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\AdeptusMechanicusMain.csproj">

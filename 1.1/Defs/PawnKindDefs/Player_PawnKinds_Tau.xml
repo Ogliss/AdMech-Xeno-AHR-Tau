@@ -27,26 +27,66 @@
     <defName>Colonist_OG_Tau</defName>
     <label>Tau colonist</label>
     <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
-    <backstoryFiltersOverride>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+          <li>Tau_FIO</li>
+        </categories>
+        <exclude>
+          <li>Tau_POR</li>
+          <li>Tau_KOR</li>
+          <li>Tau_SHAS</li>
+          <li>Tau_AUN</li>
+        </exclude>
+        <commonality>1</commonality>
+      </li>
       <li>
         <categories>
           <li>Tau_POR</li>
+        </categories>
+        <exclude>
           <li>Tau_FIO</li>
           <li>Tau_KOR</li>
+          <li>Tau_SHAS</li>
+          <li>Tau_AUN</li>
+        </exclude>
+        <commonality>0.75</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Tau_KOR</li>
         </categories>
-        <commonality>1</commonality>
+        <exclude>
+          <li>Tau_FIO</li>
+          <li>Tau_POR</li>
+          <li>Tau_SHAS</li>
+          <li>Tau_AUN</li>
+        </exclude>
+        <commonality>0.75</commonality>
       </li>
       <li>
         <categories>
           <li>Tau_SHAS</li>
         </categories>
-        <commonality>0.5</commonality>
+        <exclude>
+          <li>Tau_FIO</li>
+          <li>Tau_POR</li>
+          <li>Tau_KOR</li>
+          <li>Tau_AUN</li>
+        </exclude>
+        <commonality>0.25</commonality>
       </li>
       <li>
         <categories>
           <li>Tau_AUN</li>
         </categories>
-        <commonality>0.25</commonality>
+        <exclude>
+          <li>Tau_FIO</li>
+          <li>Tau_POR</li>
+          <li>Tau_KOR</li>
+          <li>Tau_SHAS</li>
+        </exclude>
+        <commonality>0.05</commonality>
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
@@ -58,6 +98,11 @@
       <max>1200</max>
     </apparelMoney>
     <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <modExtensions>
+      <li Class="AdeptusMechanicus.BackstoryExtension">
+
+      </li>
+    </modExtensions>
   </PawnKindDef>
 
   <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
@@ -198,6 +243,13 @@
         <categories>
 			<li>Kroot_Standard</li>
         </categories>
+		<commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+			<li>Kroot_Psyker</li>
+        </categories>
+		<commonality>0.05</commonality>
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
