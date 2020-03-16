@@ -1,7 +1,7 @@
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\bin\Release\AdeptusMechanicusTau.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\bin\Release\AdeptusMechanicusTau.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\obj\Release\AdeptusMechanicusXenoTau.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\obj\Release\AdeptusMechanicusXenoTau.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\obj\Release\AdeptusMechanicusTau.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\obj\Release\AdeptusMechanicusTau.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\bin\Release\0Harmony.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\obj\Release\AdeptusMechanicusXenoTau.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoTau\obj\Release\AdeptusMechanicusXenoTau.csproj.CopyComplete
