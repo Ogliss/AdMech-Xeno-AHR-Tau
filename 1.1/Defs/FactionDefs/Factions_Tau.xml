@@ -159,8 +159,8 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <factionIconPath>Icons/TauIcon</factionIconPath>
-	<settlementTexturePath>Icons/TauIconB</settlementTexturePath>
+    <factionIconPath>Icons/Icon_Tau</factionIconPath>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
   </FactionDef>
 
   <FactionDef ParentName="OG_Tau_Faction_Base">

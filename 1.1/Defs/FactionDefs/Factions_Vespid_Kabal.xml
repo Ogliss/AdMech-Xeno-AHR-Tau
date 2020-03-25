@@ -8,8 +8,8 @@
     <pawnsPlural>Vespid</pawnsPlural>
     <basicMemberKind>Colonist_OG_Vespid</basicMemberKind>
     <listOrderPriority>31</listOrderPriority>
-    <settlementGenerationWeight>1</settlementGenerationWeight>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <settlementGenerationWeight>0</settlementGenerationWeight>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>false</canSiege>
     <canStageAttacks>true</canStageAttacks>
@@ -112,8 +112,8 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <factionIconPath>World/WorldObjects/TribalSettlement</factionIconPath>
-	<settlementTexturePath>Icons/KrootIcon</settlementTexturePath>
+	<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <factionIconPath>Icons/Icon_Kroot</factionIconPath>
     <colorSpectrum>
       <li>(0.45, 0.05, 0.05)</li>
       <li>(0.80, 0.25, 0.05)</li>

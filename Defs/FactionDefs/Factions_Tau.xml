@@ -159,16 +159,12 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <homeIconPath>Icons/TauIcon</homeIconPath>
-	<expandingIconTexture>Icons/TauIconB</expandingIconTexture>
+	<homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+	<expandingIconTexture>Icons/Icon_Tau</expandingIconTexture>
   </FactionDef>
 
   <FactionDef ParentName="OG_Tau_Faction_Base">
     <defName>OG_Tau_Faction</defName>
   </FactionDef>
 
-  <FactionDef ParentName="OG_Tau_Faction_Base">
-    <defName>TauFaction</defName>
-    <requiredCountAtGameStart>0</requiredCountAtGameStart>
-  </FactionDef>
 </Defs>
