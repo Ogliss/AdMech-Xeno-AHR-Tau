@@ -8,15 +8,15 @@
       <!-- Resources -->
 	  <!--
       <li Class="StockGenerator_SingleDef">
-        <thingDef>OGE_Wraithbone</thingDef>
+        <thingDef>OGT_Wraithbone</thingDef>
         <countRange>20~70</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>OGE_Component</thingDef>
+        <thingDef>OGT_Component</thingDef>
         <countRange>10~60</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>OGE_SpiritStone</thingDef>
+        <thingDef>OGT_SpiritStone</thingDef>
         <countRange>1~6</countRange>
       </li>
 	  -->

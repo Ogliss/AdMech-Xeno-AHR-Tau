@@ -296,39 +296,108 @@
               <li>OG_Alien_Tau</li>
               <li>Alien_Vespid</li>
            </notXenophobistTowards>
-		<factionRelations>
-                <li>
-                    <factions>
-                       <li>OG_Kroot_Faction</li>
-                       <li>OG_Kroot_PlayerTribe</li>
-                       <li>TauFaction</li>
-                       <li>OG_Tau_PlayerColony</li>
-                    </factions>
-                    <goodwill>
-                       <min>-10</min>
-                       <max>100</max>
-                    </goodwill>
-                </li>
+			<factionRelations>
 				<li>
-                    <factions>
+					<factions>
 					   <li>PlayerColony</li>
 					   <li>PlayerTribe</li>
-                    </factions>
-                    <goodwill>
-                       <min>-50</min>
-                       <max>50</max>
-                    </goodwill>
-                </li>
+					   <li>OutlanderCivil</li>
+					   <li>OutlanderRough</li>
+					   <li>TribeCivil</li>
+					   <li>TribeRough</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>50</max>
+					</goodwill>
+				</li>
 				<li>
-                    <factions>
-                       <li>RRY_Yautja_BadBloodFaction</li>
-                    </factions>
-                    <goodwill>
-                       <min>-100</min>
-                       <max>-50</max>
-                    </goodwill>
-                </li>
-		</factionRelations>
+					<factions>
+					   <li>OG_Ork_Tek_Faction</li>
+					   <li>OG_Ork_Feral_Faction</li>
+					   <li>OG_Ork_PlayerColony</li>
+					   <li>OG_Ork_PlayerTribe</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-75</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li>OG_Eldar_Craftworld_Faction</li>
+					   <li>OG_Eldar_Player_Craftworld</li>
+					   <li>OG_Eldar_Exodite_Faction</li>
+					   <li>OG_Eldar_Player_Exodite</li>
+					   <li>OG_Eldar_Harlequin_Faction</li>
+					   <li>OG_Eldar_Player_Harlequin</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>50</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li>OG_DarkEldar_Faction</li>
+					   <li>OG_DarkEldar_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-100</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li>OG_Tau_Faction</li>
+					   <li>OG_Tau_PlayerColony</li>
+					   <li>OG_Kroot_Faction</li>
+					   <li>OG_Kroot_PlayerColony</li>
+					   <li>OG_Kroot_PlayerTribe</li>
+					   <li>OG_Vespid_Faction</li>
+					   <li>OG_Vespid_PlayerColony</li>
+					   <li>OG_Vespid_PlayerTribe</li>
+					</factions>
+					<goodwill>
+					   <min>10</min>
+					   <max>100</max>
+					</goodwill>
+				</li>  
+				<li>
+					<factions>
+					   <li>OG_Mechanicus_Faction</li>
+					   <li>OG_Mechanicus_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>5</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li>OG_Militarum_Cadian_Faction</li>
+					   <li>OG_Militarum_Cadian_Faction</li>
+					   <li>OG_Militarum_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>5</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li>OG_Astartes_BloodAngels</li>
+					   <li>OG_Astartes_DarkAngels</li>
+					   <li>OG_Astartes_ImperialFists</li>
+					   <li>OG_Astartes_PlayerColony</li>
+					   <li>OG_AstartesNeophyte_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>5</max>
+					</goodwill>
+				</li>
+			</factionRelations>
         </generalSettings>
 		<!--
         <graphicPaths>
@@ -580,7 +649,7 @@
             <researchList>
                 <li>
                     <projects>
-						<li>TauTechBase</li>
+						<li>OG_Tau_Tech_Base_T1</li>
                     </projects>
                 </li>
             </researchList>

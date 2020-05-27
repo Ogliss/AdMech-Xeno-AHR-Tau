@@ -25,7 +25,7 @@
 				<li>HandTailoringBench</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>TauTechBase</researchPrerequisite>
+			<researchPrerequisite>OG_Tau_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 		
@@ -79,7 +79,7 @@
 				<li>OG_Tau_TableMachining</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>TauTechBase</researchPrerequisite>
+			<researchPrerequisite>OG_Tau_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
 	
@@ -87,7 +87,7 @@
 	<ThingDef Name="OGTArmorMakeable" ParentName="OGTArmorMakeableBase" Abstract="True">
 				<apparel>
 			<tags>
-				<li>TauArmour</li>
+				<li>OG_Tau_Tech_Apparel_Armour_T1</li>
 			</tags>
 		</apparel>
 		<thingCategories>
@@ -133,7 +133,7 @@
 				<li>OG_Tau_TableMachining</li>
 			</recipeUsers>
 			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-			<researchPrerequisite>TauTechBase</researchPrerequisite>
+			<researchPrerequisite>OG_Tau_Tech_Base_T1</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>	
 </Defs>

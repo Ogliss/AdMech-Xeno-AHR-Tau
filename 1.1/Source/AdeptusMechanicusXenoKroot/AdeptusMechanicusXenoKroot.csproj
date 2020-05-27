@@ -40,9 +40,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AMKMain.cs" />
     <Compile Include="Utils\ThoughtWorker_Dark.cs" />
-    <Compile Include="Harmony\AMK_AMAMod_ModOptions_Patches.cs" />
-    <Compile Include="Settings\AMKsettings.cs" />
+    <Compile Include="Harmony\Settings\AMXBK_AMAMod_ModOptions_Patches.cs" />
     <Compile Include="Harmony\Patches.cs" />
     <Compile Include="Utils\ThoughtWorker_HumanlikeLeatherApparel_Kroot.cs" />
     <Compile Include="Utils\MoreTraitSlotsUtil.cs" />
@@ -60,10 +60,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.1.2571</Version>
+      <Version>1.1.2624</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.0.0.7</Version>
+      <Version>2.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

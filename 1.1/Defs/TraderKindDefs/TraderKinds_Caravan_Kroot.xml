@@ -16,25 +16,25 @@
         <countRange>30~40</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>OGE_Component</thingDef>
-        <countRange>30~40</countRange>
+        <thingDef>OGT_Component</thingDef>
+        <countRange>10~20</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
         <countRange>-10~2</countRange>
       </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>OGE_SpiritStone</thingDef>
+      <!--li Class="StockGenerator_SingleDef">
+        <thingDef>OGT_Mortonium</thingDef>
         <countRange>-10~2</countRange>
-      </li>
+      </li-->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Steel</thingDef>
         <countRange>250~400</countRange>
       </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>OGE_Wraithbone</thingDef>
+      <!--li Class="StockGenerator_SingleDef">
+        <thingDef>OGT_Fiotak</thingDef>
         <countRange>250~400</countRange>
-      </li>
+      </li-->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Cloth</thingDef>
         <countRange>250~400</countRange>
@@ -173,12 +173,12 @@
       </li>
       
       <li Class="StockGenerator_Category">
-        <categoryDef>OGERanged</categoryDef>
+        <categoryDef>OGTRanged</categoryDef>
         <thingDefCountRange>6~6</thingDefCountRange>
         <countRange>1~3</countRange>
       </li>
       <li Class="StockGenerator_Category">
-        <categoryDef>OGERanged</categoryDef>
+        <categoryDef>OGTRanged</categoryDef>
         <thingDefCountRange>6~6</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
@@ -187,12 +187,12 @@
         <countRange>5~5</countRange>
       </li>
       <li Class="StockGenerator_Category">
-        <categoryDef>OGEArmour</categoryDef>
+        <categoryDef>OGTArmour</categoryDef>
         <thingDefCountRange>6~6</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
       <li Class="StockGenerator_Category">
-        <categoryDef>OGEHeadgear</categoryDef>
+        <categoryDef>OGTHeadgear</categoryDef>
         <thingDefCountRange>6~6</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
