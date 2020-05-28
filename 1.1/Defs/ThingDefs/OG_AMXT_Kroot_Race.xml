@@ -747,9 +747,9 @@
             </researchList>
             <recipeList>
                 <li>OGK_Apparel_TribalKroot</li>
-                <li>OGT_Gun_TKrootPistol</li>
-                <li>OGT_Gun_TKrootRifle</li>
-                <li>OGT_Gun_TKrootHunterRifle</li>
+                <li>OGT_Gun_KrootPistol</li>
+                <li>OGT_Gun_KrootRifle</li>
+                <li>OGT_Gun_KrootHunterRifle</li>
             </recipeList>
             <apparelList>
                 <li>OGK_Apparel_TribalKroot</li>

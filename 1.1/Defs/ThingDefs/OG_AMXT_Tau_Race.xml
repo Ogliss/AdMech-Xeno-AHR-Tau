@@ -386,15 +386,15 @@
                 <li>OGT_Wargear_MarkerDrone</li>
                 <li>OGT_GrenadePack_EMP</li>
                 <li>OGT_GrenadePack_Photon</li>
-                <li>OGT_Gun_TPulsePistol</li>
-                <li>OGT_Gun_TPulseCarbine</li>
-                <li>OGT_Gun_TPulseBlaster</li>
-                <li>OGT_Gun_TPulseRifle</li>
-                <li>OGT_Gun_TRailRifle</li>
-                <li>OGT_Gun_TIonRifle</li>
-                <li>OGT_Gun_TBurstCannon</li>
-                <li>OGT_Gun_TKrootRifle</li>
-                <li>OGT_Gun_TNeutronBlaster</li>
+                <li>OGT_Gun_PulsePistol</li>
+                <li>OGT_Gun_PulseCarbine</li>
+                <li>OGT_Gun_PulseBlaster</li>
+                <li>OGT_Gun_PulseRifle</li>
+                <li>OGT_Gun_RailRifle</li>
+                <li>OGT_Gun_IonRifle</li>
+                <li>OGT_Gun_BurstCannon</li>
+                <li>OGT_Gun_KrootRifle</li>
+                <li>OGT_Gun_NeutronBlaster</li>
                 <li>OGT_Melee_HonorBlade</li>
             </recipeList>
 			<buildingList>

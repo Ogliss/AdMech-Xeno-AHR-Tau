@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HairDef>
+    <label>Tau Bald</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Tau/Hair/TauBald</texPath>
+    <defName>TauBald</defName>
+		<hairTags>
+			<li>TauHair</li>
+		</hairTags>
+  </HairDef>
+  
+</Defs>

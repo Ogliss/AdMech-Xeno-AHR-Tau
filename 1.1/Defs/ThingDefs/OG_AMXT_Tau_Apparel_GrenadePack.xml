@@ -26,6 +26,7 @@
 			<OGT_Fiotak>20</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
+			 <researchPrerequisite>OG_Common_Tech_Weapons_Haywire</researchPrerequisite>
 			
 		</recipeMaker>
 		<comps>  
@@ -84,6 +85,7 @@
 			<OGT_Fiotak>20</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
+			 <researchPrerequisite>OG_Tau_Tech_Base_T2</researchPrerequisite>
 			
 		</recipeMaker>
 		<comps>  

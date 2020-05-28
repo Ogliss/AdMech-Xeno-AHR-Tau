@@ -52,7 +52,7 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>OGT_Gun_TPulsePistol</thingDef>
+					<thingDef>OGT_Gun_PulsePistol</thingDef>
 					<count>3</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
@@ -62,12 +62,12 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>OGT_Gun_TPulseCarbine</thingDef>
+					<thingDef>OGT_Gun_PulseCarbine</thingDef>
 					<count>1</count>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>OGT_Gun_TPulseRifle</thingDef>
+					<thingDef>OGT_Gun_PulseRifle</thingDef>
 				</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>

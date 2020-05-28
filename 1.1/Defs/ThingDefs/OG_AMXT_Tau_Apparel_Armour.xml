@@ -197,7 +197,7 @@
 			<OGT_Fiotak>30</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T1</researchPrerequisite>
+			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T2</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -292,7 +292,7 @@
 			<OGT_Fiotak>15</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T1</researchPrerequisite>
+			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T2</researchPrerequisite>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>

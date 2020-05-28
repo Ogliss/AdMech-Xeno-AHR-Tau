@@ -2,7 +2,7 @@
 <Defs>
     <!-- ========================= Tau ========================== -->
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGTApparelBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGTApparelBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauApparel</li>
@@ -57,7 +57,7 @@
 	</ThingDef>
 	
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGTArmorBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGTArmorBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauApparel</li>
@@ -111,7 +111,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Tau - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OGTWargearBase" ParentName="OGApparelBase" Abstract="True">
+	<ThingDef Name="OGTWargearBase" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauWargear</li>
