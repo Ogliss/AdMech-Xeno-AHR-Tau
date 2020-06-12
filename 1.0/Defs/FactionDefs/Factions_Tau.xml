@@ -160,7 +160,7 @@
       </li>
     </pawnGroupMakers>
 	<homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
-	<expandingIconTexture>Icons/Icon_Tau</expandingIconTexture>
+	<expandingIconTexture>Icons/Tau/Icon_Tau</expandingIconTexture>
   </FactionDef>
 
   <FactionDef ParentName="OG_Tau_Faction_Base">

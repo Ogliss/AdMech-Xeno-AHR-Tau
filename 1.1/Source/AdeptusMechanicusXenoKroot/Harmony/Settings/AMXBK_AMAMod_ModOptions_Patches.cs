@@ -8,7 +8,7 @@ using UnityEngine;
 using AdeptusMechanicus.settings;
 using System.Linq;
 
-namespace AdeptusMechanicus
+namespace AdeptusMechanicus.HarmonyInstance
 {
     /*
     [HarmonyPatch(typeof(AMAMod), "SettingsCategory")]

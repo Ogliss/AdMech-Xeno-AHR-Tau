@@ -16,7 +16,7 @@
 			<li>Kroot_Standard</li>
 			<li>Kroot_Psyker</li>
   	</backstoryCategories>
-    <expandingIconTexture>Icons/Icon_Kroot</expandingIconTexture>
+    <expandingIconTexture>Icons/Kroot/Icon_KrootB</expandingIconTexture>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
     <startingResearchTags>
       <li>TribalStart</li>

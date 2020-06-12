@@ -19,7 +19,7 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>Icons/Icon_Tau</factionIconPath>
+    <factionIconPath>Icons/Tau/Icon_TauB</factionIconPath>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <startingResearchTags>
       <li>ClassicStart</li>

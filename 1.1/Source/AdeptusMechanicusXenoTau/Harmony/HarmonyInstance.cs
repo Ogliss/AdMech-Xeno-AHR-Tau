@@ -9,7 +9,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace AdeptusMechanicus.Eldar
+namespace AdeptusMechanicus.HarmonyInstance
 {
     [StaticConstructorOnStartup]
     static class HarmonyInstance
@@ -18,7 +18,7 @@ namespace AdeptusMechanicus.Eldar
         {
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.tau");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            if (Prefs.DevMode) Log.Message(string.Format("Adeptus Mecanicus: Tau: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))), false);
+            if (Prefs.DevMode) Log.Message(string.Format("Adeptus Xenobiologis: Tau: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))), false);
         }
         public static Pawn pawnPawnNativeVerbs(Pawn_NativeVerbs instance)
         {

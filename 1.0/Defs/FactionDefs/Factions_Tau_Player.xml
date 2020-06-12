@@ -15,7 +15,7 @@
 			<li>Civil</li>
   	</backstoryCategories>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
-    <expandingIconTexture>Icons/Icon_Tau</expandingIconTexture>
+    <expandingIconTexture>Icons/Tau/Icon_TauB</expandingIconTexture>
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>

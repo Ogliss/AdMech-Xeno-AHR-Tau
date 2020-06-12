@@ -21,7 +21,7 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>Icons/Icon_Kroot</factionIconPath>
+    <factionIconPath>Icons/Kroot/Icon_KrootB</factionIconPath>
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <startingResearchTags>
       <li>TribalStart</li>

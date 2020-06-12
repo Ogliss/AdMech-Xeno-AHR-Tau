@@ -159,7 +159,7 @@
         </options>
       </li>
     </pawnGroupMakers>
-    <factionIconPath>Icons/Icon_Tau</factionIconPath>
+    <factionIconPath>Icons/Tau/Icon_Tau</factionIconPath>
 	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
   </FactionDef>
 
