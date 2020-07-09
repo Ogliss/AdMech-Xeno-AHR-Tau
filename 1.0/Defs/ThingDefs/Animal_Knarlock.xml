@@ -144,7 +144,7 @@
         <label>knarlock cub</label>
         <labelPlural>knarlock cubs</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Animals/Knarloc/Knarloc</texPath>
+          <texPath>Things/Pawn/Animals/Knarloc/Knarloc</texPath>
           <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.4, 0.3, 0.3)</volume>
@@ -158,7 +158,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animals/Knarloc/Knarloc</texPath>
+          <texPath>Things/Pawn/Animals/Knarloc/Knarloc</texPath>
           <drawSize>3</drawSize>
           <shadowData>
             <volume>(0.6, 0.45, 0.45)</volume>
@@ -172,7 +172,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animals/Knarloc/Knarloc</texPath>
+          <texPath>Things/Pawn/Animals/Knarloc/Knarloc</texPath>
           <drawSize>5</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
