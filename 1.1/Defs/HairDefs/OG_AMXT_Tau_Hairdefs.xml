@@ -4,7 +4,7 @@
   <HairDef>
     <label>Tau Bald</label>
     <hairGender>Any</hairGender>
-    <texPath>Things/Tau/Hair/TauBald</texPath>
+    <texPath>Things/Pawn/Humanlike/Tau/Hair/TauBald</texPath>
     <defName>TauBald</defName>
 		<hairTags>
 			<li>TauHair</li>
