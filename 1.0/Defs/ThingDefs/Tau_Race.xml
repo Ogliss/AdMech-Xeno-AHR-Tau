@@ -334,7 +334,7 @@
         <graphicPaths>
             <li>
                 <body>Things/Tau/Bodies/</body>
-                <head>Things/Tau/HeadsBase/</head>
+                <head>Things/Pawn/Humanlike/Tau/HeadsBase/</head>
             </li>
         </graphicPaths>
         <hairSettings>

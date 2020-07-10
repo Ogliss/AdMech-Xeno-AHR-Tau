@@ -152,68 +152,68 @@
 				<li>Male</li>
 				<li>Fat</li>
                 </alienbodytypes>
-			                <alienskincolorgen Class="ColorGenerator_Options">
-                               <options>
-            <li>
-                <weight>10</weight>
-				<only>RGBA(0.545,0.545,0.69,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.545,0.545,0.706,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.412,0.412,0.706,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.412,0.412,0.62,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.412,0.412,0.522,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.678,0.678,0.98,1)</only>
-            </li>
-			<li>
-                <weight>8</weight>
-                <only>RGBA(0.678,0.678,0.882,1)</only>
-            </li>
-			<!--
-            <li>
-                <weight>8</weight>
-                <only>RGBA(0.952,0.913,0.349,1)</only>
-            </li>
-            <li>
-                <weight>8</weight>
-                <only>RGBA(0.980,0.631,0.227,1)</only>
-            </li>
-			<li>
-                <weight>6</weight>
-                <only>RGBA(0.980,0.227,0.227,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.282,0.894,0.525,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.886,0.756,0.56,1)</only>
-            </li>
-            <li>
-                <weight>6</weight>
-                <only>RGBA(0.415,0.25,0.474,1)</only>
-            </li>
-             <li>
-                <weight>7</weight>
-                <only>RGBA(0.25,0.274,0.474,1)</only>
-            </li>
-			-->
-            </options>
-                </alienskincolorgen>
+			<alienskincolorgen Class="ColorGenerator_Options">
+			   <options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.545,0.545,0.69,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.545,0.545,0.706,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.412,0.412,0.706,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.412,0.412,0.62,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.412,0.412,0.522,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.678,0.678,0.98,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.678,0.678,0.882,1)</only>
+				</li>
+				<!--
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.952,0.913,0.349,1)</only>
+				</li>
+				<li>
+					<weight>8</weight>
+					<only>RGBA(0.980,0.631,0.227,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<only>RGBA(0.980,0.227,0.227,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<only>RGBA(0.282,0.894,0.525,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<only>RGBA(0.886,0.756,0.56,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<only>RGBA(0.415,0.25,0.474,1)</only>
+				</li>
+				 <li>
+					<weight>7</weight>
+					<only>RGBA(0.25,0.274,0.474,1)</only>
+				</li>
+				-->
+			</options>
+		</alienskincolorgen>
             <useSkincolorForHair>false</useSkincolorForHair>
             <bodyAddons>
 			
@@ -330,7 +330,7 @@
         </generalSettings>
         <graphicPaths>
             <li>
-                <head>Things/Tau/HeadsBase/</head>
+                <head>Things/Pawn/Humanlike/Tau/HeadsBase/</head>
             </li>
         </graphicPaths>
         <hairSettings>

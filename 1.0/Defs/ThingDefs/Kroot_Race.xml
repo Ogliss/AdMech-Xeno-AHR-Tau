@@ -491,8 +491,8 @@
         </generalSettings>
         <graphicPaths>
             <li>
-                <body>Things/Kroot/Bodies/</body>
-                <head>Things/Kroot/HeadsBase/</head>
+                <body>Things/Pawn/Humanlike/Kroot/Bodies/</body>
+                <head>Things/Pawn/Humanlike/Kroot/HeadsBase/</head>
             </li>
         </graphicPaths>
         <hairSettings>
