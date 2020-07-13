@@ -79,6 +79,13 @@
       <parent>CorpsesHumanlike</parent>
     </ThingCategoryDef>
 	
+<!-- Tau Construct Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Tau_Construct</defName>
+      <label>tau construct remains</label>
+      <parent>CorpsesMechanoid</parent>
+    </ThingCategoryDef>
+	
 <!-- Kroot Corpse -->
     <ThingCategoryDef>
       <defName>OG_Corpses_Kroot</defName>
