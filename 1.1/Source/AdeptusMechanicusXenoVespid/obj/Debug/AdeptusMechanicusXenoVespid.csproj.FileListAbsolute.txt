@@ -6,7 +6,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusVespid.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusVespid.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusVespid.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusXenoVespid.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusXenoVespid.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusVespid.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusVespid.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusXenoVespid.csprojAssemblyReference.cache

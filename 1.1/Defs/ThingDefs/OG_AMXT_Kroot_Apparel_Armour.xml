@@ -6,7 +6,7 @@
 		<label>Kroot tribalwear</label>
 		<description>A full-body garment. While it may look primitive, it is effective at insulating the wearer.</description>
 		<graphicData>
-			<texPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth_Icon</texPath>
+			<texPath>Things/Item/Apparel/Kroot/KrootCloth/KrootCloth_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -34,7 +34,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/Apparel/Tau/KrootCloth/KrootCloth</wornGraphicPath>
+			<wornGraphicPath>Things/Item/Apparel/Kroot/KrootCloth/KrootCloth</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -61,19 +61,19 @@
 				<li>
 					<shoulderPadType>Both</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/Pauldron</padTexPath>
 					<commonality>10</commonality>
 				</li>
 				<li>
 					<shoulderPadType>Right</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/PauldronR</padTexPath>
 					<commonality>10</commonality>
 				</li>
 				<li>
 					<shoulderPadType>Left</shoulderPadType>
 					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Tau/KrootCloth/Pauldrons/Pauldron</padTexPath>
+					<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/PauldronL</padTexPath>
 					<commonality>10</commonality>
 				</li>
 			</PauldronEntries>
@@ -103,7 +103,7 @@
       </skillRequirements>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Item/Apparel/Tau/KrootHeaddress/KrootHeaddress</texPath>
+      <texPath>Things/Item/Apparel/Kroot/KrootHeaddress/KrootHeaddress</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.80</drawSize>
     </graphicData>
@@ -131,7 +131,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Item/Apparel/Tau/KrootHeaddress/KrootHeaddress</wornGraphicPath>
+      <wornGraphicPath>Things/Item/Apparel/Kroot/KrootHeaddress/KrootHeaddress</wornGraphicPath>
 	  <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>	
       <layers>
         <li>Overhead</li>

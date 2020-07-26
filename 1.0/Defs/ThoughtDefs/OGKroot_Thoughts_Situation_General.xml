@@ -3,7 +3,7 @@
   
   <ThoughtDef>
     <defName>EnvironmentDark_OGKroot</defName>
-    <workerClass>ThoughtWorker_Dark</workerClass>
+    <!--workerClass>ThoughtWorker_Dark</workerClass-->
     <nullifyingTraits>
       <li>NightOwl</li>
       <li>Undergrounder</li>
@@ -19,7 +19,7 @@
 
   <ThoughtDef>
     <defName>ApparelDamaged_OGKroot</defName>
-    <workerClass>ThoughtWorker_ApparelDamaged</workerClass>
+    <!--workerClass>ThoughtWorker_ApparelDamaged</workerClass-->
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
@@ -37,7 +37,7 @@
 
   <ThoughtDef>
     <defName>DeadMansApparel_OGKroot</defName>
-    <workerClass>ThoughtWorker_DeadMansApparel</workerClass>
+    <!--workerClass>ThoughtWorker_DeadMansApparel</workerClass-->
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>

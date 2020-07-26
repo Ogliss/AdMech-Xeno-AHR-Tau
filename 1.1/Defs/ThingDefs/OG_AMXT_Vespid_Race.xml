@@ -171,7 +171,7 @@
 
 <AlienRace.ThingDef_AlienRace ParentName="OG_Vespid_Pawn_Base" Name="OG_Alien_Vespid_Base" Abstract="True">
     <label>Vespid</label>
-    <description>The Kroot originated on the world of Pech and, though their physiology is humanoid, there is evidence to suggest that the roots of their evolution may be avian in origin. They retain vestigial beaks and have a light, almost hollow bone structure, with four digits on each hand and foot. Their skin is rough with small, barbed spines, similar to the elongated quills on their heads, protruding from various locations on their flesh. Skin pigmentation ranges from earthy brown colours and dappled greens to vibrant oranges and everything in between. Depending on the feeding directions of the Kroot Shapers, the colouration of each kindred can vary quite considerably. It is also common for Kroot from each kindred to have particular tribal markings painted onto their skin. Kroot mature quickly, with their most rapid period of growth occurring in the first ten years of their lives. By the age of twelve they are considered adults and it is not unknown for Kroot to live to over a hundred years old, their skin becoming increasingly pitted and leathery in their last few years of life</description>
+    <description>The Vespid are a unique race of insect-like aliens who are members of the T'au Empire. In the T'au Lexicon, they are called "Mal'kor." This derives from the T'au words for insect, "Mal," and air, "Kor." The soldiers of the Imperium of Man often refer to them as "Stingwings." The Vespids' homeworld is a gas giant also called Vespid, three light years to the galactic south of the T'au's D'yanoi Sept.</description>
     <alienRace>
         <generalSettings>
             <maleGenderProbability>0.5</maleGenderProbability>
@@ -196,12 +196,12 @@
 			   
             </disallowedTraits>
             <alienPartGenerator>
-				<customDrawSize>(0.75, 1)</customDrawSize>
-				<customHeadDrawSize>(1, 1)</customHeadDrawSize>
+				<customDrawSize>(1, 1)</customDrawSize>
+				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
 				<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(0.7, 0.7)</customPortraitHeadDrawSize>
+				<customPortraitHeadDrawSize>(0.75, 0.75)</customPortraitHeadDrawSize>
                 <aliencrowntypes>
-                    <li>Average_Normal</li>
+                    <li>Average_Vespid</li>
                 </aliencrowntypes>
                 <alienbodytypes>
                 <li>Male</li>
@@ -211,19 +211,19 @@
 					<options>
 						<li>
 							<weight>10</weight>
-							<only>RGBA(0.173,0.208,0,1)</only>
+							<only>RGBA(0.173,0.208,0.7,1)</only>
 						</li>
 						<li>
 							<weight>9</weight>
-							<only>RGBA(0.216,0.431,0.392,1)</only>
+							<only>RGBA(0.216,0.231,0.692,1)</only>
 						</li>
 						<li>
 							<weight>8</weight>
-							<only>RGBA(0.271,0.306,0,1)</only>
+							<only>RGBA(0.271,0.306,0.5,1)</only>
 						</li>
 						<li>
 							<weight>7</weight>
-							<only>RGBA(0.314,0.267,0,1)</only>
+							<only>RGBA(0.314,0.267,0.5,1)</only>
 						</li>
 						<li>
 							<weight>6</weight>
@@ -235,15 +235,15 @@
 					<options>
 						<li>
 							<weight>10</weight>
-							<only>RGBA(0.275,0.51,0.706,1)</only>
+							<only>RGBA(0.275,0.25,0.706,1)</only>
 						</li>
 						<li>
 							<weight>5</weight>
-							<only>RGBA(0.6,0.525,0.459,1)</only>
+							<only>RGBA(0.2,0.35,0.459,1)</only>
 						</li>
 						<li>
 							<weight>5</weight>
-							<only>RGBA(0.651,0.486,0.322,1)</only>
+							<only>RGBA(0.1,0.486,0.322,1)</only>
 						</li>
 					</options>
 				</alienskinsecondcolorgen>
@@ -294,7 +294,7 @@
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
               <li>OG_Alien_Tau</li>
-              <li>Alien_Vespid</li>
+              <li>OG_Alien_Kroot</li>
            </notXenophobistTowards>
 			<factionRelations>
 				<li>
@@ -399,16 +399,16 @@
 				</li>
 			</factionRelations>
         </generalSettings>
-		<!--
+		
         <graphicPaths>
             <li>
-                <body>Things/Pawn/Humanlike/Kroot/Bodies/</body>
-                <head>Things/Pawn/Humanlike/Kroot/HeadsBase/</head>
+                <!--body>Things/Pawn/Humanlike/Kroot/Bodies/</body-->
+                <head>Things/Pawn/Humanlike/Vespid/HeadsBase/</head>
             </li>
         </graphicPaths>
-		-->
+		
         <hairSettings>
-            <hasHair>true</hasHair>
+            <hasHair>false</hasHair>
             <getsGreyAt>100</getsGreyAt> 
             <hairTags>
                  <li>KrootHair</li>
