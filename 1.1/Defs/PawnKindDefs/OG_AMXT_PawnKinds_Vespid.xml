@@ -131,15 +131,6 @@
   	</backstoryCategories>
   </PawnKindDef>
   
-  <!-- ============================ Vespid Colonist ========================== -->
-  <PawnKindDef ParentName="OG_Vespid_Civilian_Base">
-    <defName>Colonist_OG_Vespid</defName>
-    <label>Vespid colonist</label>
-	<backstoryCategories>
-			<li>Vespid_Standard</li>
-  	</backstoryCategories>
-  </PawnKindDef>
-  
   <!-- ============================ Vespid Slave ========================== -->
   <PawnKindDef ParentName="OG_Vespid_Civilian_Base">
     <defName>Slave_OG_Vespid</defName>

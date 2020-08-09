@@ -173,7 +173,7 @@
     </comps>
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="OG_Kroot_Pawn_Base" Name="OG_Alien_Kroot_Base" Abstract="True">
+<AlienRace.ThingDef_AlienRace ParentName="OG_Kroot_Pawn_Base" Name="OG_Kroot_RaceBase" Abstract="True">
     <label>Kroot</label>
     <description>The Kroot originated on the world of Pech and, though their physiology is humanoid, there is evidence to suggest that the roots of their evolution may be avian in origin. They retain vestigial beaks and have a light, almost hollow bone structure, with four digits on each hand and foot. Their skin is rough with small, barbed spines, similar to the elongated quills on their heads, protruding from various locations on their flesh. Skin pigmentation ranges from earthy brown colours and dappled greens to vibrant oranges and everything in between. Depending on the feeding directions of the Kroot Shapers, the colouration of each kindred can vary quite considerably. It is also common for Kroot from each kindred to have particular tribal markings painted onto their skin. Kroot mature quickly, with their most rapid period of growth occurring in the first ten years of their lives. By the age of twelve they are considered adults and it is not unknown for Kroot to live to over a hundred years old, their skin becoming increasingly pitted and leathery in their last few years of life</description>
     <alienRace>
@@ -194,11 +194,6 @@
                 </li>
 				-->
             </forcedRaceTraitEntries>
-			<disallowedTraits>
-			
-               <li>Gay</li>
-			   
-            </disallowedTraits>
             <alienPartGenerator>
 				<customDrawSize>(0.750, 1.0)</customDrawSize>
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
@@ -212,178 +207,13 @@
                 <li>Male</li>
                 <li>Female</li>
                 </alienbodytypes>
-                <alienskincolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>RGBA(0.173,0.208,0,1)</only>
-						</li>
-						<li>
-							<weight>9</weight>
-							<only>RGBA(0.216,0.431,0.392,1)</only>
-						</li>
-						<li>
-							<weight>8</weight>
-							<only>RGBA(0.271,0.306,0,1)</only>
-						</li>
-						<li>
-							<weight>7</weight>
-							<only>RGBA(0.314,0.267,0,1)</only>
-						</li>
-						<li>
-							<weight>6</weight>
-							<only>RGBA(0.227,0.333,0.392,1)</only>
-						</li>
-					</options>
-                </alienskincolorgen>
-                <alienskinsecondcolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>RGBA(0.275,0.51,0.706,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.6,0.525,0.459,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.651,0.486,0.322,1)</only>
-						</li>
-					</options>
-				</alienskinsecondcolorgen>
-				<useSkincolorForHair>false</useSkincolorForHair>
-				<alienhaircolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>RGBA(0.3765,0.40,0.1961,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.70,0.65,0.82,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.61,0.75,0.91,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.79,0.86,0.96,1)</only>
-						</li>
-					</options>
-				</alienhaircolorgen>
-				<alienhairsecondcolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.51,0.77,0.86,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.70,0.65,0.82,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.61,0.75,0.91,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.79,0.86,0.96,1)</only>
-						</li>
-					</options>
-				</alienhairsecondcolorgen>
-				<bodyAddons>
-					<li>
-						<path>Things/Addons/Blank</path>
-						<bodyPart>Spine</bodyPart>
-						<useSkinColor>true</useSkinColor>
-						<inFrontOfBody>False</inFrontOfBody>
-						<layerOffset>-0.0</layerOffset>
-						<offsets>
-						<south>
-											<bodyTypes>
-											<Male>(-0.42,0.6)</Male>
-											<Female>(-0.42,0.6)</Female>
-											<Fat>(-0.42,0.6)</Fat>
-											<Thin>(-0.42,0.6)</Thin>
-											<Hulk>(-0.42,0.6)</Hulk>
-											</bodyTypes>
-						</south>
-
-						<north>
-											<bodyTypes>
-											<Male>(0,0.9)</Male>
-											<Female>(0,0.9)</Female>
-											<Fat>(0,0.9)</Fat>
-											<Thin>(0,0.9)</Thin>
-											<Hulk>(0,0.9)</Hulk>
-											</bodyTypes>
-						</north>
-
-						<east>
-											<bodyTypes>
-											<Male>(-0.48,0.6)</Male>
-											<Female>(-0.48,0.6)</Female>
-											<Fat>(-0.48,0.6)</Fat>
-											<Thin>(-0.48,0.6)</Thin>
-											<Hulk>(-0.48,0.6)</Hulk>
-											</bodyTypes>
-						</east>
-						</offsets>
-						<hediffGraphics>
-						<KrootWingedMutation>Things/Addons/Mutations/Kroot_Wings</KrootWingedMutation>
-						</hediffGraphics>
-					</li>
-					<li>
-						<path>Things/Addons/Blank</path>
-						<bodyPart>Waist</bodyPart>
-						<useSkinColor>true</useSkinColor>
-						<inFrontOfBody>true</inFrontOfBody>
-						<layerOffset>-0.0</layerOffset>
-						<offsets>
-						<south>
-											<bodyTypes>
-											<Male>(-0.450,-0.0)</Male>
-											<Female>(-0.450,-0.0)</Female>
-											<Fat>(-0.450,-0.0)</Fat>
-											<Thin>(-0.450,-0.0)</Thin>
-											<Hulk>(-0.450,-0.0)</Hulk>
-											</bodyTypes>
-						</south>
-
-						<north>
-											<bodyTypes>
-											<Male>(0,-0.25)</Male>
-											<Female>(0,-0.25)</Female>
-											<Fat>(0,-0.25)</Fat>
-											<Thin>(0,-0.25)</Thin>
-											<Hulk>(0,-0.25)</Hulk>
-											</bodyTypes>
-						</north>
-
-						<east>
-											<bodyTypes>
-											<Male>(-0.22,-0.22)</Male>
-											<Female>(-0.22,-0.22)</Female>
-											<Fat>(-0.22,-0.22)</Fat>
-											<Thin>(-0.22,-0.22)</Thin>
-											<Hulk>(-0.22,-0.22)</Hulk>
-											</bodyTypes>
-						</east>
-						</offsets>
-						<hediffGraphics>
-						<!-- <FoxTailMutation>Things/Pawn/Addons/Tails/Fox_Tail</FoxTailMutation> -->
-						</hediffGraphics>
-					</li>
-				</bodyAddons>
             </alienPartGenerator>
 			<chemicalSettings>	
 		    </chemicalSettings>
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
               <li>OG_Alien_Tau</li>
-              <li>Alien_Vespid</li>
+              <li>OG_Alien_Vespid</li>
            </notXenophobistTowards>
 			<factionRelations>
 				<li>
@@ -938,7 +768,7 @@
 
   <!-- ============================ Kroot ========================== -->
 
-  <AlienRace.ThingDef_AlienRace ParentName="OG_Alien_Kroot_Base">
+  <AlienRace.ThingDef_AlienRace ParentName="OG_Kroot_Race">
     <defName>OG_Alien_Kroot</defName>
   </AlienRace.ThingDef_AlienRace>
   

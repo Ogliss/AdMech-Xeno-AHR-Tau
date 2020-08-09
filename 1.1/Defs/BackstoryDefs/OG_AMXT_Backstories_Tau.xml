@@ -45,7 +45,7 @@
   <!-- Child -->
   <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>Tau_Aun_Child</defName>
-    <title>Ethereal caste</title>
+    <title>Ethereal caste (Aun)</title>
     <titleShort>Aun</titleShort>
     <baseDescription>[PAWN_nameDef] was born as Ethereal caste. As such [PAWN_nameDef] was destined to become a leading figure in Tau society.</baseDescription>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
@@ -62,7 +62,7 @@
     <skillGains>
       <li>
         <defName>Social</defName>
-        <amount>4</amount>
+        <amount>2</amount>
       </li>
       <li>
         <defName>Shooting</defName>
@@ -70,7 +70,7 @@
       </li>
       <li>
         <defName>Melee</defName>
-        <amount>4</amount>
+        <amount>2</amount>
       </li>
       <li>
         <defName>Construction</defName>
@@ -112,9 +112,149 @@
 
   <!-- Leader -->
   <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
-    <defName>Tau_Aun_Adult</defName>
+    <defName>Tau_Aun_AdultSaal</defName>
     <title>Ethereal</title>
-    <titleShort>Aun'Va</titleShort>
+    <titleShort>Aun'Saal</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultLa</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'La</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultUi</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'Ui</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultVre</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'Vre</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultEl</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'El</titleShort>
 	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
     <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
@@ -130,7 +270,42 @@
       </li>
       <li>
         <defName>Intellectual</defName>
-        <amount>2</amount>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultO</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'O</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
       </li>
       <li>
         <defName>Shooting</defName>
@@ -190,39 +365,35 @@
       </li>
       <li>
         <defName>Melee</defName>
-        <amount>-2</amount>
+        <amount>-3</amount>
       </li>
       <li>
         <defName>Construction</defName>
-        <amount>-2</amount>
-      </li>
-      <li>
-        <defName>Mining</defName>
-        <amount>-2</amount>
-      </li>
-      <li>
-        <defName>Cooking</defName>
         <amount>-1</amount>
       </li>
       <li>
+        <defName>Mining</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>1</amount>
+      </li>
+      <li>
         <defName>Plants</defName>
-        <amount>-2</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Animals</defName>
-        <amount>-3</amount>
+        <amount>-4</amount>
       </li>
       <li>
         <defName>Crafting</defName>
-        <amount>-3</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Medicine</defName>
         <amount>2</amount>
-      </li>
-      <li>
-        <defName>Social</defName>
-        <amount>-3</amount>
       </li>
       <li>
         <defName>Intellectual</defName>
@@ -405,15 +576,15 @@
       </li>
       <li>
         <defName>Construction</defName>
-        <amount>-2</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Mining</defName>
-        <amount>-2</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Cooking</defName>
-        <amount>-2</amount>
+        <amount>-1</amount>
       </li>
       <li>
         <defName>Plants</defName>

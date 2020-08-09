@@ -36,7 +36,9 @@
 			<OGT_Fiotak>15</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>

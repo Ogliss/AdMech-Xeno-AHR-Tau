@@ -21,30 +21,6 @@ namespace AdeptusMechanicus.HarmonyInstance
         }
     }
 
-    /*
-    [HarmonyPatch(typeof(AMAMod), "SettingsCategory")]
-    public static class AMT_AMAMod_SettingsCategory_Patch
-    {
-        [HarmonyPostfix, HarmonyPriority(399)]
-        public static void SettingsCategory_Postfix(ref AMAMod __instance, ref string __result)
-        {
-            __result += ", " + "AMT_ModName".Translate();
-        }
-    }
-    [HarmonyPatch(typeof(AMAMod), "get_MenuLength")]
-    public static class AMO_AMAMod_MenuLength_Patch
-    {
-        [HarmonyPostfix]
-        public static void MenuLength_Postfix(ref float __result)
-        {
-            //    Log.Message(string.Format("PreModOptions_Prefix num2: {0}",  num2));
-            __result += (AMSettings.Instance.ShowOrk ? (AdeptusIntergrationUtil.enabled_MagosXenobiologis ? 60f : 120f) : 0);
-
-            //    Log.Message(string.Format("PreModOptions_Prefix num2: {0}", num2));
-        }
-
-    }
-	*/
     [HarmonyPatch(typeof(AMAMod), "TauSettings")]
     public static class AMT_AMMod_PlayableTauSettings_Patch
     {

@@ -33,7 +33,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdeptusMechanicusTauExtensions.cs" />
     <Compile Include="AMTMain.cs" />
+    <Compile Include="Harmony\AMXBT_PawnGenerator_GeneratePawn_Tau_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Settings\AMXBT_AMAMod_ModOptions_Patches.cs" />
     <Compile Include="Utils\OGTauDefOf.cs" />

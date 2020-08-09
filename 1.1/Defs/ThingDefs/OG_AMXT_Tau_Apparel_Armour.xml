@@ -36,7 +36,9 @@
 			<OGT_Fiotak>30</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -114,7 +116,9 @@
 			<OGT_Fiotak>15</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T1</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T1</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -197,7 +201,9 @@
 			<OGT_Fiotak>30</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -292,7 +298,9 @@
 			<OGT_Fiotak>15</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -375,7 +383,9 @@
 			<OGT_Fiotak>30</OGT_Fiotak>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Apparel_Armour_T2</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T2</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 		<useWornGraphicMask>true</useWornGraphicMask>
@@ -406,6 +416,11 @@
 			<li>Apparel</li>
 		</tradeTags>
     <comps>
+      <li Class="AbilitesExtended.CompProperties_AbilityItem">
+			<Abilities>
+				<li>OGT_Ability_Stealthsuit_JumpPack</li>
+			</Abilities>
+      </li>
 		  <li Class="AdeptusMechanicus.CompProperties_ApparelExtraDrawer">
 			<compClass>AdeptusMechanicus.CompApparelExtraDrawer</compClass>
 				<ExtrasEntries>
@@ -414,6 +429,25 @@
 						<shaderType>CutoutComplex</shaderType>
 						<extraTexPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</extraTexPath>
 						<commonality>10</commonality>
+						<NorthOffset>0,0.0,0</NorthOffset>
+						<SouthOffset>0,0.0,0</SouthOffset>
+						<EastOffset>0,-0.0,0</EastOffset>
+						<WestOffset>0,-0.0,0</WestOffset>
+					</li>
+				</ExtrasEntries>
+		  </li>
+		  <li Class="AdeptusMechanicus.CompProperties_ApparelExtraDrawer">
+			<compClass>AdeptusMechanicus.CompApparelExtraDrawer</compClass>
+				<ExtrasEntries>
+					<li>
+						<UseBodytypeOffsets>false</UseBodytypeOffsets>
+						<shaderType>CutoutComplex</shaderType>
+						<extraTexPath>Things/Item/Apparel/Tau/XV25Stealthsuit/Backpack/Backpack</extraTexPath>
+						<commonality>10</commonality>
+						<NorthOffset>0,0.5,0</NorthOffset>
+						<SouthOffset>0,-0.001,0</SouthOffset>
+						<EastOffset>0,0.35,0</EastOffset>
+						<WestOffset>0,0.35,0</WestOffset>
 					</li>
 				</ExtrasEntries>
 		  </li>

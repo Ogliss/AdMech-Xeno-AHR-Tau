@@ -149,27 +149,17 @@
         <li>ITab_Pawn_Log</li>
         <li>ITab_Pawn_FormingCaravan</li>
     </inspectorTabs>
-    <comps>
-        <li>
-            <compClass>CompAttachBase</compClass>
-        </li>
-      <li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
-		<Poisonable>true</Poisonable>
-		<FoodTypeFlags>
-			<li>Meat</li>
-			<li>Corpse</li>
-		</FoodTypeFlags>
-		<FoodPoisonCause>
-			<li>DangerousFoodType</li>
-			
-		</FoodPoisonCause>
-      </li>
-    </comps>
     <drawGUIOverlay>true</drawGUIOverlay>
 	-->
+    <comps>
+      <li Class="AdeptusMechanicus.CompProperties_Floating">
+		<isFloater>true</isFloater>
+		<canCrossWater>true</canCrossWater>
+      </li>
+    </comps>
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="OG_Vespid_Pawn_Base" Name="OG_Alien_Vespid_Base" Abstract="True">
+<AlienRace.ThingDef_AlienRace ParentName="OG_Vespid_Pawn_Base" Name="OG_Vespid_RaceBase" Abstract="True">
     <label>Vespid</label>
     <description>The Vespid are a unique race of insect-like aliens who are members of the T'au Empire. In the T'au Lexicon, they are called "Mal'kor." This derives from the T'au words for insect, "Mal," and air, "Kor." The soldiers of the Imperium of Man often refer to them as "Stingwings." The Vespids' homeworld is a gas giant also called Vespid, three light years to the galactic south of the T'au's D'yanoi Sept.</description>
     <alienRace>
@@ -190,11 +180,6 @@
                 </li>
 				-->
             </forcedRaceTraitEntries>
-			<disallowedTraits>
-			
-               <li>Gay</li>
-			   
-            </disallowedTraits>
             <alienPartGenerator>
 				<customDrawSize>(1, 1)</customDrawSize>
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
@@ -207,87 +192,6 @@
                 <li>Male</li>
                 <li>Female</li>
                 </alienbodytypes>
-                <alienskincolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>RGBA(0.173,0.208,0.7,1)</only>
-						</li>
-						<li>
-							<weight>9</weight>
-							<only>RGBA(0.216,0.231,0.692,1)</only>
-						</li>
-						<li>
-							<weight>8</weight>
-							<only>RGBA(0.271,0.306,0.5,1)</only>
-						</li>
-						<li>
-							<weight>7</weight>
-							<only>RGBA(0.314,0.267,0.5,1)</only>
-						</li>
-						<li>
-							<weight>6</weight>
-							<only>RGBA(0.227,0.333,0.392,1)</only>
-						</li>
-					</options>
-                </alienskincolorgen>
-                <alienskinsecondcolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>RGBA(0.275,0.25,0.706,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.2,0.35,0.459,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.1,0.486,0.322,1)</only>
-						</li>
-					</options>
-				</alienskinsecondcolorgen>
-				<useSkincolorForHair>false</useSkincolorForHair>
-				<alienhaircolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>10</weight>
-							<only>RGBA(0.3765,0.40,0.1961,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.70,0.65,0.82,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.61,0.75,0.91,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.79,0.86,0.96,1)</only>
-						</li>
-					</options>
-				</alienhaircolorgen>
-				<alienhairsecondcolorgen Class="ColorGenerator_Options">
-					<options>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.51,0.77,0.86,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.70,0.65,0.82,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.61,0.75,0.91,1)</only>
-						</li>
-						<li>
-							<weight>5</weight>
-							<only>RGBA(0.79,0.86,0.96,1)</only>
-						</li>
-					</options>
-				</alienhairsecondcolorgen>
             </alienPartGenerator>
 			<chemicalSettings>	
 		    </chemicalSettings>
@@ -449,13 +353,12 @@
                 </li>
             </ateThoughtSpecific>
 			<!-- -->
-			<replacerList>
 				<!-- 
+			<replacerList>
                 <li>
                     <original>EnvironmentDark</original>
                     <replacer>EnvironmentDark_OGKroot</replacer> 
                 </li>
-				-->
                 <li>
                     <original>ApparelDamaged</original>
                     <replacer>ApparelDamaged_OGKroot</replacer> 
@@ -582,6 +485,7 @@
                 <li>DefeatedHostileFactionLeader_OGKroot</li>
                 <li>DefeatedHostileFactionLeaderOpinion_OGKroot</li>
             </restrictedThoughts>
+				-->
 			<cannotReceiveThoughts>
 				<!--
                 <li>ButcheredHumanlikeCorpse</li>
@@ -746,7 +650,7 @@
       <leatherDef>Leather_Kroot</leatherDef>
       <nameGenerator>OG_NamerPersonKroot_Male</nameGenerator>
       <nameGeneratorFemale>OG_NamerPersonKroot_Female</nameGeneratorFemale>
-      <body>OG_Kroot</body>
+      <body>OG_Vespid</body>
       <bloodDef>OG_FilthBlood_Kroot</bloodDef>	
       <meatColor>(35, 56, 0)</meatColor>
       <baseBodySize>1</baseBodySize>
@@ -844,7 +748,7 @@
 
   <!-- ============================ Vespid ========================== -->
 
-  <AlienRace.ThingDef_AlienRace ParentName="OG_Alien_Vespid_Base">
+  <AlienRace.ThingDef_AlienRace ParentName="OG_Vespid_Race">
     <defName>OG_Alien_Vespid</defName>
   </AlienRace.ThingDef_AlienRace>
   

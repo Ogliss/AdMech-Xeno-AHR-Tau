@@ -119,7 +119,7 @@
 	-->
 </ThingDef>
 
-<AlienRace.ThingDef_AlienRace ParentName="OG_Tau_Pawn_Base" Name="OG_Tau_Race" Abstract="True">
+<AlienRace.ThingDef_AlienRace ParentName="OG_Tau_Pawn_Base" Name="OG_Tau_RaceBase" Abstract="True">
     <label>Tau</label>
     <description>The Tau are the central figures of the T'au Empire, an interstellar polity which is composed of several different intelligent species, primarily the Kroot of Pech, the Vespids of the world of Vespid and the nomadic Nicassar, though there are now several human Tau Septs derived from conquered Imperial humans or humans who voluntarily joined the T'au Empire because they were impressed by the concept of the Greater Good. These people are known as Gue'vesa in the Tau Lexicon and they are considered amongst the most vile of Traitors and Heretics within the Imperium of Man.\n\nThe Tau are a relatively young race (it has been only 6,000 Terran years since Imperial Inquisitors first noted that the Tau had only just mastered fire and the wheel), and they have evolved rapidly over the past few millennia. Unlike other young intelligent races of the galaxy, the Tau have made remarkable leaps in technology and now represent a real threat to Imperial domination in their region of the galaxy.</description>
     <alienRace>
@@ -135,11 +135,6 @@
                 </li>
 				-->
             </forcedRaceTraitEntries>
-			<disallowedTraits>
-               <li>Xenophobia</li>
-               <li>PsychicSensitivity</li>
-               <li>Brawler</li>
-            </disallowedTraits>
             <alienPartGenerator>
                 <aliencrowntypes>
                     <li>Narrow_Normal</li>
@@ -152,72 +147,6 @@
 				<li>Male</li>
 				<li>Fat</li>
                 </alienbodytypes>
-			<alienskincolorgen Class="ColorGenerator_Options">
-			   <options>
-				<li>
-					<weight>10</weight>
-					<only>RGBA(0.545,0.545,0.69,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.545,0.545,0.706,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.412,0.412,0.706,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.412,0.412,0.62,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.412,0.412,0.522,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.678,0.678,0.98,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.678,0.678,0.882,1)</only>
-				</li>
-				<!--
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.952,0.913,0.349,1)</only>
-				</li>
-				<li>
-					<weight>8</weight>
-					<only>RGBA(0.980,0.631,0.227,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<only>RGBA(0.980,0.227,0.227,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<only>RGBA(0.282,0.894,0.525,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<only>RGBA(0.886,0.756,0.56,1)</only>
-				</li>
-				<li>
-					<weight>6</weight>
-					<only>RGBA(0.415,0.25,0.474,1)</only>
-				</li>
-				 <li>
-					<weight>7</weight>
-					<only>RGBA(0.25,0.274,0.474,1)</only>
-				</li>
-				-->
-			</options>
-		</alienskincolorgen>
-            <useSkincolorForHair>false</useSkincolorForHair>
-            <bodyAddons>
-			
-            </bodyAddons>
             </alienPartGenerator>
 			<chemicalSettings>	
 		    </chemicalSettings>

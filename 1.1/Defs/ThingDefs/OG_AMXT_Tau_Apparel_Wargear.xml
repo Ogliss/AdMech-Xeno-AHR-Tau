@@ -37,7 +37,9 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Wargear_Shield</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Wargear_Shield</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 			<bodyPartGroups>
@@ -96,7 +98,9 @@
 			<OGT_Component>6</OGT_Component>
 		</costList>
 		<recipeMaker>
-			<researchPrerequisite>OG_Tau_Tech_Wargear_Drone</researchPrerequisite>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Wargear_Drone</li>
+			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
 			<bodyPartGroups>
