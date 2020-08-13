@@ -377,10 +377,10 @@
                     <original>Greedy</original>
                     <replacer>Greedy_OGKroot</replacer> 
                 </li>
-                <li>
+                <!--li>
                     <original>ApparelDamaged</original>
                     <replacer>ApparelDamaged_OGKroot</replacer> 
-                </li>
+                </li-->
                 <li>
                     <original>DeadMansApparel</original>
                     <replacer>DeadMansApparel_OGKroot</replacer> 
@@ -517,11 +517,11 @@
 				<li>AteCorpse</li>
 				<li>ColonistLeftUnburied</li>
 				<li>DeadMansApparel</li>
-				<li>ApparelDamaged</li>
 				
 				<li>AteRawFood</li>
 				<li>Naked</li>
 				-->
+				<li>ApparelDamaged</li>
 				<li>EnvironmentDark</li>
 				<li>KnowGuestExecuted</li>
 				<li>KnowPrisonerDiedInnocent</li>
