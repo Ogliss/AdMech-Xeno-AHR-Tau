@@ -21,15 +21,20 @@
 	<factionNameMaker>NamerOGKrootFaction</factionNameMaker>
 	<settlementNameMaker>NamerOGKrootBases</settlementNameMaker>
 	<techLevel>Neolithic</techLevel>
-  <backstoryCategories>
-			<li>Kroot_Standard</li>
-			<li>Kroot_Psyker</li>
-  	</backstoryCategories>
-			<hairTags>
-			<li>Outlander</li>
-			<li>Pirate</li>
-			<li>Rural</li>
-			</hairTags>
+	<backstoryFilters>
+		<li>
+			<categories>
+				<li>Pirate</li>
+				<li>Offworlder</li>
+				<li>Outlander</li>
+			</categories>
+		</li>
+	</backstoryFilters>
+	<hairTags>
+		<li>Outlander</li>
+		<li>Pirate</li>
+		<li>Rural</li>
+	</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>
       <max>0</max>

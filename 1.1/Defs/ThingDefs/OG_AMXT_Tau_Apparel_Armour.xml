@@ -425,13 +425,16 @@
 			<compClass>AdeptusMechanicus.CompApparelExtraDrawer</compClass>
 				<ExtrasEntries>
 					<li>
+						<hidesHair>true</hidesHair>
+						<hidesHead>true</hidesHead>
+						<hidesBody>true</hidesBody>
 						<UseBodytypeOffsets>false</UseBodytypeOffsets>
 						<shaderType>CutoutComplex</shaderType>
 						<extraTexPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</extraTexPath>
 						<commonality>10</commonality>
 						<NorthOffset>0,0.0,0</NorthOffset>
 						<SouthOffset>0,0.0,0</SouthOffset>
-						<EastOffset>0,-0.0,0</EastOffset>
+						<EastOffset>0,-0.10,0</EastOffset>
 						<WestOffset>0,-0.0,0</WestOffset>
 					</li>
 				</ExtrasEntries>

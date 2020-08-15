@@ -714,7 +714,7 @@
       </hediffGiverSets>
     </race>
     <recipes>
-      <li>InstallHyperactiveNymuneOrgan</li>
+      <li>OG_Kroot_InstallHyperactiveNymuneOrgan</li>
       <li>InstallArchotechEye</li>
       <li>InstallArchotechArm</li>
       <li>InstallArchotechLeg</li>

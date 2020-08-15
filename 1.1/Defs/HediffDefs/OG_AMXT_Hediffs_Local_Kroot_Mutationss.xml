@@ -13,6 +13,15 @@
       <betterThanNatural>true</betterThanNatural>
       <partEfficiency>1.15</partEfficiency>
     </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ResearchSpeed>0.2</ResearchSpeed>
+        </statOffsets>          
+        <foodPoisoningChanceFactor>0.25</foodPoisoningChanceFactor>
+        <restFallFactorOffset>-0.1</restFallFactorOffset>
+      </li>
+    </stages>
   </HediffDef>
   
   <HediffDef ParentName="ImplantHediffBase">

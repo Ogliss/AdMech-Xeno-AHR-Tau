@@ -22,19 +22,19 @@
 	<settlementNameMaker>NamerOGKrootBases</settlementNameMaker>
 	<techLevel>Neolithic</techLevel>
 	<backstoryFilters>
-	  <li>
-		<categories>
-		<li>Pirate</li>
-		<li>Offworlder</li>
-		<li>Outlander</li>
-		</categories>
-	  </li>
+		<li>
+			<categories>
+				<li>Pirate</li>
+				<li>Offworlder</li>
+				<li>Outlander</li>
+			</categories>
+		</li>
 	</backstoryFilters>
-			<hairTags>
-			<li>Outlander</li>
-			<li>Pirate</li>
-			<li>Rural</li>
-			</hairTags>
+	<hairTags>
+		<li>Outlander</li>
+		<li>Pirate</li>
+		<li>Rural</li>
+	</hairTags>
     <naturalColonyGoodwill>
       <min>-60</min>
       <max>0</max>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <BodyPartDef>
-    <defName>NymuneOrgan</defName>
+    <defName>OG_Kroot_NymuneOrgan</defName>
     <label>Nymune Organ</label>
     <hitPoints>20</hitPoints>
     <skinCovered>false</skinCovered>

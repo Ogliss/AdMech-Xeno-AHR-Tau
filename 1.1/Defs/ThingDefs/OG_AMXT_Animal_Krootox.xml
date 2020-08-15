@@ -2,7 +2,7 @@
 <Defs>
   <!-- ========================== Kroot Ox ================================= -->
   <ThingDef Name="KrootOxBase" ParentName="AnimalThingBase" ADogSaidBody="Legs">
-    <defName>KrootOx</defName>
+    <defName>OG_Kroot_Ox</defName>
     <label>Kroot Ox</label>
     <description>A large herding herbivore descended from the Kroot and locked into an evolutionary Dead end. While enraged Kroot Ox are deadly, tamed Kroot Ox are quite docile and can be used as pack animals.</description>
     <statBases>
@@ -112,7 +112,7 @@
   <PawnKindDef Name="Krootox" ParentName="AnimalKindBase">
     <defName>Krootox</defName>
     <label>Kroot Ox</label>
-    <race>KrootOx</race>
+    <race>OG_Kroot_Ox</race>
     <combatPower>100</combatPower>
     <ecoSystemWeight>1.1</ecoSystemWeight>
     <wildGroupSize>

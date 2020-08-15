@@ -2,7 +2,7 @@
 <Defs>
   <!-- ========================== Wild Kroot hound ================================= -->
   <ThingDef Name="KrootHoundBase" ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
-    <defName>KrootHound</defName>
+    <defName>OG_Kroot_Hound</defName>
     <label>Kroot hound</label>
     <description>Heavily-muscled creatures with vicious unnatural claws and an absurdly powerful bite. They will only eat meat or corpses. If disturbed in the wild, they are very likely to attack. Kroothounds are usually found in and around Kroot Settlements and camps, often kept as Guard/Attack Dogs.</description>
     <statBases>
@@ -136,7 +136,7 @@
   <PawnKindDef Name="KrootHound" ParentName="AnimalKindBase">
     <defName>OG_Kroot_Hound</defName>
     <label>Kroothound</label>
-    <race>KrootHound</race>
+    <race>OG_Kroot_Hound</race>
     <combatPower>160</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
     <lifeStages>
