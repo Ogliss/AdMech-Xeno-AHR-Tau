@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Construct Fleshtype Base -->
+  <FleshTypeDef Name="OG_Flesh_Construct_Base" Abstract="True">
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechC</texture>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+  
+<!-- Tau Empre Fleshtypes -->
+<!-- Tau Fleshtype -->
+  <FleshTypeDef>
+    <defName>OG_Flesh_Tau</defName>
+    <corpseCategory>OG_Corpses_Tau</corpseCategory>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+        <color>0.0,0.0,0.30</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+        <color>0.0,0.0,0.30</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+        <color>0.0,0.0,0.30</color>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+
+<!-- Kroot Fleshtype -->
+  <FleshTypeDef>
+    <defName>OG_Flesh_Kroot</defName>
+    <corpseCategory>OG_Corpses_Kroot</corpseCategory>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+  
+<!-- Tau Construct Fleshtype -->
+  <FleshTypeDef ParentName="OG_Flesh_Construct_Base">
+    <defName>OG_Flesh_Construct_Tau</defName>
+    <corpseCategory>OG_Corpses_Tau_Construct</corpseCategory>
+  </FleshTypeDef>
+  
+<!-- Vespid Fleshtype -->
+  <FleshTypeDef>
+    <defName>OG_Flesh_Vespid</defName>
+    <corpseCategory>OG_Corpses_Vespid</corpseCategory>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundA</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundB</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundC</texture>
+        <color>0.0,0.30,0.0</color>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+  
+
+</Defs>

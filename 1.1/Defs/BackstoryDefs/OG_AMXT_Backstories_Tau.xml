@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!-- Tau Backstories -->
+<!-- Tau Base -->
+  <AlienRace.BackstoryDef Name="Tau_Base_Backstory" Abstract="true">
+    <defName>Tau_Base_Backstory</defName>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+
+    </disallowedTraits>
+	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Tau</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Tau_AUN -->
+<!-- Tau_AUN Base -->
+  <AlienRace.BackstoryDef Name="Tau_Aun_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+    <defName>Tau_Aun_Base_Backstory</defName>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+
+    </disallowedTraits>
+	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Child -->
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_Child</defName>
+    <title>Ethereal caste (Aun)</title>
+    <titleShort>Aun</titleShort>
+    <baseDescription>[PAWN_nameDef] was born as Ethereal caste. As such [PAWN_nameDef] was destined to become a leading figure in Tau society.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+    <workDisables>
+      <li>Cleaning</li>
+      <li>Hauling</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Leader -->
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultSaal</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'Saal</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultLa</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'La</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultUi</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'Ui</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultVre</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'Vre</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultEl</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'El</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <AlienRace.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+    <defName>Tau_Aun_AdultO</defName>
+    <title>Ethereal</title>
+    <titleShort>Aun'O</titleShort>
+	<!-- <linkedBackstory>Aun_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Ethereal Caste, [PAWN_nameDef] is destined to rule over the other castes in the name of the greater good.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>8</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-6</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_AUN</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Tau_SHAS -->
+<!-- Tau_SHAS Base -->
+  <AlienRace.BackstoryDef Name="Tau_Shas_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+    <defName>Tau_Shas_Base_Backstory</defName>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+
+    </disallowedTraits>
+	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_SHAS</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Child -->
+  <AlienRace.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+    <defName>Tau_Shas_Child</defName>
+    <title>Fire caste (Shas)</title>
+    <titleShort>Shas</titleShort>
+    <baseDescription>[PAWN_nameDef] was born as a member of the Fire Caste. As such, the path of the warrior was HIS destiny.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+    <workDisables>
+      <li>Cleaning</li>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_SHAS</li>
+      <li>Tau_FIREWARRIOR</li>
+      <li>Tau_FIREWARRIORSGT</li>
+      <li>Tau_PATHFINDER</li>
+      <li>Tau_PATHFINDERSGT</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Firewarrior -->
+  <AlienRace.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+    <defName>Tau_Shas_La_Warrior</defName>
+    <title>Firewarrior Shas'La</title>
+    <titleShort>Firewarrior'La</titleShort>
+	<!-- <linkedBackstory>Tau_Shas_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Fire Caste, [PAWN_nameDef] will spend his entire life either waging war or preparing for it.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_SHAS</li>
+      <li>Tau_FIREWARRIOR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Elite Firewarrior -->
+  <AlienRace.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+    <defName>Tau_Shas_Ui_Warrior</defName>
+    <title>Firewarrior Shas'Ui</title>
+    <titleShort>Firewarrior'Ui</titleShort>
+	<!-- <linkedBackstory>Tau_Shas_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Fire Caste, [PAWN_nameDef] has distingushed themself waging war and leading his fellow firewarriors into combat.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_SHAS</li>
+      <li>Tau_FIREWARRIORSGT</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Pathfinder -->
+  <AlienRace.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+    <defName>Tau_Shas_La_Pathfinder</defName>
+    <title>Pathfinder Shas'La</title>
+    <titleShort>Pathfinder'La</titleShort>
+	<!-- <linkedBackstory>Tau_Shas_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Fire Caste, [PAWN_nameDef] has displayed a proficentcy for infiltration and information gather and ended up in the Pathfinders.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_SHAS</li>
+      <li>Tau_PATHFINDER</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Elite Pathfinder -->
+  <AlienRace.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+    <defName>Tau_Shas_Ui_Pathfinder</defName>
+    <title>Pathfinder Shas'Ui</title>
+    <titleShort>Pathfinder'Ui</titleShort>
+	<!-- <linkedBackstory>Tau_Shas_Child</linkedBackstory> -->
+    <baseDescription>As a fully grown member of the Fire Caste, [PAWN_nameDef] has displayed a proficentcy for infiltration and information gather and ended up in the Pathfinders and distingushed themself waging war and leading his fellows into combat.</baseDescription>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_SHAS</li>
+      <li>Tau_PATHFINDERSGT</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+ 
+  <!-- Tau_POR -->
+<!-- Tau_POR Base -->
+  <AlienRace.BackstoryDef Name="Tau_Por_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+    <defName>Tau_Por_Base_Backstory</defName>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+
+    </disallowedTraits>
+	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_POR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Child -->
+  <AlienRace.BackstoryDef ParentName="Tau_Por_Base_Backstory">
+    <defName>Tau_Por_Child</defName>
+    <title>Water caste (Por)</title>
+    <titleShort>Por</titleShort>
+    <baseDescription>[PAWN_nameDef] was born as a member of the Water Caste. As such, HE was to become part of the administration.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_POR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Administrator -->
+  <AlienRace.BackstoryDef ParentName="Tau_Por_Base_Backstory">
+    <defName>Tau_Por_Admin</defName>
+    <title>Por'La Administrator</title>
+    <titleShort>Administrator</titleShort>
+	<!-- <linkedBackstory>Tau_Por_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became a bureaucrat within the tau administration.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_POR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Diplomat -->
+  <AlienRace.BackstoryDef ParentName="Tau_Por_Base_Backstory">
+    <defName>Tau_Por_Diplomat</defName>
+    <title>Por'Ui Diplomat</title>
+    <titleShort>Diplomat</titleShort>
+	<!-- <linkedBackstory>Tau_Por_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became an envoy for the Tau empire to conduct diplomatic exchanges.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Social</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_POR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Tau_FIO -->
+<!-- Tau_FIO Base -->
+  <AlienRace.BackstoryDef Name="Tau_Fio_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+    <defName>Tau_Fio_Base_Backstory</defName>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+
+    </disallowedTraits>
+	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_FIO</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Child -->
+  <AlienRace.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+    <defName>Tau_Fio_Child</defName>
+    <title>Earth caste (Fio)</title>
+    <titleShort>Fio</titleShort>
+    <baseDescription>[PAWN_nameDef] was born as a member of the Earth Caste. As such, [PAWN_pronoun] was to become part of the Workforce.</baseDescription>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+    <slot>Childhood</slot>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Mining</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Cooking</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>2</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Social</defName>
+        <amount>-2</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_FIO</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Builder -->
+  <AlienRace.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+    <defName>Tau_Fio_Builder</defName>
+    <title>Fio'La Builder</title>
+    <titleShort>Builder</titleShort>
+	<!-- <linkedBackstory>Tau_Fio_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became a builder within the tau workforce.</baseDescription>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_FIO</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Craftsman -->
+  <AlienRace.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+    <defName>Tau_Fio_Craftsman</defName>
+    <title>Fio'Ui Artisan</title>
+    <titleShort>Artisan</titleShort>
+	<!-- <linkedBackstory>Tau_Fio_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became an Artisan for the Tau empire to create needed goods.</baseDescription>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_FIO</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Farmer -->
+  <AlienRace.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+    <defName>Tau_Fio_Farmer</defName>
+    <title>Fio'O Farmer</title>
+    <titleShort>Farmer</titleShort>
+	<!-- <linkedBackstory>Tau_Fio_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became a farmer for the Tau empire to grow needed food.</baseDescription>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_FIO</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Miner -->
+  <AlienRace.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+    <defName>Tau_Fio_Miner</defName>
+    <title>Fio'Va Miner</title>
+    <titleShort>Miner</titleShort>
+	<!-- <linkedBackstory>Tau_Fio_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became a miner for the Tau empire to mine resource for the greater good.</baseDescription>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Hulk</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_FIO</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+ 
+  <!-- Tau_KOR -->
+<!-- Tau_KOR Base -->
+  <AlienRace.BackstoryDef Name="Tau_Kor_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+    <defName>Tau_Kor_Base_Backstory</defName>
+    <workDisables>
+	
+    </workDisables>
+	<disallowedTraits>
+
+    </disallowedTraits>
+	<forcedTraits>
+	
+    </forcedTraits>
+    <skillGains>
+	
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_KOR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Child -->
+  <AlienRace.BackstoryDef ParentName="Tau_Kor_Base_Backstory">
+    <defName>Tau_Kor_Child</defName>
+    <title>Air caste (Kor)</title>
+    <titleShort>Kor</titleShort>
+    <baseDescription>[PAWN_nameDef] was born as a member of the Air Caste. As such, [PAWN_pronoun] was to become part of the Tau Navy.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Childhood</slot>
+	<disallowedTraits>
+	
+    </disallowedTraits>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>-1</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>1</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>3</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_KOR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Medic -->
+  <AlienRace.BackstoryDef ParentName="Tau_Kor_Base_Backstory">
+    <defName>Tau_Kor_Medic</defName>
+    <title>Kor'La Medic</title>
+    <titleShort>Medic</titleShort>
+	<!-- <linkedBackstory>Tau_Kor_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became a medic within the tau navy.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Medicine</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_KOR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+
+  <!-- Scientist -->
+  <AlienRace.BackstoryDef ParentName="Tau_Kor_Base_Backstory">
+    <defName>Tau_Kor_Researcher</defName>
+    <title>Kor'Ui Science Officer</title>
+    <titleShort>Scientist</titleShort>
+	<!-- <linkedBackstory>Tau_Kor_Child</linkedBackstory> -->
+    <baseDescription>[PAWN_nameDef] became a science officer for the Tau empire to conduct research exchanges.</baseDescription>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <workDisables>
+    </workDisables>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>Tau_KOR</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+</Defs>

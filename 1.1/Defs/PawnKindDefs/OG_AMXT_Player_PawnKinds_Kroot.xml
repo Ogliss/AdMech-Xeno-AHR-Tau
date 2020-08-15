@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="OG_Kroot_BasePlayer_PawnKind">
+    <race>OG_Alien_Kroot</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.55</baseRecruitDifficulty>
+    <isFighter>true</isFighter>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+	    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OG_Kroot_BasePlayer_PawnKind">
+    <defName>Colonist_OG_Kroot</defName>
+    <label>Kroot colonist</label>
+    <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Kroot_Standard</li>
+        </categories>
+		<commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+			<li>Kroot_Psyker</li>
+        </categories>
+		<commonality>0.05</commonality>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<li>KrootClothBody</li>
+		<li>TribalCloak</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="OG_Kroot_BasePlayer_PawnKind">
+    <defName>Colonist_OG_KrootPsyker</defName>
+    <label>Kroot colonist</label>
+    <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Kroot_Psyker</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<li>KrootClothBody</li>
+		<li>TribalCloak</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</Defs>

@@ -38,12 +38,16 @@
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.1\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="RecruitShips">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\User\Desktop\OgsTools\RecruitShips\bin\Debug\RecruitShips.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AMKMain.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Utils\ThoughtWorker_Dark.cs" />
-    <Compile Include="Harmony\AMK_AMAMod_ModOptions_Patches.cs" />
-    <Compile Include="Settings\AMKsettings.cs" />
-    <Compile Include="Harmony\Patches.cs" />
+    <Compile Include="Harmony\Settings\AMXBK_AMAMod_ModOptions_Patches.cs" />
+    <None Include="Harmony\Patches.cs.bak" />
     <Compile Include="Utils\ThoughtWorker_HumanlikeLeatherApparel_Kroot.cs" />
     <Compile Include="Utils\MoreTraitSlotsUtil.cs" />
     <Compile Include="Utils\IngestionOutcomeDoer_HumanlikeCorpse.cs" />
@@ -60,10 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.1.2571</Version>
+      <Version>1.2.2719</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.0.0.7</Version>
+      <Version>2.0.2</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
