@@ -171,7 +171,7 @@
   <ThingDef ParentName="KrootOxBase">
     <defName>KindredKrootOx</defName>
 	<race>
-	  <useMeatFrom>KrootOx</useMeatFrom>
+	  <useMeatFrom>OG_Kroot_Ox</useMeatFrom>
       <intelligence>ToolUser</intelligence>
       <packAnimal>false</packAnimal>
     </race>

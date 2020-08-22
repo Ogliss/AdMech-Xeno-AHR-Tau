@@ -12,7 +12,7 @@ using AdeptusMechanicus.ExtensionMethods;
 namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(AMAMod), "ModLoaded")]
-    public static class AMXB_AMAMod_SettingsCategory_Patch
+    public static class AMAMod_SettingsCategory_Patch
     {
         [HarmonyPostfix]
         public static void ModsLoaded(ref AMAMod __instance, ref string __result)
@@ -22,7 +22,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     }
 
     [HarmonyPatch(typeof(AMAMod), "TauSettings")]
-    public static class AMT_AMMod_PlayableTauSettings_Patch
+    public static class AMMod_PlayableTauSettings_Patch
     {
         [HarmonyPrefix, HarmonyPriority(401)]
         public static bool TauSettings_Prefix(ref AMAMod __instance, ref Listing_Standard listing_Main, Rect rect, Rect inRect, float num, float num2)

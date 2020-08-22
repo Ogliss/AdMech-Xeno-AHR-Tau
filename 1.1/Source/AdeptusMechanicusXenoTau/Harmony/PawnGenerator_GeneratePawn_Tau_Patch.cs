@@ -14,7 +14,7 @@ using AdeptusMechanicus.ExtensionMethods;
 namespace AdeptusMechanicus.HarmonyInstance
 {
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
-    public static class AMXBT_PawnGenerator_GeneratePawn_Tau_Patch
+    public static class PawnGenerator_GeneratePawn_Tau_Patch
     {
         public static void Postfix(ref Pawn __result)
         {

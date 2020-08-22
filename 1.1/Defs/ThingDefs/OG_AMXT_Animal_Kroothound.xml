@@ -193,7 +193,7 @@
   <ThingDef ParentName="KrootHoundBase">
     <defName>KindredKrootHound</defName>
     <race>
-	  <useMeatFrom>KrootHound</useMeatFrom>
+	  <useMeatFrom>OG_Kroot_Hound</useMeatFrom>
       <intelligence>ToolUser</intelligence>
     </race>
     <tradeTags Inherit="false"> </tradeTags>
