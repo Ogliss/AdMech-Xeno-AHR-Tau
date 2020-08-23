@@ -14,6 +14,7 @@
     <canSiege>false</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Grandmaster Shaper</leaderTitle>
+    <earliestRaidDays>45</earliestRaidDays>
     <startingGoodwill>
       <min>-100</min>
       <max>0</max>

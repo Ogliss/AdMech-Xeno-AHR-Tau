@@ -48,7 +48,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/Apparel/Tau/TauScoutSuit/TauScoutSuit</wornGraphicPath>
+			<wornGraphicPath>Things/Item/Apparel/Tau/PathfinderSuit/PathfinderSuit</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>

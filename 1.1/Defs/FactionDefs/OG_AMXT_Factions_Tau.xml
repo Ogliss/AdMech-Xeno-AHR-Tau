@@ -14,6 +14,7 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>Aun'va</leaderTitle>
+    <earliestRaidDays>45</earliestRaidDays>
     <startingGoodwill>
       <min>-60</min>
       <max>60</max>
