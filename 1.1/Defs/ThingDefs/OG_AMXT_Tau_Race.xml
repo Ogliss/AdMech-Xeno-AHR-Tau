@@ -296,13 +296,19 @@
             <researchList>
                 <li>
                     <projects>
-						<!--li>OG_Tau_Tech_Base_T1</li>
+					<!--
+					-->
+						<li>OG_Tau_Tech_Base_T1</li>
+						<li>OG_Tau_Tech_Base_T2</li>
+						<li>OG_Tau_Tech_Base_T3</li>
+						<li>OG_Tau_Tech_Weapons_PlasmaPulse</li>
+						<li>OG_Tau_Tech_Weapons_Railgun</li>
+						<li>OG_Tau_Tech_Weapons_Ion</li>
+						<li>OG_Tau_Tech_Apparel</li>
 						<li>OG_Tau_Tech_Apparel_Armour_T1</li>
-						<li>OG_Tau_Tech_Weapons_Ranged_T1</li>
-						<li>OG_Tau_Tech_Weapons_Ranged_T2</li>
+						<li>OG_Tau_Tech_Apparel_Armour_T2</li>
 						<li>OG_Tau_Tech_Wargear_Drone</li>
 						<li>OG_Tau_Tech_Wargear_Shield</li>
-						<li>OG_Tau_Tech_Weapons_Ranged_T3</li-->
                     </projects>
                 </li>
             </researchList>
