@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--========================= Vespid - Armour ==========================-->
-	<!--========================= Vespid - Pathfinder Helmet ==========================-->
+	<!--========================= Vespid - Helmet ==========================-->
     <ThingDef ParentName="OGTArmorMakeableBase">
 		<defName>OGV_Apparel_VespidHelmet</defName>
 		<label>vespid combat helmet</label>
@@ -51,6 +51,7 @@
 			</layers>
 			<tags>
 				<li>VespidMilitary</li>
+				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>

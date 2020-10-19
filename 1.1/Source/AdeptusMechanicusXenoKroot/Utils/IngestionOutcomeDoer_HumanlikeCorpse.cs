@@ -10,11 +10,13 @@ namespace AdeptusMechanicus
     {
         public new void DoIngestionOutcome(Pawn pawn, Thing ingested)
         {
-            
+
+            Rand.PushState();
             if (Rand.Value < this.chance)
             {
                 this.DoIngestionOutcomeSpecial(pawn, ingested);
             }
+            Rand.PopState();
         }
         // Token: 0x06000AED RID: 2797 RVA: 0x00057114 File Offset: 0x00055514
         protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested)

@@ -340,7 +340,7 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_DarkEldar_Faction</li>
+					   <li><!--li>OG_DarkEldar_Faction</li--></li>
 					   <li>OG_DarkEldar_PlayerColony</li>
 					</factions>
 					<goodwill>
@@ -356,7 +356,7 @@
 					   <li>OG_Kroot_PlayerColony</li>
 					   <li>OG_Kroot_PlayerTribe</li>
 					   <li>OG_Vespid_Faction</li>
-					   <li>OG_Vespid_PlayerColony</li>
+					   <!--li>OG_Vespid_PlayerColony</li-->
 					   <li>OG_Vespid_PlayerTribe</li>
 					</factions>
 					<goodwill>

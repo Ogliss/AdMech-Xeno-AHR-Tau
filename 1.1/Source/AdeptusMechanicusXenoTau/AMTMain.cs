@@ -21,7 +21,7 @@ namespace AdeptusMechanicus
                 if (!AlienRace.RaceRestrictionSettings.researchRestrictionDict.ContainsKey(key: def))
                     AlienRace.RaceRestrictionSettings.researchRestrictionDict.Add(key: def, value: new List<AlienRace.ThingDef_AlienRace>());
 
-                Log.Message("adding "+ def + " to " + tau);
+            //    Log.Message("adding "+ def + " to " + tau);
                 AlienRace.RaceRestrictionSettings.researchRestrictionDict[key: def].Add(item: tau);
             }
             HarmonyPatches.TryAddRacialRestrictions(tau, "T");

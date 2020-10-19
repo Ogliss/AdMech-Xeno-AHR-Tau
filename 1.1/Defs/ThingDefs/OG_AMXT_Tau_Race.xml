@@ -171,10 +171,10 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Ork_Tek_Faction</li>
-					   <li>OG_Ork_Feral_Faction</li>
-					   <li>OG_Ork_PlayerColony</li>
-					   <li>OG_Ork_PlayerTribe</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Tek_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Feral_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_PlayerTribe</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -183,12 +183,12 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Eldar_Craftworld_Faction</li>
-					   <li>OG_Eldar_Player_Craftworld</li>
-					   <li>OG_Eldar_Exodite_Faction</li>
-					   <li>OG_Eldar_Player_Exodite</li>
-					   <li>OG_Eldar_Harlequin_Faction</li>
-					   <li>OG_Eldar_Player_Harlequin</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Exodite_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Player_Exodite</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Harlequin_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Player_Harlequin</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -197,8 +197,26 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_DarkEldar_Faction</li>
-					   <li>OG_DarkEldar_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_PlayerColony</li>
+					</factions>
+					<goodwill>
+					   <min>-100</min>
+					   <max>-100</max>
+					</goodwill>
+				</li>
+				<li>
+					<factions>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Necrons">OG_Necron_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Necron_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Tyranid_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Chaos_Deamon_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Ork_Hulk</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Ork_Rok</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Hulk</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Rok</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -213,8 +231,8 @@
 					   <li>OG_Kroot_PlayerColony</li>
 					   <li>OG_Kroot_PlayerTribe</li>
 					   <li>OG_Vespid_Faction</li>
-					   <li>OG_Vespid_PlayerColony</li>
-					   <li>OG_Vespid_PlayerTribe</li>
+					   <!--li>OG_Vespid_PlayerColony</li-->
+					   <!--li>OG_Vespid_PlayerTribe</li-->
 					</factions>
 					<goodwill>
 					   <min>10</min>
@@ -223,8 +241,8 @@
 				</li>  
 				<li>
 					<factions>
-					   <li>OG_Mechanicus_Faction</li>
-					   <li>OG_Mechanicus_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -233,9 +251,9 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Militarum_Cadian_Faction</li>
-					   <li>OG_Militarum_Cadian_Faction</li>
-					   <li>OG_Militarum_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
+					   <li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -244,11 +262,8 @@
 				</li>
 				<li>
 					<factions>
-					   <li>OG_Astartes_BloodAngels</li>
-					   <li>OG_Astartes_DarkAngels</li>
-					   <li>OG_Astartes_ImperialFists</li>
-					   <li>OG_Astartes_PlayerColony</li>
-					   <li>OG_AstartesNeophyte_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Astartes">OG_Astartes_PlayerColony</li>
+					   <li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
 					</factions>
 					<goodwill>
 					   <min>-100</min>
@@ -271,8 +286,8 @@
         </hairSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
-				<li>FeelingRandom</li>
-				<li>CabinFever</li>
+				<!--li>FeelingRandom</li-->
+				<!--li>CabinFever</li-->
 				<li>KnowPrisonerDiedInnocent</li>
 				<li>SoldPrisoner</li>
 				<li>ExecutedPrisoner</li>
@@ -313,24 +328,24 @@
                 </li>
             </researchList>
             <recipeList>
-                <li>OGT_Apparel_CombatArmour</li>
-                <li>OGT_Apparel_CombatHelmet</li>
-                <li>OGT_Apparel_PathfinderArmour</li>
-                <li>OGT_Apparel_PathfinderHelmet</li>
-                <li>OGT_Wargear_ShieldDrone</li>
-                <li>OGT_Wargear_MarkerDrone</li>
-                <li>OGT_GrenadePack_EMP</li>
-                <li>OGT_GrenadePack_Photon</li>
-                <li>OGT_Gun_PulsePistol</li>
-                <li>OGT_Gun_PulseCarbine</li>
-                <li>OGT_Gun_PulseBlaster</li>
-                <li>OGT_Gun_PulseRifle</li>
-                <li>OGT_Gun_RailRifle</li>
-                <li>OGT_Gun_IonRifle</li>
-                <li>OGT_Gun_BurstCannon</li>
-                <li>OGT_Gun_KrootRifle</li>
-                <li>OGT_Gun_NeutronBlaster</li>
-                <li>OGT_Melee_HonorBlade</li>
+                <li>Make_OGT_Apparel_CombatArmour</li>
+                <li>Make_OGT_Apparel_CombatHelmet</li>
+                <li>Make_OGT_Apparel_PathfinderArmour</li>
+                <li>Make_OGT_Apparel_PathfinderHelmet</li>
+                <li>Make_OGT_Wargear_ShieldDrone</li>
+                <li>Make_OGT_Wargear_MarkerDrone</li>
+                <li>Make_OGT_GrenadePack_EMP</li>
+                <li>Make_OGT_GrenadePack_Photon</li>
+                <li>Make_OGT_Gun_PulsePistol</li>
+                <li>Make_OGT_Gun_PulseCarbine</li>
+                <li>Make_OGT_Gun_PulseBlaster</li>
+                <li>Make_OGT_Gun_PulseRifle</li>
+                <li>Make_OGT_Gun_RailRifle</li>
+                <li>Make_OGT_Gun_IonRifle</li>
+                <li>Make_OGT_Gun_BurstCannon</li>
+                <li>Make_OGK_Gun_KrootRifle</li>
+                <li>Make_OGT_Gun_NeutronBlaster</li>
+                <li>Make_OGT_Melee_HonorBlade</li>
             </recipeList>
 			<buildingList>
                 <li>OG_Tau_TableMachining</li>

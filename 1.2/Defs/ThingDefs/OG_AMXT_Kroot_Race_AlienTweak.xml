@@ -137,7 +137,7 @@
 						</east>
 						</offsets>
 						<hediffGraphics>
-						<KrootWingedMutation>Things/Addons/Mutations/Kroot_Wings</KrootWingedMutation>
+						<OG_Kroot_Mutation_Wings>Things/Addons/Mutations/Kroot_Wings</OG_Kroot_Mutation_Wings>
 						</hediffGraphics>
 					</li>
 					<li>
