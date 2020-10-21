@@ -170,6 +170,11 @@
 			-->
 		</FoodPoisonCause>
       </li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
+		<li MayRequire="CETeam.CombatExtended">
+		  <compClass>CombatExtended.CompPawnGizmo</compClass>
+		</li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
     </comps>
 </ThingDef>
 
@@ -622,6 +627,8 @@
       <GlobalLearningFactor>0.95</GlobalLearningFactor>
       <MeleeDodgeChance>1.25</MeleeDodgeChance>
       <MeleeHitChance>1.25</MeleeHitChance>
+      <MeleeCritChance MayRequire="CETeam.CombatExtended">1.25</MeleeCritChance>
+      <MeleeParryChance MayRequire="CETeam.CombatExtended">1.25</MeleeParryChance>
       <GeneralLaborSpeed>1.05</GeneralLaborSpeed>
       <ButcheryFleshSpeed>1.75</ButcheryFleshSpeed>
       <ButcheryFleshEfficiency>1.75</ButcheryFleshEfficiency>
@@ -779,6 +786,11 @@
       <li>Anesthetize</li>
 
     </recipes>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Humanoid</bodyShape>
+		</li>
+    </modExtensions>
 </AlienRace.ThingDef_AlienRace>
 
   <!-- ============================ Kroot ========================== -->

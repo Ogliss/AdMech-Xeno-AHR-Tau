@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef>
-		<defName>OG_Kroot_Lost_Tribe</defName>
+		<defName>OGAM_Scenario_Kroot_LostTribe</defName>
 		<label>Lost Kindred</label>
 		<description>Your kindred was destroyed by the great blood machines sent by the gods. Five of you managed to escape. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</description>
 		<scenario>

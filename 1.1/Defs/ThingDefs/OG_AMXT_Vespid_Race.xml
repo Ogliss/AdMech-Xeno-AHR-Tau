@@ -152,10 +152,15 @@
     <drawGUIOverlay>true</drawGUIOverlay>
 	-->
     <comps>
-      <li Class="AdeptusMechanicus.CompProperties_Floating">
-		<isFloater>true</isFloater>
-		<canCrossWater>true</canCrossWater>
-      </li>
+		<li Class="AdeptusMechanicus.CompProperties_Floating">
+			<isFloater>true</isFloater>
+			<canCrossWater>true</canCrossWater>
+		</li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
+		<li MayRequire="CETeam.CombatExtended">
+		  <compClass>CombatExtended.CompPawnGizmo</compClass>
+		</li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
     </comps>
 </ThingDef>
 
@@ -600,11 +605,13 @@
       <PainShockThreshold>0.9</PainShockThreshold>
       <ForagedNutritionPerDay>2.5</ForagedNutritionPerDay>
       <GlobalLearningFactor>0.95</GlobalLearningFactor>
-      <MeleeDodgeChance>1.25</MeleeDodgeChance>
-      <MeleeHitChance>1.25</MeleeHitChance>
+      <MeleeDodgeChance>1.05</MeleeDodgeChance>
+      <MeleeHitChance>1.05</MeleeHitChance>
+      <MeleeCritChance MayRequire="CETeam.CombatExtended">1.0</MeleeCritChance>
+      <MeleeParryChance MayRequire="CETeam.CombatExtended">1.0</MeleeParryChance>
       <GeneralLaborSpeed>1.05</GeneralLaborSpeed>
-      <ButcheryFleshSpeed>1.75</ButcheryFleshSpeed>
-      <ButcheryFleshEfficiency>1.75</ButcheryFleshEfficiency>
+      <ButcheryFleshSpeed>0.75</ButcheryFleshSpeed>
+      <ButcheryFleshEfficiency>1.25</ButcheryFleshEfficiency>
       <SmeltingSpeed>0.85</SmeltingSpeed>
       <NegotiationAbility>0.85</NegotiationAbility>
       <SocialImpact>0.85</SocialImpact>
@@ -759,6 +766,11 @@
       <li>Anesthetize</li>
 
     </recipes>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Humanoid</bodyShape>
+		</li>
+    </modExtensions>
 </AlienRace.ThingDef_AlienRace>
 
   <!-- ============================ Vespid ========================== -->

@@ -117,6 +117,13 @@
     </comps>
     <drawGUIOverlay>true</drawGUIOverlay>
 	-->
+    <comps>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
+		<li MayRequire="CETeam.CombatExtended">
+		  <compClass>CombatExtended.CompPawnGizmo</compClass>
+		</li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
+    </comps>
 </ThingDef>
 
 <AlienRace.ThingDef_AlienRace ParentName="OG_Tau_Pawn_Base" Name="OG_Tau_RaceBase" Abstract="True">
@@ -371,6 +378,8 @@
         <GlobalLearningFactor>1.15</GlobalLearningFactor>
         <MeleeDodgeChance>0.85</MeleeDodgeChance>
         <MeleeHitChance>0.85</MeleeHitChance>
+        <MeleeCritChance MayRequire="CETeam.CombatExtended">0.825</MeleeCritChance>
+		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.825</MeleeParryChance>
         <GeneralLaborSpeed>1.11</GeneralLaborSpeed>
         <ButcheryFleshSpeed>1.05</ButcheryFleshSpeed>
         <ButcheryFleshEfficiency>1.05</ButcheryFleshEfficiency>
@@ -524,6 +533,11 @@
       <li>Euthanize</li>
       <li>Anesthetize</li>
     </recipes>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+			<bodyShape>Humanoid</bodyShape>
+		</li>
+    </modExtensions>
 </AlienRace.ThingDef_AlienRace>
 
   <!-- ============================ Tau ========================== -->

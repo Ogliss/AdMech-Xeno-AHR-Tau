@@ -49,6 +49,18 @@
       <li>Apparel_CowboyHat</li>
     </apparelRequired>
     <apparelColor>(58,58,58)</apparelColor>
+	<modExtensions>
+	  <li Class="AlienRace.Info">
+		<allowHumanBios>false</allowHumanBios>
+		<maleGenderProbability>0.5</maleGenderProbability>
+	  </li>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+			  <min>5</min>
+			  <max>8</max>
+			</primaryMagazineCount>
+		</li>
+    </modExtensions>
   </PawnKindDef>
 
 </Defs>

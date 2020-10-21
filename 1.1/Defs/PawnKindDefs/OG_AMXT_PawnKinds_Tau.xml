@@ -92,6 +92,14 @@
     </inventoryOptions>
 	<minGenerationAge>16</minGenerationAge>
 	<maxGenerationAge>60</maxGenerationAge>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+			  <min>2</min>
+			  <max>5</max>
+			</primaryMagazineCount>
+		</li>
+    </modExtensions>
   </PawnKindDef>
  
   <!-- ============================ Tau Civilians ========================== -->
@@ -268,6 +276,14 @@
     </inventoryOptions>
 	<minGenerationAge>20</minGenerationAge>
 	<maxGenerationAge>40</maxGenerationAge>
+    <modExtensions>
+		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+			<primaryMagazineCount>
+			  <min>5</min>
+			  <max>8</max>
+			</primaryMagazineCount>
+		</li>
+    </modExtensions>
   </PawnKindDef>
 
   <!-- ============================ Tau Military ========================== -->  
