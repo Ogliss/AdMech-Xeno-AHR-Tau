@@ -2,7 +2,7 @@
 <Defs>
 <!-- ==== Vespid ==== -->
   <BodyDef>
-    <defName>OG_Vespid</defName>
+    <defName>OG_Vespid_Body</defName>
 	<ignoreConfigErrors>true</ignoreConfigErrors>
     <label>vespid</label>
     <corePart>
@@ -144,8 +144,8 @@
                 </li>
                 <li>
                   <def>Eye</def>
-                  <customLabel>left eye</customLabel>
-                  <coverage>0.07</coverage>
+                  <customLabel>left top eye</customLabel>
+                  <coverage>0.02</coverage>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -153,8 +153,44 @@
                 </li>
                 <li>
                   <def>Eye</def>
-                  <customLabel>right eye</customLabel>
-                  <coverage>0.07</coverage>
+                  <customLabel>left middle eye</customLabel>
+                  <coverage>0.02</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>left bottom eye</customLabel>
+                  <coverage>0.03</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right top eye</customLabel>
+                  <coverage>0.02</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right middle eye</customLabel>
+                  <coverage>0.02</coverage>
+                  <groups>
+                    <li>FullHead</li>
+                    <li>Eyes</li>
+                  </groups>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right bottom eye</customLabel>
+                  <coverage>0.03</coverage>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>

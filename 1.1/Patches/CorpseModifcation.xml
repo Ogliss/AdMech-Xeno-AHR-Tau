@@ -24,15 +24,6 @@
       </outcomeDoers>
 	  </value>
     </li>
-    <li Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[starts-with(*,'Corpse_')]/comps</xpath>
-      <value>
-      <li Class="CompProperties_Glower">
-        <glowRadius>5</glowRadius>
-        <glowColor>(255,255,255,0)</glowColor>
-      </li>
-	  </value>
-    </li>
   </operations>
 </Operation>
 

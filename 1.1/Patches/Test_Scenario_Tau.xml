@@ -28,14 +28,14 @@
 						<!-- Tau Animls -->
 						<li Class="ScenPart_StartingAnimalofGender">
 							<def>StartingAnimal</def>
-							<animalKind>OG_Kroot_Hound</animalKind>
+							<animalKind>OG_Kroothound</animalKind>
 							<gender>Male</gender>
 							<count>2</count>
 							<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
 						</li>
 						<li Class="ScenPart_StartingAnimalofGender">
 							<def>StartingAnimal</def>
-							<animalKind>OG_Kroot_Hound</animalKind>
+							<animalKind>OG_Kroothound</animalKind>
 							<gender>Female</gender>
 							<count>2</count>
 							<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>

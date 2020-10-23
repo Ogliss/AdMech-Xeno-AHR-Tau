@@ -444,7 +444,7 @@
       <lifeExpectancy>45</lifeExpectancy>
       <leatherDef>Leather_Tau</leatherDef>
       <nameGenerator>NamerOGTauPawns</nameGenerator>
-      <body>Human</body>
+      <body>OG_Tau_Body</body>
       <bloodDef>OG_FilthBlood_Tau</bloodDef>	
       <meatColor>(200,135,100)</meatColor>
       <baseBodySize>1</baseBodySize>

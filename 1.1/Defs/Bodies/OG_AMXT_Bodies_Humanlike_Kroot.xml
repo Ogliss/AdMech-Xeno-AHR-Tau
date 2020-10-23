@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <BodyDef>
-    <defName>OG_Kroot</defName>
+    <defName>OG_Kroot_Body</defName>
     <label>kroot</label>
     <corePart>
       <def>Torso</def>

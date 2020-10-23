@@ -653,13 +653,13 @@
         </surpriseAttack>
       </li>
       <li>
-        <label>beak</label>
+        <label>bite</label>
         <capacities>
-          <li>Cut</li>
+          <li>Bite</li>
         </capacities>
         <power>9</power>
         <cooldownTime>1.8</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
@@ -672,7 +672,7 @@
       <leatherDef>Leather_Kroot</leatherDef>
       <nameGenerator>OG_NamerPersonKroot_Male</nameGenerator>
       <nameGeneratorFemale>OG_NamerPersonKroot_Female</nameGeneratorFemale>
-      <body>OG_Vespid</body>
+      <body>OG_Vespid_Body</body>
       <bloodDef>OG_FilthBlood_Kroot</bloodDef>	
       <meatColor>(35, 56, 0)</meatColor>
       <baseBodySize>1</baseBodySize>

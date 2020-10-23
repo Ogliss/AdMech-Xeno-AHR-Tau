@@ -3,7 +3,7 @@
 
 
   <BodyDef>
-    <defName>OG_Tau</defName>
+    <defName>OG_Tau_Body</defName>
     <label>tau</label>
     <corePart>
       <def>Torso</def>

@@ -14,8 +14,8 @@ namespace RimWorld
         }
 
         // Token: 0x04001E56 RID: 7766
-        public static BodyDef OG_Kroot;
-        public static BodyDef OG_Tau;
+        public static BodyDef OG_Kroot_Body;
+        public static BodyDef OG_Tau_Body;
 
         // Token: 0x04001E56 RID: 7766
         public static ThingDef OG_Alien_Tau;

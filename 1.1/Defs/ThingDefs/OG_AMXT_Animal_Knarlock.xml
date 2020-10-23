@@ -35,26 +35,24 @@
 			</surpriseAttack>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 		</li>
-		<!--
 		<li>
-			<label>left claw</label>
+			<label>left foot claw</label>
 			<capacities>
 			  <li>Scratch</li>
 			</capacities>
 			<power>17</power>
 			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			<linkedBodyPartsGroup>OG_Knarloc_RightFootClaws</linkedBodyPartsGroup>
 		</li>
 		<li>
-			<label>right claw</label>
+			<label>right foot claw</label>
 			<capacities>
 			  <li>Scratch</li>
 			</capacities>
 			<power>17</power>
 			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			<linkedBodyPartsGroup>OG_Knarloc_RightFootClaws</linkedBodyPartsGroup>
 			</li>
-		-->
 		<li>
 			<capacities>
 			  <li>Bite</li>
@@ -90,7 +88,7 @@
 	<race>
 		<herdAnimal>false</herdAnimal>
 		<predator>true</predator>
-		<body>OG_Knarloc</body>
+		<body>OG_Knarloc_Body</body>
 		<maxPreyBodySize>3</maxPreyBodySize>
 		<baseBodySize>3.1</baseBodySize>
 		<baseHealthScale>5</baseHealthScale>
@@ -199,7 +197,7 @@
 
   <!-- ========================== Trained Kroot Knarloc ================================= -->
   <ThingDef ParentName="OG_Knarloc_Base">
-    <defName>OG_Knarloc_Kroot</defName>
+    <defName>OG_Knarloc_Kindred</defName>
 	<race>
 	  <useMeatFrom>OG_Knarloc</useMeatFrom>
       <intelligence>ToolUser</intelligence>
@@ -207,9 +205,9 @@
     <tradeTags Inherit="false"> </tradeTags>
   </ThingDef>
   
-  <PawnKindDef Name="OG_Knarloc_Kroot" ParentName="OG_Knarloc">
-    <defName>OG_Knarloc_Kroot</defName>
-    <race>OG_Knarloc_Kroot</race>
+  <PawnKindDef ParentName="OG_Knarloc">
+    <defName>OG_Knarloc_Kindred</defName>
+    <race>OG_Knarloc_Kindred</race>
 	<defaultFactionType>OG_Kroot_Faction</defaultFactionType>
   </PawnKindDef>
 </Defs>

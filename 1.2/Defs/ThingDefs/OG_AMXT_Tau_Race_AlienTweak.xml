@@ -13,6 +13,118 @@
                 <li>
                     <defName>Xenophobia</defName>
                 </li>
+               <!-- Astra Militarum -->
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitMechanicus</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAstraMilitarum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAssassinorum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitInquisition</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitImperialMedic</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IG_TraitAstarte</defName>
+			   </li>
+               <!-- The Force -->
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_ForceSensitive</defName>
+			   </li>
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_JediTrait</defName>
+			   </li>
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_SithTrait</defName>
+			   </li>
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_GrayTrait</defName>
+			   </li>
+               <!-- The Force: Continued -->
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_ForceSensitive</defName>
+			   </li>
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_JediTrait</defName>
+			   </li>
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_SithTrait</defName>
+			   </li>
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_GrayTrait</defName>
+			   </li>
+			   <!-- RimWolrd of Magic -->
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Gifted</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>InnerFire</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>HeartOfFrost</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>StormBorn</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Arcanist</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Druid</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Paladin</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Summoner</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Necromancer</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Lich</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Priest</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Geomancer</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Technomancer</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Succubus</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Warlock</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>TM_Psionic</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>DeathKnight</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Enchanter</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>BloodMage</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>PhysicalProdigy</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Faceless</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Ranger</defName>
+			   </li>
             </disallowedTraits>
             <alienPartGenerator>
 				<colorChannels>
