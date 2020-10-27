@@ -18,11 +18,11 @@ namespace AdeptusMechanicus.HarmonyInstance
     public static class Thing_Ingested_KrootTraitAbsorbtion_Patch
     {
         [HarmonyPostfix]
-        public static void Postfix(Thing __instance, Pawn ingester, float nutritionWanted)
+        public static void Postfix(Thing __instance, Pawn ingester)
         {
             if (__instance is Corpse corpse)
             {
-                if (corpse.InnerPawn.RaceProps.Humanlike && ingester.def == OGKrootDefOf.OG_Alien_Kroot)
+                if (ingester.def == OGKrootDefOf.OG_Alien_Kroot)
                 {
                     Rand.PushState();
                     if (Rand.Value < 0.25f)

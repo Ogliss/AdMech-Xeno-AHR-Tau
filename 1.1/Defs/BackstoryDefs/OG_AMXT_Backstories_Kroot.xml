@@ -4,7 +4,7 @@
 <!-- Baseline Kroot -->
 <!-- Baseline Child -->
   <AlienRace.BackstoryDef Name="Kroot_Base_Child">
-    <defName>Kroot_Base_Child</defName>
+    <defName>OG_Kroot_Base_Child</defName>
     <title>Krootling</title>
     <titleShort>krootspawn</titleShort>
     <baseDescription>[PAWN_nameDef] was born as a member of a carnivore kindred. A Carnivore Kindred is a type of Kroot kindred and represents the core of any Kroot mercenary band, this kindred is a flexible fighting team with no specific adaptations, though their Shaper is always on the look-out for fresh foes whose genetic traits can be absorbed. As such, the path of the warrior was [PAWN_possessive] destiny.</baseDescription>
@@ -141,7 +141,7 @@
  
   <!-- Warrior -->
   <AlienRace.BackstoryDef>
-    <defName>Kroot_Base_Carnivore</defName>
+    <defName>OG_Kroot_Base_Carnivore</defName>
     <title>Kindred Warrior</title>
     <titleShort>Carnivore</titleShort>
     <baseDescription>Kroot Carnivores are the basic infantry for the Kroot. Carnivores have the ability to absorb characteristic traits from the food or remains of any enemy they consume. It has been reported that Kroot Carnivores can become tainted by Chaos by eating the flesh of those serve the Ruinous Powers.</baseDescription>
@@ -177,7 +177,7 @@
 
   <!-- Forager --> 
   <AlienRace.BackstoryDef>
-    <defName>Kroot_Base_Farmer</defName>
+    <defName>OG_Kroot_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
@@ -205,7 +205,7 @@
   
   <!-- Herbalist --> 
   <AlienRace.BackstoryDef>
-    <defName>Kroot_Base_Healer</defName>
+    <defName>OG_Kroot_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
@@ -253,7 +253,7 @@
 
   <!-- Builder -->
   <AlienRace.BackstoryDef>
-    <defName>Kroot_Base_Builder</defName>
+    <defName>OG_Kroot_Base_Builder</defName>
     <title>Kroot Builder</title>
     <titleShort>Builder</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
@@ -277,7 +277,7 @@
 
   <!-- Craftsman -->
   <AlienRace.BackstoryDef>
-    <defName>Kroot_Base_Craftsman</defName>
+    <defName>OG_Kroot_Base_Craftsman</defName>
     <title>Kroot Artisan</title>
     <titleShort>Artisan</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
@@ -301,7 +301,7 @@
     
   <!-- Shaper -->
   <AlienRace.BackstoryDef>
-    <defName>Kroot_Base_Shaper</defName>
+    <defName>OG_Kroot_Base_Shaper</defName>
     <title>Kroot Shaper</title>
     <titleShort>Shaper</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> --> 
@@ -367,7 +367,7 @@
   <!-- Kroot Mutations  -->
   <!-- Hyperactive Nymune Organ Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_Hyperactive_Child</defName>
+    <defName>OG_Kroot_Hyperactive_Child</defName>
     <title>Krootling</title>
 	<maleCommonality>0.5</maleCommonality>
     <femaleCommonality>0.5</femaleCommonality>
@@ -381,7 +381,7 @@
   
   <!-- Winged Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_Winged_Child</defName>
+    <defName>OG_Kroot_Winged_Child</defName>
     <title>Winged Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
@@ -395,7 +395,7 @@
    
   <!-- Bold Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_Bold_Child</defName>
+    <defName>OG_Kroot_Bold_Child</defName>
     <title>Bold Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
@@ -409,7 +409,7 @@
    
   <!-- Chameleon Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_Chameleon_Child</defName>
+    <defName>OG_Kroot_Chameleon_Child</defName>
     <title>Chameleon Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
@@ -423,7 +423,7 @@
    
   <!-- Nocturnal Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_Nocturnal_Child</defName>
+    <defName>OG_Kroot_Nocturnal_Child</defName>
     <title>Nocturnal Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
@@ -443,7 +443,7 @@
  
   <!-- Fast Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_Fast_Child</defName>
+    <defName>OG_Kroot_Fast_Child</defName>
     <title>Fast Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
@@ -457,7 +457,7 @@
     
   <!-- Ork Hybrid Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
-    <defName>Kroot_OrkHybrid_Child</defName>
+    <defName>OG_Kroot_OrkHybrid_Child</defName>
     <title>Green Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
@@ -472,7 +472,7 @@
   <!-- Psyker Mutations -->
   <!-- Psyker Child -->
   <AlienRace.BackstoryDef Name="Kroot_Psyker_Child">
-    <defName>Kroot_Psyker_Child</defName>
+    <defName>OG_Kroot_Psyker_Child</defName>
     <title>Krootling Psyker</title>
     <titleShort>krootspawn</titleShort>
 	<linkedBackstory>Kroot_Psyker_Shaman</linkedBackstory>
@@ -547,7 +547,7 @@
 
   <!-- Hyperactive Nymune Psyker Organ Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Psyker_Child">
-    <defName>Kroot_Hyperactive_Psyker_Child</defName>
+    <defName>OG_Kroot_Hyperactive_Psyker_Child</defName>
     <title>Psyker Krootling</title>
     <maleCommonality>1</maleCommonality>
     <femaleCommonality>1</femaleCommonality>
@@ -561,7 +561,7 @@
   
   <!-- Shaman -->
   <AlienRace.BackstoryDef>
-	<defName>Kroot_Psyker_Shaman</defName>
+	<defName>OG_Kroot_Psyker_Shaman</defName>
 	<title>Kroot Shaman</title>
 	<titleShort>Shaman</titleShort>
 	<linkedBackstory>Kroot_Psyker_Child</linkedBackstory>

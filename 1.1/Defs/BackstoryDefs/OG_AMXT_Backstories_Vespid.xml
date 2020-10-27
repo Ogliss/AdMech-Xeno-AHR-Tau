@@ -4,7 +4,7 @@
 <!-- Baseline Vespid -->
 <!-- Baseline Child -->
   <AlienRace.BackstoryDef Name="Vespid_Base_Child">
-    <defName>Vespid_Base_Child</defName>
+    <defName>OG_Vespid_Base_Child</defName>
     <title>Vespidling</title>
     <titleShort>krootspawn</titleShort>
     <baseDescription>[PAWN_nameDef] was born as a member of a Vespid hive. A Vespid hive is a type of Vespid kindred and represents the core of any Vespid mercenary band, this kindred is a flexible fighting team with no specific adaptations, though their Shaper is always on the look-out for fresh foes whose genetic traits can be absorbed. As such, the path of the warrior was [PAWN_possessive] destiny.</baseDescription>
@@ -40,7 +40,7 @@
     </skillGains>
     <spawnCategories>
       <li>Vespid_Standard</li>
-      <li>Vespid_Shaper</li>
+      <li>Vespid_Strainleader</li>
       <li>Vespid_Warrior</li>
       <li>Vespid_Young</li>
     </spawnCategories>
@@ -48,7 +48,7 @@
  
   <!-- Warrior -->
   <AlienRace.BackstoryDef>
-    <defName>Vespid_Base_Stingwing</defName>
+    <defName>OG_Vespid_Base_Stingwing</defName>
     <title>Stingwing Warrior</title>
     <titleShort>Stingwing</titleShort>
     <baseDescription>Vespid Stingwings are the basic infantry for the Vespid. Named so for their diamond hard claws.</baseDescription>
@@ -84,7 +84,7 @@
 
   <!-- Forager --> 
   <AlienRace.BackstoryDef>
-    <defName>Vespid_Base_Farmer</defName>
+    <defName>OG_Vespid_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
@@ -112,7 +112,7 @@
   
   <!-- Herbalist --> 
   <AlienRace.BackstoryDef>
-    <defName>Vespid_Base_Healer</defName>
+    <defName>OG_Vespid_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
@@ -160,7 +160,7 @@
 
   <!-- Builder -->
   <AlienRace.BackstoryDef>
-    <defName>Vespid_Base_Builder</defName>
+    <defName>OG_Vespid_Base_Builder</defName>
     <title>Vespid Builder</title>
     <titleShort>Builder</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
@@ -184,7 +184,7 @@
 
   <!-- Craftsman -->
   <AlienRace.BackstoryDef>
-    <defName>Vespid_Base_Craftsman</defName>
+    <defName>OG_Vespid_Base_Craftsman</defName>
     <title>Vespid Artisan</title>
     <titleShort>Artisan</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
@@ -208,7 +208,7 @@
     
   <!-- Strain Leader -->
   <AlienRace.BackstoryDef>
-    <defName>Vespid_Base_StrainLeader</defName>
+    <defName>OG_Vespid_Base_StrainLeader</defName>
     <title>Vespid Strain Leader</title>
     <titleShort>Strain Leader</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> --> 
@@ -266,7 +266,7 @@
       </li>
     </skillGains>
     <spawnCategories>
-      <li>Vespid_Shaper</li>
+      <li>Vespid_Strainleader</li>
       <li>Vespid_Standard</li>
     </spawnCategories>
   </AlienRace.BackstoryDef>

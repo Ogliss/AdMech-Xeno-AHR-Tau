@@ -109,7 +109,7 @@
           "lib/net472/_._": {}
         }
       },
-      "AdeptusMechanicusMain/1.0.0": {
+      "AdeptusMechanicusArmoury/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -118,10 +118,10 @@
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         }
       }
     },
@@ -233,7 +233,7 @@
           "lib/net472/_._": {}
         }
       },
-      "AdeptusMechanicusMain/1.0.0": {
+      "AdeptusMechanicusArmoury/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -242,10 +242,10 @@
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         }
       }
     },
@@ -357,7 +357,7 @@
           "lib/net472/_._": {}
         }
       },
-      "AdeptusMechanicusMain/1.0.0": {
+      "AdeptusMechanicusArmoury/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -366,10 +366,10 @@
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         }
       }
     },
@@ -481,7 +481,7 @@
           "lib/net472/_._": {}
         }
       },
-      "AdeptusMechanicusMain/1.0.0": {
+      "AdeptusMechanicusArmoury/1.0.0": {
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
@@ -490,10 +490,10 @@
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
         "compile": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         },
         "runtime": {
-          "bin/placeholder/AdeptusMechanicusMain.dll": {}
+          "bin/placeholder/AdeptusMechanicusArmoury.dll": {}
         }
       }
     }
@@ -629,15 +629,15 @@
         "unlimitedhugs.rimworld.hugslib.nuspec"
       ]
     },
-    "AdeptusMechanicusMain/1.0.0": {
+    "AdeptusMechanicusArmoury/1.0.0": {
       "type": "project",
-      "path": "../../../../AdMechArmoury/1.1/Source/AdeptusMechanicusMain/AdeptusMechanicusMain.csproj",
-      "msbuildProject": "../../../../AdMechArmoury/1.1/Source/AdeptusMechanicusMain/AdeptusMechanicusMain.csproj"
+      "path": "../../../../AdMechArmoury/1.1/Source/AdeptusMechanicusMain/AdeptusMechanicusArmoury.csproj",
+      "msbuildProject": "../../../../AdMechArmoury/1.1/Source/AdeptusMechanicusMain/AdeptusMechanicusArmoury.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "AdeptusMechanicusMain >= 1.0.0",
+      "AdeptusMechanicusArmoury >= 1.0.0",
       "Krafs.Rimworld.Ref >= 1.2.2753",
       "Lib.Harmony >= 2.0.2"
     ]
@@ -674,8 +674,8 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj": {
-              "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusMain.csproj"
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj": {
+              "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj"
             }
           }
         }

@@ -16,16 +16,7 @@ namespace AdeptusMechanicus
         static AMTMain()
         {
             AlienRace.ThingDef_AlienRace tau = OGTauDefOf.OG_Alien_Tau as AlienRace.ThingDef_AlienRace;
-            foreach (ResearchProjectDef def in TauReseach)
-            {
-                if (!AlienRace.RaceRestrictionSettings.researchRestrictionDict.ContainsKey(key: def))
-                    AlienRace.RaceRestrictionSettings.researchRestrictionDict.Add(key: def, value: new List<AlienRace.ThingDef_AlienRace>());
-
-            //    Log.Message("adding "+ def + " to " + tau);
-                AlienRace.RaceRestrictionSettings.researchRestrictionDict[key: def].Add(item: tau);
-            }
-            HarmonyPatches.TryAddRacialRestrictions(tau, "T");
-
+            ArmouryMain.DoRacialRestrictionsFor(tau, "T", TauReseach);
         }
 
     }
