@@ -46,10 +46,12 @@
     <Compile Include="AMKMain.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Patches\Thing_Ingested_KrootTraitAbsorbtion_Patch.cs" />
+    <Compile Include="Harmony\Patches\TraitSet_DegreeOfTrait_Kroot_Patch.cs" />
+    <Compile Include="Harmony\Patches\TraitSet_GetTrait_Kroot_Patch.cs" />
     <Compile Include="Harmony\Patches\TraitSet_HasTrait_Kroot_Patch.cs" />
     <Compile Include="Utils\AdeptusMechanicusKrootExtensions.cs" />
     <Compile Include="Utils\ThoughtWorker_Dark.cs" />
-    <Compile Include="Harmony\Patches\Settings\AMXBK_AMAMod_ModOptions_Patches.cs" />
+    <Compile Include="Harmony\Settings\AMXBK_AMAMod_ModOptions_Patches.cs" />
     <Compile Include="Utils\ThoughtWorker_HumanlikeLeatherApparel_Kroot.cs" />
     <Compile Include="Utils\MoreTraitSlotsUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

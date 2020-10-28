@@ -13,11 +13,11 @@ using AdeptusMechanicus.ExtensionMethods;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
-    [HarmonyPatch(typeof(TraitSet), "HasTrait")]
-    public static class TraitSet_HasTrait_Kroot_Patch
+    [HarmonyPatch(typeof(TraitSet), "DegreeOfTrait")]
+    public static class TraitSet_DegreeOfTrait_Kroot_Patch
     {
         [HarmonyPostfix]
-        public static void Postfix(TraitDef tDef, Pawn ___pawn, ref bool __result)
+        public static void Postfix(TraitDef tDef, Pawn ___pawn, ref int __result)
         {
             if (___pawn != null)
             {
@@ -25,7 +25,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     if (tDef == TraitDefOf.Cannibal || tDef == OGTraitDefOf.FastLearner)
                     {
-                        __result = true;
+                        __result = 0;
                     }
                 }
             }
