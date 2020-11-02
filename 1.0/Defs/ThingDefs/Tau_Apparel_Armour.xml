@@ -2,7 +2,7 @@
 <Defs>
 	<!--========================= Tau - Armour ==========================-->
 	<!--========================= Tau - Pathfinder Suit ==========================-->
-	<ThingDef ParentName="OGTArmorMakeableBase">
+	<ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
 		<defName>OGT_Apparel_PathfinderArmour</defName>
 		<label>pathfinder armour</label>
 		<description>Pathfider Armour is a form of Tau standard-issue infantry armour worn by all Pathfinders in battle, and is similar in design and construction to Imperial Carapace Armour. Pathfinder Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
@@ -77,7 +77,7 @@
 	</ThingDef>
 
 	<!--========================= Tau - Pathfinder Helmet ==========================-->
-    <ThingDef ParentName="OGTArmorMakeableBase">
+    <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
 		<defName>OGT_Apparel_PathfinderHelmet</defName>
 		<label>pathfinder helmet</label>
 		<description>Pathfider Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
@@ -154,7 +154,7 @@
 	</ThingDef>
 	
 	<!--========================= Tau - Combat Suit ==========================-->
-	<ThingDef ParentName="OGTArmorMakeableBase">
+	<ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
 		<defName>OGT_Apparel_CombatArmour</defName>
 		<label>tau combat armour</label>
 		<description>Combat Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
@@ -246,7 +246,7 @@
 	</ThingDef>
 
 	<!--========================= Tau - Combat Helmet ==========================-->
-    <ThingDef ParentName="OGTArmorMakeableBase">
+    <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
 		<defName>OGT_Apparel_CombatHelmet</defName>
 		<label>tau combat Helmet</label>
 		<description>Combat Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>

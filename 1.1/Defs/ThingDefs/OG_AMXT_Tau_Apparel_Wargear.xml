@@ -2,7 +2,7 @@
 <Defs>
 	<!--========================= Tau - Wargear ==========================-->
 	<!--========================= Tau - Shield Drone ==========================-->
-	<ThingDef ParentName="OGTWargearMakeable">
+	<ThingDef ParentName="OG_Tau_Apparel_Wargear_Makeable">
 		<defName>OGT_Wargear_ShieldDrone</defName>
 		<label>tau shield drone</label>
 		<description>A Shield Drone (Kor’vesa in the Tau Lexicon) is a type of Tau Drone (small, sleek, disc-shaped, semi-sentient machines) employed extensively alongside Tau units in battle to enhance their defensive protection through the use of a Shield Generator. Because they are intended to provide physical protection to their Tau masters, Shield Drones are essentially mobile Shield Generators. This provide several layers of powerful energy fields and advanced countermeasures that are effective within a range of roughly two metres. This energy shield is capable of protecting anyone in the affected region from even heavy ordnance and anti-tank weapons fire. Shield Drones are most often assigned to accompany a single individual, such as a Tau officer, and to protect him at all costs. In this role, they will always stay within close proximity to their master and act as a form of robotic bodyguard by getting in the way of incoming enemy fire or close-combat opponents during the course of a battle.</description>
@@ -67,7 +67,7 @@
 	</ThingDef>
 	
 	<!--========================= Tau - Markerlight Drone ==========================-->
-	<ThingDef ParentName="OGTWargearMakeable">
+	<ThingDef ParentName="OG_Tau_Apparel_Wargear_Makeable">
 		<defName>OGT_Wargear_MarkerDrone</defName>
 		<label>marker drone</label>
 		<description>A Marker Drone (Kor’vesa in the Tau Lexicon) is a type of Tau Drone (small, sleek, disc-shaped, semi-sentient machines) employed extensively alongside Tau units in battle. Marker Drones are primarily equipped with a Marker Light, which it can use to designate targets for other squads of Tau warriors. The Marker Light can then feed targeting information to the squad to drastically improve the effectiveness of their firepower. Some Marker Drones have also been known equipped with a Targeting Array to augment its own accuracy when using its Marker Light.\n\nMarker Drones consist of an advanced processor unit, which individually has only a basic intelligence (approximately that of a small animal such as a pterasquirrel), and moves about by way of a small anti-gravitic generator and a smaller and much modified version of a Tau Jetpack. This allows the Marker Drone to hover over the ground and skim over most obstacles. As they hover over landscapes, rotating back and forth, their sensor vane constantly transmits vital information about their surroundings.</description>

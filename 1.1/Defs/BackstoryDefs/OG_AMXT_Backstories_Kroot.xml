@@ -45,7 +45,7 @@
 		</li>
 		<!-- RimWolrd of Magic -->
 		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Gifted</defName>
+			<defName>TM_Gifted</defName>
 		</li>
 		<li MayRequire="Torann.ARimworldOfMagic">
 			<defName>InnerFire</defName>

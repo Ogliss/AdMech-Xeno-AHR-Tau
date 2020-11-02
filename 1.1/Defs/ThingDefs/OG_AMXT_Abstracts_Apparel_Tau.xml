@@ -2,7 +2,7 @@
 <Defs>
     <!-- ========================= Tau ========================== -->
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGTApparelBase" ParentName="OG_Apparel_Base" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauApparel</li>
@@ -14,7 +14,7 @@
 	</ThingDef>
 	
     <!-- ========================= Tau - Clothes Base - Apparel Makable Base ========================== -->
-	<ThingDef Name="OGTApparelMakeableBase" ParentName="OGTApparelBase" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Makeable" ParentName="OG_Tau_Apparel_Base" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -32,7 +32,7 @@
 	</ThingDef>
 		
     <!-- ========================= Tau - Clothes - Apparel Makable ========================== -->
-	<ThingDef Name="OGTApparelMakeable" ParentName="OGTApparelMakeableBase" Abstract="True">
+	<ThingDef Name="OGTApparelMakeable" ParentName="OG_Tau_Apparel_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauClothing</li>
@@ -44,7 +44,7 @@
 	</ThingDef>
 	
 	<!-- ========================= Tau - Headgear - Hat Makable ========================== -->
-	<ThingDef Name="OGTHatMakeable" ParentName="OGTApparelMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel" ParentName="OG_Tau_Apparel_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauHat</li>
@@ -59,7 +59,7 @@
 	</ThingDef>
 	
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
-	<ThingDef Name="OGTArmorBase" ParentName="OG_Apparel_Base" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Armor_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauApparel</li>
@@ -71,7 +71,7 @@
 	</ThingDef>
 
     <!-- ========================= Tau - Apparel Armor Makable Base ========================== -->
-	<ThingDef Name="OGTArmorMakeableBase" ParentName="OGTArmorBase" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Armor_Makeable" ParentName="OG_Tau_Apparel_Armor_Base" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -88,7 +88,7 @@
 	</ThingDef>
 	
     <!-- ========================= Tau - Apparel Armor Makable Base ========================== -->
-	<ThingDef Name="OGTArmorMakeable" ParentName="OGTArmorMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Armor" ParentName="OG_Tau_Apparel_Armor_Makeable" Abstract="True">
 				<apparel>
 			<tags>
 				<li>OG_Tau_Tech_Apparel_Armour_T1</li>
@@ -100,7 +100,7 @@
 	</ThingDef>	
 		
 	<!-- ========================= Tau - Headgear Base - Helmet Makable Base ========================== -->
-	<ThingDef Name="OGTHelmetMakeable" ParentName="OGTArmorMakeableBase" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Armor_Headgear" ParentName="OG_Tau_Apparel_Armor_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauHelmet</li>
@@ -115,7 +115,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Tau - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OGTWargearBase" ParentName="OG_Apparel_Base" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Wargear_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauWargear</li>
@@ -127,7 +127,7 @@
 	</ThingDef>	
 	
 	<!-- ========================= Tau - Apparel Wargear Makable Base ========================== -->
-	<ThingDef Name="OGTWargearMakeable" ParentName="OGTWargearBase" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Wargear_Makeable" ParentName="OG_Tau_Apparel_Wargear_Base" Abstract="True">
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>

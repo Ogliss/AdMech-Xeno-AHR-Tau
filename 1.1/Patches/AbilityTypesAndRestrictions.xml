@@ -32,7 +32,7 @@
 		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Base_Backstory"]/disallowedTraits</xpath>
 		<value>
 			<li>
-				<defName>Gifted</defName>
+				<defName>TM_Gifted</defName>
 			</li>
 			<li>
 				<defName>InnerFire</defName>
@@ -273,7 +273,7 @@
       <xpath>/Defs/AlienRace.BackstoryDef[defName = "Kroot_Psyker_Child"]/forcedTraits</xpath>
 		<value>	
 			<li>
-				<defName>Gifted</defName>
+				<defName>TM_Gifted</defName>
 				<degree>2</degree>
 				<chance>75</chance>
 			</li>

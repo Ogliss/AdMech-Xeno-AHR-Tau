@@ -2,11 +2,42 @@
 <Configuration>
   <Excluded>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\.git</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Assemblies\AdeptusMechanicusKroot.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Assemblies\AdeptusMechanicusKrootMechanics.dll.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\Misc\Items_Resource_Manufactured_Tau.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThingDefs\Tau_Apparel_BaseAbstracts.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThoughtDefs\OGKroot_Thoughts_Memory_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThoughtDefs\OGKroot_Thoughts_Memory_Social.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThoughtDefs\OGKroot_Thoughts_Memory_Special.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThoughtDefs\OGKroot_Thoughts_Situation_Needs.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThoughtDefs\OGKroot_Thoughts_Situation_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Defs\ThoughtDefs\OGKroot_Thoughts_Situation_TraitsPerm.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Patches\DisableTauMagic.xml (2).bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Patches\DisableTauMagic.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Patches\ModKrootAbilities.xml - Copy.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Patches\ModKrootAbilities.xml.bak</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.0\Source</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusKroot.pdb</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusKrootMechanics.dll.bak</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusTau.pdb</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\AdeptusMechanicusVespid.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Assemblies\RecruitShips.pdb</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\Misc\OG_AMXT_Items_Resource_Manufactured_Tau.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\ThoughtDefs\OG_AMXT_Kroot_Thoughts_Memory_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\ThoughtDefs\OG_AMXT_Kroot_Thoughts_Memory_Social.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\ThoughtDefs\OG_AMXT_Kroot_Thoughts_Memory_Special.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\ThoughtDefs\OG_AMXT_Kroot_Thoughts_Situation_Needs.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\ThoughtDefs\OG_AMXT_Kroot_Thoughts_Situation_RoomStats.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Defs\ThoughtDefs\OG_AMXT_Kroot_Thoughts_Situation_TraitsPerm.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Patches\DisableTauMagic.xml (2).bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Patches\DisableTauMagic.xml.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Patches\ModKrootAbilities.xml - Copy.bak</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Patches\ModKrootAbilities.xml.bak</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Textures\Things\Item\Apparel\Tau\XV25Stealthsuit\XV25.psd</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Textures\Things\Item\Resource\desktop.ini</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Textures\Things\Pawn\Humanlike\Kroot\Hair\Hair.7z</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Textures\Things\Pawn\Humanlike\Kroot\Hair\KrootAverage_east.psd</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Textures\Things\Pawn\Humanlike\Kroot\Hair\KrootAverage_south.psd</exclude>
+    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Textures\Things\Pawn\Humanlike\Kroot\HeadsBase\HeadsBase.7z</exclude>
   </Excluded>
 </Configuration>
