@@ -439,7 +439,7 @@
 						<hidesHair>true</hidesHair>
 						<hidesHead>true</hidesHead>
 						<hidesBody>true</hidesBody>
-						<UseBodytypeOffsets>false</UseBodytypeOffsets>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
 						<commonality>10</commonality>
 						<NorthOffset>0,0.0,0</NorthOffset>
 						<SouthOffset>0,0.0,0</SouthOffset>
@@ -458,7 +458,7 @@
 							<!--colorTwo>(255,255,255)</colorTwo>
 							<color>255,255,209</color-->
 						</graphicData>
-						<UseBodytypeOffsets>false</UseBodytypeOffsets>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
 						<commonality>10</commonality>
 						<NorthOffset>0,0.5,0</NorthOffset>
 						<SouthOffset>0,-0.001,0</SouthOffset>

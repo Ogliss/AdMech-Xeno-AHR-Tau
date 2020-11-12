@@ -10,9 +10,9 @@
     <listOrderPriority>31</listOrderPriority>
     <settlementGenerationWeight>0</settlementGenerationWeight>
     <requiredCountAtGameStart>0</requiredCountAtGameStart>
-    <canMakeRandomly>true</canMakeRandomly>
+    <canMakeRandomly>false</canMakeRandomly>
     <canSiege>false</canSiege>
-    <canStageAttacks>true</canStageAttacks>
+    <canStageAttacks>false</canStageAttacks>
     <earliestRaidDays>45</earliestRaidDays>
     <leaderTitle>Grand Strain Leader</leaderTitle>
     <startingGoodwill>
