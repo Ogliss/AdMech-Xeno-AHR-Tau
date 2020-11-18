@@ -18,7 +18,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         {
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.tau");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            if (AdeptusIntergrationUtil.enabled_SOS2)
+            if (AdeptusIntergrationUtility.enabled_SOS2)
             {
                 HarmonyPatches.SOSConstructPatch();
             }
