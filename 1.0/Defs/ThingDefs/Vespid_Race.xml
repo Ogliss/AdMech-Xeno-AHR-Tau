@@ -655,11 +655,11 @@
                 </li>
             </researchList>
             <recipeList>
-                <li>OGK_Apparel_TribalKroot</li>
+                <li>OGK_Apparel_Tribalwear</li>
                 <li>OGT_Gun_TKrootRifle</li>
             </recipeList>
             <apparelList>
-                <li>OGK_Apparel_TribalKroot</li>
+                <li>OGK_Apparel_Tribalwear</li>
             </apparelList>
 			<buildingList>
                 <li>OG_Tau_TableMachining</li>

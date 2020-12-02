@@ -552,11 +552,11 @@
                 </li>
             </researchList>
             <recipeList>
-                <!--li>Make_OGK_Apparel_TribalKroot</li>
+                <!--li>Make_OGK_Apparel_Tribalwear</li>
                 <li>Make_OGK_Gun_KrootRifle</li-->
             </recipeList>
             <apparelList>
-                <li>OGK_Apparel_TribalKroot</li>
+                <!--li>OGK_Apparel_Tribalwear</li-->
             </apparelList>
 			<buildingList>
                 <!--li>OGT_TableMachining</li-->

@@ -18,7 +18,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     {
         public static void Postfix(ref Pawn __result)
         {
-            if (__result.isTau())
+            if (__result != null && __result.isTau())
 			{
 				NameTriple nameTriple = __result.Name as NameTriple;
                 string pref = string.Empty;

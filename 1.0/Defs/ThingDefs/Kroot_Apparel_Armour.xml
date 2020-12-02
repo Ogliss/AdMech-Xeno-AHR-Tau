@@ -2,7 +2,7 @@
 <Defs>
 	<!--========================= Kroot -  Rags ==========================-->
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>OGK_Apparel_TribalKroot</defName>
+		<defName>OGK_Apparel_Tribalwear</defName>
 		<label>Kroot tribalwear</label>
 		<description>A full-body garment. While it may look primitive, it is effective at insulating the wearer.</description>
 		<graphicData>
