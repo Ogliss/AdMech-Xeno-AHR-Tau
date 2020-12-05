@@ -119,6 +119,7 @@
 				<bodyAddons>
 					<li>
 						<path>Things/Addons/Blank</path>
+						<debug>false</debug>
 						<bodyPart>Spine</bodyPart>
 						<colorChannel>skin</colorChannel>
 						<inFrontOfBody>False</inFrontOfBody>
@@ -160,6 +161,7 @@
 					</li>
 					<li>
 						<path>Things/Addons/Blank</path>
+						<debug>false</debug>
 						<bodyPart>Waist</bodyPart>
 						<colorChannel>skin</colorChannel>
 						<inFrontOfBody>true</inFrontOfBody>

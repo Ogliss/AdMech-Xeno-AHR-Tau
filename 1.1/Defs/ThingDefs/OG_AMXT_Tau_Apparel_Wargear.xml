@@ -38,7 +38,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>OG_Tau_Tech_Wargear_Shield</li>
+				<li>OG_Tau_Tech_Apparel_Wargear_Shield</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
@@ -99,7 +99,7 @@
 		</costList>
 		<recipeMaker>
 			<researchPrerequisites>
-				<li>OG_Tau_Tech_Wargear_Drone</li>
+				<li>OG_Tau_Tech_Apparel_Wargear_Shield</li>
 			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>

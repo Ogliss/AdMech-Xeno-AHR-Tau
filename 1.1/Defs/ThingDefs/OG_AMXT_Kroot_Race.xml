@@ -596,8 +596,8 @@
 	  <ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
 	  <AimingDelayFactor>0.95</AimingDelayFactor>
 	  <PawnTrapSpringChance>0.85</PawnTrapSpringChance>
-	  <MentalBreakThreshold>0.3</MentalBreakThreshold>
-	  <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+	  <MentalBreakThreshold>0.25</MentalBreakThreshold>
+	  <ImmunityGainSpeed>1.05</ImmunityGainSpeed>
       <PainShockThreshold>0.9</PainShockThreshold>
       <ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
       <GlobalLearningFactor>0.95</GlobalLearningFactor>
