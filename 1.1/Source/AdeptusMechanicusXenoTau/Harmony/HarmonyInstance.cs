@@ -18,10 +18,12 @@ namespace AdeptusMechanicus.HarmonyInstance
         {
             Harmony harmony = new Harmony("rimworld.ogliss.adeptusmechanicus.tau");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+            /*
             if (AdeptusIntergrationUtility.enabled_SOS2)
             {
                 HarmonyPatches.SOSConstructPatch();
             }
+            */
             if (Prefs.DevMode) Log.Message(string.Format("Adeptus Xenobiologis: Tau: successfully completed {0} harmony patches.", harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany((Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner.Contains(harmony.Id))), false);
         }
     }

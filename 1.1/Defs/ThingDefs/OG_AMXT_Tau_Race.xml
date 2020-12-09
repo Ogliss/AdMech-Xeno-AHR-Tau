@@ -143,6 +143,7 @@
 				-->
             </forcedRaceTraitEntries>
             <alienPartGenerator>
+				<useGenderedHeads>true</useGenderedHeads>
                 <aliencrowntypes>
                     <li>Narrow_Normal</li>
                     <li>Narrow_Pointy</li>
@@ -255,7 +256,7 @@
         </generalSettings>
         <graphicPaths>
             <li>
-                <head>Things/Pawn/Humanlike/Tau/HeadsBase/</head>
+                <head>Things/Pawn/Humanlike/Tau/Heads/</head>
             </li>
         </graphicPaths>
         <hairSettings>

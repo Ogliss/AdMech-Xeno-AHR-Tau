@@ -151,7 +151,7 @@
     <defName>OG_Guevesa_Cadet</defName>
     <label>Gue'vesa Cadet</label>
     <combatPower>50</combatPower>
-    <maxGenerationAge>10</maxGenerationAge>
+    <maxGenerationAge>21</maxGenerationAge>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -170,7 +170,7 @@
     <apparelTags>
       <li>Outlander</li>
       <li>Military</li>
-      <li>TauMilitary</li>
+      <li>OGTFlak</li>
     </apparelTags>
     <weaponMoney>
       <min>200</min>
@@ -219,8 +219,14 @@
       <max>2.3</max>
     </gearHealthRange>
     <apparelTags>
-      <li>Outlander</li>
-      <li>Military</li>
+		<li>OGIGLightFlak</li>
+		<li>OGIGClothing</li>
+		<li>IndustrialBasic</li>
+		<li>Outlander</li>
+		<li>Military</li>
+		<li>TauMilitary</li>
+		<li>OGIGFlak</li>
+		<li>OGIGBasicHelmet</li>
     </apparelTags>
     <apparelMoney>
       <min>1500</min>
@@ -275,7 +281,7 @@
       </li>
     </backstoryFiltersOverride>
     <apparelTags>
-      <li>KrootBasic</li>
+      <li>OGTFlak</li>
     </apparelTags>
   </PawnKindDef>
   
