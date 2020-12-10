@@ -125,6 +125,42 @@
                <li MayRequire="Torann.ARimworldOfMagic">
 					<defName>Ranger</defName>
 			   </li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Emperor_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Ynnead_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Cegorach_Laughter</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khaine_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khorne_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Nurgle_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Slaanesh_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Tzeentch_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Undivided_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>DE_Depravity</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ELDAR_mastery</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ORK_Brutality</defName>
+				</li>
             </disallowedTraits>
             <alienPartGenerator>
 				<colorChannels>
