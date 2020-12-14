@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZnBraK5yzBf1uZjnBOlKEUYubhnEn/kvjojB/Q2Mmn8BxO3MsxFaUbS0OFGszm7fJxUK9WPBVSH8HaSuK9YeTg==",
+  "dgSpecHash": "D1FJ26BCaJx0hxa1tByfZzvkuVVS+UB1MawTHgxWmQv4O/3VZnDPGpLX+kUllCVn2QK3pcK4s7/CxYDlJ6bZ8Q==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Tau\\1.1\\Source\\AdeptusMechanicusXenoVespid\\AdeptusMechanicusXenoVespid.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2753\\krafs.rimworld.ref.1.2.2753.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\lib.harmony\\2.0.3\\lib.harmony.2.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\8.0.0\\unlimitedhugs.rimworld.hugslib.8.0.0.nupkg.sha512"
   ],
   "logs": []
