@@ -150,10 +150,10 @@
                     <li>Narrow_Wide</li>
                 </aliencrowntypes>
                 <alienbodytypes>
-                <li>Thin</li>
-                <li>Female</li>
-				<li>Male</li>
-				<li>Fat</li>
+					<li>Thin</li>
+					<li>Female</li>
+					<li>Male</li>
+					<li>Fat</li>
                 </alienbodytypes>
             </alienPartGenerator>
 			<chemicalSettings>	
@@ -161,6 +161,7 @@
             <humanRecipeImport>true</humanRecipeImport>
 		   <notXenophobistTowards>
               <li>OG_Alien_Kroot</li>
+              <li>OG_Alien_Vespid</li>
            </notXenophobistTowards>
 			<factionRelations>
 				<li>

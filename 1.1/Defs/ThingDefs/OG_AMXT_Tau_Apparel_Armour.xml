@@ -345,11 +345,11 @@
 	-->
 	</ThingDef>
 		
-	<!--========================= Tau - XV25 Battlesuit ==========================-->
+	<!--========================= Tau - XV25 Stealthsuit ==========================-->
 	<ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
 		<defName>OGT_Apparel_XV25Battlesuit</defName>
-		<label>tau XV25 Battlesuit</label>
-		<description>Combat Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
+		<label>XV25 Stealthsuit</label>
+		<description>The XV25 Stealthsuit is one of the smallest of all the various Tau Battlesuits, and is designed for use in operations requiring a high degree of stealth. Fire Warriors serving in a Stealth Team specialise in covert operations such as infiltration, sabotage, reconnaissance and ambush. Stealth Teams are essentially the Fire Caste's special operations units. They are the "lone wolves" of the Tau military, typically operating independently of their Hunter Cadre. Suddenly appearing, as if stepping out from nowhere, a Stealth Team unleashes a hail of gunfire to cripple or eliminate their selected targets. Theirs is a secretive way of war, as they infiltrate enemy lines, seeking vulnerable targets to destroy. In order to pass unseen into enemy territory, Stealth Teams use light-bending disruption technology embedded in their sleek Battlesuits to camouflage themselves. Additional cloaking fields deaden sound and shield them from heat-detecting sensors, allowing them to penetrate deep into hostile regions before launching precisely timed ambushes.</description>
 		<graphicData>
 			<texPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25_Icon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -490,6 +490,119 @@
 	
 	-->
 	</ThingDef>
+
+	<!--========================= Tau - XV8 Battlesuit ==========================-->
+	<!--ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+		<defName>OGT_Apparel_XV8Battlesuit</defName>
+		<label>XV8 Battlesuit</label>
+		<description>The XV8 Crisis Battlesuit is the mainstay general combat T'au Battlesuit utilised by the warriors of the Fire Caste of the T'au Empire. It mounts a vast array of fearsome ranged weaponry as well as a complement of technologically advanced support systems on a comparatively small and agile frame that offers the T'au pilot within exceptional protection. Of all the weapons systems employed by the T'au, the XV8 Crisis Battlesuit is easily the most distinctive and recognisable due to its reputation as an efficient and lethal weapon of war.</description>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Tau/XV8Battlesuit/XV8_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>199,132,1</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>60000</WorkToMake>
+			<ArmorRating_Blunt>1.10</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.10</ArmorRating_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Mass>4</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.03</MoveSpeed>
+			<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+			<ShootingAccuracyPawn>0.0</ShootingAccuracyPawn>
+			<PsychicSensitivity>-0.10</PsychicSensitivity>
+		</equippedStatOffsets>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>30</Plasteel>
+			<OGT_Component>10</OGT_Component>
+			<OGT_Fiotak>30</OGT_Fiotak>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>OG_Tau_Tech_Apparel_Armour_T3</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>TauMilitary</li>
+				<li>EVA</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<thingCategories>
+			<li>OGTArmour</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Apparel</li>
+		</tradeTags>
+    <comps>
+      <li Class="AbilitesExtended.CompProperties_AbilityItem">
+			<Abilities>
+				<li>OGT_Ability_Stealthsuit_JumpPack</li>
+			</Abilities>
+      </li>
+		  <li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+				<ExtrasEntries>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Apparel/Tau/XV8Battlesuit/XV8</texPath>
+							<shaderType>CutoutComplex</shaderType>
+							<colorTwo>(255,255,255)</colorTwo>
+							<color>255,255,209</color>
+						</graphicData>
+						<hidesHair>true</hidesHair>
+						<hidesHead>true</hidesHead>
+						<hidesBody>true</hidesBody>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<commonality>10</commonality>
+						<NorthOffset>0,0.0,0</NorthOffset>
+						<SouthOffset>0,0.0,0</SouthOffset>
+						<EastOffset>0,-0.10,0</EastOffset>
+						<WestOffset>0,-0.0,0</WestOffset>
+					</li>
+				</ExtrasEntries>
+		  </li>
+		  <li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+				<ExtrasEntries>
+					<li>
+						<graphicData>
+							<texPath>Things/Item/Apparel/Tau/XV8Battlesuit/Backpack/Backpack</texPath>
+							<shaderType>CutoutComplex</shaderType>
+						</graphicData>
+						<UseBodytypeTextures>false</UseBodytypeTextures>
+						<commonality>10</commonality>
+						<NorthOffset>0,0.5,0</NorthOffset>
+						<SouthOffset>0,-0.001,0</SouthOffset>
+						<EastOffset>0,0.35,0</EastOffset>
+						<WestOffset>0,0.35,0</WestOffset>
+					</li>
+				</ExtrasEntries>
+		  </li>
+    </comps>
+	</ThingDef-->
 
 
   <!-- ========================= Gue'Vesa Flak Armour ========================== -->
