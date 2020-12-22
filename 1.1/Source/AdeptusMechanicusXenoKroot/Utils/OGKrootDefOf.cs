@@ -1,7 +1,8 @@
 ﻿using System;
 using Verse;
+using RimWorld;
 
-namespace RimWorld
+namespace AdeptusMechanicus
 {
     // PLAYABLE KROOT
     [DefOf]
