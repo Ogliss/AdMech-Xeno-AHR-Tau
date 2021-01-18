@@ -8,7 +8,7 @@ using Verse;
 namespace AdeptusMechanicus.ExtensionMethods
 {
 
-    public static class AdeptusMechanicusTauExtensions
+    public static class TauExtensions
     {
         public static bool isTau(this PawnKindDef pawn)
         {

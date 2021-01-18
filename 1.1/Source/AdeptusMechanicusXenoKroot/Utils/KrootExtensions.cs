@@ -8,7 +8,7 @@ using Verse;
 namespace AdeptusMechanicus.ExtensionMethods
 {
 
-    public static class AdeptusMechanicusKrootExtensions
+    public static class KrootExtensions
     {
         public static bool isKroot(this Pawn pawn)
         {

@@ -39,7 +39,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     public static class AMXBK_AMAMod_ModOptions_Patch
     {
         [HarmonyPostfix]
-        public static void ModOptions_Postfix(ref Listing_Standard listing_Standard, Rect inRect, float num, float num2)
+        public static void ModOptions_Postfix(ref Listing_StandardExpanding listing_Standard, Rect inRect, float num, float num2)
         {
             AMKsettings settings = AMKsettings.Instance;
             Rect rect = new Rect(inRect.x, inRect.y - 50, num, num2);

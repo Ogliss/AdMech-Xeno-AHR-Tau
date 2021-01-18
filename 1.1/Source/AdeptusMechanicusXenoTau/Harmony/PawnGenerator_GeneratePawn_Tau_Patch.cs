@@ -13,7 +13,7 @@ using AdeptusMechanicus.ExtensionMethods;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
-    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
+    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) }), HarmonyPriority(Priority.Last)]
     public static class PawnGenerator_GeneratePawn_Tau_Patch
     {
         public static void Postfix(ref Pawn __result)
@@ -46,11 +46,6 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     if (__result.story?.adulthood != null)
                     {
-                        if (__result.story.adulthood.title.Contains("'La"))
-                        {
-                            pref += "'La";
-                        }
-                        else
                         if (__result.story.adulthood.title.Contains("'Ui"))
                         {
                             pref += "'Ui";
@@ -72,7 +67,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         }
                         else
                         {
-                            pref += "'Saal";
+                            pref += "'La";
                         }
                     }
                     else
