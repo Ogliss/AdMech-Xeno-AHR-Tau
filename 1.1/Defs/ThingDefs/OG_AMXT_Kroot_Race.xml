@@ -674,7 +674,7 @@
       <meatColor>(35, 56, 0)</meatColor>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1.05</baseHealthScale>
-      <foodType>CarnivoreAnimal, OvivoreAnimal, Corpse</foodType>
+      <foodType>Corpse, CarnivoreAnimal, OvivoreAnimal</foodType>
       <gestationPeriodDays>45</gestationPeriodDays>
       <litterSizeCurve>
         <points>
