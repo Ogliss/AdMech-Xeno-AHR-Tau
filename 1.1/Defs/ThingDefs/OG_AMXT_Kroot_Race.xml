@@ -1,134 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<AlienRace.RaceSettings>
-    <defName>Kroot_Settings</defName>
-    <pawnKindSettings>
-            <alienslavekinds>
-				<li>
-					<kindDefs>
-						<li>Colonist_OG_TauShas</li>
-						<li>Colonist_OG_TauPor</li>
-						<li>Colonist_OG_TauFio</li>
-						<li>Colonist_OG_TauKor</li>
-					</kindDefs>
-					<chance>10.0</chance>
-				</li>
-				<li>
-					<kindDefs>
-						<li>Colonist_OG_Guevesa</li>
-						<li>Colonist_OG_TauAun</li>
-					</kindDefs>
-					<chance>1.0</chance>
-				</li>
-                <li>
-                    <kindDefs>
-						<li>Colonist_OG_Kroot</li>
-						<li>Slave_OG_Kroot</li>
-                    </kindDefs>
-                    <chance>80.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-						<li>Colonist_OG_KrootPsyker</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-            </alienslavekinds>
-            <alienrefugeekinds>
-				<li>
-					<kindDefs>
-						<li>Colonist_OG_TauShas</li>
-						<li>Colonist_OG_TauPor</li>
-						<li>Colonist_OG_TauFio</li>
-						<li>Colonist_OG_TauKor</li>
-					</kindDefs>
-					<chance>10.0</chance>
-				</li>
-				<li>
-					<kindDefs>
-						<li>Colonist_OG_Guevesa</li>
-						<li>Colonist_OG_TauAun</li>
-					</kindDefs>
-					<chance>1.0</chance>
-				</li>
-                <li>
-                    <kindDefs>
-						<li>Colonist_OG_Kroot</li>
-						<li>Slave_OG_Kroot</li>
-                    </kindDefs>
-                    <chance>80.0</chance>
-                </li>
-                <li>
-                    <kindDefs>
-						<li>Colonist_OG_KrootPsyker</li>
-                    </kindDefs>
-                    <chance>5.0</chance>
-                </li>
-            </alienrefugeekinds>
-			<startingColonists>
-				<li>
-				<pawnKindEntries>
-					<li>
-						<kindDefs>
-							<li>Colonist_OG_KrootPsyker</li>
-						</kindDefs>
-						<chance>5.0</chance>
-					</li>
-					<li>
-                    <kindDefs>
-                        <li>Colonist_OG_Kroot</li>
-                    </kindDefs>
-                    <chance>50.0</chance>
-					</li>
-				</pawnKindEntries>
-				<factionDefs>
-					<li>OG_Kroot_PlayerTribe</li> 
-					<li>OG_Kroot_PlayerTribe</li> 
-				</factionDefs>
-				</li>
-			</startingColonists>
-            <alienwandererkinds>
-                <li>
-                    <pawnKindEntries>
-                        <li>
-                            <kindDefs>
-								<li>Colonist_OG_TauShas</li>
-								<li>Colonist_OG_TauPor</li>
-								<li>Colonist_OG_TauFio</li>
-								<li>Colonist_OG_TauKor</li>
-                            </kindDefs>
-                            <chance>10.0</chance>
-                        </li>
-                        <li>
-                            <kindDefs>
-								<li>Colonist_OG_Guevesa</li>
-								<li>Colonist_OG_TauAun</li>
-                            </kindDefs>
-                            <chance>1.0</chance>
-                        </li>
-                        <li>
-                            <kindDefs>
-								<li>Slave_OG_Kroot</li>
-								<li>Colonist_OG_Kroot</li>
-                            </kindDefs>
-                            <chance>80.0</chance>
-                        </li>
-						<li>
-							<kindDefs>
-								<li>Colonist_OG_KrootPsyker</li>
-							</kindDefs>
-							<chance>5.0</chance>
-						</li>
-                    </pawnKindEntries>
-                    <factionDefs>
-                        <li>OG_Kroot_PlayerTribe</li> 
-                        <li>OG_Kroot_PlayerTribe</li> 
-                    </factionDefs>
-                </li>
-            </alienwandererkinds>
-        </pawnKindSettings>
-  </AlienRace.RaceSettings>
-
 <ThingDef ParentName="BasePawn" Name="OG_Kroot_Pawn_Base" Abstract="True">
 	<!--
     <thingClass>Pawn</thingClass>
@@ -153,28 +24,37 @@
     </inspectorTabs>
     <drawGUIOverlay>true</drawGUIOverlay>
 	-->
+    <inspectorTabs>
+		<li MayRequire="Corruption.Core">Corruption.Core.Soul.ITab_Pawn_Soul</li>
+    </inspectorTabs>
     <comps>
-      <li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
-		<Poisonable>true</Poisonable>
-		<FoodTypeFlags>
-			<li>Meat</li>
-			<li>Corpse</li>
-		</FoodTypeFlags>
-		<FoodPoisonCause>
-			<li>DangerousFoodType</li>
-			<!--
-			<li>FilthyKitchen</li>
-			<li>IncompetentCook</li>
-			<li>Rotten</li>
-			<li>Unknown</li>
-			-->
-		</FoodPoisonCause>
-      </li>
 		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
 		<li MayRequire="CETeam.CombatExtended">
-		  <compClass>CombatExtended.CompPawnGizmo</compClass>
+			<compClass>CombatExtended.CompPawnGizmo</compClass>
 		</li>
 		<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
+		<li MayRequire="Corruption.Psykers">
+			<compClass>Corruption.Psykers.CompPsyker</compClass>
+		</li>
+		<li MayRequire="Corruption.Core">
+			<compClass>Corruption.Core.Soul.CompSoul</compClass>
+		</li>
+		<li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
+			<Poisonable>true</Poisonable>
+			<FoodTypeFlags>
+				<li>Meat</li>
+				<li>Corpse</li>
+			</FoodTypeFlags>
+			<FoodPoisonCause>
+				<li>DangerousFoodType</li>
+				<!--
+				<li>FilthyKitchen</li>
+				<li>IncompetentCook</li>
+				<li>Rotten</li>
+				<li>Unknown</li>
+				-->
+			</FoodPoisonCause>
+		</li>
     </comps>
 </ThingDef>
 

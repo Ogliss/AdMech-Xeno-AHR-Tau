@@ -197,6 +197,33 @@
     <backstoryFiltersOverride Inherit="false">
       <li>
         <categories>
+          <li>Tau_POR</li>
+        </categories>
+      </li>
+      <li>
+        <categories>
+          <li>Tau_FIO</li>
+        </categories>
+      </li>
+      <li>
+        <categories>
+          <li>Tau_KOR</li>
+        </categories>
+      </li>
+      <li>
+        <commonality>0.25</commonality>
+        <categories>
+          <li>Tau_SHAS</li>
+        </categories>
+      </li>
+      <li>
+        <commonality>0.05</commonality>
+        <categories>
+          <li>Tau_AUN</li>
+        </categories>
+      </li>
+      <li>
+        <categories>
           <li>Tau_Slave</li>
         </categories>
       </li>
