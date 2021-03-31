@@ -30,12 +30,12 @@ namespace AdeptusMechanicus.HarmonyInstance
 
         private static bool Dev => AMAMod.Dev;
         private static bool Xenobiologis => AdeptusIntergrationUtility.enabled_MagosXenobiologis;
-        private static bool showXB => settings.ShowXenobiologisSettings;
-        private static bool showRaces => (Xenobiologis && settings.ShowAllowedRaceSettings && showXB) || (!Xenobiologis && settings.ShowTau);
-        private static bool setting => showRaces && settings.ShowTau;
+        private static bool ShowXB => settings.ShowXenobiologisSettings;
+        private static bool ShowRaces => (Xenobiologis && settings.ShowAllowedRaceSettings && ShowXB) || (!Xenobiologis && settings.ShowTau);
+        private static bool Setting => ShowRaces && settings.ShowTau;
 
         private static int Options = 3;
-        private static float RaceSettings => mod.Length(setting, Options, lineheight, 8, showRaces ? 1 : 0);
+        private static float RaceSettings => mod.Length(Setting, Options, lineheight, 8, ShowRaces ? 1 : 0);
 
         public static float MainMenuLength = 0;
         public static float MenuLength = 0;
@@ -57,7 +57,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                     return;
                 }
             }
-            if (showRaces)
+            if (ShowRaces)
             {
                 Listing_StandardExpanding listing_Race = listing_Main.BeginSection((num2 != 0 ? num2 : RaceSettings) + inc, false, 3, 4, 0);
                 if (Xenobiologis)

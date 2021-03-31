@@ -25,7 +25,7 @@
 
   <PawnKindDef ParentName="OG_Kroot_BasePlayer_PawnKind">
     <defName>Colonist_OG_Kroot</defName>
-    <label>Kroot colonist</label>
+    <label>colonist (Kroot)</label>
     <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
     <backstoryFiltersOverride Inherit="false">
       <li>
@@ -54,7 +54,7 @@
 
   <PawnKindDef ParentName="OG_Kroot_BasePlayer_PawnKind">
     <defName>Colonist_OG_KrootPsyker</defName>
-    <label>Kroot colonist</label>
+    <label>colonist (Kroot)</label>
     <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
     <backstoryFiltersOverride Inherit="false">
       <li>

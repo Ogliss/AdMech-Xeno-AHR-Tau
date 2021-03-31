@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
         static AMTMain()
         {
             AlienRace.ThingDef_AlienRace tau = OGTauDefOf.OG_Alien_Tau as AlienRace.ThingDef_AlienRace;
-            ArmouryMain.DoRacialRestrictionsFor(tau, "T", TauReseach);
+            AlienRaceUtility.DoRacialRestrictionsFor(tau, "T", TauReseach);
         }
 
     }

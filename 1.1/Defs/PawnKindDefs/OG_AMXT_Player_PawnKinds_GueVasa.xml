@@ -35,7 +35,7 @@
 
   <PawnKindDef ParentName="OG_Guevesa_Base_PawnKind">
     <defName>Colonist_OG_Guevesa</defName>
-    <label>Gue'vesa colonist</label>
+    <label>colonist (Gue'vesa)</label>
     <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
     <apparelTags>
       <li>Spacer</li>

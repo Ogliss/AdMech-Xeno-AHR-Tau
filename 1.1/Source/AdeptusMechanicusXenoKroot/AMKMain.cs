@@ -17,7 +17,7 @@ namespace AdeptusMechanicus
         static AMKMain()
         {
             AlienRace.ThingDef_AlienRace kroot = OGKrootDefOf.OG_Alien_Kroot as AlienRace.ThingDef_AlienRace;
-            ArmouryMain.DoRacialRestrictionsFor(kroot, "K", KrootReseach);
+            AlienRaceUtility.DoRacialRestrictionsFor(kroot, "K", KrootReseach);
             //    ArmouryMain.DoRacialRestrictionsFor(kroot, "T", TauReseach);
         }
 

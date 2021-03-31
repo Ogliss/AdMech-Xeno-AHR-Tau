@@ -25,7 +25,7 @@
 
   <PawnKindDef ParentName="OG_Vespid_BasePlayer_PawnKind">
     <defName>Colonist_OG_Vespid</defName>
-    <label>Vespid colonist</label>
+    <label>colonist (Vespid)</label>
     <!--defaultFactionType>OG_Vespid_PlayerTribe</defaultFactionType-->
     <backstoryFiltersOverride Inherit="false">
       <li>

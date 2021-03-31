@@ -31,7 +31,7 @@
 
   <PawnKindDef ParentName="OG_Tau_Base_PawnKind" Name="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_Tau</defName>
-    <label>Tau colonist</label>
+    <label>colonist (Tau)</label>
     <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
     <backstoryFiltersOverride Inherit="false">
       <li>
@@ -176,7 +176,6 @@
 
   <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauFio</defName>
-    <label>Tau colonist</label>
     <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
     <backstoryFiltersOverride Inherit="false">
       <li>
@@ -198,7 +197,6 @@
 
   <PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
     <defName>Colonist_OG_TauKor</defName>
-    <label>Tau colonist</label>
     <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
     <backstoryFiltersOverride Inherit="false">
       <li>

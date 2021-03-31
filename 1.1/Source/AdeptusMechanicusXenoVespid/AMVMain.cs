@@ -17,7 +17,7 @@ namespace AdeptusMechanicus
         static AMVMain()
         {
             AlienRace.ThingDef_AlienRace vespid = OGVespidDefOf.OG_Alien_Vespid as AlienRace.ThingDef_AlienRace;
-            ArmouryMain.DoRacialRestrictionsFor(vespid, "V", VespidReseach);
+            AlienRaceUtility.DoRacialRestrictionsFor(vespid, "V", VespidReseach);
             //    ArmouryMain.DoRacialRestrictionsFor(vespid, "T", TauReseach);
         }
 

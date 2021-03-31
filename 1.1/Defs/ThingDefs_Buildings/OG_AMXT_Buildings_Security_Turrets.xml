@@ -52,7 +52,7 @@
   </ThingDef>
 
   <ThingDef ParentName="OGT_Turret" Name="OGT_LaserTurret" Abstract="True"> 
-    <thingClass>AdeptusMechanicus.Building_LaserGun</thingClass>
+    <thingClass>AdeptusMechanicus.Lasers.Building_LaserGun</thingClass>
   </ThingDef>
 
 <!--
@@ -233,7 +233,7 @@
   </ThingDef>
 
   <ThingDef ParentName="OGT_HeavyTurret" Name="OGT_HeavyLaserTurret" Abstract="True"> 
-    <thingClass>AdeptusMechanicus.Building_LaserGun</thingClass>
+    <thingClass>AdeptusMechanicus.Lasers.Building_LaserGun</thingClass>
   </ThingDef>
 
   <!--=============== Twin-Linked Burst Cannon turret ===============-->
@@ -466,8 +466,8 @@
         <trailerMoteInterval>6</trailerMoteInterval>
       </li-->
       <li Class="AdeptusMechanicus.GlowerProjectileExtension">
-        <GlowMoteDef>Mote_PlasmaGlow</GlowMoteDef>
-        <GlowMoteSize>1.25</GlowMoteSize>
+        <glowMoteDef>Mote_PlasmaGlow</glowMoteDef>
+        <glowMoteSize>1.25</glowMoteSize>
       </li>
     </modExtensions>
  </ThingDef>
@@ -597,7 +597,7 @@
   </ThingDef>
   
   <!--=============== Twin-Linked Fusion Blaster turret ===============-->
-  <ThingDef ParentName="OGT_HeavyLaserTurret" Class="AdeptusMechanicus.Building_LaserGunDef">
+  <ThingDef ParentName="OGT_HeavyLaserTurret" Class="AdeptusMechanicus.Lasers.Building_LaserGunDef">
     <defName>OGT_Turret_FusionBlasterDual_Auto</defName>
     <label>twin-linked fuison blaster turret</label>
     <description>A drone sentry turret. Its fuison blasters do heavy damage over very short ranges, but its barrel must be refurbished after use. It may explode when damaged.</description>   
@@ -681,7 +681,7 @@
 	</comps>
   </ThingDef>
 
-  <ThingDef ParentName="OG_Bullet_LaserGeneric" Class="AdeptusMechanicus.LaserBeamDef">
+  <ThingDef ParentName="OG_Bullet_LaserGeneric" Class="AdeptusMechanicus.Lasers.LaserBeamDef">
     <defName>OGT_Bullet_FusionBlast</defName>
     <label>fusion blast</label>
     <description>A higher power laser beam which is effective against the more durable alien bodies and stronger types of personal armour.</description>
