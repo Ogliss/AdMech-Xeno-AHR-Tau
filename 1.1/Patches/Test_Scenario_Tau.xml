@@ -26,14 +26,14 @@
                     <xpath>Defs/ScenarioDef[defName = "OGAM_TestScenario_Tau"]/scenario/parts</xpath>
                     <value>
 						<!-- Tau Animls -->
-						<li Class="ScenPart_StartingAnimalofGender">
+						<li Class="AdeptusMechanicus.ScenPart_StartingAnimalofGender">
 							<def>StartingAnimal</def>
 							<animalKind>OG_Kroothound</animalKind>
 							<gender>Male</gender>
 							<count>2</count>
 							<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
 						</li>
-						<li Class="ScenPart_StartingAnimalofGender">
+						<li Class="AdeptusMechanicus.ScenPart_StartingAnimalofGender">
 							<def>StartingAnimal</def>
 							<animalKind>OG_Kroothound</animalKind>
 							<gender>Female</gender>
