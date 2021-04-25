@@ -11,7 +11,7 @@
 	<modDependencies>
 		<li>
 			<packageId>Ogliss.AdMech.Armoury</packageId>
-			<displayName>Adeptus Mechanicus: Armoury R1.1</displayName>
+			<displayName>Adeptus Mechanicus: Armoury</displayName>
 			<steamWorkshopUrl>steam://url/CommunityFilePage/1541438614</steamWorkshopUrl>
 			<downloadUrl>https://github.com/Ogliss/AdMechArmoury</downloadUrl>
 		</li>
@@ -40,8 +40,8 @@
 	Adds plyable WH40k Tau
 	Requires new start or a faction manager mod to have faction bases on the world map.
 
-	Contents
-	Races:
+Contents
+Races:
 	Tau - Humanlike
 	Gue'vesa - Humanlike
 	Kroot - Humanlike
@@ -49,22 +49,47 @@
 	Krootox - Animal
 	Knarloc - Animal
 	
-	Apparel:
+Apparel:
 	Tau Combat Armour
 	Tau Combat Helmet
 	Kroot Tribalwear
 	Kroot Tribal Headdress
 	
-	Wargear:
+Wargear:
 	Grenade Packs (Frag, EMP, Photon)
 	Drones (Shield, Markerlight)
 	
-	Resources:
+Resources:
 	Fio'Tak - a crafting material used in the almost all tau construction
 	Tau component - Tau component counterpart
 	Mor'tonium - advanced Tau crafting material
 	
-	Mechanics:
+Mechanics:
 	Kroot Adaptability - All Kroot posess an ability that gives them a small chance to absorb traits from humanlike corpses by eating them(Max 4, respects MaxTraitSlots mod limit)
+	
+Load Order info:
+	Humanoid Alien Races( if used, ideally this should be loaded as close to the top of your list as possible )
+	SRTS( if used )
+	Combat Extended( if used )
+	Astra Militarum Core( if used )
+	Astra offical addons( if used )
+	Corruption Core( if used )
+	Corruption offical addons( if used )
+	Armoury
+	Magos Xenobiologis( if used )
+	Playable Orkz,Eldar,Tau( This Mod ),Etc( if used ) order doesnt matter
+
+Credits:
+Fennbold: Textures for
+	Kroothound
+	Krootox
+	
+RebelRot: Textures for
+	Kroot Heads
+	Kroot Hair
+	
+Ogliss: XML, C#, Textures for
+	Everything not listed above!
+		
 	</description>
 </ModMetaData>
