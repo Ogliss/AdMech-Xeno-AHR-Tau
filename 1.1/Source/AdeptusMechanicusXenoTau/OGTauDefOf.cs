@@ -4,17 +4,14 @@ using Verse;
 
 namespace AdeptusMechanicus
 {
-    // Token: 0x02000945 RID: 2373
     [DefOf]
-    public static class OGTauDefOf
+    public static class TauDefOf
     {
-        // Token: 0x0600376E RID: 14190 RVA: 0x001A82DE File Offset: 0x001A66DE
-        static OGTauDefOf()
+        static TauDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(OGTauDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(TauDefOf));
         }
 
-        // Token: 0x04001E56 RID: 7766
         public static ThingDef OG_Alien_Tau;
         public static BodyDef OG_Tau_Body;
         public static ThingDef OG_FilthBlood_Tau;

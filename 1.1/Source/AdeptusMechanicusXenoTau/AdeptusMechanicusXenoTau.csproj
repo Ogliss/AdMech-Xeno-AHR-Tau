@@ -35,12 +35,12 @@
     <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="TauExtensions.cs" />
+    <Compile Include="Utils\TauExtensions.cs" />
     <Compile Include="AMTMain.cs" />
     <Compile Include="Harmony\PawnGenerator_GeneratePawn_Tau_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Settings\AMAMod_PlayableTauSettings_Patch.cs" />
-    <Compile Include="Utils\OGTauDefOf.cs" />
+    <Compile Include="OGTauDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

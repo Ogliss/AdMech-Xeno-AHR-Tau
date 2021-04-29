@@ -6,11 +6,11 @@ namespace AdeptusMechanicus
 {
     // PLAYABLE KROOT
     [DefOf]
-    public static class OGKrootDefOf
+    public static class KrootDefOf
     {
-        static OGKrootDefOf()
+        static KrootDefOf()
         {
-            DefOfHelper.EnsureInitializedInCtor(typeof(OGKrootDefOf));
+            DefOfHelper.EnsureInitializedInCtor(typeof(KrootDefOf));
         }
 
         // Kroot ThingDefs

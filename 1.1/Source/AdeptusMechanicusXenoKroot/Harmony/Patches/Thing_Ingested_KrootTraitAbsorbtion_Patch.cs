@@ -22,7 +22,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         {
             if (__instance is Corpse corpse)
             {
-                if (ingester.def == OGKrootDefOf.OG_Alien_Kroot)
+                if (ingester.def == KrootDefOf.OG_Alien_Kroot)
                 {
                     Rand.PushState();
                     if (Rand.Value < 0.25f)

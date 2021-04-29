@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
         public static List<ResearchProjectDef> TauReseach => DefDatabase<ResearchProjectDef>.AllDefs.Where(x => x.defName.Contains("OG_Tau_Tech_")).ToList();
         static AMKMain()
         {
-            AlienRace.ThingDef_AlienRace kroot = OGKrootDefOf.OG_Alien_Kroot as AlienRace.ThingDef_AlienRace;
+            AlienRace.ThingDef_AlienRace kroot = KrootDefOf.OG_Alien_Kroot as AlienRace.ThingDef_AlienRace;
             AlienRaceUtility.DoRacialRestrictionsFor(kroot, "K", KrootReseach);
             //    ArmouryMain.DoRacialRestrictionsFor(kroot, "T", TauReseach);
         }

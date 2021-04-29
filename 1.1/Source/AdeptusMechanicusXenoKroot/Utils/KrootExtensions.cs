@@ -12,7 +12,7 @@ namespace AdeptusMechanicus.ExtensionMethods
     {
         public static bool isKroot(this Pawn pawn)
         {
-            return pawn.def == OGKrootDefOf.OG_Alien_Kroot;
+            return pawn.def == KrootDefOf.OG_Alien_Kroot;
         }
 
     }
