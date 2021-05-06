@@ -12,7 +12,29 @@ namespace AdeptusMechanicus.ExtensionMethods
     {
         public static bool isKroot(this Pawn pawn)
         {
-            return pawn.def == KrootDefOf.OG_Alien_Kroot;
+            return pawn.def.isKroot();
+        }
+        public static bool isKrootoid(this Pawn pawn)
+        {
+            return pawn.def.isKrootoid();
+        }
+        
+        public static bool isKroot(this Thing pawn)
+        {
+            return pawn.def.isKroot();
+        }
+        public static bool isKrootoid(this Thing pawn)
+        {
+            return pawn.def.isKrootoid();
+        }
+
+        public static bool isKroot(this ThingDef def)
+        {
+            return def == KrootDefOf.OG_Alien_Kroot;
+        }
+        public static bool isKrootoid(this ThingDef def)
+        {
+            return def.race.BloodDef == KrootDefOf.OG_FilthBlood_Kroot;
         }
 
     }

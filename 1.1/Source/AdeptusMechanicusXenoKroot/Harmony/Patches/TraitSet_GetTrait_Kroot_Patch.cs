@@ -17,7 +17,7 @@ namespace AdeptusMechanicus.HarmonyInstance
     public static class TraitSet_GetTrait_Kroot_Patch
     {
         private static Trait cannibal = new Trait(TraitDefOf.Cannibal);
-        private static Trait fastLearner = new Trait(OGTraitDefOf.FastLearner);
+        private static Trait fastLearner = new Trait(AdeptusTraitDefOf.FastLearner);
         [HarmonyPostfix]
         public static void Postfix(TraitDef tDef, Pawn ___pawn, ref Trait __result)
         {
@@ -29,7 +29,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                     {
                         __result = cannibal;
                     }
-                    if (tDef == OGTraitDefOf.FastLearner)
+                    if (tDef == AdeptusTraitDefOf.FastLearner)
                     {
                         __result = fastLearner;
                     }

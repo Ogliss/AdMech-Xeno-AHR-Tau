@@ -23,7 +23,7 @@ namespace AdeptusMechanicus.HarmonyInstance
             {
                 if (___pawn.isKroot())
                 {
-                    if (tDef == TraitDefOf.Cannibal || tDef == OGTraitDefOf.FastLearner)
+                    if (tDef == TraitDefOf.Cannibal || tDef == AdeptusTraitDefOf.FastLearner)
                     {
                         __result = 0;
                     }

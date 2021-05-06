@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
 
         // Token: 0x04001E56 RID: 7766
     //    public static BodyDef OG_Vespid;
-        public static ThingDef OG_Alien_Vespid;
+        public static AlienRace.ThingDef_AlienRace OG_Alien_Vespid;
 
     }
 }

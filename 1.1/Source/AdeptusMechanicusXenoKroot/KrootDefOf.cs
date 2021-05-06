@@ -14,9 +14,11 @@ namespace AdeptusMechanicus
         }
 
         // Kroot ThingDefs
-        public static ThingDef OG_Alien_Kroot;
+        public static AlienRace.ThingDef_AlienRace OG_Alien_Kroot;
+        public static AlienRace.ThingDef_AlienRace OG_Alien_Tau;
+        public static AlienRace.ThingDef_AlienRace OG_Alien_Vespid;
+
         public static ThingDef OG_FilthBlood_Kroot;
-        public static ThingDef OG_Alien_Tau;
         //    public static ThingDef OG_Alien_Vespid;
 
         public static ThingDef OG_Kroothound;
