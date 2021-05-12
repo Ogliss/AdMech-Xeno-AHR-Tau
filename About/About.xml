@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Adeptus Mechanicus: Xenobiologis (Playable Tau, Kroot)</name>
+	<name>Adeptus Xenobiologis: Tau, Kroot, Vespid</name>
 	<packageId>Ogliss.AdMech.Xenobiologis.Tau</packageId>
 	<author>Ogliss</author>
 	<supportedVersions>
@@ -35,6 +35,7 @@
 	</loadBefore>
 	<incompatibleWith>
 		<li>Ogliss.FeralOrkz</li>
+		<li>Mlie.O21Rimhammer40K</li>
 	</incompatibleWith>	
 	<description>V1.6.1.1
 	Adds plyable WH40k Tau

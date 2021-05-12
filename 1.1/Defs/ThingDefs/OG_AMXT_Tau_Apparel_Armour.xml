@@ -413,13 +413,13 @@
 		<tradeTags>
 			<li>Apparel</li>
 		</tradeTags>
-    <comps>
-      <li Class="AbilitesExtended.CompProperties_AbilityItem">
-			<Abilities>
-				<li>OGT_Ability_Stealthsuit_JumpPack</li>
-			</Abilities>
-      </li>
-		  <li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+		<comps>
+			<li Class="AbilitesExtended.CompProperties_AbilityItem">
+				<Abilities>
+					<li>OGT_Ability_Stealthsuit_JumpPack</li>
+				</Abilities>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
 				<ExtrasEntries>
 					<li>
 						<graphicData>
@@ -440,55 +440,42 @@
 						<WestOffset>0,-0.0,0</WestOffset>
 					</li>
 				</ExtrasEntries>
-		  </li>
-		  <li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
-				<ExtrasEntries>
-					<li>
-						<graphicData>
-							<texPath>Things/Item/Apparel/Tau/XV25Stealthsuit/Backpack/Backpack</texPath>
-							<!--graphicClass>Graphic_Single</graphicClass-->
-							<shaderType>CutoutComplex</shaderType>
-							<!--colorTwo>(255,255,255)</colorTwo>
-							<color>255,255,209</color-->
-						</graphicData>
-						<UseBodytypeTextures>false</UseBodytypeTextures>
-						<commonality>10</commonality>
-						<NorthOffset>0,0.5,0</NorthOffset>
-						<SouthOffset>0,-0.001,0</SouthOffset>
-						<EastOffset>0,0.35,0</EastOffset>
-						<WestOffset>0,0.35,0</WestOffset>
-					</li>
-				</ExtrasEntries>
-		  </li>
-      <!--li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
-        <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
-			<PauldronEntries>
-				<li>
-					<shoulderPadType>Both</shoulderPadType>
-					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Tau/CombatSuit/Pauldrons/Pauldron</padTexPath>
-					<commonality>10</commonality>
+			  </li>
+				<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+					<ExtrasEntries>
+						<li>
+							<graphicData>
+								<texPath>Things/Item/Apparel/Tau/XV25Stealthsuit/Backpack/Backpack</texPath>
+								<!--graphicClass>Graphic_Single</graphicClass-->
+								<shaderType>CutoutComplex</shaderType>
+								<!--colorTwo>(255,255,255)</colorTwo>
+								<color>255,255,209</color-->
+							</graphicData>
+							<UseBodytypeTextures>false</UseBodytypeTextures>
+							<commonality>10</commonality>
+							<NorthOffset>0,0.5,0</NorthOffset>
+							<SouthOffset>0,-0.001,0</SouthOffset>
+							<EastOffset>0,0.35,0</EastOffset>
+							<WestOffset>0,0.35,0</WestOffset>
+						</li>
+					</ExtrasEntries>
 				</li>
-			</PauldronEntries>
-			<NorthOffset>0,0.5,0</NorthOffset>
-			<SouthOffset>0,-0.001,0</SouthOffset>
-			<EastOffset>0,0.35,0</EastOffset>
-			<WestOffset>0,0.35,0</WestOffset>
-      </li-->
-    </comps>
-	<!--
-	
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-		<li>
-			<weight>10</weight>
-			<max>(0.967,0.727,0.484)</max>
-			<min>(0.767,0.527,0.284)</min>
-		</li>
-      </options>
-    </colorGenerator>
-	
-	-->
+				<!--li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
+					<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+					<PauldronEntries>
+						<li>
+							<shoulderPadType>Both</shoulderPadType>
+							<shaderType>CutoutComplex</shaderType>
+							<padTexPath>Things/Item/Apparel/Tau/CombatSuit/Pauldrons/Pauldron</padTexPath>
+							<commonality>10</commonality>
+						</li>
+					</PauldronEntries>
+					<NorthOffset>0,0.5,0</NorthOffset>
+					<SouthOffset>0,-0.001,0</SouthOffset>
+					<EastOffset>0,0.35,0</EastOffset>
+					<WestOffset>0,0.35,0</WestOffset>
+			</li-->
+		</comps>
 	</ThingDef>
 
 	<!--========================= Tau - XV8 Battlesuit ==========================-->
