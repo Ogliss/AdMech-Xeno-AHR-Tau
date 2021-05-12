@@ -40,7 +40,6 @@
     <Compile Include="Harmony\PawnGenerator_GeneratePawn_Tau_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\Settings\AMAMod_PlayableTauSettings_Patch.cs" />
-    <Compile Include="OGTauDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

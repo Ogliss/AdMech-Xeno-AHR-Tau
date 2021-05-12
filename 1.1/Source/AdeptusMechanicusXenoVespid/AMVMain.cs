@@ -22,7 +22,7 @@ namespace AdeptusMechanicus
             blackProjects.AddRange(ArmouryMain.ReseachChaos);
 
             List<ResearchProjectDef> whiteProjects = new List<ResearchProjectDef>(VespidReseach);
-            AlienRace.ThingDef_AlienRace vespid = OGVespidDefOf.OG_Alien_Vespid as AlienRace.ThingDef_AlienRace;
+            AlienRace.ThingDef_AlienRace vespid = AdeptusThingDefOf.OG_Alien_Vespid as AlienRace.ThingDef_AlienRace;
             AlienRaceUtility.DoRacialRestrictionsFor(vespid, "V", blackTags, whiteProjects, blackProjects);
             //    ArmouryMain.DoRacialRestrictionsFor(vespid, "T", TauReseach);
         }

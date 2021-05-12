@@ -30,11 +30,11 @@ namespace AdeptusMechanicus.ExtensionMethods
 
         public static bool isKroot(this ThingDef def)
         {
-            return def == KrootDefOf.OG_Alien_Kroot;
+            return def == AdeptusThingDefOf.OG_Alien_Kroot;
         }
         public static bool isKrootoid(this ThingDef def)
         {
-            return def.race.BloodDef == KrootDefOf.OG_FilthBlood_Kroot;
+            return def.race.BloodDef == AdeptusThingDefOf.OG_FilthBlood_Kroot;
         }
 
     }

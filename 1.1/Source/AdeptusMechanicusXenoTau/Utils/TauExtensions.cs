@@ -12,17 +12,17 @@ namespace AdeptusMechanicus.ExtensionMethods
     {
         public static bool isTau(this PawnKindDef pawn)
         {
-            return pawn.race == TauDefOf.OG_Alien_Tau || pawn.RaceProps.BloodDef == TauDefOf.OG_FilthBlood_Tau;
+            return pawn.race == AdeptusThingDefOf.OG_Alien_Tau || pawn.RaceProps.BloodDef == AdeptusThingDefOf.OG_FilthBlood_Tau;
         }
 
         public static bool isTau(this Pawn pawn)
         {
-            return pawn.def == TauDefOf.OG_Alien_Tau || pawn.RaceProps.BloodDef == TauDefOf.OG_FilthBlood_Tau;
+            return pawn.def == AdeptusThingDefOf.OG_Alien_Tau || pawn.RaceProps.BloodDef == AdeptusThingDefOf.OG_FilthBlood_Tau;
         }
 
         public static bool isTau(this ThingDef pawn)
         {
-            return pawn == TauDefOf.OG_Alien_Tau || pawn.race.BloodDef == TauDefOf.OG_FilthBlood_Tau;
+            return pawn == AdeptusThingDefOf.OG_Alien_Tau || pawn.race.BloodDef == AdeptusThingDefOf.OG_FilthBlood_Tau;
         }
 
         public static bool EtheralCaste(this PawnKindDef pawn)

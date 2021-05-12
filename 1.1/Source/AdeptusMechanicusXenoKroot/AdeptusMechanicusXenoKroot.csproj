@@ -58,7 +58,6 @@
     <Compile Include="ThoughtWorkers\ThoughtWorker_HumanlikeLeatherApparel_Kroot.cs" />
     <Compile Include="Utils\MoreTraitSlotsUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="KrootDefOf.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\AdMechArmoury\1.1\Source\AdeptusMechanicusMain\AdeptusMechanicusArmoury.csproj">

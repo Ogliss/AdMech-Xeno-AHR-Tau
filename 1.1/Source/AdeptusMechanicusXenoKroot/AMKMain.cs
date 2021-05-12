@@ -26,7 +26,7 @@ namespace AdeptusMechanicus
 
             List<ThingDef> whiteAnimals = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.race != null && x.race.Animal && x.isKrootoid()).ToList();
 
-            AlienRaceUtility.DoRacialRestrictionsFor(KrootDefOf.OG_Alien_Kroot, "K", blackTags, whiteProjects, blackProjects, whiteAnimals: whiteAnimals);
+            AlienRaceUtility.DoRacialRestrictionsFor(AdeptusThingDefOf.OG_Alien_Kroot, "K", blackTags, whiteProjects, blackProjects, whiteAnimals: whiteAnimals);
             //    ArmouryMain.DoRacialRestrictionsFor(kroot, "T", TauReseach);
         }
 

@@ -21,7 +21,7 @@ namespace AdeptusMechanicus
             blackProjects.AddRange(ArmouryMain.ReseachChaos);
 
             List<ResearchProjectDef> whiteProjects = new List<ResearchProjectDef>(TauReseach);
-            AlienRaceUtility.DoRacialRestrictionsFor(TauDefOf.OG_Alien_Tau, "T", blackTags, whiteProjects, blackProjects);
+            AlienRaceUtility.DoRacialRestrictionsFor(AdeptusThingDefOf.OG_Alien_Tau, "T", blackTags, whiteProjects, blackProjects);
         }
 
     }
