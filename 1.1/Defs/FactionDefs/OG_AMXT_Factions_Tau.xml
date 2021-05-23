@@ -19,8 +19,8 @@
       <min>-60</min>
       <max>60</max>
     </startingGoodwill>
-	<factionNameMaker>NamerOGTauFaction</factionNameMaker>
-	<settlementNameMaker>NamerOGTauBases</settlementNameMaker>
+	<factionNameMaker>OG_Tau_NamerFaction</factionNameMaker>
+	<settlementNameMaker>OG_Tau_NamerBases</settlementNameMaker>
 	<techLevel>Spacer</techLevel>
     <backstoryFilters>
       <li>

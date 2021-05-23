@@ -3,51 +3,11 @@
 <Defs>
 <!-- ======================== Jump Pack Ability Defs ================================== -->
 <!-- ======================== Imperial - Jump Ability ================================== -->
-  	<ThingDef ParentName="BaseBullet">
-	   <defName>FlyingObject_JumpPackTau</defName>
-	   <thingClass>AdeptusMechanicus.FlyingObject_JumpPack</thingClass>
-	   <label>jump</label>
-	   <graphicData>
-			<texPath>DummyTexture</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutFlying</shaderType>
-		</graphicData>
-	   <projectile>
-			<flyOverhead>true</flyOverhead>
-			<damageDef>Stun</damageDef>
-			<damageAmountBase>60</damageAmountBase>
-			<explosionRadius>2</explosionRadius>
+	<ThingDef ParentName="FlyingObject_JumpPack">
+		<defName>FlyingObject_JumpPackTau</defName>
+		<projectile>
 			<speed>15</speed>
-	   </projectile>
-    <skyfaller>
-      <reversed>true</reversed>
-      <anticipationSound>Shuttle_Leaving</anticipationSound>
-      <anticipationSoundTicks>-10</anticipationSoundTicks>
-      <moteSpawnTime>0.05</moteSpawnTime>
-      <zPositionCurve>
-        <points>
-          <li>(0,0)</li>
-          <li>(0.5,10)</li>
-          <li>(0.9,10)</li>
-          <li>(1,0)</li>
-        </points>
-      </zPositionCurve>
-      <!--xPositionCurve>
-        <points>
-          <li>(0,0)</li>
-          <li>(0.5,5)</li>
-          <li>(1,0)</li>
-        </points>
-      </xPositionCurve-->
-      <speedCurve>
-        <points>
-          <li>(0,1)</li>
-          <li>(0.5,2)</li>
-          <li>(0.9,5)</li>
-          <li>(1,0)</li>
-        </points>
-      </speedCurve>
-    </skyfaller>
+		</projectile>
 	</ThingDef>
 
 
@@ -75,9 +35,6 @@
 		  <li Class="AdeptusMechanicus.CompProperties_EquipmentAbilityJumpPack">
 			<compClass>AdeptusMechanicus.CompAbilityEffect_JumpPack</compClass>
 			<jumpingThing>FlyingObject_JumpPackTau</jumpingThing>
-			<psychic>false</psychic>
-			<goodwillImpact>0</goodwillImpact>
-			<screenShakeIntensity>0</screenShakeIntensity>
 			<stunTicks>70~120</stunTicks>
 			<!--explodingLeaperRadius>2.5</explodingLeaperRadius-->
 			<clamorRadius>5</clamorRadius>

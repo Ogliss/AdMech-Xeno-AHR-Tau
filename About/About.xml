@@ -37,7 +37,7 @@
 		<li>Ogliss.FeralOrkz</li>
 		<li>Mlie.O21Rimhammer40K</li>
 	</incompatibleWith>	
-	<description>V1.6.1.1
+	<description>V1.6.5.0
 	Adds plyable WH40k Tau
 	Requires new start or a faction manager mod to have faction bases on the world map.
 
@@ -51,6 +51,8 @@ Races:
 	Knarloc - Animal
 	
 Apparel:
+	Gue'vesa Combat Armour
+	Gue'vesa Combat Helmet
 	Tau Combat Armour
 	Tau Combat Helmet
 	Kroot Tribalwear
@@ -81,7 +83,7 @@ Load Order info:
 	Playable Orkz,Eldar,Tau( This Mod ),Etc( if used ) order doesnt matter
 
 Credits:
-Fennbold: Textures for
+Fennbold/Emeraldwing: Textures for
 	Kroothound
 	Krootox
 	

@@ -547,8 +547,7 @@
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>300</lifeExpectancy>
       <leatherDef>Leather_Kroot</leatherDef>
-      <nameGenerator>OG_NamerPersonKroot_Male</nameGenerator>
-      <nameGeneratorFemale>OG_NamerPersonKroot_Female</nameGeneratorFemale>
+      <nameGenerator>OG_Kroot_NamerPerson</nameGenerator>
       <body>OG_Kroot_Body</body>
       <bloodDef>OG_FilthBlood_Kroot</bloodDef>	
       <meatColor>(35, 56, 0)</meatColor>

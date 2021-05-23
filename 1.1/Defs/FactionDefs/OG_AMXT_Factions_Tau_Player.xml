@@ -8,8 +8,8 @@
     <basicMemberKind>Colonist_OG_Tau</basicMemberKind>
     <pawnsPlural>colonists</pawnsPlural>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerOGTauFaction</factionNameMaker>
-    <settlementNameMaker>NamerOGTauBases</settlementNameMaker>
+		<factionNameMaker>OG_Tau_NamerFaction</factionNameMaker>
+    <settlementNameMaker>OG_Tau_NamerBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
     <backstoryFilters>
       <li>

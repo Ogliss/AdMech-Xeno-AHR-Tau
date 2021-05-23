@@ -364,6 +364,67 @@
     </spawnCategories>
   </AlienRace.BackstoryDef>
  
+  <!-- Assassin -->
+  <AlienRace.BackstoryDef>
+    <defName>OG_Kroot_Assassin</defName>
+    <title>assassin</title>
+    <titleShort>assassin</titleShort>
+    <baseDescription>[PAWN_nameDef] was a professional assassin. [PAWN_pronoun] natural ability to move unseen and unheard in jungles and woods was an asset, capable of silently infiltrating enemy encampments and waiting amongst the trees for days or weeks until the ideal moment to strike, and made a good profit. In this business, often hired for one off Assassination missions although sometimes kept for an extended period on a regular payment.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+		<li>
+			<defName>Melee</defName>
+			<amount>10</amount>
+		</li>
+		<li>
+			<defName>Shooting</defName>
+			<amount>10</amount>
+		</li>
+    </skillGains>
+    <spawnCategories>
+      <li>Kroot_Assassin</li>
+      <li>Kroot_Standard</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Intellectual</li>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+      <li>Social</li>
+      <li>Caring</li>
+    </workDisables>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+    <forcedTraits>
+        <li>
+            <defName>Psychopath</defName>
+            <chance>100</chance>
+        </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  
+  <!-- Scum -->
+  <AlienRace.BackstoryDef>
+    <defName>OG_Kroot_Scum</defName>
+    <title>scum</title>
+    <titleShort>scum</titleShort>
+    <baseDescription>While it is uncommon for Kroot to be on a world without some sort of master providing regular payments, [PAWN_nameDef] stowed away on ships moving from world to world. [PAWN_pronoun] travelled often, taking up casual work wherever [PAWN_pronoun] found it.\n\nWhen [PAWN_pronoun] found a planet of choice, often a Feral World [PAWN_pronoun] would set up home within woodlands or jungle near a local community that [PAWN_pronoun] could terrorize to eke out survival.</baseDescription>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li><defName>Cooking</defName><amount>3</amount></li>
+      <li><defName>Construction</defName><amount>3</amount></li>
+      <li><defName>Artistic</defName><amount>-4</amount></li>
+    </skillGains>
+    <spawnCategories>
+      <li>Kroot_Scum</li>
+      <li>Kroot_Standard</li>
+    </spawnCategories>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
+  </AlienRace.BackstoryDef>
+  
   <!-- Kroot Mutations  -->
   <!-- Hyperactive Nymune Organ Child -->
   <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
