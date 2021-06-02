@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D1FJ26BCaJx0hxa1tByfZzvkuVVS+UB1MawTHgxWmQv4O/3VZnDPGpLX+kUllCVn2QK3pcK4s7/CxYDlJ6bZ8Q==",
+  "dgSpecHash": "XifzPLJQHI4jPQvcAg3I9w5yerRiZiJzsk/AtQgkHlYjWsZawGgxN7z33Nbs08S7uzLjjRGJL9v/paMPnd6REA==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMech-Xeno-AHR-Tau\\1.1\\Source\\AdeptusMechanicusXenoVespid\\AdeptusMechanicusXenoVespid.csproj",
   "expectedPackageFiles": [
@@ -8,5 +8,19 @@
     "C:\\Users\\User\\.nuget\\packages\\lib.harmony\\2.0.4\\lib.harmony.2.0.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\unlimitedhugs.rimworld.hugslib\\8.0.0\\unlimitedhugs.rimworld.hugslib.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Krafs.Rimworld.Ref from 1.2.2905 to 1.2.2753. Reference the package directly from the project to select a different version. \r\n AdeptusMechanicusXenoVespid -> AdeptusMechanicusArmoury -> Krafs.Rimworld.Ref (>= 1.2.2905) \r\n AdeptusMechanicusXenoVespid -> Krafs.Rimworld.Ref (>= 1.2.2753)",
+      "libraryId": "Krafs.Rimworld.Ref",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

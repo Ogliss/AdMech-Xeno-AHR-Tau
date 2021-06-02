@@ -17,7 +17,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPostfix]
         public static void SettingsCategory_Postfix(ref AMAMod __instance, ref string __result)
         {
-            __result += ", " + "AMXB_ModName".Translate();
+            __result += ", " + "AdeptusMechanicus.Xenobiologis.ModName".Translate();
         }
     }
     [HarmonyPatch(typeof(AMAMod), "PreModOptions")]
@@ -43,15 +43,15 @@ namespace AdeptusMechanicus.HarmonyInstance
         {
             AMKsettings settings = AMKsettings.Instance;
             Rect rect = new Rect(inRect.x, inRect.y - 50, num, num2);
-            listing_Standard.Label("AMXB_ModName".Translate() + " Settings");
-            listing_Standard.Label("AMXB_AllowedRaces".Translate());
-            listing_Standard.CheckboxLabeled("AMXB_ShowImperium".Translate(), ref settings.ShowKroot, "AMXB_ShowImperiumDesc".Translate());
+            listing_Standard.Label("AdeptusMechanicus.Xenobiologis.ModName".Translate() + " Settings");
+            listing_Standard.Label("AdeptusMechanicus.Xenobiologis.AllowedRaces".Translate());
+            listing_Standard.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.ShowImperium".Translate(), ref settings.ShowKroot, "AdeptusMechanicus.Xenobiologis.ShowImperiumDesc".Translate());
             Rect rectImperium = new Rect(rect.x, rect.y + 10, num, 60f);
             if (settings.ShowKroot)
             {
                 listing_Standard.BeginSection(60f);
-                Widgets.CheckboxLabeled(rectImperium.TopHalf().LeftHalf().ContractedBy(4), "AMXB_AllowAdeptusAstartes".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Astartes")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_HiddenFaction".Translate()), ref settings.AllowKrootTrait, !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Astartes")) || !AMASettings.Instance.AllowImperialWeapons);
-                Widgets.CheckboxLabeled(rectImperium.BottomHalf().LeftHalf().ContractedBy(4), "AMXB_AllowAdeptusMechanicus".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Mechanicus")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_HiddenFaction".Translate()), ref settings.AllowKrootMutations, !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Mechanicus")) || !AMASettings.Instance.AllowMechanicusWeapons);
+                Widgets.CheckboxLabeled(rectImperium.TopHalf().LeftHalf().ContractedBy(4), "AdeptusMechanicus.Xenobiologis.AllowAdeptusAstartes".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Astartes")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.HiddenFaction".Translate()), ref settings.AllowKrootTrait, !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Astartes")) || !AMASettings.Instance.AllowImperialWeapons);
+                Widgets.CheckboxLabeled(rectImperium.BottomHalf().LeftHalf().ContractedBy(4), "AdeptusMechanicus.Xenobiologis.AllowAdeptusMechanicus".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Mechanicus")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.HiddenFaction".Translate()), ref settings.AllowKrootMutations, !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Mechanicus")) || !AMASettings.Instance.AllowMechanicusWeapons);
                 listing_Standard.EndSection(listing_Standard);
             }
 

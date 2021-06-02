@@ -17,7 +17,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         [HarmonyPostfix]
         public static void ModsLoaded(ref AMAMod __instance, ref string __result)
         {
-            __result += ", " + "AMT_ModName".Translate();
+            __result += ", " + "AdeptusMechanicus.Tau.ModName".Translate();
         }
     }
 
@@ -44,7 +44,7 @@ namespace AdeptusMechanicus.HarmonyInstance
         public static void TauSettings_Prefix(ref AMAMod __instance, ref Listing_StandardExpanding listing_Main, Rect rect, Rect inRect, float num, ref float num2)
         {
 
-            string label = "AMXB_ShowTau".Translate() + " Settings";
+            string label = "AdeptusMechanicus.Xenobiologis.ShowTau".Translate() + " Settings";
             string tooltip = string.Empty;
             if (Dev)
             {
@@ -68,34 +68,34 @@ namespace AdeptusMechanicus.HarmonyInstance
                 {
                     Listing_StandardExpanding listing_General = listing_Race.BeginSection(MenuLength, true);
                     listing_General.ColumnWidth *= 0.32f;
-                    listing_General.CheckboxLabeled("AMXB_AllowTau".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowTau".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                         ref settings.AllowTau,
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) || !settings.AllowTauWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) && settings.AllowTauWeapons);
-                    listing_General.CheckboxLabeled("AMXB_AllowGueVesa".Translate() + (!DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Auxiliaries".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowGueVesa".Translate() + (!DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Auxiliaries".Translate()),
                         ref settings.AllowGueVesaAuxiliaries,
                         null,
                         !DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) || !settings.AllowTauWeapons,
                         DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) && settings.AllowTauWeapons);
                     listing_General.NewColumn();
-                    listing_General.CheckboxLabeled("AMXB_AllowKroot".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowKroot".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                         ref settings.AllowKroot,
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) || !settings.AllowTauWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) && settings.AllowTauWeapons);
-                    listing_General.CheckboxLabeled("AMXB_AllowKroot".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Auxiliaries".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowKroot".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Auxiliaries".Translate()),
                         ref settings.AllowKrootAuxiliaries,
                         null,
                         !DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) || !settings.AllowTauWeapons,
                         DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) && settings.AllowTauWeapons);
                     listing_General.NewColumn();
-                    listing_General.CheckboxLabeled("AMXB_AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                         ref settings.AllowVespid,
                         null,
                         !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Vespid")) || !settings.AllowTauWeapons,
                         DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Vespid")) && settings.AllowTauWeapons);
-                    listing_General.CheckboxLabeled("AMXB_AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Auxiliaries".Translate()),
+                    listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Auxiliaries".Translate()),
                         ref settings.AllowVespidAuxiliaries,
                         null,
                         !DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) || !settings.AllowTauWeapons,
@@ -128,47 +128,47 @@ namespace AdeptusMechanicus.HarmonyInstance
             float options = __instance.Length(setting, Options - 1, lineheight, 0, 0);
             if (!Xenobiologis)
             {
-                if (!listing_Main.ButtonText("AMT_ModName".Translate() + " Options" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowTau))
+                if (!listing_Main.ButtonText("AdeptusMechanicus.Tau.ModName".Translate() + " Options" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowTau))
                 {
                     return;
                 }
             }
 
             Listing_StandardExpanding listing_Race = listing_Main.BeginSection(RaceSettings, false, 3, 4, 0);
-            listing_Race.CheckboxLabeled("AMXB_ShowTau".Translate() + " Settings" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowTau, null, false, true, ArmouryMain.collapseTex, ArmouryMain.expandTex);
+            listing_Race.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.ShowTau".Translate() + " Settings" + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") ? " Menu Length: " + RaceSettings : "") + (Prefs.DevMode && SteamUtility.SteamPersonaName.Contains("Ogliss") && setting ? " options length: " + options : ""), ref settings.ShowTau, null, false, true, ArmouryMain.collapseTex, ArmouryMain.expandTex);
 
             if (setting)
             {
                 Listing_StandardExpanding listing_General = listing_Race.BeginSection(options, true);
                 listing_General.ColumnWidth *= 0.32f;
-                listing_General.CheckboxLabeled("AMXB_AllowTau".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowTau".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                     ref settings.AllowTau,
                     null,
                     !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) || !settings.AllowTauWeapons,
                     DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Tau")) && settings.AllowTauWeapons);
-                listing_General.CheckboxLabeled("AMXB_AllowGueVesa".Translate() + (!DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Auxiliaries".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowGueVesa".Translate() + (!DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Auxiliaries".Translate()),
                     ref settings.AllowGueVesaAuxiliaries,
                     null,
                     !DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) || !settings.AllowTauWeapons,
                     DefDatabase<PawnKindDef>.AllDefs.Any(x => x.defName.Contains("OG_Guevesa")) && settings.AllowTauWeapons);
                 listing_General.NewColumn();
-                listing_General.CheckboxLabeled("AMXB_AllowKroot".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowKroot".Translate() + (!DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                     ref settings.AllowKroot,
                     null,
                     !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) || !settings.AllowTauWeapons,
                     DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Kroot")) && settings.AllowTauWeapons);
-                listing_General.CheckboxLabeled("AMXB_AllowKroot".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Auxiliaries".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowKroot".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Auxiliaries".Translate()),
                     ref settings.AllowKrootAuxiliaries,
                     null,
                     !DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) || !settings.AllowTauWeapons,
                     DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Kroot")) && settings.AllowTauWeapons);
                 listing_General.NewColumn();
-                listing_General.CheckboxLabeled("AMXB_AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Faction".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Faction".Translate()),
                     ref settings.AllowVespid,
                     null,
                     !DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Vespid")) || !settings.AllowTauWeapons,
                     DefDatabase<FactionDef>.AllDefs.Any(x => x.defName.Contains("OG_Vespid")) && settings.AllowTauWeapons);
-                listing_General.CheckboxLabeled("AMXB_AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AMXB_NotYetAvailable".Translate() : "AMXB_Auxiliaries".Translate()),
+                listing_General.CheckboxLabeled("AdeptusMechanicus.Xenobiologis.AllowVespid".Translate() + (!DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) ? "AdeptusMechanicus.Xenobiologis.NotYetAvailable".Translate() : "AdeptusMechanicus.Xenobiologis.Auxiliaries".Translate()),
                     ref settings.AllowVespidAuxiliaries,
                     null,
                     !DefDatabase<ThingDef>.AllDefs.Any(x => x.defName.Contains("OG_Alien_Vespid")) || !settings.AllowTauWeapons,
