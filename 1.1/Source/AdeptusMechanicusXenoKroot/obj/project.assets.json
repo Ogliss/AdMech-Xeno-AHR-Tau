@@ -220,7 +220,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.2.2905",
+          "Krafs.Rimworld.Ref": "1.3.0",
           "Lib.Harmony": "2.0.4",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
@@ -451,7 +451,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.2.2905",
+          "Krafs.Rimworld.Ref": "1.3.0",
           "Lib.Harmony": "2.0.4",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
@@ -682,7 +682,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.2.2905",
+          "Krafs.Rimworld.Ref": "1.3.0",
           "Lib.Harmony": "2.0.4",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
@@ -913,7 +913,7 @@
         "type": "project",
         "framework": ".NETFramework,Version=v4.7.2",
         "dependencies": {
-          "Krafs.Rimworld.Ref": "1.2.2905",
+          "Krafs.Rimworld.Ref": "1.3.0",
           "Lib.Harmony": "2.0.4",
           "UnlimitedHugs.Rimworld.HugsLib": "8.0.0"
         },
@@ -1596,8 +1596,8 @@
     },
     "AdeptusMechanicusArmoury/1.0.0": {
       "type": "project",
-      "path": "../../../../AdMechArmoury/1.1/Source/AdeptusMechanicusMain/AdeptusMechanicusArmoury.csproj",
-      "msbuildProject": "../../../../AdMechArmoury/1.1/Source/AdeptusMechanicusMain/AdeptusMechanicusArmoury.csproj"
+      "path": "../../../../AdMechArmoury/1.3/Source/AdeptusMechanicusMain/AdeptusMechanicusArmoury.csproj",
+      "msbuildProject": "../../../../AdMechArmoury/1.3/Source/AdeptusMechanicusMain/AdeptusMechanicusArmoury.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1635,13 +1635,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Downloads\\KrafsLocal": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj": {
-              "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.1\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj"
+            "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.3\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj": {
+              "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\AdMechArmoury\\1.3\\Source\\AdeptusMechanicusMain\\AdeptusMechanicusArmoury.csproj"
             }
           }
         }
@@ -1678,5 +1679,20 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Krafs.Rimworld.Ref from 1.3.0 to 1.2.2905. Reference the package directly from the project to select a different version. \r\n AdeptusMechanicusXenoKroot -> AdeptusMechanicusArmoury -> Krafs.Rimworld.Ref (>= 1.3.0) \r\n AdeptusMechanicusXenoKroot -> Krafs.Rimworld.Ref (>= 1.2.2905)",
+      "libraryId": "Krafs.Rimworld.Ref",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

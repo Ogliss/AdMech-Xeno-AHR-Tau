@@ -10,4 +10,3 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoTau\obj\Debug\AdeptusMechanicusTau.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoTau\obj\Debug\AdeptusMechanicusTau.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoTau\obj\Debug\AdeptusMechanicusXenoTau.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\1.1\Source\AdeptusMechanicusXenoTau\obj\Debug\AdeptusMechanicusXenoTau.csprojAssemblyReference.cache
