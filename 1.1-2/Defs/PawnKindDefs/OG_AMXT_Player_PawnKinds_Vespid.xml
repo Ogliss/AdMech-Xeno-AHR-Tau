@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="OG_Vespid_PlayerColonist_PawnKind">
+		<defName>Colonist_OG_Vespid</defName>
+	</PawnKindDef>
+ 
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="OG_Guevesa_Base_PawnKind">
+    <race>Human</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.45</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Outlander</li>
+			<li>Offworlder</li>
+			<li>Pirate</li>
+			<li>ImperialFighter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+	    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef Abstract="True" Name="OG_Guevesa_Colonist_PawnKind" ParentName="OG_Guevesa_Base_PawnKind">
+    <label>colonist (Gue'vesa)</label>
+    <defaultFactionType>OG_Tau_PlayerColony</defaultFactionType>
+    <apparelTags>
+      <li>Spacer</li>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>500</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+  
+</Defs>

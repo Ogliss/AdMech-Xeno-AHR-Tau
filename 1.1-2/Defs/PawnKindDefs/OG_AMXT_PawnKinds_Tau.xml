@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ============================ Tau Civilians ========================== -->
+	<!-- ============================ Tau Faction Leader ========================== -->
+	<PawnKindDef ParentName="OG_Tau_Faction_EtherealBase">
+		<defName>OG_Tau_Faction_Ethereal</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Trader ========================== -->
+	<PawnKindDef ParentName="OG_Tau_TraderBase">
+		<defName>OG_Tau_Trader</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Slave ========================== -->
+	<PawnKindDef ParentName="OG_Tau_SlaveBase">
+		<defName>Slave_OG_Tau</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Security ========================== -->
+	<PawnKindDef ParentName="OG_Tau_CadetBase">
+		<defName>OG_Tau_Cadet</defName>
+	</PawnKindDef>
+
+	<!-- ============================ Tau Military ========================== -->	
+	<!-- ============================ Tau Pathfinder (la) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_PathfinderBase">
+		<defName>OG_Tau_Pathfinder</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Firewarrior (la) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_FirewarriorBase">
+		<defName>OG_Tau_Firewarrior</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Pathfinder (Ui) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_Pathfinder_SgtBase">
+		<defName>OG_Tau_Pathfinder_Sgt</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Firewarrior (Ui) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_Firewarrior_SgtBase">
+		<defName>OG_Tau_Firewarrior_Sgt</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Ethereal ========================== -->
+	<PawnKindDef ParentName="OG_Tau_EtherealBase">
+		 <defName>OG_Tau_Ethereal</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Battlesuits ========================== -->
+	<!-- ============================ Crisis Battlesuit La ========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_CrisisBattlesuitBase">
+		<defName>OG_Tau_CrisisBattlesuit</defName>
+	</PawnKindDef>
+	
+	-->
+	<!-- ============================ Broadside Battlesuit La ========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_BroadsideBattlesuitBase">
+		<defName>OG_Tau_BroadsideBattlesuit</defName>
+	</PawnKindDef>
+	-->
+	<!-- ============================ Tau Battlesuits Ui ========================== -->
+	<!-- ============================ Crisis Battlesuit	========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_CrisisBattlesuitSgtBase">
+		<defName>OG_Tau_CrisisBattlesuitSgt</defName>
+	</PawnKindDef>
+	-->
+	<!-- ============================ Broadside Battlesuit	========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_BroadsideBattlesuitSgtBase">
+		<defName>OG_Tau_BroadsideBattlesuitSgt</defName>
+	</PawnKindDef>
+	-->
+	<!-- ============================ Commander Battlesuit ========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_CommanderBattlesuitBase">
+		<defName>OG_Tau_CommanderBattlesuit</defName>
+	</PawnKindDef>
+	-->
+</Defs>

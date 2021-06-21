@@ -1,6 +1,0 @@
-C:\Users\User\Desktop\admechb19 scourcefile test\Assemblies\AdeptusMechanicusV2.dll
-C:\Users\User\Desktop\admechb19 scourcefile test\Assemblies\AdeptusMechanicusV2.pdb
-C:\Users\User\Desktop\admechb19 scourcefile test\Source\AdeptusMechanicusV2\obj\Debug\AdeptusMechanicusV2.csprojResolveAssemblyReference.cache
-C:\Users\User\Desktop\admechb19 scourcefile test\Source\AdeptusMechanicusV2\obj\Debug\AdeptusMechanicusV2.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\admechb19 scourcefile test\Source\AdeptusMechanicusV2\obj\Debug\AdeptusMechanicusV2.dll
-C:\Users\User\Desktop\admechb19 scourcefile test\Source\AdeptusMechanicusV2\obj\Debug\AdeptusMechanicusV2.pdb

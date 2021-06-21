@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef ParentName="OG_Kroot_StrangerInBlack_Base">
+		<defName>StrangerInBlackKroot</defName>
+	</PawnKindDef>
+	
+</Defs>

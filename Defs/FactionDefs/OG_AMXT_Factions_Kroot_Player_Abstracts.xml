@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <FactionDef ParentName="PlayerFactionBase" Name="OG_Kroot_Player_Base" Abstract="True">
+  <FactionDef Abstract="True" Name="OG_Kroot_Player_Base" ParentName="PlayerFactionBase">
     <label>Kroot Kindred</label>
     <description>Kroot Kindred Start.</description>
     <isPlayer>true</isPlayer>
@@ -12,18 +12,20 @@
 		<factionNameMaker>NamerOGKrootFaction</factionNameMaker>
     <settlementNameMaker>NamerOGKrootBases</settlementNameMaker>
     <techLevel>Ultra</techLevel>
-    <backstoryCategories>
-			<li>Kroot_Standard</li>
-			<li>Kroot_Psyker</li>
-  	</backstoryCategories>
-    <expandingIconTexture>Icons/Kroot/Icon_KrootB</expandingIconTexture>
-    <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
+    <backstoryFilters>
+      <li>
+        <categories>
+		<li>Pirate</li>
+		<li>Offworlder</li>
+		<li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icons/Kroot/Icon_KrootB</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
-    <hairTags>
-      <li>Tribal</li>
-    </hairTags>
     <apparelStuffFilter>
       <thingDefs>
         <li>Cloth</li>
@@ -43,18 +45,22 @@
     </maxPawnCostPerTotalPointsCurve>
   </FactionDef>
 	
-  <FactionDef ParentName="OG_Kroot_Player_Base">
-    <defName>OG_Kroot_PlayerColony</defName>
-  </FactionDef>
-
-  <FactionDef ParentName="OG_Kroot_Player_Base">
-    <defName>OG_Kroot_PlayerTribe</defName>
+  <FactionDef Abstract="True" Name="OG_Kroot_Player_Tribe" ParentName="OG_Kroot_Player_Base">
     <label>Kroot Tribal Kindred</label>
     <description>Kroot Tribal Kindred Start.</description>
+    <backstoryFilters>
+      <li>
+        <categories>
+		<li>Pirate</li>
+		<li>Tribal</li>
+		<li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
     <startingResearchTags>
       <li>TribalStart</li>
     </startingResearchTags>
-    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
   </FactionDef>
 
 </Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="OG_Tau_Faction_Base">
+    <defName>OG_Tau_Faction</defName>
+	<hairTags>
+		<li>Outlander</li>
+		<li>Pirate</li>
+		<li>Rural</li>
+	</hairTags>
+    <startingGoodwill>
+      <min>-60</min>
+      <max>60</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-60</min>
+      <max>60</max>
+    </naturalColonyGoodwill>
+  </FactionDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ============================ Kroot Civilians ========================== -->
+	<!-- ============================ Kroot Faction Leader ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_Faction_ShaperBase">
+		<defName>OG_Kroot_Faction_Shaper</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Trader ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_TraderBase">
+		<defName>OG_Kroot_Trader</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Slave ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_SlaveBase">
+		<defName>Slave_OG_Kroot</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Warrior ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_WarriorBase">
+		<defName>OG_Kroot_Warrior</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Hunter ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_HunterBase">
+		<defName>OG_Kroot_Hunter</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Shaper ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_ShaperBase">
+		<defName>OG_Kroot_Shaper</defName>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Shaman ========================== -->
+	<PawnKindDef ParentName="OG_Kroot_ShamanBase">
+		<defName>OG_Kroot_Shaman</defName>
+	</PawnKindDef>
+	
+</Defs>

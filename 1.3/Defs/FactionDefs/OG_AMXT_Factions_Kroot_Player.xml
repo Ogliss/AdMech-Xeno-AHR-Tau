@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="OG_Kroot_Player_Base">
+    <defName>OG_Kroot_PlayerColony</defName>
+  </FactionDef>
+
+  <FactionDef ParentName="OG_Kroot_Player_Tribe">
+    <defName>OG_Kroot_PlayerTribe</defName>
+  </FactionDef>
+
+</Defs>

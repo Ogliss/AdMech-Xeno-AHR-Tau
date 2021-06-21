@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
+		<defName>Colonist_OG_Tau</defName>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseAun">
+		<defName>Colonist_OG_TauAun</defName>
+	</PawnKindDef>
+ 
+	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseShas">
+		<defName>Colonist_OG_TauShas</defName>
+	</PawnKindDef>
+ 
+	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BasePor">
+		<defName>Colonist_OG_TauPor</defName>
+	</PawnKindDef>
+ 
+	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseFio">
+		<defName>Colonist_OG_TauFio</defName>
+	</PawnKindDef>
+ 
+	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseKor">
+		<defName>Colonist_OG_TauKor</defName>
+	</PawnKindDef>
+ 
+</Defs>

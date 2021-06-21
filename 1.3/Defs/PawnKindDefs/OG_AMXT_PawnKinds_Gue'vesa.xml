@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ============================ Gue'vesa Civilians ========================== -->
+  <!-- ============================ Gue'vesa Faction Leader ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_Commander_FactionBase">
+		<defName>OG_Guevesa_Commander_Faction</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Trader ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_TraderBase">
+		<defName>OG_Guevesa_Trader</defName>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Slave ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_SlaveBase">
+		<defName>Slave_OG_Guevesa</defName>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Security ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_CadetBase">
+		<defName>OG_Guevesa_Cadet</defName>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Soldier ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_SoldierBase">
+		<defName>OG_Guevesa_Soldier</defName>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Heavy Weapons Trooper ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_Soldier_HWBase">
+		<defName>OG_Guevesa_Soldier_HW</defName>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Special weapons Trooper ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_Soldier_SWBase">
+		<defName>OG_Guevesa_Soldier_SW</defName>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+  <!-- ============================ Gue'vesa Sargent ========================== -->
+	<PawnKindDef ParentName="OG_Guevesa_SgtBase">
+		<defName>OG_Guevesa_Sgt</defName>
+		<initialWillRange>2~3</initialWillRange>
+		<initialResistanceRange>17~26</initialResistanceRange>
+	</PawnKindDef>
+	
+</Defs>
