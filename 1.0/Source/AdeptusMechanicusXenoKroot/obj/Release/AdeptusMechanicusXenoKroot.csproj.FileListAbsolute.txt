@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Assemblies\AdeptusMechanicusKroot.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Assemblies\AdeptusMechanicusKroot.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoKroot\obj\Release\AdeptusMechanicusKroot.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoKroot\obj\Release\AdeptusMechanicusKroot.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoKroot\obj\Release\AdeptusMechanicusXenoKroot.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoKroot\obj\Release\AdeptusMechanicusXenoKroot.csproj.CopyComplete

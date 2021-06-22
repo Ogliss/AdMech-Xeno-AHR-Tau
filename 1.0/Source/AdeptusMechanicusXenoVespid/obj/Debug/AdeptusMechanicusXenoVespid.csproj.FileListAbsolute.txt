@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\bin\Debug\AdeptusMechanicusVespid.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\bin\Debug\AdeptusMechanicusVespid.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusXenoVespid.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusXenoVespid.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusVespid.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\AdMech-Xeno-AHR-Tau\Source\AdeptusMechanicusXenoVespid\obj\Debug\AdeptusMechanicusVespid.pdb
