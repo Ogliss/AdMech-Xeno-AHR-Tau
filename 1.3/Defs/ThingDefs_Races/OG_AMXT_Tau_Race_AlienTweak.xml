@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AlienRace.ThingDef_AlienRace Name="OG_Tau_Race" ParentName="OG_Tau_RaceBase" Abstract="True">
+    <alienRace>
+        <generalSettings>
+			<disallowedTraits>
+                <li>
+                    <defName>Brawler</defName>
+                </li>
+                <li>
+                    <defName>PsychicSensitivity</defName>
+                </li>
+                <li>
+                    <defName>Xenophobia</defName>
+                </li>
+               <!-- Astra Militarum -->
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitMechanicus</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAstraMilitarum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAssassinorum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitInquisition</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitImperialMedic</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IG_TraitAstarte</defName>
+			   </li>
+               <!-- The Force -->
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_ForceSensitive</defName>
+			   </li>
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_JediTrait</defName>
+			   </li>
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_SithTrait</defName>
+			   </li>
+               <li MayRequire="PJedi.starwars.Force">
+					<defName>PJ_GrayTrait</defName>
+			   </li>
+               <!-- The Force: Continued -->
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_ForceSensitive</defName>
+			   </li>
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_JediTrait</defName>
+			   </li>
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_SithTrait</defName>
+			   </li>
+               <li MayRequire="Mlie.StarWarsTheForce">
+					<defName>PJ_GrayTrait</defName>
+			   </li>
+			   <!-- RimWolrd of Magic -->
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>TM_Gifted</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>InnerFire</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>HeartOfFrost</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>StormBorn</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Arcanist</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Druid</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Paladin</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Summoner</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Necromancer</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Lich</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Priest</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Geomancer</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Technomancer</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Succubus</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Warlock</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>TM_Psionic</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>DeathKnight</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Enchanter</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>BloodMage</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>PhysicalProdigy</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Faceless</defName>
+			   </li>
+               <li MayRequire="Torann.ARimworldOfMagic">
+					<defName>Ranger</defName>
+			   </li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Emperor_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Ynnead_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Cegorach_Laughter</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khaine_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khorne_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Nurgle_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Slaanesh_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Tzeentch_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Undivided_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>DE_Depravity</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ELDAR_mastery</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ORK_Brutality</defName>
+				</li>
+            </disallowedTraits>
+            <alienPartGenerator>
+				<colorChannels>
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.545,0.545,0.69,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.545,0.545,0.706,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.412,0.412,0.706,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.412,0.412,0.62,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.412,0.412,0.522,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.678,0.678,0.98,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.678,0.678,0.882,1)</only>
+								</li>
+								<!--
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.952,0.913,0.349,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.980,0.631,0.227,1)</only>
+								</li>
+								<li>
+									<weight>6</weight>
+									<only>RGBA(0.980,0.227,0.227,1)</only>
+								</li>
+								<li>
+									<weight>6</weight>
+									<only>RGBA(0.282,0.894,0.525,1)</only>
+								</li>
+								<li>
+									<weight>6</weight>
+									<only>RGBA(0.886,0.756,0.56,1)</only>
+								</li>
+								<li>
+									<weight>6</weight>
+									<only>RGBA(0.415,0.25,0.474,1)</only>
+								</li>
+								 <li>
+									<weight>7</weight>
+									<only>RGBA(0.25,0.274,0.474,1)</only>
+								</li>
+								-->
+							</options>
+						</first>
+						<!--second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.500, 1.000, 0.000, 1.000)</only>
+								</li>
+							</options>
+						</second-->
+					</li>
+				</colorChannels>
+				<bodyAddons>
+				
+				</bodyAddons>
+            </alienPartGenerator>
+        </generalSettings>
+     </alienRace>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>
