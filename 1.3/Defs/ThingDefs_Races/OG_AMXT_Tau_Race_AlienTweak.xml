@@ -243,6 +243,30 @@
 				</bodyAddons>
             </alienPartGenerator>
         </generalSettings>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>true</hasStyle>
+					<!--getsGreyAt>30</getsGreyAt--> 
+					<styleTagsOverride>
+						<li>TauHair</li>
+					</styleTagsOverride>
+				</value>
+			</li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+		</styleSettings>
      </alienRace>
 </AlienRace.ThingDef_AlienRace>
 

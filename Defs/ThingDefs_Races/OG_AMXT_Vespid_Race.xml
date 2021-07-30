@@ -178,13 +178,6 @@
             </li>
         </graphicPaths>
 		
-        <hairSettings>
-            <hasHair>false</hasHair>
-            <getsGreyAt>100</getsGreyAt> 
-            <hairTags>
-                 <li>KrootHair</li>
-            </hairTags>
-        </hairSettings>
         <thoughtSettings>
 		
             <butcherThoughtGeneral>

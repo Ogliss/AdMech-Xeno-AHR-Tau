@@ -172,13 +172,6 @@
                 <head>Things/Pawn/Humanlike/Tau/Heads/</head>
             </li>
         </graphicPaths>
-        <hairSettings>
-            <hasHair>true</hasHair>
-            <getsGreyAt>300</getsGreyAt> 
-            <hairTags>
-                 <li>TauHair</li>
-            </hairTags>
-        </hairSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
 				<!--li>FeelingRandom</li-->

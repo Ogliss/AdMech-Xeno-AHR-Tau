@@ -237,6 +237,13 @@
 				</bodyAddons>
             </alienPartGenerator>
         </generalSettings>
+        <hairSettings>
+            <hasHair>true</hasHair>
+            <getsGreyAt>100</getsGreyAt> 
+            <hairTags>
+                 <li>KrootHair</li>
+            </hairTags>
+        </hairSettings>
     </alienRace>
 </AlienRace.ThingDef_AlienRace>
 

@@ -16,7 +16,7 @@
     <lifeStages>
       <li>
 		<bodyGraphicData>
-			<texPath>Things/Pawn/ToolUser/Drones/Dronea</texPath>
+			<texPath>Things/Pawn/ToolUser/Tau_Drones/Dronea</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>1.50</drawSize>
 			<color>(221,160,99)</color>

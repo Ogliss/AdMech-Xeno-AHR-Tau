@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>TauHair</defName>
+		<label>tau hair</label>
+	</StyleItemCategoryDef>
+  
+	<HairDef>
+		<defName>TauBald</defName>
+		<label>Tau Bald</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Pawn/Humanlike/Tau/Hair/TauBald</texPath>
+		<styleTags>
+			<li>TauHair</li>
+		</styleTags>
+	</HairDef> 
+	
+	<HairDef>
+		<defName>TauBaldB</defName>
+		<label>Tau Bald</label>
+		<hairGender>Any</hairGender>
+		<texPath>Things/Pawn/Humanlike/Tau/Hair/TauBald</texPath>
+		<styleTags>
+			<li>TauHair</li>
+		</styleTags>
+	</HairDef>
+  
+</Defs>

@@ -243,6 +243,13 @@
 				</bodyAddons>
             </alienPartGenerator>
         </generalSettings>
+        <hairSettings>
+            <hasHair>true</hasHair>
+            <getsGreyAt>30</getsGreyAt> 
+            <hairTags>
+                 <li>TauHair</li>
+            </hairTags>
+        </hairSettings>
      </alienRace>
 </AlienRace.ThingDef_AlienRace>
 

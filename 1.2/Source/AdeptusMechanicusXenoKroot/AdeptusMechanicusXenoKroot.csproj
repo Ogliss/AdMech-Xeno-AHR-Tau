@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AdeptusMechanicusArmoury">
-      <HintPath>..\..\..\..\AdMechArmoury\1.1\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
+      <HintPath>..\..\..\..\\AdMechArmoury\1.2\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AlienRace">
@@ -70,6 +70,7 @@
     <PackageReference Include="Lib.Harmony">
       <Version>2.0.4</Version>
     </PackageReference>
+    <PackageReference Include="RimWorld.MultiplayerAPI" Version="0.3.0" />
     <PackageReference Include="TaskPubliciser">
       <Version>1.0.3</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
