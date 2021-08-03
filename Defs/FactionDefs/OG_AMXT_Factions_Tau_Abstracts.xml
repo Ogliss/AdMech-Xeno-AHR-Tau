@@ -24,7 +24,12 @@
 			<li>Outlander</li>
         </categories>
       </li>
-    </backstoryFilters>
+    </backstoryFilters>	
+	<hairTags IgnoreIfNoMatchingField="True">
+		<li>Outlander</li>
+		<li>Pirate</li>
+		<li>Rural</li>
+	</hairTags>
     <visitorTraderKinds>
       <li>Visitor_Tau_Standard</li>
     </visitorTraderKinds>

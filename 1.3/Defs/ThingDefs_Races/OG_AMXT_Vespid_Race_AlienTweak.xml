@@ -160,7 +160,7 @@
 					<hasStyle>true</hasStyle>
 					<!--getsGreyAt>100</getsGreyAt--> 
 					<styleTagsOverride>
-						<li>VespidHair</li>
+						<li>OG_Vespid_Hair</li>
 					</styleTagsOverride>
 				</value>
 			</li>

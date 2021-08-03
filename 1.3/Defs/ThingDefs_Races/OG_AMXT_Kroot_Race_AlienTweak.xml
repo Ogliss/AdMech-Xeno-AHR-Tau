@@ -240,7 +240,7 @@
 					<hasStyle>true</hasStyle>
 					<!--getsGreyAt>100</getsGreyAt--> 
 					<styleTagsOverride>
-						<li>KrootHair</li>
+						<li>OG_Kroot_Hair</li>
 					</styleTagsOverride>
 				</value>
 			</li>

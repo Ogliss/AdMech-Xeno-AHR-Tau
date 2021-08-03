@@ -4,43 +4,43 @@
 	<PawnKindDef ParentName="OG_Tau_BaseColonist_PawnKind">
 		<defName>Colonist_OG_Tau</defName>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-		<initialWillRange>3~5</initialWillRange>
-		<initialResistanceRange>17~27</initialResistanceRange>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
  
 	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseAun">
 		<defName>Colonist_OG_TauAun</defName>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-		<initialWillRange>3~5</initialWillRange>
-		<initialResistanceRange>17~27</initialResistanceRange>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseShas">
 		<defName>Colonist_OG_TauShas</defName>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-		<initialWillRange>3~5</initialWillRange>
-		<initialResistanceRange>17~27</initialResistanceRange>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BasePor">
 		<defName>Colonist_OG_TauPor</defName>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-		<initialWillRange>3~5</initialWillRange>
-		<initialResistanceRange>17~27</initialResistanceRange>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseFio">
 		<defName>Colonist_OG_TauFio</defName>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-		<initialWillRange>3~5</initialWillRange>
-		<initialResistanceRange>17~27</initialResistanceRange>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="OG_Tau_PlayerColonist_BaseKor">
 		<defName>Colonist_OG_TauKor</defName>
 		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-		<initialWillRange>3~5</initialWillRange>
-		<initialResistanceRange>17~27</initialResistanceRange>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
 	
 </Defs>

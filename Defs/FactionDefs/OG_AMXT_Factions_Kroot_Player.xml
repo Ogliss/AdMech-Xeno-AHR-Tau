@@ -3,55 +3,52 @@
 
 	<FactionDef ParentName="OG_Kroot_Player_Base">
 		<defName>OG_Kroot_PlayerColony</defName>
-		<allowedCultures>
+		<allowedCultures IgnoreIfNoMatchingField="True">
 			<li>OG_Kroot_Mercenary</li>
-			<li>OG_Kroot_Tribal</li>
 		</allowedCultures>
-		<disallowedMemes>
+		<disallowedMemes IgnoreIfNoMatchingField="True">
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
-		<disallowedPrecepts>
+		<disallowedPrecepts IgnoreIfNoMatchingField="True">
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
 		</disallowedPrecepts>
-		<structureMemeWeights>
+		<structureMemeWeights IgnoreIfNoMatchingField="True">
 			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
-			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
-			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
-			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
-			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
 		</structureMemeWeights>
+		<hairTags IgnoreIfNoMatchingField="True">
+		  <li>Tribal</li>
+		</hairTags>
 	</FactionDef>
 
 	<FactionDef ParentName="OG_Kroot_Player_Tribe">
 		<defName>OG_Kroot_PlayerTribe</defName>
-		<allowedCultures>
+		<allowedCultures IgnoreIfNoMatchingField="True">
 			<li>OG_Kroot_Tribal</li>
 		</allowedCultures>
-		<disallowedMemes>
+		<disallowedMemes IgnoreIfNoMatchingField="True">
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
-		<disallowedPrecepts>
+		<disallowedPrecepts IgnoreIfNoMatchingField="True">
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
 		</disallowedPrecepts>
-		<structureMemeWeights>
+		<structureMemeWeights IgnoreIfNoMatchingField="True">
 			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
-			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
-			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
-			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
-			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
 		</structureMemeWeights>
+		<hairTags IgnoreIfNoMatchingField="True">
+		  <li>Tribal</li>
+		</hairTags>
 	</FactionDef>
 
 </Defs>

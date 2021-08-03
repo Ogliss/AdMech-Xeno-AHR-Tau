@@ -2,7 +2,7 @@
 <Defs>
 
   <StyleItemCategoryDef>
-    <defName>KrootHair</defName>
+    <defName>OG_Kroot_Hair</defName>
     <label>kroot hair</label>
   </StyleItemCategoryDef>
 
@@ -12,7 +12,7 @@
     <hairGender>Any</hairGender>
     <texPath>Things/Pawn/Humanlike/Kroot/Hair/Kroot_Average</texPath>
 		<styleTags>
-			<li>KrootHair</li>
+			<li>OG_Kroot_Hair</li>
 		</styleTags>
   </HairDef>
   
@@ -22,7 +22,7 @@
     <hairGender>Any</hairGender>
     <texPath>Things/Pawn/Humanlike/Kroot/Hair/Kroot_Average</texPath>
 		<styleTags>
-			<li>KrootHair</li>
+			<li>OG_Kroot_Hair</li>
 		</styleTags>
   </HairDef>
   

@@ -3,16 +3,31 @@
 
   <FactionDef ParentName="OG_Tau_Faction_Base">
     <defName>OG_Tau_Faction</defName>
-    <allowedCultures><li>OG_Tau_GreaterGood</li></allowedCultures>
-    <disallowedMemes>
+    <allowedCultures IgnoreIfNoMatchingField="True">
+		<li>OG_Tau_GreaterGood</li>
+	</allowedCultures>
+    <disallowedMemes IgnoreIfNoMatchingField="True">
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
     </disallowedMemes>
-    <structureMemeWeights>
+    <structureMemeWeights IgnoreIfNoMatchingField="True">
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
       <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
     </structureMemeWeights>
+	<hairTags IgnoreIfNoMatchingField="True">
+		<li>Outlander</li>
+		<li>Pirate</li>
+		<li>Rural</li>
+	</hairTags>
+    <startingGoodwill IgnoreIfNoMatchingField="True">
+      <min>-60</min>
+      <max>60</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill IgnoreIfNoMatchingField="True">
+      <min>-60</min>
+      <max>60</max>
+    </naturalColonyGoodwill>
   </FactionDef>
 
 </Defs>

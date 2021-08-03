@@ -7,7 +7,7 @@
     <texPath>Things/Pawn/Humanlike/Kroot/Hair/Kroot_Average</texPath>
     <defName>KrootQuills</defName>
 		<hairTags>
-			<li>KrootHair</li>
+			<li>OG_Kroot_Hair</li>
 		</hairTags>
   </HairDef>
   

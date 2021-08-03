@@ -241,7 +241,7 @@
             <hasHair>true</hasHair>
             <getsGreyAt>100</getsGreyAt> 
             <hairTags>
-                 <li>KrootHair</li>
+                 <li>OG_Kroot_Hair</li>
             </hairTags>
         </hairSettings>
     </alienRace>

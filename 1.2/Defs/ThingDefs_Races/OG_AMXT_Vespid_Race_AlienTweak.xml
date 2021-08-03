@@ -157,7 +157,7 @@
             <hasHair>false</hasHair>
             <getsGreyAt>100</getsGreyAt> 
             <hairTags>
-                 <li>VespidHair</li>
+                 <li>OG_Vespid_Hair</li>
             </hairTags>
         </hairSettings>
     </alienRace>

@@ -7,7 +7,7 @@
     <texPath>Things/Pawn/Humanlike/Tau/Hair/TauBald</texPath>
     <defName>TauBald</defName>
 		<hairTags>
-			<li>TauHair</li>
+			<li>OG_Tau_Hair</li>
 		</hairTags>
   </HairDef>
   

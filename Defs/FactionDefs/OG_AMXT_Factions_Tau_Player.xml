@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="OG_Tau_Player_Base">
+		<defName>OG_Tau_PlayerColony</defName>
+		<allowedCultures IgnoreIfNoMatchingField="True">
+			<li>OG_Tau_GreaterGood</li>
+		</allowedCultures>
+		<disallowedMemes IgnoreIfNoMatchingField="True">
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights IgnoreIfNoMatchingField="True">
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+    <hairTags IgnoreIfNoMatchingField="True">
+		<li>Outlander</li>
+		<li>Rural</li>
+    </hairTags>
+	</FactionDef>
+
+</Defs>
