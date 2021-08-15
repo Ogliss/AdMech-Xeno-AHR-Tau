@@ -120,8 +120,8 @@
 					   <li>OG_Tau_Faction</li>
 					   <li>OG_Tau_PlayerColony</li>
 					   <li>OG_Kroot_Faction</li>
-					   <li>OG_Kroot_PlayerColony</li>
-					   <li>OG_Kroot_PlayerTribe</li>
+					   <!--li>OG_Kroot_PlayerColony</li>
+					   <li>OG_Kroot_PlayerTribe</li-->
 					   <li>OG_Vespid_Faction</li>
 					   <!--li>OG_Vespid_PlayerColony</li-->
 					   <!--li>OG_Vespid_PlayerTribe</li-->

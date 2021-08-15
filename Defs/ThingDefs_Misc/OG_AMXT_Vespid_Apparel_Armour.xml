@@ -4,10 +4,10 @@
 	<!--========================= Vespid - Helmet ==========================-->
     <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
 		<defName>OGV_Apparel_VespidHelmet</defName>
-		<label>vespid combat helmet</label>
-		<description>Pathfider Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
+		<label>vespid communion helmet</label>
+		<description>The Vespid Communion Helms are Tau-manufactured masks or helmets worn by Vespid Strain Leaders. The Communion Helm allows for communication between the Vespid and the Tau, Even among the Tau, the technology behind the Communion Helm is a mystery, as the Earth Caste created the devices following the orders of the Ethereal Caste</description>
 		<graphicData>
-		<texPath>Things/Item/Apparel/Vespid/Helmet/Vespid_Helmet</texPath>
+		<texPath>Things/Item/Apparel/Vespid/Helmet/__Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>199,132,1</color>

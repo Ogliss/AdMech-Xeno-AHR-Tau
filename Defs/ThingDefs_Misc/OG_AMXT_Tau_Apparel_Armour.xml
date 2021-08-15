@@ -395,7 +395,8 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<apparel>
-		<useWornGraphicMask>true</useWornGraphicMask>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<shellCoversHead IgnoreIfNoMatchingField="True">true</shellCoversHead>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
@@ -405,11 +406,11 @@
 				<li MayRequire="CETeam.CombatExtended">Hands</li>
 				<li MayRequire="CETeam.CombatExtended">Feet</li>
 			</bodyPartGroups>
-			<!--wornGraphicPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</wornGraphicPath-->
+			<wornGraphicPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
-				<li>Shell</li>
 				<li>Overhead</li>
+				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>TauMilitary</li>
@@ -448,7 +449,7 @@
 						<commonality>10</commonality>
 						<NorthOffset>0,0.0,0</NorthOffset>
 						<SouthOffset>0,0.0,0</SouthOffset>
-						<EastOffset>0,-0.10,0</EastOffset>
+						<EastOffset>0,-0.0,0</EastOffset>
 						<WestOffset>0,-0.0,0</WestOffset>
 					</li>
 				</ExtrasEntries>
