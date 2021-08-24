@@ -3,6 +3,8 @@
 
   <FactionDef ParentName="OG_Tau_Faction_Base">
     <defName>OG_Tau_Faction</defName>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">20</configurationListOrderPriority>
     <allowedCultures IgnoreIfNoMatchingField="True">
 		<li>OG_Tau_GreaterGood</li>
 	</allowedCultures>

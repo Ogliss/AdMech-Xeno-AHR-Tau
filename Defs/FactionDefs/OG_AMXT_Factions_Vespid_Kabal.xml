@@ -5,6 +5,8 @@
     <defName>OG_Vespid_Faction</defName>
     <settlementGenerationWeight>0</settlementGenerationWeight>
     <requiredCountAtGameStart>0</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">20</configurationListOrderPriority>
 	<hairTags IgnoreIfNoMatchingField="True">
 		<li>Outlander</li>
 		<li>Pirate</li>

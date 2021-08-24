@@ -5,6 +5,8 @@
 		<defName>OG_Kroot_Faction</defName>
 		<factionNameMaker>NamerFactionTribal</factionNameMaker>
 		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority IgnoreIfNoMatchingField="True">20</configurationListOrderPriority>
 		<allowedCultures IgnoreIfNoMatchingField="True">
 			<li>OG_Kroot_Mercenary</li>
 		</allowedCultures>
