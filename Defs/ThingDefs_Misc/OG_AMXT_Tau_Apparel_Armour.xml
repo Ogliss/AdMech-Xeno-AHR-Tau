@@ -248,7 +248,7 @@
 					<padTexPath>Things/Item/Apparel/Tau/CombatSuit/Pauldrons/Pauldron</padTexPath>
 					<commonality>10</commonality>
 					<northtop>PostHead</northtop>
-					<southtop>Shell</southtop>
+					<!--southtop>Utility_South</southtop-->
 					<easttop>PostHead</easttop>
 					<westtop>PostHead</westtop>
 				</li>
