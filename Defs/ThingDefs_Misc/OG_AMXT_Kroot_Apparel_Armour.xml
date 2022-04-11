@@ -1,7 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--========================= Kroot -  Rags ==========================-->
-	<ThingDef ParentName="ApparelMakeableBase">
+    <!-- ========================= Kroot - Clothes Base - Apparel Base ========================== -->
+	<ThingDef Name="OG_Kroot_Apparel_Base" ParentName="OG_Apparel_Base" Abstract="True">
+		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Outlander_Kroot</li>
+				<li>OG_Tribal_Kroot</li>
+			</ideoDesireAllowedFactionCategoryTags>
+			<tags>
+				<li>KrootApparel</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGTSub</li>
+		</thingCategories>
+	</ThingDef>
+	
+    <!-- ========================= Kroot - Clothes Base - Apparel Makable Base ========================== -->
+	<ThingDef Name="OG_Kroot_Apparel_Makeable" ParentName="OG_Kroot_Apparel_Base" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisites>
+				<li>OG_Kroot_Tech_Base_T1</li>
+			</researchPrerequisites>
+		</recipeMaker>
+	</ThingDef>
+		
+    <!-- ========================= Kroot - Clothes - Apparel Makable ========================== -->
+	<ThingDef Name="OG_Kroot_Apparel" ParentName="OG_Kroot_Apparel_Makeable" Abstract="True">
+		<apparel>
+			<tags>
+				<li>KrootClothing</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGKApparel</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<!-- ========================= Kroot - Headgear - Hat Makable ========================== -->
+	<ThingDef Name="OG_Kroot_Apparel_Headgear" ParentName="OG_Kroot_Apparel_Makeable" Abstract="True">
+		<apparel>
+			<tags>
+				<li>KrootHat</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>OGKHeadgear</li>
+		</thingCategories>
+    <statBases>
+      <Mass>0.15</Mass>
+    </statBases>
+	</ThingDef>
+	
+	<!--========================= Kroot -  Tribalwear ==========================-->
+	<ThingDef ParentName="OG_Kroot_Apparel">
 		<defName>OGK_Apparel_Tribalwear</defName>
 		<label>Kroot tribalwear</label>
 		<description>A full-body garment. While it may look primitive, it is effective at insulating the wearer.</description>
@@ -87,7 +148,7 @@
 	
 	
 	<!--========================= Tau - Kroot Helmet ==========================-->
-  <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="OG_Kroot_Apparel_Headgear">
     <defName>OGK_Apparel_TribalHeaddress</defName>
     <label>Kroot headdress</label>
     <description>Elegant traditional garb, often with religious significance. Improves social impact.</description>

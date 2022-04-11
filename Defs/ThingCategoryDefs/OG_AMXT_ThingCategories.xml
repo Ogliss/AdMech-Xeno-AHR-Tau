@@ -16,12 +16,6 @@
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
-		<defName>OGKRanged</defName>
-		<label>Tau Ranged Weapons</label>
-		<parent>OGTWeapons</parent>
-	</ThingCategoryDef>
-	
-	<ThingCategoryDef>
 		<defName>OGTMelee</defName>
 		<label>Tau Melee Weapons</label>
 		<parent>OGTWeapons</parent>
@@ -33,6 +27,17 @@
 		<parent>OGTWeapons</parent>
 	</ThingCategoryDef>	
 			
+	<ThingCategoryDef>
+		<defName>OGKRanged</defName>
+		<label>Kroot Ranged Weapons</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKMelee</defName>
+		<label>Kroot Melee Weapons</label>
+		<parent>OGTWeapons</parent>
+	</ThingCategoryDef>
 	<!-- ========================= Adeptus Mechanicus - Tau Armour Catagories ========================== -->
 	<ThingCategoryDef>
 		<defName>OGTSub</defName>
@@ -69,7 +74,18 @@
 		<label>Tau Wargear</label>
 		<parent>OGTSub</parent>
 	</ThingCategoryDef>
-  
+
+	<ThingCategoryDef>
+		<defName>OGKApparel</defName>
+		<label>Kroot Apparel</label>
+		<parent>OGTSub</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKHeadgear</defName>
+		<label>Kroot Headgear</label>
+		<parent>OGTSub</parent>
+	</ThingCategoryDef>
 	<!-- ========================= Adeptus Mechanicus - Tau Corpse Catagories ========================== -->
 
 	<!-- Tau Corpse -->

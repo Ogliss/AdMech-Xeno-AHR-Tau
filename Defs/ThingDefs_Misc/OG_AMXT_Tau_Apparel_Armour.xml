@@ -489,6 +489,14 @@
 					<WestOffset>0,0.35,0</WestOffset>
 			</li-->
 		</comps>
+		<modExtensions>
+		  <li Class="AdeptusMechanicus.ApparelRestrictionDefExtension">
+			<BodytypeDefs>
+				<li>Male</li>
+			</BodytypeDefs>
+			<forcedBodytype>true</forcedBodytype>
+		  </li>
+		</modExtensions>
 	</ThingDef>
 
 	<!--========================= Tau - XV8 Battlesuit ==========================-->

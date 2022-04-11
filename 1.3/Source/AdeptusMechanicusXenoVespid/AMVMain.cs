@@ -16,7 +16,7 @@ namespace AdeptusMechanicus
         public static List<ResearchProjectDef> TauReseach => DefDatabase<ResearchProjectDef>.AllDefs.Where(x => x.defName.Contains("OG_Tau_Tech_")).ToList();
         static AMVMain()
         {
-            List<string> blackTags = new List<string>() { "I", "C" };
+            List<string> blackTags = ArmouryMain.humansTags;
             List<ResearchProjectDef> blackProjects = new List<ResearchProjectDef>();
             blackProjects.AddRange(ArmouryMain.ReseachImperial);
             blackProjects.AddRange(ArmouryMain.ReseachChaos);

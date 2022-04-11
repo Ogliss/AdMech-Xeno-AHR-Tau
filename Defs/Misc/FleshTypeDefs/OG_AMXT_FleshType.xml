@@ -347,7 +347,33 @@
 						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
 						<flipWest>true</flipWest>
 						<onlyOnPart>Eye</onlyOnPart>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnWoundAnchorTag>LeftTopEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<missingBodyPartFresh>false</missingBodyPartFresh>
+						<scale>0.7</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftMiddleEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<tintWithSkinColor>true</tintWithSkinColor>
+						<missingBodyPartFresh>false</missingBodyPartFresh>
+						<scale>0.7</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/MissingEye_Scar_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/MissingEye_Scar_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/MissingEye_Scar_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/MissingEye_Scar_east</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftBottomEye</flipOnWoundAnchorTag>
 						<flipOnRotation>South</flipOnRotation>
 						<tintWithSkinColor>true</tintWithSkinColor>
 						<missingBodyPartFresh>false</missingBodyPartFresh>
@@ -360,7 +386,31 @@
 						<textureWest>Things/Pawn/Wounds/MissingEye_Fresh</textureWest>
 						<flipWest>true</flipWest>
 						<onlyOnPart>Eye</onlyOnPart>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnWoundAnchorTag>LeftTopEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<missingBodyPartFresh>true</missingBodyPartFresh>
+						<scale>0.7</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/MissingEye_Fresh</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/MissingEye_Fresh</textureNorth>
+						<textureEast>Things/Pawn/Wounds/MissingEye_Fresh</textureEast>
+						<textureWest>Things/Pawn/Wounds/MissingEye_Fresh</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftMiddleEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<missingBodyPartFresh>true</missingBodyPartFresh>
+						<scale>0.7</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/MissingEye_Fresh</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/MissingEye_Fresh</textureNorth>
+						<textureEast>Things/Pawn/Wounds/MissingEye_Fresh</textureEast>
+						<textureWest>Things/Pawn/Wounds/MissingEye_Fresh</textureWest>
+						<flipWest>true</flipWest>
+						<onlyOnPart>Eye</onlyOnPart>
+						<flipOnWoundAnchorTag>LeftBottomEye</flipOnWoundAnchorTag>
 						<flipOnRotation>South</flipOnRotation>
 						<missingBodyPartFresh>true</missingBodyPartFresh>
 						<scale>0.7</scale>
@@ -376,7 +426,27 @@
 						<textureEast>Things/Pawn/Wounds/BionicEye_east</textureEast>
 						<textureWest>Things/Pawn/Wounds/BionicEye_east</textureWest>
 						<flipWest>true</flipWest>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnWoundAnchorTag>LeftTopEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/BionicEye_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/BionicEye_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/BionicEye_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/BionicEye_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftMiddleEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/BionicEye_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/BionicEye_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/BionicEye_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/BionicEye_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftBottomEye</flipOnWoundAnchorTag>
 						<flipOnRotation>South</flipOnRotation>
 						<scale>0.85</scale>
 					</li>
@@ -391,7 +461,27 @@
 						<textureEast>Things/Pawn/Wounds/ArchotechEye_east</textureEast>
 						<textureWest>Things/Pawn/Wounds/ArchotechEye_east</textureWest>
 						<flipWest>true</flipWest>
-						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnWoundAnchorTag>LeftTopEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/ArchotechEye_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/ArchotechEye_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/ArchotechEye_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/ArchotechEye_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftMiddleEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+					<li>
+						<textureSouth>Things/Pawn/Wounds/ArchotechEye_south</textureSouth>
+						<textureNorth>Things/Pawn/Wounds/ArchotechEye_south</textureNorth>
+						<textureEast>Things/Pawn/Wounds/ArchotechEye_east</textureEast>
+						<textureWest>Things/Pawn/Wounds/ArchotechEye_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftBottomEye</flipOnWoundAnchorTag>
 						<flipOnRotation>South</flipOnRotation>
 						<scale>0.85</scale>
 					</li>

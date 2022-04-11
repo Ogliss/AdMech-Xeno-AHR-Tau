@@ -146,6 +146,7 @@
                   <def>Eye</def>
                   <customLabel>left top eye</customLabel>
                   <coverage>0.02</coverage>
+                  <woundAnchorTag IgnoreIfNoMatchingField="True">LeftTopEye</woundAnchorTag>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -155,6 +156,7 @@
                   <def>Eye</def>
                   <customLabel>left middle eye</customLabel>
                   <coverage>0.02</coverage>
+                  <woundAnchorTag IgnoreIfNoMatchingField="True">LeftMiddleEye</woundAnchorTag>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -164,6 +166,7 @@
                   <def>Eye</def>
                   <customLabel>left bottom eye</customLabel>
                   <coverage>0.03</coverage>
+                  <woundAnchorTag IgnoreIfNoMatchingField="True">LeftBottomEye</woundAnchorTag>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -173,6 +176,7 @@
                   <def>Eye</def>
                   <customLabel>right top eye</customLabel>
                   <coverage>0.02</coverage>
+                  <woundAnchorTag IgnoreIfNoMatchingField="True">RightTopEye</woundAnchorTag>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -182,6 +186,7 @@
                   <def>Eye</def>
                   <customLabel>right middle eye</customLabel>
                   <coverage>0.02</coverage>
+                  <woundAnchorTag IgnoreIfNoMatchingField="True">RightMiddleEye</woundAnchorTag>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -191,6 +196,7 @@
                   <def>Eye</def>
                   <customLabel>right bottom eye</customLabel>
                   <coverage>0.03</coverage>
+                  <woundAnchorTag IgnoreIfNoMatchingField="True">RightBottomEye</woundAnchorTag>
                   <groups>
                     <li>FullHead</li>
                     <li>Eyes</li>
@@ -260,6 +266,7 @@
           <def>Shoulder</def>
           <customLabel>left shoulder</customLabel>
           <coverage>0.12</coverage>
+          <woundAnchorTag IgnoreIfNoMatchingField="True">LeftShoulder</woundAnchorTag>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -365,6 +372,7 @@
           <def>Shoulder</def>
           <customLabel>right shoulder</customLabel>
           <coverage>0.12</coverage>
+          <woundAnchorTag IgnoreIfNoMatchingField="True">RightShoulder</woundAnchorTag>
           <groups>
             <li>Shoulders</li>
           </groups>
@@ -479,6 +487,7 @@
           <customLabel>left leg</customLabel>
           <coverage>0.14</coverage>
           <height>Bottom</height>
+          <woundAnchorTag IgnoreIfNoMatchingField="True">LeftLeg</woundAnchorTag>
           <groups>
             <li>Legs</li>
           </groups>
@@ -558,6 +567,7 @@
           <customLabel>right leg</customLabel>
           <coverage>0.14</coverage>
           <height>Bottom</height>
+          <woundAnchorTag IgnoreIfNoMatchingField="True">RightLeg</woundAnchorTag>
           <groups>
             <li>Legs</li>
           </groups>

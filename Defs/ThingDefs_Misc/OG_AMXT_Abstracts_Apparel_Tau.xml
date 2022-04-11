@@ -4,6 +4,9 @@
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
 	<ThingDef Name="OG_Tau_Apparel_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Outlander_Tau</li>
+			</ideoDesireAllowedFactionCategoryTags>
 			<tags>
 				<li>TauApparel</li>
 			</tags>
@@ -61,8 +64,11 @@
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
 	<ThingDef Name="OG_Tau_Apparel_Armor_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
+			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+				<li>OG_Outlander_Tau</li>
+			</ideoDesireAllowedFactionCategoryTags>
 			<tags>
-				<li>TauApparel</li>
+				<li>TauArmour</li>
 			</tags>
 		</apparel>
 		<thingCategories>
@@ -115,7 +121,7 @@
 	</ThingDef>
 			
 	<!-- ========================= Tau - Apparel Wargear Base ========================== -->
-	<ThingDef Name="OG_Tau_Apparel_Wargear_Base" ParentName="OG_Apparel_Base" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Wargear_Base" ParentName="OG_Apparel_Wargear_Base" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauWargear</li>
