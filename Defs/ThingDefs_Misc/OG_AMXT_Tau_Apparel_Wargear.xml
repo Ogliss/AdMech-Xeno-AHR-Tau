@@ -46,7 +46,7 @@
 			</bodyPartGroups>
 			<!--wornGraphicPath>Things/Item/Equipment/Wargear/Tau/Drones/Tau_DroneBase</wornGraphicPath-->
 			<layers>
-				<li>OverheadEquipment</li>
+				<li>OG_Overhead_Equipment</li>
 			</layers>
 			<tags>
 				<li>TauMilitary</li>
@@ -133,7 +133,7 @@
 			<!--wornGraphicPath>Things/Item/Equipment/Wargear/Tau/Drones/Tau_DroneBase</wornGraphicPath-->
 			<hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
 			<layers>
-				<li>OverheadEquipment</li>
+				<li>OG_Overhead_Equipment</li>
 			</layers>
 			<tags>
 				<li>TauMilitary</li>

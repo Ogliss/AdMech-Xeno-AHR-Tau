@@ -54,6 +54,25 @@
 						<li>OG_Kroot_PlayerTribe</li> 
 					</factionDefs>
 				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Colonist_OG_KrootPsyker</li>
+							</kindDefs>
+							<chance>1.0</chance>
+						</li>
+						<li>
+							<kindDefs>
+								<li>Colonist_OG_Kroot</li>
+							</kindDefs>
+							<chance>5.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>OG_Tau_PlayerColony</li> 
+					</factionDefs>
+				</li>
 			</startingColonists>
             <alienwandererkinds>
                 <li>
@@ -75,6 +94,26 @@
                     <factionDefs>
                         <li>OG_Kroot_PlayerTribe</li> 
                         <li>OG_Kroot_PlayerTribe</li> 
+                    </factionDefs>
+                </li>
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+								<li>Slave_OG_Kroot</li>
+								<li>Colonist_OG_Kroot</li>
+                            </kindDefs>
+                            <chance>10.0</chance>
+                        </li>
+						<li>
+							<kindDefs>
+								<li>Colonist_OG_KrootPsyker</li>
+							</kindDefs>
+							<chance>1.0</chance>
+						</li>
+                    </pawnKindEntries>
+                    <factionDefs>
+                        <li>OG_Tau_PlayerColony</li> 
                     </factionDefs>
                 </li>
             </alienwandererkinds>
