@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!-- ======================== Jump Pack Ability Defs ================================== -->
+<!-- ======================== Imperial - Jump Ability ================================== -->
+	<ThingDef ParentName="FlyingObject_JumpPack">
+		<defName>FlyingObject_JumpPackTau</defName>
+		<projectile>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+
+
+	<AbilitesExtended.EquipmentAbilityDef>
+        <defName>OGT_Ability_Stealthsuit_JumpPack</defName>
+        <label>Jump</label>
+        <iconPath>Things/Item/Apparel/Tau/XV25Stealthsuit/Backpack/Backpack_north</iconPath>
+        <description>use Jump Pack.</description>
+        <abilityClass>AbilitesExtended.EquipmentAbility</abilityClass>
+		<cooldown>15</cooldown>
+		<verbProperties>
+		  <verbClass>AbilitesExtended.Verb_UseEquipment</verbClass>
+		  <range>12</range>
+		  <requireLineOfSight>false</requireLineOfSight>
+		  <minRange>5</minRange>
+		  <warmupTime>0.5</warmupTime>
+		  <!--warmupEffecter>JumpWarmupEffect</warmupEffecter-->
+		  <targetParams>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetLocations>True</canTargetLocations>
+		  </targetParams>
+		</verbProperties>
+		<comps>
+		  <li Class="AdeptusMechanicus.CompProperties_EquipmentAbilityJumpPack">
+			<compClass>AdeptusMechanicus.CompAbilityEffect_JumpPack</compClass>
+			<jumpingThing>FlyingObject_JumpPackTau</jumpingThing>
+			<stunTicks>70~120</stunTicks>
+			<!--explodingLeaperRadius>2.5</explodingLeaperRadius-->
+			<clamorRadius>5</clamorRadius>
+		  </li>
+		</comps>
+	</AbilitesExtended.EquipmentAbilityDef>
+
+</Defs>

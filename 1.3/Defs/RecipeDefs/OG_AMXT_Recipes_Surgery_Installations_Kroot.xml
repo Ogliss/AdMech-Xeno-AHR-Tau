@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="SurgeryKroot" ParentName="SurgeryFlesh" Abstract="True">
+	  <recipeUsers>
+		<li>OG_Alien_Kroot</li>
+	  </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryKroot">
+    <defName>OG_Kroot_InstallHyperactiveNymuneOrgan</defName>
+    <label>install hyperactive nymune organ</label>
+    <description>Install a hyperactive nymune organ.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing hyperactive nymune organ.</jobString>
+    <workAmount>2000</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>OG_Kroot_NymuneOrgan</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>OG_Kroot_Mutation_HyperactiveNymuneOrgan</addsHediff>
+  </RecipeDef>
+
+</Defs>
