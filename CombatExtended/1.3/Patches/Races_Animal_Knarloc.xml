@@ -1,65 +1,88 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- ========== KrootKnarloc ========== -->
+	<!-- ========== Knarloc ========== -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="OG_Knarloc_Base"]/tools</xpath>
-				<value>
-					<tools>
-						<li Class="CombatExtended.ToolCE">
-							<label>beak</label>
-							<capacities>
-								<li>Cut</li>
-							</capacities>
-							<power>30</power>
-							<cooldownTime>1.85</cooldownTime>
-							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-							<armorPenetration>0.243</armorPenetration>
-						</li>
-						<li Class="CombatExtended.ToolCE">
-							<label>left foot claw</label>
-							<capacities>
-								<li>Scratch</li>
-							</capacities>
-							<power>16</power>
-							<cooldownTime>1.65</cooldownTime>
-							<linkedBodyPartsGroup>OG_Knarloc_LeftFootClaws</linkedBodyPartsGroup>
-							<armorPenetration>0.163</armorPenetration>
-						</li>
-						<li Class="CombatExtended.ToolCE">
-							<label>right foot claw</label>
-							<capacities>
-								<li>Scratch</li>
-							</capacities>
-							<power>16</power>
-							<cooldownTime>1.65</cooldownTime>
-							<linkedBodyPartsGroup>OG_Knarloc_RightFootClaws</linkedBodyPartsGroup>
-							<armorPenetration>0.163</armorPenetration>
-						</li>
-						<li Class="CombatExtended.ToolCE">
-							<capacities>
-								<li>Bite</li>
-							</capacities>
-							<power>30</power>
-							<cooldownTime>2</cooldownTime>
-							<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-							<armorPenetration>0.373</armorPenetration>
-						</li>
-						<li Class="CombatExtended.ToolCE">
-							<label>head</label>
-							<capacities>
-								<li>Blunt</li>
-							</capacities>
-							<power>11</power>
-							<cooldownTime>1.65</cooldownTime>
-							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-							<chanceFactor>0.2</chanceFactor>
-							<armorPenetration>0.125</armorPenetration>
-						</li>
-					</tools>
-				</value>
+			<li Class="CombatExtended.PatchOperationMakeWeaponCECompatible">
+				<Name>OG_Knarloc_Base</Name>
+				<statBases>
+					<ArmorRating_Blunt>50</ArmorRating_Blunt>
+					<ArmorRating_Sharp>16</ArmorRating_Sharp>
+					<MeleeCritChance>1.76</MeleeCritChance>
+					<MeleeDodgeChance>0.7</MeleeDodgeChance>
+					<MeleeParryChance>0.5</MeleeParryChance>
+				</statBases>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>left foot claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.19</cooldownTime>
+						<linkedBodyPartsGroup>OG_Knarloc_LeftFootClaws</linkedBodyPartsGroup>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+									<def>Stun</def>
+									<amount>10</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
+						<armorPenetrationBlunt>10.250</armorPenetrationBlunt>
+						<armorPenetrationSharp>2.75</armorPenetrationSharp>
+					</li>
+					<li Class="CombatExtended.ToolCE">
+						<label>right foot claw</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1.19</cooldownTime>
+						<linkedBodyPartsGroup>OG_Knarloc_RightFootClaws</linkedBodyPartsGroup>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+									<def>Stun</def>
+									<amount>10</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
+						<armorPenetrationBlunt>10.250</armorPenetrationBlunt>
+						<armorPenetrationSharp>2.75</armorPenetrationSharp>
+					</li>
+					<li Class="CombatExtended.ToolCE">
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>30</power>
+						<cooldownTime>1.46</cooldownTime>
+						<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+									<def>Stun</def>
+									<amount>20</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
+						<chanceFactor>2</chanceFactor>
+						<armorPenetrationBlunt>8.863</armorPenetrationBlunt>
+						<armorPenetrationSharp>1.6</armorPenetrationSharp>
+					</li>
+					<li Class="CombatExtended.ToolCE">
+						<label>head</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>11</power>
+						<cooldownTime>3.2</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<chanceFactor>0.2</chanceFactor>
+						<armorPenetrationBlunt>1.225</armorPenetrationBlunt>
+					</li>
+				</tools>
 			</li>
 		</operations>
 	</Operation>

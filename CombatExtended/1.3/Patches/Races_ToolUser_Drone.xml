@@ -4,64 +4,70 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[@Name="OG_Tau_Drone"]/tools</xpath>
-				<value>
-					<tools>
-						<li Class="CombatExtended.ToolCE">
-							<label>ram</label>
-							<capacities>
-							  <li>Blunt</li>
-							</capacities>
-							<power>4.5</power>
-							<cooldownTime>2</cooldownTime>
-							<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-							<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-							<armorPenetration>0.125</armorPenetration>
-						</li>
-					</tools>
-				</value>
+			<li Class="CombatExtended.PatchOperationMakeWeaponCECompatible">
+				<Name>OG_Tau_Drone</Name>
+				<statBases>
+					<ArmorRating_Blunt>50</ArmorRating_Blunt>
+					<ArmorRating_Sharp>16</ArmorRating_Sharp>
+					<ArmorRating_Heat>20.40</ArmorRating_Heat>
+					<MeleeCritChance>0.06</MeleeCritChance>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MeleeParryChance>0.0</MeleeParryChance>
+				</statBases>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>ram</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>4.5</power>
+						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+						<armorPenetration>0.125</armorPenetration>
+					</li>
+				</tools>
 			</li>
 			
 			<!--==================== Tau - Twin linked Pulse Carbine (Drones only) =========================-->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>OGT_Gun_PulseCarbineTwinLinked</defName>
-			<statBases>
-			  <Mass>4</Mass>
-			  <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
-			  <SightsEfficiency>0.8</SightsEfficiency>
-			  <ShotSpread>0.15</ShotSpread>
-			  <SwayFactor>0.5</SwayFactor>
-			  <Bulk>2.50</Bulk>
-			</statBases>
-			<Properties>
-				<recoilAmount>0.08</recoilAmount>
-			  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			  <hasStandardCommand>true</hasStandardCommand>
-			  <defaultProjectile>OGT_Bullet_PulseTwinlinked</defaultProjectile>
-			  <warmupTime>0.75</warmupTime>
-			  <range>20</range>
-			  <soundCast>OG_Plasma_Pistol_Sound</soundCast>
-			  <soundCastTail>GunTail_Light</soundCastTail>
-			  <muzzleFlashScale>8</muzzleFlashScale>
-			  <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-				<burstShotCount>8</burstShotCount>
-				<targetParams>
-				  <canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</Properties>
-			<!--AmmoUser>
-			  <magazineSize>40</magazineSize>
-			  <reloadTime>4</reloadTime>
-			  <ammoSet>AmmoSet_OGPulseCarbine</ammoSet>
-			</AmmoUser-->
-			<FireModes>
-				<aiAimMode>AimedShot</aiAimMode>
-				<aiUseBurstMode>TRUE</aiUseBurstMode>		
-			</FireModes>
-			<weaponTags>
-				<li>TPulseCarbine</li>
-			</weaponTags>
+				<defName>OGT_Gun_PulseCarbineTwinLinked</defName>
+				<statBases>
+				  <Mass>4</Mass>
+				  <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+				  <SightsEfficiency>0.8</SightsEfficiency>
+				  <ShotSpread>0.15</ShotSpread>
+				  <SwayFactor>0.5</SwayFactor>
+				  <Bulk>2.50</Bulk>
+				</statBases>
+				<Properties>
+					<recoilAmount>0.08</recoilAmount>
+				  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>OGT_Bullet_PulseTwinlinked</defaultProjectile>
+				  <warmupTime>0.75</warmupTime>
+				  <range>20</range>
+				  <soundCast>OG_Plasma_Pistol_Sound</soundCast>
+				  <soundCastTail>GunTail_Light</soundCastTail>
+				  <muzzleFlashScale>8</muzzleFlashScale>
+				  <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+					<burstShotCount>8</burstShotCount>
+					<targetParams>
+					  <canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</Properties>
+				<!--AmmoUser>
+				  <magazineSize>40</magazineSize>
+				  <reloadTime>4</reloadTime>
+				  <ammoSet>AmmoSet_OGPulseCarbine</ammoSet>
+				</AmmoUser-->
+				<FireModes>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>		
+				</FireModes>
+				<weaponTags>
+					<li>TPulseCarbine</li>
+				</weaponTags>
 			</li>
 
 			<li Class="PatchOperationAdd">

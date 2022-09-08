@@ -44,12 +44,15 @@
     <Compile Include="AMTMain.cs" />
     <Compile Include="Harmony\PawnGenerator_GeneratePawn_Tau_Patch.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
-    <Compile Include="Harmony\Settings\AMAMod_PlayableTauSettings_Patch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AdeptusMechanicusArmoury">
-      <HintPath>..\..\..\..\AdMechArmoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\AdMech-Armoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AdeptusMechanicusArmouryAlienTweaks">
+      <HintPath>..\..\..\..\AdMech-Armoury\1.3\AlienRaces\Assemblies\AdeptusMechanicusArmouryAlienTweaks.dll</HintPath>
+      <Private>false</Private>
     </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\839005762\1.3\Assemblies\AlienRace.dll</HintPath>
@@ -57,7 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.3326" GeneratePathProperty="true" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.3.3389" GeneratePathProperty="true" />
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.1</Version>
     </PackageReference>

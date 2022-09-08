@@ -21,15 +21,11 @@
 			<ArmorRating_Heat>0.75</ArmorRating_Heat>
 			<Insulation_Heat>18</Insulation_Heat>
 			<Insulation_Cold>18</Insulation_Cold>
-			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
-			<WornBulk MayRequire="CETeam.CombatExtended">6</WornBulk>
 			<Mass>2</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.01</MoveSpeed>
 			<WorkSpeedGlobal>-0.025</WorkSpeedGlobal>
-			<CarryWeight MayRequire="CETeam.CombatExtended">10</CarryWeight>
-			<CarryBulk MayRequire="CETeam.CombatExtended">8</CarryBulk>
 		</equippedStatOffsets>
 		<costList>
 			<Steel>100</Steel>
@@ -189,14 +185,10 @@
 			<Insulation_Heat>12</Insulation_Heat>
 			<Insulation_Cold>32</Insulation_Cold>
 			<Mass>6.5</Mass>
-			<Bulk MayRequire="CETeam.CombatExtended">10</Bulk>
-			<WornBulk MayRequire="CETeam.CombatExtended">8</WornBulk>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.03</MoveSpeed>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-			<CarryWeight MayRequire="CETeam.CombatExtended">10</CarryWeight>
-			<CarryBulk MayRequire="CETeam.CombatExtended">8</CarryBulk>
 		</equippedStatOffsets>
 		<costList>
 			<Steel>100</Steel>
@@ -373,15 +365,11 @@
 			<ArmorRating_Heat>1.10</ArmorRating_Heat>
 			<Insulation_Heat>10</Insulation_Heat>
 			<Insulation_Cold>30</Insulation_Cold>
-			<Bulk MayRequire="CETeam.CombatExtended">13</Bulk>
-			<WornBulk MayRequire="CETeam.CombatExtended">10</WornBulk>
 			<Mass>4</Mass>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.04</MoveSpeed>
 			<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
-			<CarryWeight MayRequire="CETeam.CombatExtended">10</CarryWeight>
-			<CarryBulk MayRequire="CETeam.CombatExtended">8</CarryBulk>
 		</equippedStatOffsets>
 		<costList>
 			<Steel>100</Steel>
@@ -403,8 +391,6 @@
 				<li>Arms</li>
 				<li>Legs</li>
 				<li>FullHead</li>
-				<li MayRequire="CETeam.CombatExtended">Hands</li>
-				<li MayRequire="CETeam.CombatExtended">Feet</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</wornGraphicPath>
 			<layers>
@@ -650,8 +636,6 @@
 		<Insulation_Cold>10.4</Insulation_Cold> <!-- like a cloth jacket -->
 		<Insulation_Heat>3</Insulation_Heat>
 		<EquipDelay>6</EquipDelay>
-		<Bulk MayRequire="CETeam.CombatExtended">5</Bulk>
-		<WornBulk MayRequire="CETeam.CombatExtended">6</WornBulk>
 	</statBases>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.06</MoveSpeed>
@@ -707,8 +691,6 @@
 		<Insulation_Cold>3.5</Insulation_Cold>
 		<Insulation_Heat>1</Insulation_Heat>
 		<EquipDelay>5</EquipDelay>
-		<Bulk MayRequire="CETeam.CombatExtended">4</Bulk>
-		<WornBulk MayRequire="CETeam.CombatExtended">4</WornBulk>
 	</statBases>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.06</MoveSpeed>

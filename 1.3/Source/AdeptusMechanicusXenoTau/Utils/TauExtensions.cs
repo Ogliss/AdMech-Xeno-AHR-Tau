@@ -27,11 +27,11 @@ namespace AdeptusMechanicus.ExtensionMethods
 
         public static bool EtheralCaste(this PawnKindDef pawn)
         {
-            return pawn.backstoryCategories.Contains("Tau_AUN");
+            return pawn.backstoryCategories != null && pawn.backstoryCategories.Contains("Tau_AUN");
         }
         public static bool EtheralCaste(this Pawn pawn)
         {
-            return pawn.story.childhood.identifier.Contains("Tau_Aun");
+            return pawn.story?.childhood != null && pawn.story.childhood.identifier.Contains("Tau_Aun");
         }
 
 

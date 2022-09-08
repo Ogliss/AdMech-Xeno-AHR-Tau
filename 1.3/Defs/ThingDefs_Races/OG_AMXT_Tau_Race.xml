@@ -153,9 +153,9 @@
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Tyranid_Faction</li>
 						<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Chaos_Deamon_Faction</li>
 						<li MayRequire="CptOhu.CorruptionCore">PlayerColony_Chaos</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">IG_ChaosMarineFaction</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">TraitorGuardFaction</li>
-						<li MayRequire="QX.AstraMilitarum.Factions">TyranidFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_ChaosMarineFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_TraitorGuardFaction</li>
+						<li MayRequire="QX.AstraMilitarum.Factions">QX_TyranidFaction</li>
 					</factions>
 					<goodwill>
 						<min>-100</min>
@@ -256,8 +256,6 @@
         <GlobalLearningFactor>1.15</GlobalLearningFactor>
         <MeleeDodgeChance>0.85</MeleeDodgeChance>
         <MeleeHitChance>0.85</MeleeHitChance>
-        <MeleeCritChance MayRequire="CETeam.CombatExtended">0.825</MeleeCritChance>
-		<MeleeParryChance MayRequire="CETeam.CombatExtended">0.825</MeleeParryChance>
         <GeneralLaborSpeed>1.11</GeneralLaborSpeed>
         <ButcheryFleshSpeed>0.85</ButcheryFleshSpeed>
         <ButcheryFleshEfficiency>0.95</ButcheryFleshEfficiency>
