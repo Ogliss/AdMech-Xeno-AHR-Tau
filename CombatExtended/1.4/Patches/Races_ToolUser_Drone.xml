@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- ========== Tau - Gun Drone ========== -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="CombatExtended.PatchOperationMakeWeaponCECompatible">
+				<Name>OG_Tau_Drone</Name>
+				<statBases>
+					<ArmorRating_Blunt>50</ArmorRating_Blunt>
+					<ArmorRating_Sharp>16</ArmorRating_Sharp>
+					<ArmorRating_Heat>20.40</ArmorRating_Heat>
+					<MeleeCritChance>0.06</MeleeCritChance>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<MeleeParryChance>0.0</MeleeParryChance>
+				</statBases>
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>ram</label>
+						<capacities>
+						  <li>Blunt</li>
+						</capacities>
+						<power>4.5</power>
+						<cooldownTime>2</cooldownTime>
+						<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+						<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+						<armorPenetration>0.125</armorPenetration>
+					</li>
+				</tools>
+			</li>
+			
+			<!--==================== Tau - Twin linked Pulse Carbine (Drones only) =========================-->
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>OGT_Gun_PulseCarbineTwinLinked</defName>
+				<statBases>
+				  <Mass>4</Mass>
+				  <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+				  <SightsEfficiency>0.8</SightsEfficiency>
+				  <ShotSpread>0.15</ShotSpread>
+				  <SwayFactor>0.5</SwayFactor>
+				  <Bulk>2.50</Bulk>
+				</statBases>
+				<Properties>
+					<recoilAmount>0.08</recoilAmount>
+				  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>OGT_Bullet_PulseTwinlinked</defaultProjectile>
+				  <warmupTime>0.75</warmupTime>
+				  <range>20</range>
+				  <soundCast>OG_Plasma_Pistol_Sound</soundCast>
+				  <soundCastTail>GunTail_Light</soundCastTail>
+				  <muzzleFlashScale>8</muzzleFlashScale>
+				  <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+					<burstShotCount>8</burstShotCount>
+					<targetParams>
+					  <canTargetLocations>true</canTargetLocations>
+					</targetParams>
+				</Properties>
+				<!--AmmoUser>
+				  <magazineSize>40</magazineSize>
+				  <reloadTime>4</reloadTime>
+				  <ammoSet>AmmoSet_OGPulseCarbine</ammoSet>
+				</AmmoUser-->
+				<FireModes>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aiUseBurstMode>TRUE</aiUseBurstMode>		
+				</FireModes>
+				<weaponTags>
+					<li>TPulseCarbine</li>
+				</weaponTags>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+						<defName>OGT_Bullet_PulseTwinlinked</defName>
+						<label>Plasma Bolt</label>
+						<description>A superheated bolt fired by a Plasma Weapon impacts with the fury of a supernova, scything through steel, flesh and bone as if they were nothing.Due to the enormous temperatures and deadly energies that Plasma Weapons generate when fired, most such weapons are prone to overheating, destabilisation and misfire.</description>
+						<graphicData>
+							<texPath>Things/Projectile/PlasmaPulse</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+							<damageDef>OGTPlasmaPulse</damageDef>
+							<damageAmountBase>15</damageAmountBase>
+							<armorPenetrationBase>0.48</armorPenetrationBase>
+							<speed>100</speed>
+							<spreadMult>1.8</spreadMult>
+							<pelletCount>2</pelletCount>
+						</projectile>
+						<thingClass>AdeptusMechanicus.Bullet_ExplosiveCE</thingClass>
+						<modExtensions>
+						  <li Class="AdeptusMechanicus.GlowerProjectileExtension">
+							<glowMoteDef>Mote_PlasmaGlow</glowMoteDef>
+							<glowMoteSize>1.5</glowMoteSize>
+						  </li>
+						  <li Class="AdeptusMechanicus.ProjectileVFX">
+							
+							<explosionMoteSize>0.05</explosionMoteSize>
+							<impactMoteDef>Mote_YellowSparkFlash</impactMoteDef>
+							<impactMoteSize>1</impactMoteSize>
+							<impactGlowMoteDef>Mote_ExplosionFlash</impactGlowMoteDef>
+							<impactGlowMoteSize>0.5</impactGlowMoteSize>
+						  </li>
+						</modExtensions>
+					</ThingDef>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>
+

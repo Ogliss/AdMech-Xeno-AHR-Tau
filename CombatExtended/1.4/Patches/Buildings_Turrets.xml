@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!--success>Always</success-->
+		<operations>
+			<!--=============== Auto turrets ===============-->
+			<!--li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="OGT_HeavyTurret"]/thingClass</xpath>
+				<value>
+					<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="OGT_HeavyLaserTurret"]/thingClass</xpath>
+				<value>
+					<thingClass>AdeptusMechanicus.Lasers.Building_LaserGunCE</thingClass>
+				</value>
+			</li-->
+			<!--=============== Dual Burst Cannon turret ===============-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "OGT_Turret_BurstCannonDual_Auto"]/researchPrerequisites/li[text()="HeavyTurrets"]</xpath>
+					<value>
+						<li>CE_HeavyTurret</li>
+					</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_BurstCannonDual_Auto"]/comps/li[@Class = "CompProperties_Explosive"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_BurstCannonDual_Auto"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_BurstCannonDual_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy>0.25</AimingAccuracy>
+				</value>
+			</li>
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>OGT_GunTurret_BurstCannonDual</defName>
+				<statBases>
+				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+				  <SightsEfficiency>1</SightsEfficiency>
+				  <ShotSpread>0.07</ShotSpread>
+				  <SwayFactor>0.82</SwayFactor>
+				  <Bulk>10.00</Bulk>
+				</statBases>
+				<Properties>
+				  <recoilAmount>0.76</recoilAmount>
+				  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>OGT_Bullet_BurstCannonDual</defaultProjectile>
+				  <warmupTime>0.2</warmupTime>
+				  <range>28</range>
+				  <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				  <burstShotCount>36</burstShotCount>
+				  <soundCast>OG_Plasma_Pistol_Sound</soundCast>
+				  <soundCastTail>GunTail_Medium</soundCastTail>
+				  <muzzleFlashScale>9</muzzleFlashScale>
+				  <recoilPattern>Mounted</recoilPattern>
+				</Properties>
+				<AmmoUser>
+				  <magazineSize>140</magazineSize>
+				  <reloadTime>7.8</reloadTime>
+				  <ammoSet>AmmoSet_OGBurstCannonDual</ammoSet>
+				</AmmoUser>
+				<FireModes>
+				  <aiAimMode>AimedShot</aiAimMode>
+				  <noSnapshot>true</noSnapshot>
+				  <noSingleShot>true</noSingleShot>
+				</FireModes>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+						<defName>OGT_Bullet_BurstCannonDual</defName>
+						<label>Burst Pulse</label>
+						<graphicData>
+							<texPath>Things/Projectile/PlasmaPulseSml</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+							<damageDef>OGTPlasmaPulse</damageDef>
+							<damageAmountBase>9</damageAmountBase>
+							<armorPenetrationBase>0.48</armorPenetrationBase>
+							<speed>135</speed>
+							<pelletCount>2</pelletCount>
+							<spreadMult>2.0</spreadMult>
+						</projectile>
+						<thingClass>AdeptusMechanicus.Bullet_ExplosiveCE</thingClass>
+						<modExtensions>
+						  <li Class="AdeptusMechanicus.GlowerProjectileExtension">
+							<glowMoteDef>Mote_PlasmaGlow</glowMoteDef>
+							<glowMoteSize>1.5</glowMoteSize>
+						  </li>
+						  <li Class="AdeptusMechanicus.ProjectileVFX">
+							<explosionMoteSize>0.05</explosionMoteSize>
+							<impactMoteDef>Mote_YellowSparkFlash</impactMoteDef>
+							<impactMoteSize>1</impactMoteSize>
+							<impactGlowMoteDef>Mote_ExplosionFlash</impactGlowMoteDef>
+							<impactGlowMoteSize>0.5</impactGlowMoteSize>
+						  </li>
+						</modExtensions>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<!--=============== Dual Plasma Rifle turret ===============-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "OGT_Turret_PlasmaRifleDual_Auto"]/researchPrerequisites/li[text()="HeavyTurrets"]</xpath>
+					<value>
+						<li>CE_HeavyTurret</li>
+					</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_PlasmaRifleDual_Auto"]/comps/li[@Class = "CompProperties_Explosive"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_PlasmaRifleDual_Auto"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_PlasmaRifleDual_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy>0.5</AimingAccuracy>
+				</value>
+			</li>
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>OGT_GunTurret_PlasmaRifleDual</defName>
+				<statBases>
+				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+				  <SightsEfficiency>1</SightsEfficiency>
+				  <ShotSpread>0.07</ShotSpread>
+				  <SwayFactor>0.82</SwayFactor>
+				  <Bulk>10.00</Bulk>
+				</statBases>
+				<Properties>
+				  <recoilAmount>0.76</recoilAmount>
+				  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>OGT_Bullet_PlasmaRifleDual</defaultProjectile>
+				  <warmupTime>1.25</warmupTime>
+				  <range>31</range>
+				  <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				  <burstShotCount>36</burstShotCount>
+				  <soundCast>OG_Plasma_Pistol_Sound</soundCast>
+				  <soundCastTail>GunTail_Medium</soundCastTail>
+				  <muzzleFlashScale>9</muzzleFlashScale>
+				  <recoilPattern>Mounted</recoilPattern>
+				</Properties>
+				<AmmoUser>
+				  <magazineSize>140</magazineSize>
+				  <reloadTime>7.8</reloadTime>
+				  <ammoSet>AmmoSet_OGTPlasmaDual</ammoSet>
+				</AmmoUser>
+				<FireModes>
+				  <aiAimMode>AimedShot</aiAimMode>
+				  <noSnapshot>true</noSnapshot>
+				  <noSingleShot>true</noSingleShot>
+				</FireModes>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+						<defName>OGT_Bullet_PlasmaRifleDual</defName>
+						<label>Burst Pulse</label>
+						<graphicData>
+							<texPath>Things/Projectile/PlasmaPulseSml</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+							<flyOverhead>false</flyOverhead>
+							<damageDef>OGIPlasma</damageDef>
+							<explosionRadius>0.50</explosionRadius>
+							<damageAmountBase>35</damageAmountBase>
+							<armorPenetrationBase>0.68</armorPenetrationBase>
+							<stoppingPower>2</stoppingPower>
+							<speed>85</speed>
+							<soundExplode>OGIPP_Explosion</soundExplode>
+							<pelletCount>2</pelletCount>
+							<spreadMult>2.0</spreadMult>
+						</projectile>
+						<thingClass>AdeptusMechanicus.Bullet_ExplosiveCE</thingClass>
+						<modExtensions>
+						  <li Class="AdeptusMechanicus.GlowerProjectileExtension">
+							<glowMoteDef>Mote_PlasmaGlow</glowMoteDef>
+							<glowMoteSize>1.5</glowMoteSize>
+						  </li>
+						  <li Class="AdeptusMechanicus.ProjectileVFX">
+							<explosionMoteSize>0.05</explosionMoteSize>
+							<impactMoteDef>Mote_YellowSparkFlash</impactMoteDef>
+							<impactMoteSize>1</impactMoteSize>
+							<impactGlowMoteDef>Mote_ExplosionFlash</impactGlowMoteDef>
+							<impactGlowMoteSize>0.5</impactGlowMoteSize>
+						  </li>
+						</modExtensions>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<!--=============== Missile turret ===============-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "OGT_Turret_Missile_Auto"]/researchPrerequisites/li[text()="HeavyTurrets"]</xpath>
+				<value>
+					<li>CE_HeavyTurret</li>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_Missile_Auto"]/comps/li[@Class = "CompProperties_Explosive"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_Missile_Auto"]/comps/li[@Class = "CompProperties_Refuelable"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_Missile_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy>0.5</AimingAccuracy>
+				</value>
+			</li>
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>OGT_GunTurret_Missile</defName>
+				<statBases>
+				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+				  <SightsEfficiency>1</SightsEfficiency>
+				  <ShotSpread>0.07</ShotSpread>
+				  <SwayFactor>0.82</SwayFactor>
+				  <Bulk>10.00</Bulk>
+				</statBases>
+				<Properties>
+				  <recoilAmount>0.76</recoilAmount>
+				  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>OGT_Bullet_Missile</defaultProjectile>
+				  <warmupTime>1.25</warmupTime>
+				  <range>31</range>
+				  <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				  <burstShotCount>36</burstShotCount>
+				  <soundCast>OG_Plasma_Pistol_Sound</soundCast>
+				  <soundCastTail>GunTail_Medium</soundCastTail>
+				  <muzzleFlashScale>9</muzzleFlashScale>
+				  <recoilPattern>Mounted</recoilPattern>
+				</Properties>
+				<AmmoUser>
+				  <magazineSize>140</magazineSize>
+				  <reloadTime>7.8</reloadTime>
+				  <ammoSet>AmmoSet_OGTMissile</ammoSet>
+				</AmmoUser>
+				<FireModes>
+				  <aiAimMode>AimedShot</aiAimMode>
+				  <noSnapshot>true</noSnapshot>
+				  <noSingleShot>true</noSingleShot>
+				</FireModes>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="OGT_Bullet_Missile"]</xpath>
+				<value>
+					<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+						<defName>OGT_Bullet_Missile</defName>
+						<label>missile</label>
+						<description>Whilst not as powerful as an Imperial Krak Missile warhead and lacking the damage radius of a Frag Missile, T'au missiles instead combine the best attributes of both, and are capable of rapid fire to shred infantry, transports, skimmers, and other light vehicles with ease.</description>
+						<graphicData>
+							<texPath>Things/Projectile/ImpMissileFrag</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+						</graphicData>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						  <damageDef>Bomb</damageDef>
+						  <damageAmountBase>15</damageAmountBase>
+						  <armorPenetrationBase>0.16</armorPenetrationBase>
+						  <explosionRadius>0.5</explosionRadius>
+						  <stoppingPower>2</stoppingPower>
+							<spreadMult>4.8</spreadMult>
+							<pelletCount>2</pelletCount>
+						</projectile>
+						<thingClass>AdeptusMechanicus.Bullet_ExplosiveCE</thingClass>
+						<modExtensions>
+						  <li Class="AdeptusMechanicus.GlowerProjectileExtension">
+							<glowMoteDef>Mote_PlasmaGlow</glowMoteDef>
+							<glowMoteSize>1.5</glowMoteSize>
+						  </li>
+						  <li Class="AdeptusMechanicus.ProjectileVFX">
+							<explosionMoteSize>0.05</explosionMoteSize>
+							<impactMoteDef>Mote_YellowSparkFlash</impactMoteDef>
+							<impactMoteSize>1</impactMoteSize>
+							<impactGlowMoteDef>Mote_ExplosionFlash</impactGlowMoteDef>
+							<impactGlowMoteSize>0.5</impactGlowMoteSize>
+						  </li>
+						</modExtensions>
+					</ThingDef>
+				</value>
+			</li>
+			
+			<!--=============== Dual Fusion Blaster turret ===============-->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "OGT_Turret_FusionBlasterDual_Auto"]/researchPrerequisites/li[text()="HeavyTurrets"]</xpath>
+					<value>
+						<li>CE_HeavyTurret</li>
+					</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_FusionBlasterDual_Auto"]/comps/li[@Class = "CompProperties_Explosive"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="OGT_Turret_FusionBlasterDual_Auto"]/statBases</xpath>
+				<value>
+					<AimingAccuracy>0.75</AimingAccuracy>
+				</value>
+			</li>
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+				<defName>OGT_GunTurret_FusionBlasterDual</defName>
+				<statBases>
+				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+				  <SightsEfficiency>1</SightsEfficiency>
+				  <ShotSpread>0.07</ShotSpread>
+				  <SwayFactor>0.82</SwayFactor>
+				  <Bulk>10.00</Bulk>
+				</statBases>
+				<Properties>
+				  <recoilAmount>0.76</recoilAmount>
+				  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				  <hasStandardCommand>true</hasStandardCommand>
+				  <defaultProjectile>OGT_Bullet_FusionBlastDual</defaultProjectile>
+				  <warmupTime>0.25</warmupTime>
+				  <range>25</range>
+				  <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				  <burstShotCount>36</burstShotCount>
+				  <soundCast>OG_Melta_Sound</soundCast>
+				  <soundCastTail>GunTail_Heavy</soundCastTail>
+				  <muzzleFlashScale>9</muzzleFlashScale>
+				  <recoilPattern>Mounted</recoilPattern>
+				</Properties>
+				<!--AmmoUser>
+				  <magazineSize>140</magazineSize>
+				  <reloadTime>7.8</reloadTime>
+				  <ammoSet>AmmoSet_OGFusionBlasterDual</ammoSet>
+				</AmmoUser-->
+				<FireModes>
+				  <aiAimMode>AimedShot</aiAimMode>
+				  <noSnapshot>true</noSnapshot>
+				  <noSingleShot>true</noSingleShot>
+				</FireModes>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<ThingDef Class="AdeptusMechanicus.Lasers.LaserBeamDefCE" ParentName="OG_Bullet_LaserGeneric">
+						<defName>OGT_Bullet_FusionBlastDual</defName>
+						<label>fusion blast</label>
+						<description>A higher power laser beam which is effective against the more durable alien bodies and stronger types of personal armour.</description>
+						<textures>
+						  <li>Things/Projectile/MeltaShot</li>
+						</textures>
+						<seam>0</seam>
+						<projectile Class="CombatExtended.ProjectilePropertiesCE">
+							<damageDef>OGIMelta</damageDef>
+							<damageAmountBase>125</damageAmountBase>
+							<armorPenetrationBase>1</armorPenetrationBase>
+							<explosionRadius>0.50</explosionRadius>
+							<stoppingPower>4</stoppingPower>
+							<soundExplode>OGIFL_Explosion</soundExplode>
+							<spreadMult>4.8</spreadMult>
+							<pelletCount>2</pelletCount>
+						</projectile>
+						<modExtensions>
+							<li Class="AdeptusMechanicus.ProjectileVFX">
+								<explosionMoteSize>0.75</explosionMoteSize>
+								<impactMoteDef>Mote_YellowSparkFlash</impactMoteDef>
+								<impactMoteSize>2</impactMoteSize>
+								<impactGlowMoteDef>Mote_ExplosionFlash</impactGlowMoteDef>
+								<impactGlowMoteSize>2.5</impactGlowMoteSize>
+							</li>
+						</modExtensions>
+					</ThingDef>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	 
+</Patch>

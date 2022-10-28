@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ============================ Kroot Base ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_Base_PawnKind">
+		<defaultFactionType>OG_Kroot_Faction</defaultFactionType>
+		<race>OG_Alien_Kroot</race>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>Kroot_Standard</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<chemicalAddictionChance>0.035</chemicalAddictionChance>
+		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<modExtensions>
+			<li Class="AlienRace.Info">
+				<allowHumanBios>false</allowHumanBios>
+				<maleGenderProbability>0.5</maleGenderProbability>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Civilian Base ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_Civ_Base" ParentName="OG_Kroot_Base_PawnKind">
+		<combatPower>25</combatPower>
+		<race>OG_Alien_Kroot</race>
+		<baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>300</min>
+			<max>900</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>KrootClothBasic</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>100</min>
+			<max>750</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>TKrootRifle</li>
+			<li>NeolithicRangedKroot</li>
+		 	<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>200</min>
+			<max>300</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>0.51</techHediffsChance>
+		<invNutrition>2.55</invNutrition>
+		<inventoryOptions>
+			<skipChance>0.75</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>90</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>25</min>
+						<max>70</max>
+					</countRange>
+				</li>
+				<li>
+					<choiceChance>10</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>700</min>
+						<max>1000</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>2</min>
+					<max>5</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+ 
+	<!-- ============================ Kroot Civilians ========================== -->
+	<!-- ============================ Kroot Faction Leader ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_Faction_ShaperBase" ParentName="OG_Kroot_Civ_Base">
+		<label>Grandmaster Shaper</label>
+		<labelPlural>Grandmaster Shapers</labelPlural>
+		<factionLeader>true</factionLeader>
+		<isFighter>true</isFighter>
+		<gearHealthRange>
+			<min>0.5</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>1000</min>
+			<max>5000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>Tribal</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>10000</min>
+			<max>15500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>KrootGun</li>
+		</weaponTags>
+		<techHediffsMoney>
+			<min>200</min>
+			<max>300</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>Kroot_Shaper</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<minGenerationAge>60</minGenerationAge>
+		<maxGenerationAge>600</maxGenerationAge>
+	</PawnKindDef>
+
+	<!-- ============================ Kroot Trader ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_TraderBase" ParentName="OG_Kroot_Civ_Base">
+		<label>Kroot trader</label>
+		<trader>true</trader>
+	</PawnKindDef>
+
+	<!-- ============================ Kroot Slave ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_SlaveBase" ParentName="OG_Kroot_Civ_Base">
+		<label>Kroot slave</label>
+	</PawnKindDef>
+
+	<!-- ============================ Kroot Military Base ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_Mil_Base" ParentName="OG_Kroot_Base_PawnKind">
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<isFighter>true</isFighter>
+	<race>OG_Alien_Kroot</race>
+		<invNutrition>2.55</invNutrition>
+		<itemQuality>Normal</itemQuality>
+	<minGenerationAge>10</minGenerationAge>
+		<maxGenerationAge>300</maxGenerationAge>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>2.3</max>
+		</gearHealthRange>
+		<apparelTags>
+			<li>KrootClothBasic</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>1500</min>
+			<max>2800</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>750</min>
+			<max>2500</max>
+		</weaponMoney>
+		<techHediffsMoney>
+			<min>1000</min>
+			<max>1500</max>
+		</techHediffsMoney>
+		<inventoryOptions>
+			<skipChance>0.8</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>200</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- ============================ Kroot Kindred Warrior ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_Kindred_Base" ParentName="OG_Kroot_Mil_Base">
+		<label>Kroot Kindred Warrior</label>
+		<combatPower>70</combatPower>
+		<apparelTags>
+			<li>KrootBasic</li>
+		</apparelTags>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Warrior ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_WarriorBase" ParentName="OG_Kroot_Kindred_Base">
+		<label>Kroot Warrior</label>
+		<weaponTags>
+			<li>KrootGun</li>
+		</weaponTags>
+	</PawnKindDef>
+		
+	<!-- ============================ Kroot Hunter ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_HunterBase" ParentName="OG_Kroot_Kindred_Base">
+		<label>Kroot Hunter</label>
+		<weaponTags>
+			<li>TKrootRifle</li>
+			<li>TKrootHuntingRifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Shaper ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_ShaperBase" ParentName="OG_Kroot_Kindred_Base">
+		<label>Kroot Shaper</label>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>Kroot_Shaper</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponTags>
+			<li>KrootGun</li>
+			<li>KPowerSword</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<!-- ============================ Kroot Shaman ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Kroot_ShamanBase" ParentName="OG_Kroot_Kindred_Base">
+		<label>Kroot Shaman</label>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>Kroot_Psyker</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<weaponMoney>
+			<min>1750</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>KrootGun</li>
+			<li>KShamanStaff</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+</Defs>

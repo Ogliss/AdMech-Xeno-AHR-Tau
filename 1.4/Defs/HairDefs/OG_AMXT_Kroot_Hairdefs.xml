@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <StyleItemCategoryDef>
+    <defName>OG_Kroot_Hair</defName>
+    <label>kroot hair</label>
+  </StyleItemCategoryDef>
+
+  <HairDef>
+    <defName>KrootQuills</defName>
+    <label>Kroot Quills</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Kroot/Hair/Kroot_Average</texPath>
+		<styleTags>
+			<li>OG_Kroot_Hair</li>
+		</styleTags>
+  </HairDef>
+  
+  <HairDef>
+    <defName>KrootQuillsB</defName>
+    <label>Kroot Quills</label>
+    <hairGender>Any</hairGender>
+    <texPath>Things/Pawn/Humanlike/Kroot/Hair/Kroot_Average</texPath>
+		<styleTags>
+			<li>OG_Kroot_Hair</li>
+		</styleTags>
+  </HairDef>
+  
+</Defs>

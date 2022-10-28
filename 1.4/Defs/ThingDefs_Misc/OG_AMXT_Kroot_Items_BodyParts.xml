@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- natural -->
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>OG_Kroot_NymuneOrgan</defName>
+    <label>nymune organ</label>
+    <description>Nymune Organs are a Kroot organ that stores energy, which controls the speed of the Kroot’s metabolism, governing his raw muscle speed, reflexes, and reaction time.\n\nIt is not only purebred Kroots but also other Kroot-based organisms (like a Great Knarlocs, for example) have this organ.</description>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="BodyPartNaturalBase">
+    <defName>OG_Kroot_Mutation_HyperactiveNymuneOrgan</defName>
+    <label>hyperactive nymune organ</label>
+    <description>Hyperactive Nymune Organs are a Kroot organ that stores great amounts of energy, which increases the speed of the Kroot’s metabolism, improving his raw muscle speed, reflexes, and reaction time.\n\nIt is not only purebred Kroots but also other Kroot-based organisms (like a Great Knarlocs, for example) can have this organ.</description>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ============================ Tau Civilians ========================== -->
+	<!-- ============================ Tau Faction Leader ========================== -->
+	<PawnKindDef ParentName="OG_Tau_Faction_EtherealBase">
+		<defName>OG_Tau_Faction_Ethereal</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Trader ========================== -->
+	<PawnKindDef ParentName="OG_Tau_TraderBase">
+		<defName>OG_Tau_Trader</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Slave ========================== -->
+	<PawnKindDef ParentName="OG_Tau_SlaveBase">
+		<defName>Slave_OG_Tau</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Security ========================== -->
+	<PawnKindDef ParentName="OG_Tau_CadetBase">
+		<defName>OG_Tau_Cadet</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ============================ Tau Military ========================== -->	
+	<!-- ============================ Tau Pathfinder (la) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_PathfinderBase">
+		<defName>OG_Tau_Pathfinder</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Firewarrior (la) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_FirewarriorBase">
+		<defName>OG_Tau_Firewarrior</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Pathfinder (Ui) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_Pathfinder_SgtBase">
+		<defName>OG_Tau_Pathfinder_Sgt</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Firewarrior (Ui) ========================== -->
+	<PawnKindDef ParentName="OG_Tau_Firewarrior_SgtBase">
+		<defName>OG_Tau_Firewarrior_Sgt</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Ethereal ========================== -->
+	<PawnKindDef ParentName="OG_Tau_EtherealBase">
+		 <defName>OG_Tau_Ethereal</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Battlesuits ========================== -->
+	<!-- ============================ Crisis Battlesuit La ========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_CrisisBattlesuitBase">
+		<defName>OG_Tau_CrisisBattlesuit</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	-->
+	<!-- ============================ Broadside Battlesuit La ========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_BroadsideBattlesuitBase">
+		<defName>OG_Tau_BroadsideBattlesuit</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	-->
+	<!-- ============================ Tau Battlesuits Ui ========================== -->
+	<!-- ============================ Crisis Battlesuit	========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_CrisisBattlesuitSgtBase">
+		<defName>OG_Tau_CrisisBattlesuitSgt</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	-->
+	<!-- ============================ Broadside Battlesuit	========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_BroadsideBattlesuitSgtBase">
+		<defName>OG_Tau_BroadsideBattlesuitSgt</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	-->
+	<!-- ============================ Commander Battlesuit ========================== -->
+	<!--
+	<PawnKindDef ParentName="OG_Tau_CommanderBattlesuitBase">
+		<defName>OG_Tau_CommanderBattlesuit</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+	-->
+	
+</Defs>

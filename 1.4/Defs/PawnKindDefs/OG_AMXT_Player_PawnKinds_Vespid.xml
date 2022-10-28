@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="OG_Vespid_PlayerColonist_PawnKind">
+		<defName>Colonist_OG_Vespid</defName>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+	</PawnKindDef>
+ 
+</Defs>

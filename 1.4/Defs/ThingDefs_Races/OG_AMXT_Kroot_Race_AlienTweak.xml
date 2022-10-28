@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace Name="OG_Kroot_Race" ParentName="OG_Kroot_RaceBase" Abstract="True">
+    <alienRace>
+        <generalSettings>
+			<disallowedTraits>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitMechanicus</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAstraMilitarum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitAssassinorum</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitInquisition</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IGTraitImperialMedic</defName>
+			   </li>
+               <li MayRequire="QX.AstraMilitarum">
+					<defName>IG_TraitAstarte</defName>
+			   </li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Emperor_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Ynnead_Hope</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Cegorach_Laughter</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khaine_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Khorne_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Nurgle_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Slaanesh_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Tzeentch_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>Undivided_Fervor</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>DE_Depravity</defName>
+				</li>
+				<li MayRequire="CptOhu.CorruptionCore">
+					<defName>ELDAR_mastery</defName>
+				</li>
+                <li>
+                    <defName>Gay</defName>
+                </li>
+            </disallowedTraits>
+            <alienPartGenerator>
+				<colorChannels>
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.173,0.208,0,1)</only>
+								</li>
+								<li>
+									<weight>9</weight>
+									<only>RGBA(0.216,0.431,0.392,1)</only>
+								</li>
+								<li>
+									<weight>8</weight>
+									<only>RGBA(0.271,0.306,0,1)</only>
+								</li>
+								<li>
+									<weight>7</weight>
+									<only>RGBA(0.314,0.267,0,1)</only>
+								</li>
+								<li>
+									<weight>6</weight>
+									<only>RGBA(0.227,0.333,0.392,1)</only>
+								</li>
+							</options>
+						</first>
+						<second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.275,0.51,0.706,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.6,0.525,0.459,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.651,0.486,0.322,1)</only>
+								</li>
+							</options>
+						</second>
+					</li>
+					<li>
+						<name>hair</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>RGBA(0.3765,0.40,0.1961,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.70,0.65,0.82,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.61,0.75,0.91,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.79,0.86,0.96,1)</only>
+								</li>
+							</options>
+						</first>
+						<second Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.51,0.77,0.86,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.70,0.65,0.82,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.61,0.75,0.91,1)</only>
+								</li>
+								<li>
+									<weight>5</weight>
+									<only>RGBA(0.79,0.86,0.96,1)</only>
+								</li>
+							</options>
+						</second>
+					</li>
+				</colorChannels>
+				<bodyAddons>
+					<li>
+						<path>Things/Addons/Blank</path>
+						<debug>false</debug>
+						<bodyPart>Spine</bodyPart>
+						<colorChannel>skin</colorChannel>
+						<inFrontOfBody>False</inFrontOfBody>
+						<defaultOffset>Center</defaultOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.42,0.6)</Male>
+									<Female>(-0.42,0.6)</Female>
+									<Fat>(-0.42,0.6)</Fat>
+									<Thin>(-0.42,0.6)</Thin>
+									<Hulk>(-0.42,0.6)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,0.9)</Male>
+									<Female>(0,0.9)</Female>
+									<Fat>(0,0.9)</Fat>
+									<Thin>(0,0.9)</Thin>
+									<Hulk>(0,0.9)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.48,0.6)</Male>
+									<Female>(-0.48,0.6)</Female>
+									<Fat>(-0.48,0.6)</Fat>
+									<Thin>(-0.48,0.6)</Thin>
+									<Hulk>(-0.48,0.6)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>
+						<hediffGraphics>
+						<OG_Kroot_Mutation_Wings>Things/Addons/Mutations/Kroot_Wings</OG_Kroot_Mutation_Wings>
+						</hediffGraphics>
+					</li>
+					<li>
+						<path>Things/Addons/Blank</path>
+						<debug>false</debug>
+						<bodyPart>Waist</bodyPart>
+						<colorChannel>skin</colorChannel>
+						<inFrontOfBody>true</inFrontOfBody>
+						<defaultOffset>Center</defaultOffset>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(-0.450,-0.0)</Male>
+									<Female>(-0.450,-0.0)</Female>
+									<Fat>(-0.450,-0.0)</Fat>
+									<Thin>(-0.450,-0.0)</Thin>
+									<Hulk>(-0.450,-0.0)</Hulk>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0,-0.25)</Male>
+									<Female>(0,-0.25)</Female>
+									<Fat>(0,-0.25)</Fat>
+									<Thin>(0,-0.25)</Thin>
+									<Hulk>(0,-0.25)</Hulk>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(-0.22,-0.22)</Male>
+									<Female>(-0.22,-0.22)</Female>
+									<Fat>(-0.22,-0.22)</Fat>
+									<Thin>(-0.22,-0.22)</Thin>
+									<Hulk>(-0.22,-0.22)</Hulk>
+								</bodyTypes>
+							</east>
+						</offsets>
+						<hediffGraphics>
+						
+						</hediffGraphics>
+					</li>
+				</bodyAddons>
+            </alienPartGenerator>
+        </generalSettings>
+		<styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>true</hasStyle>
+					<!--getsGreyAt>100</getsGreyAt--> 
+					<styleTagsOverride>
+						<li>OG_Kroot_Hair</li>
+					</styleTagsOverride>
+				</value>
+			</li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+		</styleSettings>
+    </alienRace>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

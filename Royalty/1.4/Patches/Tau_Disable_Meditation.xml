@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Orkoid Weirdboy Meditation Focus Link -->
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/MeditationFocusDef[starts-with(*,'')]/incompatibleBackstoriesAny</xpath>
+				<value>
+					<li>
+						<categoryName>Tau</categoryName>
+						<slot>Childhood</slot>
+					</li>
+					<li>
+						<categoryName>Tau</categoryName>
+						<slot>Adulthood</slot>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
