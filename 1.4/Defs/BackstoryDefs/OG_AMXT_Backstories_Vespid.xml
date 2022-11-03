@@ -3,39 +3,36 @@
 <!-- Vespid --> 
 <!-- Baseline Vespid -->
 <!-- Baseline Child -->
-  <AlienRace.BackstoryDef Name="Vespid_Base_Child">
+  <AdeptusMechanicus.BackstoryDef Name="Vespid_Base_Child">
     <defName>OG_Vespid_Base_Child</defName>
     <title>Vespidling</title>
     <titleShort>krootspawn</titleShort>
-    <baseDescription>[PAWN_nameDef] was born as a member of a Vespid hive. A Vespid hive is a type of Vespid kindred and represents the core of any Vespid mercenary band, this kindred is a flexible fighting team with no specific adaptations, though their Shaper is always on the look-out for fresh foes whose genetic traits can be absorbed. As such, the path of the warrior was [PAWN_possessive] destiny.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born as a member of a Vespid hive. A Vespid hive is a type of Vespid kindred and represents the core of any Vespid mercenary band, this kindred is a flexible fighting team with no specific adaptations, though their Shaper is always on the look-out for fresh foes whose genetic traits can be absorbed. As such, the path of the warrior was [PAWN_possessive] destiny.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
     <slot>Childhood</slot>
 	<disallowedTraits>
-		<li>
-			<defName>PsychicSensitivity</defName>
-			<degree>2</degree>
-		</li>
+		<PsychicSensitivity>2</PsychicSensitivity>
     </disallowedTraits>
     <workDisables>
     </workDisables>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
+        <key>Shooting</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
+        <key>Melee</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-6</amount>
+        <key>Social</key>
+        <value>-6</value>
       </li>
     </skillGains>
     <spawnCategories>
@@ -44,14 +41,14 @@
       <li>Vespid_Warrior</li>
       <li>Vespid_Young</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
  
   <!-- Warrior -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Vespid_Base_Stingwing</defName>
     <title>Stingwing Warrior</title>
     <titleShort>Stingwing</titleShort>
-    <baseDescription>Vespid Stingwings are the basic infantry for the Vespid. Named so for their diamond hard claws.</baseDescription>
+    <baseDesc>Vespid Stingwings are the basic infantry for the Vespid. Named so for their diamond hard claws.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -60,35 +57,35 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
+        <key>Melee</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
+        <key>Shooting</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-6</amount>
+        <key>Social</key>
+        <value>-6</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Vespid_Standard</li>
       <li>Vespid_Warrior</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Forager --> 
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Vespid_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -97,26 +94,26 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Animals</defName>
-        <amount>6</amount>
+        <key>Animals</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>6</amount>
+        <key>Plants</key>
+        <value>6</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Herbalist --> 
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Vespid_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -125,46 +122,46 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>6</amount>
+        <key>Plants</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>4</amount>
+        <key>Medicine</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>4</amount>
+        <key>Social</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>-6</amount>
+        <key>Artistic</key>
+        <value>-6</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>-6</amount>
+        <key>Mining</key>
+        <value>-6</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>-6</amount>
+        <key>Construction</key>
+        <value>-6</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
+        <key>Intellectual</key>
+        <value>4</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Builder -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Vespid_Base_Builder</defName>
     <title>Vespid Builder</title>
     <titleShort>Builder</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became a builder within the tau workforce.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became a builder within the tau workforce.</baseDesc>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
@@ -173,22 +170,22 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>4</amount>
+        <key>Construction</key>
+        <value>4</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Craftsman -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Vespid_Base_Craftsman</defName>
     <title>Vespid Artisan</title>
     <titleShort>Artisan</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became an Artisan for the Tau empire to create needed goods.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became an Artisan for the Tau empire to create needed goods.</baseDesc>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
@@ -197,22 +194,22 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Crafting</defName>
-        <amount>6</amount>
+        <key>Crafting</key>
+        <value>6</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
     
   <!-- Strain Leader -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Vespid_Base_StrainLeader</defName>
     <title>Vespid Strain Leader</title>
     <titleShort>Strain Leader</titleShort>
 	<!-- <linkedBackstory>Vespid_Base_Child</linkedBackstory> --> 
-    <baseDescription>[PAWN_nameDef] is a Strain Leader, The Strain Leader are the military leaders of the Vespid. Strain Leader facilitate the Vespid communications with the rest of the Tau Empire.</baseDescription>
+    <baseDesc>[PAWN_nameDef] is a Strain Leader, The Strain Leader are the military leaders of the Vespid. Strain Leader facilitate the Vespid communications with the rest of the Tau Empire.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -221,54 +218,54 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>8</amount>
+        <key>Social</key>
+        <value>8</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>6</amount>
+        <key>Shooting</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>6</amount>
+        <key>Melee</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>-2</amount>
+        <key>Construction</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>-2</amount>
+        <key>Mining</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Cooking</defName>
-        <amount>-1</amount>
+        <key>Cooking</key>
+        <value>-1</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Animals</defName>
-        <amount>-3</amount>
+        <key>Animals</key>
+        <value>-3</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>-3</amount>
+        <key>Crafting</key>
+        <value>-3</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>-2</amount>
+        <key>Medicine</key>
+        <value>-2</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Vespid_Strainleader</li>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
    
 </Defs>

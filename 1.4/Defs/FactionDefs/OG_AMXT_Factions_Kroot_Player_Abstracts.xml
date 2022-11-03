@@ -7,7 +7,7 @@
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>Colonist_OG_Kroot</basicMemberKind>
 		<pawnsPlural>colonists</pawnsPlural>
-		<geneticVariance>0</geneticVariance>
+		<!--geneticVariance>0</geneticVariance-->
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>NamerOGKrootFaction</factionNameMaker>
 		<settlementNameMaker>NamerOGKrootBases</settlementNameMaker>

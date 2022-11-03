@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <!-- Unisex -->
+
+  <!-- Male -->
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Male_Kroot_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Kroot/HeadsBase/Male_Average_Kroot</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Male_Vespid_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Vespid/HeadsBase/Male_Average_Vespid</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+
+  <!-- Female -->
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Female_Kroot_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Kroot/HeadsBase/Female_Average_Kroot</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>Female_Vespid_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Vespid/HeadsBase/Female_Average_Vespid</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+
+</Defs>

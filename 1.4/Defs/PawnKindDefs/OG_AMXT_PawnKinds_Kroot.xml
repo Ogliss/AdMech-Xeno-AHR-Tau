@@ -4,7 +4,7 @@
 	<!-- ============================ Kroot Faction Leader ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_Faction_ShaperBase">
 		<defName>OG_Kroot_Faction_Shaper</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -12,7 +12,7 @@
 	<!-- ============================ Kroot Trader ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_TraderBase">
 		<defName>OG_Kroot_Trader</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -20,7 +20,7 @@
 	<!-- ============================ Kroot Slave ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_SlaveBase">
 		<defName>Slave_OG_Kroot</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -28,7 +28,7 @@
 	<!-- ============================ Kroot Warrior ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_WarriorBase">
 		<defName>OG_Kroot_Warrior</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -36,7 +36,7 @@
 	<!-- ============================ Kroot Hunter ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_HunterBase">
 		<defName>OG_Kroot_Hunter</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -44,7 +44,7 @@
 	<!-- ============================ Kroot Shaper ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_ShaperBase">
 		<defName>OG_Kroot_Shaper</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>
@@ -52,7 +52,7 @@
 	<!-- ============================ Kroot Shaman ========================== -->
 	<PawnKindDef ParentName="OG_Kroot_ShamanBase">
 		<defName>OG_Kroot_Shaman</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>

@@ -4,7 +4,7 @@
   <PawnKindDef Abstract="True" Name="OG_Kroot_BasePlayer_PawnKind">
     <race>OG_Alien_Kroot</race>
     <combatPower>40</combatPower>
-    <baseRecruitDifficulty>0.55</baseRecruitDifficulty>
+    <!--baseRecruitDifficulty>0.55</baseRecruitDifficulty-->
     <isFighter>true</isFighter>
     <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>

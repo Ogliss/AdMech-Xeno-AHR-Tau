@@ -8,7 +8,6 @@ using Verse.AI;
 using Verse.AI.Group;
 using HarmonyLib;
 using Verse.Sound;
-using AdeptusMechanicus;
 using AdeptusMechanicus.ExtensionMethods;
 
 namespace AdeptusMechanicus.HarmonyInstance
@@ -19,17 +18,17 @@ namespace AdeptusMechanicus.HarmonyInstance
         public static void Postfix(ref Pawn __result)
         {
             if (__result != null && __result.isTau())
-			{
-				NameTriple nameTriple = __result.Name as NameTriple;
+            {
+                NameTriple nameTriple = __result.Name as NameTriple;
                 string pref = string.Empty;
-				if (__result.EtheralCaste() && !nameTriple.First.Contains("Aun"))
+                if (__result.EtheralCaste() && !nameTriple.First.Contains("Aun"))
                 {
                     pref = "Aun";
                 }
                 if (__result.FireCaste() && !nameTriple.First.Contains("Shas"))
                 {
                     pref = "Shas";
-				}
+                }
                 if (__result.AirCaste() && !nameTriple.First.Contains("Kor"))
                 {
                     pref = "Kor";
@@ -59,7 +58,7 @@ namespace AdeptusMechanicus.HarmonyInstance
                         if (__result.story.adulthood.title.Contains("'El"))
                         {
                             pref += "'El";
-                        } 
+                        }
                         else
                         if (__result.story.adulthood.title.Contains("'O"))
                         {
@@ -79,5 +78,5 @@ namespace AdeptusMechanicus.HarmonyInstance
             }
         }
 
-	}
+    }
 }

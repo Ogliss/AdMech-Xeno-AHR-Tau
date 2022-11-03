@@ -4,7 +4,7 @@
   <PawnKindDef Abstract="True" Name="OG_Guevesa_Base_PawnKind">
     <race>Human</race>
     <combatPower>40</combatPower>
-    <baseRecruitDifficulty>0.45</baseRecruitDifficulty>
+    <!--baseRecruitDifficulty>0.45</baseRecruitDifficulty-->
     <isFighter>false</isFighter>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>

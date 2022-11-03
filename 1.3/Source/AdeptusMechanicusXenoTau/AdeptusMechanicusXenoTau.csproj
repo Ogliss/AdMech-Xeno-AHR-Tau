@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AdeptusMechanicusArmoury">
-      <HintPath>..\..\..\..\AdMech-Armoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
+      <HintPath>..\..\..\..\AdMechArmoury\1.3\Assemblies\AdeptusMechanicusArmoury.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="AdeptusMechanicusArmouryAlienTweaks">
-      <HintPath>..\..\..\..\AdMech-Armoury\1.3\AlienRaces\Assemblies\AdeptusMechanicusArmouryAlienTweaks.dll</HintPath>
+      <HintPath>..\..\..\..\AdMechArmoury\1.3\AlienRaces\Assemblies\AdeptusMechanicusArmouryAlienTweaks.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <Reference Include="AlienRace">

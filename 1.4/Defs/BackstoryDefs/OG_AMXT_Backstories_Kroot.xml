@@ -3,132 +3,69 @@
 <!-- Kroot --> 
 <!-- Baseline Kroot -->
 <!-- Baseline Child -->
-  <AlienRace.BackstoryDef Name="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef Name="Kroot_Base_Child">
     <defName>OG_Kroot_Base_Child</defName>
     <title>Krootling</title>
     <titleShort>krootspawn</titleShort>
-    <baseDescription>[PAWN_nameDef] was born as a member of a carnivore kindred. A Carnivore Kindred is a type of Kroot kindred and represents the core of any Kroot mercenary band, this kindred is a flexible fighting team with no specific adaptations, though their Shaper is always on the look-out for fresh foes whose genetic traits can be absorbed. As such, the path of the warrior was [PAWN_possessive] destiny.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born as a member of a carnivore kindred. A Carnivore Kindred is a type of Kroot kindred and represents the core of any Kroot mercenary band, this kindred is a flexible fighting team with no specific adaptations, though their Shaper is always on the look-out for fresh foes whose genetic traits can be absorbed. As such, the path of the warrior was [PAWN_possessive] destiny.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
     <slot>Childhood</slot>
 	<disallowedTraits>
-		<li>
-			<defName>PsychicSensitivity</defName>
-			<degree>2</degree>
-		</li>
+			<PsychicSensitivity>2</PsychicSensitivity>
 		<!-- The Force -->
-		<li MayRequire="PJedi.starwars.Force">
-			<defName>PJ_ForceSensitive</defName>
-		</li>
-		<li MayRequire="PJedi.starwars.Force">
-			<defName>PJ_JediTrait</defName>
-		</li>
-		<li MayRequire="PJedi.starwars.Force">
-			<defName>PJ_SithTrait</defName>
-		</li>
-		<li MayRequire="PJedi.starwars.Force">
-			<defName>PJ_GrayTrait</defName>
-		</li>
+		<PJ_ForceSensitive MayRequire="PJedi.starwars.Force">0</PJ_ForceSensitive>
+		<PJ_JediTrait MayRequire="PJedi.starwars.Force">0</PJ_JediTrait>
+		<PJ_SithTrait MayRequire="PJedi.starwars.Force">0</PJ_SithTrait>
+		<PJ_GrayTrait MayRequire="PJedi.starwars.Force">0</PJ_GrayTrait>
 		<!-- The Force: Continued -->
-		<li MayRequire="Mlie.StarWarsTheForce">
-			<defName>PJ_ForceSensitive</defName>
-		</li>
-		<li MayRequire="Mlie.StarWarsTheForce">
-			<defName>PJ_JediTrait</defName>
-		</li>
-		<li MayRequire="Mlie.StarWarsTheForce">
-			<defName>PJ_SithTrait</defName>
-		</li>
-		<li MayRequire="Mlie.StarWarsTheForce">
-			<defName>PJ_GrayTrait</defName>
-		</li>
+		<PJ_ForceSensitive MayRequire="Mlie.StarWarsTheForce">0</PJ_ForceSensitive>
+		<PJ_JediTrait MayRequire="Mlie.StarWarsTheForce">0</PJ_JediTrait>
+		<PJ_SithTrait MayRequire="Mlie.StarWarsTheForce">0</PJ_SithTrait>
+		<PJ_GrayTrait MayRequire="Mlie.StarWarsTheForce">0</PJ_GrayTrait>
 		<!-- RimWolrd of Magic -->
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>TM_Gifted</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>InnerFire</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>HeartOfFrost</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>StormBorn</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Arcanist</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Druid</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Paladin</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Summoner</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Necromancer</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Lich</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Priest</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Geomancer</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Technomancer</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Succubus</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Warlock</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>TM_Psionic</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>DeathKnight</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Enchanter</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>BloodMage</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>PhysicalProdigy</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Faceless</defName>
-		</li>
-		<li MayRequire="Torann.ARimworldOfMagic">
-			<defName>Ranger</defName>
-		</li>
+		<TM_Gifted MayRequire="Torann.ARimworldOfMagic">0</TM_Gifted>
+		<InnerFire MayRequire="Torann.ARimworldOfMagic">0</InnerFire>
+		<HeartOfFrost MayRequire="Torann.ARimworldOfMagic">0</HeartOfFrost>
+		<StormBorn MayRequire="Torann.ARimworldOfMagic">0</StormBorn>
+		<Arcanist MayRequire="Torann.ARimworldOfMagic">0</Arcanist>
+		<Druid MayRequire="Torann.ARimworldOfMagic">0</Druid>
+		<Paladin MayRequire="Torann.ARimworldOfMagic">0</Paladin>
+		<Summoner MayRequire="Torann.ARimworldOfMagic">0</Summoner>
+		<Necromancer MayRequire="Torann.ARimworldOfMagic">0</Necromancer>
+		<Lich MayRequire="Torann.ARimworldOfMagic">0</Lich>
+		<Priest MayRequire="Torann.ARimworldOfMagic">0</Priest>
+		<Geomancer MayRequire="Torann.ARimworldOfMagic">0</Geomancer>
+		<Technomancer MayRequire="Torann.ARimworldOfMagic">0</Technomancer>
+		<Succubus MayRequire="Torann.ARimworldOfMagic">0</Succubus>
+		<Warlock MayRequire="Torann.ARimworldOfMagic">0</Warlock>
+		<TM_Psionic MayRequire="Torann.ARimworldOfMagic">0</TM_Psionic>
+		<DeathKnight MayRequire="Torann.ARimworldOfMagic">0</DeathKnight>
+		<Enchanter MayRequire="Torann.ARimworldOfMagic">0</Enchanter>
+		<BloodMage MayRequire="Torann.ARimworldOfMagic">0</BloodMage>
+		<PhysicalProdigy MayRequire="Torann.ARimworldOfMagic">0</PhysicalProdigy>
+		<Faceless MayRequire="Torann.ARimworldOfMagic">0</Faceless>
+		<Ranger MayRequire="Torann.ARimworldOfMagic">0</Ranger>
     </disallowedTraits>
     <workDisables>
     </workDisables>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
+        <key>Shooting</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
+        <key>Melee</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-6</amount>
+        <key>Social</key>
+        <value>-6</value>
       </li>
     </skillGains>
     <spawnCategories>
@@ -137,14 +74,14 @@
       <li>Kroot_Warrior</li>
       <li>Kroot_Young</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
  
   <!-- Warrior -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Base_Carnivore</defName>
     <title>Kindred Warrior</title>
     <titleShort>Carnivore</titleShort>
-    <baseDescription>Kroot Carnivores are the basic infantry for the Kroot. Carnivores have the ability to absorb characteristic traits from the food or remains of any enemy they consume. It has been reported that Kroot Carnivores can become tainted by Chaos by eating the flesh of those serve the Ruinous Powers.</baseDescription>
+    <baseDesc>Kroot Carnivores are the basic infantry for the Kroot. Carnivores have the ability to absorb characteristic traits from the food or remains of any enemy they consume. It has been reported that Kroot Carnivores can become tainted by Chaos by eating the flesh of those serve the Ruinous Powers.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -153,35 +90,35 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
+        <key>Melee</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>4</amount>
+        <key>Shooting</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-6</amount>
+        <key>Social</key>
+        <value>-6</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Standard</li>
       <li>Kroot_Warrior</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Forager --> 
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -190,26 +127,26 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Animals</defName>
-        <amount>6</amount>
+        <key>Animals</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>6</amount>
+        <key>Plants</key>
+        <value>6</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Herbalist --> 
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became an animal tender for the Tau empire to care for animals that provide needed food.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -218,46 +155,46 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Plants</defName>
-        <amount>6</amount>
+        <key>Plants</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>4</amount>
+        <key>Medicine</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>4</amount>
+        <key>Social</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Artistic</defName>
-        <amount>-6</amount>
+        <key>Artistic</key>
+        <value>-6</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>-6</amount>
+        <key>Mining</key>
+        <value>-6</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>-6</amount>
+        <key>Construction</key>
+        <value>-6</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
+        <key>Intellectual</key>
+        <value>4</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Builder -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Base_Builder</defName>
     <title>Kroot Builder</title>
     <titleShort>Builder</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became a builder within the tau workforce.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became a builder within the tau workforce.</baseDesc>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
@@ -266,22 +203,22 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Construction</defName>
-        <amount>4</amount>
+        <key>Construction</key>
+        <value>4</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Craftsman -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Base_Craftsman</defName>
     <title>Kroot Artisan</title>
     <titleShort>Artisan</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> -->
-    <baseDescription>[PAWN_nameDef] became an Artisan for the Tau empire to create needed goods.</baseDescription>
+    <baseDesc>[PAWN_nameDef] became an Artisan for the Tau empire to create needed goods.</baseDesc>
     <bodyTypeGlobal>Male</bodyTypeGlobal>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
@@ -290,22 +227,22 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Crafting</defName>
-        <amount>6</amount>
+        <key>Crafting</key>
+        <value>6</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
     
   <!-- Shaper -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Base_Shaper</defName>
     <title>Kroot Shaper</title>
     <titleShort>Shaper</titleShort>
 	<!-- <linkedBackstory>Kroot_Base_Child</linkedBackstory> --> 
-    <baseDescription>[PAWN_nameDef] is a Shaper, The Shapers are the military and spiritual leaders of the Kroot. Shapers ensure the Kroot inherit only the good traits and that they do not reach an evolutionary dead end.</baseDescription>
+    <baseDesc>[PAWN_nameDef] is a Shaper, The Shapers are the military and spiritual leaders of the Kroot. Shapers ensure the Kroot inherit only the good traits and that they do not reach an evolutionary dead end.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -314,71 +251,71 @@
     </workDisables>
     <skillGains>
       <li>
-        <defName>Social</defName>
-        <amount>8</amount>
+        <key>Social</key>
+        <value>8</value>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <key>Intellectual</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Shooting</defName>
-        <amount>6</amount>
+        <key>Shooting</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>6</amount>
+        <key>Melee</key>
+        <value>6</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>-2</amount>
+        <key>Construction</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>-2</amount>
+        <key>Mining</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Cooking</defName>
-        <amount>-1</amount>
+        <key>Cooking</key>
+        <value>-1</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>2</amount>
+        <key>Plants</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Animals</defName>
-        <amount>-3</amount>
+        <key>Animals</key>
+        <value>-3</value>
       </li>
       <li>
-        <defName>Crafting</defName>
-        <amount>-3</amount>
+        <key>Crafting</key>
+        <value>-3</value>
       </li>
       <li>
-        <defName>Medicine</defName>
-        <amount>-2</amount>
+        <key>Medicine</key>
+        <value>-2</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Shaper</li>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
  
   <!-- Assassin -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Assassin</defName>
     <title>assassin</title>
     <titleShort>assassin</titleShort>
-    <baseDescription>[PAWN_nameDef] was a professional assassin. [PAWN_pronoun] natural ability to move unseen and unheard in jungles and woods was an asset, capable of silently infiltrating enemy encampments and waiting amongst the trees for days or weeks until the ideal moment to strike, and made a good profit. In this business, often hired for one off Assassination missions although sometimes kept for an extended period on a regular payment.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was a professional assassin. [PAWN_pronoun] natural ability to move unseen and unheard in jungles and woods was an asset, capable of silently infiltrating enemy encampments and waiting amongst the trees for days or weeks until the ideal moment to strike, and made a good profit. In this business, often hired for one off Assassination missions although sometimes kept for an extended period on a regular payment.</baseDesc>
     <slot>Adulthood</slot>
     <skillGains>
 		<li>
-			<defName>Melee</defName>
-			<amount>10</amount>
+			<key>Melee</key>
+			<value>10</value>
 		</li>
 		<li>
-			<defName>Shooting</defName>
-			<amount>10</amount>
+			<key>Shooting</key>
+			<value>10</value>
 		</li>
     </skillGains>
     <spawnCategories>
@@ -397,25 +334,25 @@
     </requiredWorkTags>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
-    <forcedTraits>
+    <forcedTraitsChance>
         <li>
             <defName>Psychopath</defName>
             <chance>100</chance>
         </li>
-    </forcedTraits>
-  </AlienRace.BackstoryDef>
+    </forcedTraitsChance>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Scum -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
     <defName>OG_Kroot_Scum</defName>
     <title>scum</title>
     <titleShort>scum</titleShort>
-    <baseDescription>While it is uncommon for Kroot to be on a world without some sort of master providing regular payments, [PAWN_nameDef] stowed away on ships moving from world to world. [PAWN_pronoun] travelled often, taking up casual work wherever [PAWN_pronoun] found it.\n\nWhen [PAWN_pronoun] found a planet of choice, often a Feral World [PAWN_pronoun] would set up home within woodlands or jungle near a local community that [PAWN_pronoun] could terrorize to eke out survival.</baseDescription>
+    <baseDesc>While it is uncommon for Kroot to be on a world without some sort of master providing regular payments, [PAWN_nameDef] stowed away on ships moving from world to world. [PAWN_pronoun] travelled often, taking up casual work wherever [PAWN_pronoun] found it.\n\nWhen [PAWN_pronoun] found a planet of choice, often a Feral World [PAWN_pronoun] would set up home within woodlands or jungle near a local community that [PAWN_pronoun] could terrorize to eke out survival.</baseDesc>
     <slot>Adulthood</slot>
     <skillGains>
-      <li><defName>Cooking</defName><amount>3</amount></li>
-      <li><defName>Construction</defName><amount>3</amount></li>
-      <li><defName>Artistic</defName><amount>-4</amount></li>
+      <li><key>Cooking</key><value>3</value></li>
+      <li><key>Construction</key><value>3</value></li>
+      <li><key>Artistic</key><value>-4</value></li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_Scum</li>
@@ -423,11 +360,11 @@
     </spawnCategories>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Kroot Mutations  -->
   <!-- Hyperactive Nymune Organ Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Hyperactive_Child</defName>
     <title>Krootling</title>
 	<maleCommonality>0.5</maleCommonality>
@@ -436,12 +373,12 @@
       <li>OG_Kroot_Mutation_HyperactiveNymuneOrgan</li>
     </forcedHediffs>
     <spawnCategories Inherit="true">
-	
+      <li>Kroot_Hyperactive</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Winged Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Winged_Child</defName>
     <title>Winged Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -450,12 +387,12 @@
       <!-- <li>KrootWingMutation</li> -->
     </forcedHediffs>
     <spawnCategories Inherit="false">
-	
+      <li>Kroot_Winged</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
    
   <!-- Bold Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Bold_Child</defName>
     <title>Bold Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -464,12 +401,12 @@
       <!-- <li>KrootBoldMutation</li> -->
     </forcedHediffs>
     <spawnCategories Inherit="false">
-	
+      <li>Kroot_Bold</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
    
   <!-- Chameleon Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Chameleon_Child</defName>
     <title>Chameleon Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -478,32 +415,32 @@
       <!-- <li>KrootChameleonMutation</li> -->
     </forcedHediffs>
     <spawnCategories Inherit="false">
-	
+      <li>Kroot_Chameleon</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
    
   <!-- Nocturnal Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Nocturnal_Child</defName>
     <title>Nocturnal Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
     <femaleCommonality>0.0</femaleCommonality>
-	<forcedTraits>
+	<forcedTraitsChance>
         <li>
             <defName>NightOwl</defName>
             <chance>100</chance>
         </li>
-    </forcedTraits>
+    </forcedTraitsChance>
     <forcedHediffs>
       <!-- <li>KrootNocturnalMutation</li> -->
     </forcedHediffs>
     <spawnCategories Inherit="false">
-	
+      <li>Kroot_Nocturnal</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
  
   <!-- Fast Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Fast_Child</defName>
     <title>Fast Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -512,12 +449,12 @@
       <!-- <li>KrootFastMutation</li> -->
     </forcedHediffs>
     <spawnCategories Inherit="false">
-	
+      <li>Kroot_Fast</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
     
   <!-- Ork Hybrid Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Base_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_OrkHybrid_Child</defName>
     <title>Green Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -526,18 +463,18 @@
       <!-- <li>KrootOrkHybridMutation</li> -->
     </forcedHediffs>
     <spawnCategories Inherit="false">
-	
+      <li>Kroot_Ork</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Psyker Mutations -->
   <!-- Psyker Child -->
-  <AlienRace.BackstoryDef Name="Kroot_Psyker_Child">
+  <AdeptusMechanicus.BackstoryDef Name="Kroot_Psyker_Child">
     <defName>OG_Kroot_Psyker_Child</defName>
     <title>Krootling Psyker</title>
     <titleShort>krootspawn</titleShort>
 	<linkedBackstory>Kroot_Psyker_Shaman</linkedBackstory>
-    <baseDescription>[PAWN_nameDef] was born a member of a kroot kindred that has hunted and consumed many Psykers. As is the way with Kroot, this could allow him to develop Psyker like abilities.</baseDescription>
+    <baseDesc>[PAWN_nameDef] was born a member of a kroot kindred that has hunted and consumed many Psykers. As is the way with Kroot, this could allow him to develop Psyker like abilities.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
@@ -547,7 +484,7 @@
 	<disallowedTraits>
 
     </disallowedTraits>
-	<forcedTraits>
+	<forcedTraitsChance>
 		<!-- The Force -->
 		<li MayRequire="PJedi.starwars.Force">
 			<defName>PJ_ForceSensitive</defName>
@@ -571,43 +508,43 @@
 			<degree>2</degree>
 			<chance>50</chance>
 		</li>
-    </forcedTraits>
+    </forcedTraitsChance>
     <workDisables>
     </workDisables>
     <skillGains>
       <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
+        <key>Shooting</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
+        <key>Melee</key>
+        <value>2</value>
       </li>
       <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
+        <key>Plants</key>
+        <value>4</value>
       </li>
       <li>
-        <defName>Social</defName>
-        <amount>-3</amount>
+        <key>Social</key>
+        <value>-3</value>
       </li>
       <li>
-        <defName>Construction</defName>
-        <amount>-2</amount>
+        <key>Construction</key>
+        <value>-2</value>
       </li>
       <li>
-        <defName>Mining</defName>
-        <amount>-2</amount>
+        <key>Mining</key>
+        <value>-2</value>
       </li>
     </skillGains>
     <spawnCategories>
       <li>Kroot_ShamanYoung</li>
       <li>Kroot_Psyker</li>
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
 
   <!-- Hyperactive Nymune Psyker Organ Child -->
-  <AlienRace.BackstoryDef ParentName="Kroot_Psyker_Child">
+  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Psyker_Child">
     <defName>OG_Kroot_Hyperactive_Psyker_Child</defName>
     <title>Psyker Krootling</title>
     <maleCommonality>1</maleCommonality>
@@ -618,22 +555,22 @@
     <spawnCategories Inherit="true">
 	
     </spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
   
   <!-- Shaman -->
-  <AlienRace.BackstoryDef>
+  <AdeptusMechanicus.BackstoryDef>
 	<defName>OG_Kroot_Psyker_Shaman</defName>
 	<title>Kroot Shaman</title>
 	<titleShort>Shaman</titleShort>
 	<linkedBackstory>Kroot_Psyker_Child</linkedBackstory>
-	<baseDescription>[PAWN_nameDef] is a Shaman, Kroot Shamans are usually the result of repeated and prolonged feeding on Psykers. Shaman have often inherited the traits and and abilites of psykers.</baseDescription>
+	<baseDesc>[PAWN_nameDef] is a Shaman, Kroot Shamans are usually the result of repeated and prolonged feeding on Psykers. Shaman have often inherited the traits and and abilites of psykers.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
 	<bodyTypeFemale>Thin</bodyTypeFemale>
 	<slot>Adulthood</slot>
 	<workDisables>
 	</workDisables>
-	<forcedTraits>
+	<forcedTraitsChance>
 		<li>
 			<defName>PsychicSensitivity</defName>
 			<degree>2</degree>
@@ -768,57 +705,57 @@
 			<chance>5</chance>
 		</li>
 		
-	</forcedTraits>
+	</forcedTraitsChance>
 	<skillGains>
 	  <li>
-		<defName>Social</defName>
-		<amount>8</amount>
+		<key>Social</key>
+		<value>8</value>
 	  </li>
 	  <li>
-		<defName>Intellectual</defName>
-		<amount>2</amount>
+		<key>Intellectual</key>
+		<value>2</value>
 	  </li>
 	  <li>
-		<defName>Shooting</defName>
-		<amount>-2</amount>
+		<key>Shooting</key>
+		<value>-2</value>
 	  </li>
 	  <li>
-		<defName>Melee</defName>
-		<amount>-2</amount>
+		<key>Melee</key>
+		<value>-2</value>
 	  </li>
 	  <li>
-		<defName>Construction</defName>
-		<amount>-2</amount>
+		<key>Construction</key>
+		<value>-2</value>
 	  </li>
 	  <li>
-		<defName>Mining</defName>
-		<amount>-2</amount>
+		<key>Mining</key>
+		<value>-2</value>
 	  </li>
 	  <li>
-		<defName>Cooking</defName>
-		<amount>-1</amount>
+		<key>Cooking</key>
+		<value>-1</value>
 	  </li>
 	  <li>
-		<defName>Plants</defName>
-		<amount>2</amount>
+		<key>Plants</key>
+		<value>2</value>
 	  </li>
 	  <li>
-		<defName>Animals</defName>
-		<amount>-3</amount>
+		<key>Animals</key>
+		<value>-3</value>
 	  </li>
 	  <li>
-		<defName>Crafting</defName>
-		<amount>-3</amount>
+		<key>Crafting</key>
+		<value>-3</value>
 	  </li>
 	  <li>
-		<defName>Medicine</defName>
-		<amount>2</amount>
+		<key>Medicine</key>
+		<value>2</value>
 	  </li>
 	</skillGains>
 	<spawnCategories>
 	  <li>Kroot_Shaman</li>
       <li>Kroot_Psyker</li>
 	</spawnCategories>
-  </AlienRace.BackstoryDef>
+  </AdeptusMechanicus.BackstoryDef>
    
 </Defs>

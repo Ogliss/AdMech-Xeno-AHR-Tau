@@ -12,7 +12,7 @@
 			</li>
 		</backstoryFiltersOverride>
 		<chemicalAddictionChance>0.035</chemicalAddictionChance>
-		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>1</baseRecruitDifficulty-->
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 		<modExtensions>
 			<li Class="AlienRace.Info">
@@ -26,7 +26,7 @@
 	<PawnKindDef Abstract="True" Name="OG_Kroot_Civ_Base" ParentName="OG_Kroot_Base_PawnKind">
 		<combatPower>25</combatPower>
 		<race>OG_Alien_Kroot</race>
-		<baseRecruitDifficulty>0.25</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.25</baseRecruitDifficulty-->
 		<itemQuality>Normal</itemQuality>
 		<isFighter>false</isFighter>
 		<gearHealthRange>

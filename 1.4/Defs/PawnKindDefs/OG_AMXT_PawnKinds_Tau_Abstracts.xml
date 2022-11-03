@@ -37,7 +37,7 @@
 		</backstoryFiltersOverride>
 		<race>OG_Alien_Tau</race>
 		<chemicalAddictionChance>0.035</chemicalAddictionChance>
-		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>1</baseRecruitDifficulty-->
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
 	<modExtensions>
 		<li Class="AlienRace.Info">

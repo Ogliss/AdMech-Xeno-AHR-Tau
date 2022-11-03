@@ -3,7 +3,7 @@
 
 	<PawnKindDef ParentName="OG_Tau_StrangerInBlack_Base">
 		<defName>StrangerInBlackTau</defName>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+		<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
 		<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
 		<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
 	</PawnKindDef>

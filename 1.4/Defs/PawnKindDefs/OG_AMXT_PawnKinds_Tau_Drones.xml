@@ -97,6 +97,16 @@
 			</targetParams>
 			</li>
 		</verbs>
+		<recipeMaker Inherit="flase">
+			<recipeUsers>
+			
+			</recipeUsers>
+		</recipeMaker>
+		<costList>				<!-- USED TO CONTROL WHAT IS GIVEN WHEN ITEM IS SMELTED TIER 1-->
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Plasteel>2</Plasteel>
+			<Steel>10</Steel>
+		</costList>
 		<techLevel>Spacer</techLevel>
 		<weaponTags>
 			<li>TPulseCarbineTwinLinked</li>
