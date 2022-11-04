@@ -3,7 +3,7 @@
 <!-- Kroot --> 
 <!-- Baseline Kroot -->
 <!-- Baseline Child -->
-  <AdeptusMechanicus.BackstoryDef Name="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef Name="Kroot_Base_Child">
     <defName>OG_Kroot_Base_Child</defName>
     <title>Krootling</title>
     <titleShort>krootspawn</titleShort>
@@ -74,10 +74,10 @@
       <li>Kroot_Warrior</li>
       <li>Kroot_Young</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <!-- Warrior -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Base_Carnivore</defName>
     <title>Kindred Warrior</title>
     <titleShort>Carnivore</titleShort>
@@ -110,10 +110,10 @@
       <li>Kroot_Standard</li>
       <li>Kroot_Warrior</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Forager --> 
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
@@ -138,10 +138,10 @@
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Herbalist --> 
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
@@ -186,10 +186,10 @@
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Builder -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Base_Builder</defName>
     <title>Kroot Builder</title>
     <titleShort>Builder</titleShort>
@@ -210,10 +210,10 @@
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Craftsman -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Base_Craftsman</defName>
     <title>Kroot Artisan</title>
     <titleShort>Artisan</titleShort>
@@ -234,10 +234,10 @@
     <spawnCategories>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
     
   <!-- Shaper -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Base_Shaper</defName>
     <title>Kroot Shaper</title>
     <titleShort>Shaper</titleShort>
@@ -299,10 +299,10 @@
       <li>Kroot_Shaper</li>
       <li>Kroot_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <!-- Assassin -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Assassin</defName>
     <title>assassin</title>
     <titleShort>assassin</titleShort>
@@ -340,10 +340,10 @@
             <chance>100</chance>
         </li>
     </forcedTraitsChance>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Scum -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Kroot_Scum</defName>
     <title>scum</title>
     <titleShort>scum</titleShort>
@@ -360,11 +360,11 @@
     </spawnCategories>
     <bodyTypeMale>Thin</bodyTypeMale>
     <bodyTypeFemale>Thin</bodyTypeFemale>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Kroot Mutations  -->
   <!-- Hyperactive Nymune Organ Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Hyperactive_Child</defName>
     <title>Krootling</title>
 	<maleCommonality>0.5</maleCommonality>
@@ -375,10 +375,10 @@
     <spawnCategories Inherit="true">
       <li>Kroot_Hyperactive</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Winged Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Winged_Child</defName>
     <title>Winged Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -389,10 +389,10 @@
     <spawnCategories Inherit="false">
       <li>Kroot_Winged</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
    
   <!-- Bold Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Bold_Child</defName>
     <title>Bold Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -403,10 +403,10 @@
     <spawnCategories Inherit="false">
       <li>Kroot_Bold</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
    
   <!-- Chameleon Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Chameleon_Child</defName>
     <title>Chameleon Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -417,10 +417,10 @@
     <spawnCategories Inherit="false">
       <li>Kroot_Chameleon</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
    
   <!-- Nocturnal Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Nocturnal_Child</defName>
     <title>Nocturnal Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -437,10 +437,10 @@
     <spawnCategories Inherit="false">
       <li>Kroot_Nocturnal</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <!-- Fast Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_Fast_Child</defName>
     <title>Fast Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -451,10 +451,10 @@
     <spawnCategories Inherit="false">
       <li>Kroot_Fast</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
     
   <!-- Ork Hybrid Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Base_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Base_Child">
     <defName>OG_Kroot_OrkHybrid_Child</defName>
     <title>Green Krootling</title>
 	<maleCommonality>0.0</maleCommonality>
@@ -465,15 +465,15 @@
     <spawnCategories Inherit="false">
       <li>Kroot_Ork</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Psyker Mutations -->
   <!-- Psyker Child -->
-  <AdeptusMechanicus.BackstoryDef Name="Kroot_Psyker_Child">
+  <AlienRace.AlienBackstoryDef Name="Kroot_Psyker_Child">
     <defName>OG_Kroot_Psyker_Child</defName>
     <title>Krootling Psyker</title>
     <titleShort>krootspawn</titleShort>
-	<linkedBackstory>Kroot_Psyker_Shaman</linkedBackstory>
+	<linkedBackstory>OG_Kroot_Psyker_Shaman</linkedBackstory>
     <baseDesc>[PAWN_nameDef] was born a member of a kroot kindred that has hunted and consumed many Psykers. As is the way with Kroot, this could allow him to develop Psyker like abilities.</baseDesc>
     <bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
@@ -541,10 +541,10 @@
       <li>Kroot_ShamanYoung</li>
       <li>Kroot_Psyker</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Hyperactive Nymune Psyker Organ Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Kroot_Psyker_Child">
+  <AlienRace.AlienBackstoryDef ParentName="Kroot_Psyker_Child">
     <defName>OG_Kroot_Hyperactive_Psyker_Child</defName>
     <title>Psyker Krootling</title>
     <maleCommonality>1</maleCommonality>
@@ -555,14 +555,14 @@
     <spawnCategories Inherit="true">
 	
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Shaman -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
 	<defName>OG_Kroot_Psyker_Shaman</defName>
 	<title>Kroot Shaman</title>
 	<titleShort>Shaman</titleShort>
-	<linkedBackstory>Kroot_Psyker_Child</linkedBackstory>
+	<linkedBackstory>OG_Kroot_Psyker_Child</linkedBackstory>
 	<baseDesc>[PAWN_nameDef] is a Shaman, Kroot Shamans are usually the result of repeated and prolonged feeding on Psykers. Shaman have often inherited the traits and and abilites of psykers.</baseDesc>
 	<bodyTypeGlobal>Thin</bodyTypeGlobal>
 	<bodyTypeMale>Thin</bodyTypeMale>
@@ -756,6 +756,6 @@
 	  <li>Kroot_Shaman</li>
       <li>Kroot_Psyker</li>
 	</spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
    
 </Defs>

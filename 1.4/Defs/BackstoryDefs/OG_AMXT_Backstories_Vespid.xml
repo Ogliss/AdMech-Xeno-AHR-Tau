@@ -3,7 +3,7 @@
 <!-- Vespid --> 
 <!-- Baseline Vespid -->
 <!-- Baseline Child -->
-  <AdeptusMechanicus.BackstoryDef Name="Vespid_Base_Child">
+  <AlienRace.AlienBackstoryDef Name="Vespid_Base_Child">
     <defName>OG_Vespid_Base_Child</defName>
     <title>Vespidling</title>
     <titleShort>krootspawn</titleShort>
@@ -41,10 +41,10 @@
       <li>Vespid_Warrior</li>
       <li>Vespid_Young</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <!-- Warrior -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Vespid_Base_Stingwing</defName>
     <title>Stingwing Warrior</title>
     <titleShort>Stingwing</titleShort>
@@ -77,10 +77,10 @@
       <li>Vespid_Standard</li>
       <li>Vespid_Warrior</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Forager --> 
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Vespid_Base_Farmer</defName>
     <title>Kindred Forager</title>
     <titleShort>Forager</titleShort>
@@ -105,10 +105,10 @@
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Herbalist --> 
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Vespid_Base_Healer</defName>
     <title>Kindred Herbalist</title>
     <titleShort>Herbalist</titleShort>
@@ -153,10 +153,10 @@
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Builder -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Vespid_Base_Builder</defName>
     <title>Vespid Builder</title>
     <titleShort>Builder</titleShort>
@@ -177,10 +177,10 @@
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Craftsman -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Vespid_Base_Craftsman</defName>
     <title>Vespid Artisan</title>
     <titleShort>Artisan</titleShort>
@@ -201,10 +201,10 @@
     <spawnCategories>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
     
   <!-- Strain Leader -->
-  <AdeptusMechanicus.BackstoryDef>
+  <AlienRace.AlienBackstoryDef>
     <defName>OG_Vespid_Base_StrainLeader</defName>
     <title>Vespid Strain Leader</title>
     <titleShort>Strain Leader</titleShort>
@@ -266,6 +266,6 @@
       <li>Vespid_Strainleader</li>
       <li>Vespid_Standard</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
    
 </Defs>

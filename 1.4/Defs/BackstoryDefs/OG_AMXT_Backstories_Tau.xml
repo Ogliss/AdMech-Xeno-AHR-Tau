@@ -2,7 +2,7 @@
 <Defs>
 <!-- Tau Backstories -->
 <!-- Tau Base -->
-  <AdeptusMechanicus.BackstoryDef Name="Tau_Base_Backstory" Abstract="true">
+  <AlienRace.AlienBackstoryDef Name="Tau_Base_Backstory" Abstract="true">
     <defName>OG_Tau_Base_Backstory</defName>
     <workDisables>
 	
@@ -19,11 +19,11 @@
     <spawnCategories>
       <li>Tau</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Tau_AUN -->
 <!-- Tau_AUN Base -->
-  <AdeptusMechanicus.BackstoryDef Name="Tau_Aun_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+  <AlienRace.AlienBackstoryDef Name="Tau_Aun_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
     <defName>OG_Tau_Aun_Base_Backstory</defName>
     <workDisables>
 	
@@ -40,10 +40,10 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_Child</defName>
     <title>Ethereal caste (Aun)</title>
     <titleShort>Aun</titleShort>
@@ -108,10 +108,10 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Leader -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_AdultSaal</defName>
     <title>Ethereal</title>
     <titleShort>Aun'Saal</titleShort>
@@ -144,9 +144,9 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_AdultLa</defName>
     <title>Ethereal</title>
     <titleShort>Aun'La</titleShort>
@@ -179,9 +179,9 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_AdultUi</defName>
     <title>Ethereal</title>
     <titleShort>Aun'Ui</titleShort>
@@ -214,9 +214,9 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_AdultVre</defName>
     <title>Ethereal</title>
     <titleShort>Aun'Vre</titleShort>
@@ -249,9 +249,9 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_AdultEl</defName>
     <title>Ethereal</title>
     <titleShort>Aun'El</titleShort>
@@ -284,9 +284,9 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Aun_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Aun_Base_Backstory">
     <defName>OG_Tau_Aun_AdultO</defName>
     <title>Ethereal</title>
     <titleShort>Aun'O</titleShort>
@@ -319,11 +319,11 @@
     <spawnCategories>
       <li>Tau_AUN</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Tau_SHAS -->
 <!-- Tau_SHAS Base -->
-  <AdeptusMechanicus.BackstoryDef Name="Tau_Shas_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+  <AlienRace.AlienBackstoryDef Name="Tau_Shas_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
     <defName>OG_Tau_Shas_Base_Backstory</defName>
     <workDisables>
 	
@@ -340,10 +340,10 @@
     <spawnCategories>
       <li>Tau_SHAS</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Shas_Base_Backstory">
     <defName>OG_Tau_Shas_Child</defName>
     <title>Fire caste (Shas)</title>
     <titleShort>Shas</titleShort>
@@ -407,10 +407,10 @@
       <li>Tau_PATHFINDER</li>
       <li>Tau_PATHFINDERSGT</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Firewarrior -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Shas_Base_Backstory">
     <defName>OG_Tau_Shas_La_Warrior</defName>
     <title>Firewarrior Shas'La</title>
     <titleShort>Firewarrior'La</titleShort>
@@ -436,10 +436,10 @@
       <li>Tau_SHAS</li>
       <li>Tau_FIREWARRIOR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Elite Firewarrior -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Shas_Base_Backstory">
     <defName>OG_Tau_Shas_Ui_Warrior</defName>
     <title>Firewarrior Shas'Ui</title>
     <titleShort>Firewarrior'Ui</titleShort>
@@ -465,10 +465,10 @@
       <li>Tau_SHAS</li>
       <li>Tau_FIREWARRIORSGT</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Pathfinder -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Shas_Base_Backstory">
     <defName>OG_Tau_Shas_La_Pathfinder</defName>
     <title>Pathfinder Shas'La</title>
     <titleShort>Pathfinder'La</titleShort>
@@ -494,10 +494,10 @@
       <li>Tau_SHAS</li>
       <li>Tau_PATHFINDER</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Elite Pathfinder -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Shas_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Shas_Base_Backstory">
     <defName>OG_Tau_Shas_Ui_Pathfinder</defName>
     <title>Pathfinder Shas'Ui</title>
     <titleShort>Pathfinder'Ui</titleShort>
@@ -523,11 +523,11 @@
       <li>Tau_SHAS</li>
       <li>Tau_PATHFINDERSGT</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <!-- Tau_POR -->
 <!-- Tau_POR Base -->
-  <AdeptusMechanicus.BackstoryDef Name="Tau_Por_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+  <AlienRace.AlienBackstoryDef Name="Tau_Por_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
     <defName>OG_Tau_Por_Base_Backstory</defName>
     <workDisables>
 	
@@ -544,10 +544,10 @@
     <spawnCategories>
       <li>Tau_POR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Por_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Por_Base_Backstory">
     <defName>OG_Tau_Por_Child</defName>
     <title>Water caste (Por)</title>
     <titleShort>Por</titleShort>
@@ -610,10 +610,10 @@
     <spawnCategories>
       <li>Tau_POR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Administrator -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Por_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Por_Base_Backstory">
     <defName>OG_Tau_Por_Admin</defName>
     <title>Por'La Administrator</title>
     <titleShort>Administrator</titleShort>
@@ -634,10 +634,10 @@
     <spawnCategories>
       <li>Tau_POR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Diplomat -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Por_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Por_Base_Backstory">
     <defName>OG_Tau_Por_Diplomat</defName>
     <title>Por'Ui Diplomat</title>
     <titleShort>Diplomat</titleShort>
@@ -658,11 +658,11 @@
     <spawnCategories>
       <li>Tau_POR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Tau_FIO -->
 <!-- Tau_FIO Base -->
-  <AdeptusMechanicus.BackstoryDef Name="Tau_Fio_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+  <AlienRace.AlienBackstoryDef Name="Tau_Fio_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
     <defName>OG_Tau_Fio_Base_Backstory</defName>
     <workDisables>
 	
@@ -679,10 +679,10 @@
     <spawnCategories>
       <li>Tau_FIO</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Fio_Base_Backstory">
     <defName>OG_Tau_Fio_Child</defName>
     <title>Earth caste (Fio)</title>
     <titleShort>Fio</titleShort>
@@ -745,10 +745,10 @@
     <spawnCategories>
       <li>Tau_FIO</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Builder -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Fio_Base_Backstory">
     <defName>OG_Tau_Fio_Builder</defName>
     <title>Fio'La Builder</title>
     <titleShort>Builder</titleShort>
@@ -769,10 +769,10 @@
     <spawnCategories>
       <li>Tau_FIO</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Craftsman -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Fio_Base_Backstory">
     <defName>OG_Tau_Fio_Craftsman</defName>
     <title>Fio'Ui Artisan</title>
     <titleShort>Artisan</titleShort>
@@ -793,10 +793,10 @@
     <spawnCategories>
       <li>Tau_FIO</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Farmer -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Fio_Base_Backstory">
     <defName>OG_Tau_Fio_Farmer</defName>
     <title>Fio'O Farmer</title>
     <titleShort>Farmer</titleShort>
@@ -817,10 +817,10 @@
     <spawnCategories>
       <li>Tau_FIO</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Miner -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Fio_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Fio_Base_Backstory">
     <defName>OG_Tau_Fio_Miner</defName>
     <title>Fio'Va Miner</title>
     <titleShort>Miner</titleShort>
@@ -841,11 +841,11 @@
     <spawnCategories>
       <li>Tau_FIO</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
  
   <!-- Tau_KOR -->
 <!-- Tau_KOR Base -->
-  <AdeptusMechanicus.BackstoryDef Name="Tau_Kor_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
+  <AlienRace.AlienBackstoryDef Name="Tau_Kor_Base_Backstory" ParentName="Tau_Base_Backstory" Abstract="true">
     <defName>OG_Tau_Kor_Base_Backstory</defName>
     <workDisables>
 	
@@ -862,10 +862,10 @@
     <spawnCategories>
       <li>Tau_KOR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
   
   <!-- Child -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Kor_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Kor_Base_Backstory">
     <defName>OG_Tau_Kor_Child</defName>
     <title>Air caste (Kor)</title>
     <titleShort>Kor</titleShort>
@@ -908,10 +908,10 @@
     <spawnCategories>
       <li>Tau_KOR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Medic -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Kor_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Kor_Base_Backstory">
     <defName>OG_Tau_Kor_Medic</defName>
     <title>Kor'La Medic</title>
     <titleShort>Medic</titleShort>
@@ -932,10 +932,10 @@
     <spawnCategories>
       <li>Tau_KOR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 
   <!-- Scientist -->
-  <AdeptusMechanicus.BackstoryDef ParentName="Tau_Kor_Base_Backstory">
+  <AlienRace.AlienBackstoryDef ParentName="Tau_Kor_Base_Backstory">
     <defName>OG_Tau_Kor_Researcher</defName>
     <title>Kor'Ui Science Officer</title>
     <titleShort>Scientist</titleShort>
@@ -956,5 +956,5 @@
     <spawnCategories>
       <li>Tau_KOR</li>
     </spawnCategories>
-  </AdeptusMechanicus.BackstoryDef>
+  </AlienRace.AlienBackstoryDef>
 </Defs>
