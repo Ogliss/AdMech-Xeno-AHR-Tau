@@ -31,7 +31,7 @@ namespace AdeptusMechanicus.ExtensionMethods
         }
         public static bool EtheralCaste(this Pawn pawn)
         {
-            return pawn.story?.childhood != null && pawn.story.childhood.identifier.Contains("Tau_Aun");
+            return pawn.story?.childhood != null && pawn.story.childhood.defName.ToLower().Contains("tau_aun");
         }
 
 
@@ -41,7 +41,7 @@ namespace AdeptusMechanicus.ExtensionMethods
         }
         public static bool FireCaste(this Pawn pawn)
         {
-            return pawn.story.childhood.identifier.Contains("Tau_Shas");
+            return pawn.story.childhood.defName.ToLower().Contains("tau_shas");
         }
 
 
@@ -51,7 +51,7 @@ namespace AdeptusMechanicus.ExtensionMethods
         }
         public static bool EarthCaste(this Pawn pawn)
         {
-            return pawn.story.childhood.identifier.Contains("Tau_Fio");
+            return pawn.story.childhood.defName.ToLower().Contains("tau_fio");
         }
 
         public static bool AirCaste(this PawnKindDef pawn)
@@ -60,7 +60,7 @@ namespace AdeptusMechanicus.ExtensionMethods
         }
         public static bool AirCaste(this Pawn pawn)
         {
-            return pawn.story.childhood.identifier.Contains("Tau_Kor");
+            return pawn.story.childhood.defName.ToLower().Contains("tau_kor");
         }
 
 
@@ -70,7 +70,7 @@ namespace AdeptusMechanicus.ExtensionMethods
         }
         public static bool WaterCaste(this Pawn pawn)
         {
-            return pawn.story.childhood.identifier.Contains("Tau_Por");
+            return pawn.story.childhood.defName.ToLower().Contains("tau_por");
         }
     }
 
