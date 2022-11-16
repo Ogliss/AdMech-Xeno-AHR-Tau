@@ -12,8 +12,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<structureMemeWeights IgnoreIfNoMatchingField="True">
-			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<OG_Tau_Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">10</OG_Tau_Structure_Ideological>
 		</structureMemeWeights>
     <hairTags IgnoreIfNoMatchingField="True">
 		<li>Outlander</li>
