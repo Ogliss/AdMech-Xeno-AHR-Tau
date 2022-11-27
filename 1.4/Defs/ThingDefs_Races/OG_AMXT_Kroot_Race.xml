@@ -422,6 +422,9 @@
 				</renamer>
 			</relationSettings>
 			<raceRestriction>
+				<blackEndoCategories>
+				  <li>BodyType</li>
+				</blackEndoCategories>
 				<researchList>
 					<li>
 						<projects>

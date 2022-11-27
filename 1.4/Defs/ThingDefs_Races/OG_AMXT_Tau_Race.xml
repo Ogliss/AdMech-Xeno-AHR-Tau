@@ -195,6 +195,9 @@
 				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
 			</relationSettings>
 			<raceRestriction>
+				<blackEndoCategories>
+				  <li>BodyType</li>
+				</blackEndoCategories>
 				<researchList>
 					<li>
 						<projects>

@@ -5,8 +5,6 @@
 		<defName>OG_Vespid_Faction</defName>
 		<settlementGenerationWeight>0</settlementGenerationWeight>
 		<requiredCountAtGameStart>0</requiredCountAtGameStart>
-		<maxConfigurableAtWorldCreation IgnoreIfNoMatchingField="True">9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority IgnoreIfNoMatchingField="True">20</configurationListOrderPriority>
 		<allowedCultures IgnoreIfNoMatchingField="True">
 			<li>OG_Tau_GreaterGood</li>
 		</allowedCultures>

@@ -46,6 +46,7 @@
     <Compile Include="Utils\MoreTraitSlotsUtil.cs" />
     <Compile Include="Utils\TauExtensions.cs" />
     <Compile Include="AMTMain.cs" />
+    <Compile Include="_Harmony\Patches\StatPart_Age_AgeMultiplier_Kroot_Patch.cs" />
     <Compile Include="_Harmony\Patches\FoodUtility_BestFoodSourceOnMap_Kroot_Patch.cs" />
     <Compile Include="_Harmony\Patches\Thing_Ingested_KrootTraitAbsorbtion_Patch.cs" />
     <Compile Include="_Harmony\Patches\TraitSet_DegreeOfTrait_Kroot_Patch.cs" />
