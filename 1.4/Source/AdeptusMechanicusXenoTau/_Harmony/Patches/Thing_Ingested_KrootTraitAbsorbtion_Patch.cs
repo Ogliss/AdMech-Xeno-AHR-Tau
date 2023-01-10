@@ -10,6 +10,7 @@ using HarmonyLib;
 using Verse.Sound;
 using AdeptusMechanicus;
 using AdeptusMechanicus.ExtensionMethods;
+using AlienRace;
 
 namespace AdeptusMechanicus.HarmonyInstance
 {
@@ -27,10 +28,57 @@ namespace AdeptusMechanicus.HarmonyInstance
                     Rand.PushState();
                     if (Rand.Value < 0.25f)
                     {
-                        DoIngestionOutcomeSpecial(ingester, corpse);
+                        if (!ModsConfig.BiotechActive || corpse.InnerPawn.genes == null) DoIngestionOutcomeSpecial(ingester, corpse);
+                        else DoIngestionOutcomeSpecialBiotech(ingester, corpse);
                     }
                     Rand.PopState();
                 }
+            }
+        }
+
+        public static void DoIngestionOutcomeSpecialBiotech(Pawn pawn, Corpse corpse)
+        {
+            List<Gene> possibleEndoGenes = new List<Gene>();
+            if (corpse.InnerPawn.genes == null)
+            {
+                return;
+            }
+            foreach (var item in corpse.InnerPawn.genes.Endogenes)
+            {
+                if (pawn.genes.HasEndogene(item.def))
+                {
+                    continue;
+                }
+                possibleEndoGenes.Add(item);
+            }
+            possibleEndoGenes.RemoveAll(x => RaceRestrictionSettings.CanHaveGene(x.def, pawn.def));
+            List<Gene> possibleXenoGenes = new List<Gene>();
+            foreach (var item in corpse.InnerPawn.genes.Xenogenes)
+            {
+                if (pawn.genes.HasXenogene(item.def))
+                {
+                    continue;
+                }
+                possibleXenoGenes.Add(item);    
+            }
+            possibleXenoGenes.RemoveAll(x => RaceRestrictionSettings.CanHaveGene(x.def, pawn.def));
+
+            List<Gene> possibleGenes = new List<Gene>(possibleEndoGenes.ConcatIfNotNull(possibleXenoGenes));
+            foreach (var item in pawn.genes.cachedGenes)
+            {
+                possibleGenes.RemoveAll(x=> x.def.ConflictsWith(item.def));
+            }
+            if (!possibleGenes.NullOrEmpty())
+            {
+                Rand.PushState();
+                int genes = Rand.RangeInclusive(1, 3);
+                for (int i = 0; i < genes; i++)
+                {
+                    Gene gene = possibleGenes.RandomElement();
+                    pawn.genes.AddGene(gene.def, possibleXenoGenes.Contains(gene));
+                    possibleXenoGenes.Remove(gene);
+                }
+                Rand.PopState();
             }
         }
 

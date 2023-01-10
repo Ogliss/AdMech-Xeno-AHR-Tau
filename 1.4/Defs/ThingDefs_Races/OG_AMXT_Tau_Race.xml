@@ -196,7 +196,9 @@
 			</relationSettings>
 			<raceRestriction>
 				<blackEndoCategories>
-				  <li>BodyType</li>
+					<li>BodyType</li>
+					<li>Headbone</li>
+					<li>Head</li>
 				</blackEndoCategories>
 				<researchList>
 					<li>

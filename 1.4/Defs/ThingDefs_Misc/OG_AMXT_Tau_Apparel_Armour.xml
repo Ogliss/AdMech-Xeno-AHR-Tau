@@ -2,7 +2,7 @@
 <Defs>
 	<!--========================= Tau - Armour ==========================-->
 	<!--========================= Tau - Pathfinder Suit ==========================-->
-	<ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+	<ThingDef ParentName="OG_Tau_Apparel_Armor">
 		<defName>OGT_Apparel_PathfinderArmour</defName>
 		<label>pathfinder armour</label>
 		<description>Pathfider Armour is a form of Tau standard-issue infantry armour worn by all Pathfinders in battle, and is similar in design and construction to Imperial Carapace Armour. Pathfinder Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
@@ -52,6 +52,7 @@
 				<li>Shell</li>
 			</layers>
 			<tags>
+				<li>TauPathfinder</li>
 				<li>TauMilitary</li>
 				<li>EVA</li>
 			</tags>
@@ -59,34 +60,18 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<thingCategories>
-			<li>OGTArmour</li>
-		</thingCategories>
 		<tradeTags>
 			<li>Apparel</li>
 		</tradeTags>
-	<!--
-	
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-		<li>
-			<weight>10</weight>
-			<max>(0.967,0.727,0.484)</max>
-			<min>(0.767,0.527,0.284)</min>
-		</li>
-      </options>
-    </colorGenerator>
-	
-	-->
 	</ThingDef>
 
 	<!--========================= Tau - Pathfinder Helmet ==========================-->
-    <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+    <ThingDef ParentName="OG_Tau_Apparel_Armor_Headgear">
 		<defName>OGT_Apparel_PathfinderHelmet</defName>
 		<label>pathfinder helmet</label>
 		<description>Pathfider Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
 		<graphicData>
-		<texPath>Things/Item/Apparel/Tau/PathfinderHelmet/PathfinderHelmet</texPath>
+		<texPath>Things/Item/Apparel/Tau/PathfinderHelmet/_Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>199,132,1</color>
@@ -122,50 +107,35 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/Apparel/Tau/PathfinderHelmet/PathfinderHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Item/Apparel/Tau/PathfinderHelmet/Base</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>TauMilitary</li>
+				<li>TauPathfinder</li>
 				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<thingCategories>
-			<li>OGTHeadgear</li>
-		</thingCategories>
 		<tradeTags>
 			<li>Headgear</li>
 		</tradeTags>
-    <tickerType>Normal</tickerType>
-	<comps>     
-	      <li Class="AdeptusMechanicus.CompProperties_EyeProtectionApparel">
-		  <Chance>1</Chance>
-		</li>
-	      <li Class="AdeptusMechanicus.CompProperties_LungProtectionApparel">
-		  <Chance>1</Chance>
-		</li>
-	</comps>
-	<!--
-	
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-		<li>
-			<weight>10</weight>
-			<max>(0.967,0.727,0.484)</max>
-			<min>(0.767,0.527,0.284)</min>
-		</li>
-      </options>
-    </colorGenerator>
-	
-	-->
+		<tickerType>Normal</tickerType>
+		<comps>     
+			<li Class="AdeptusMechanicus.CompProperties_EyeProtectionApparel">
+				<Chance>1</Chance>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_LungProtectionApparel">
+				<Chance>1</Chance>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!--========================= Tau - Combat Suit ==========================-->
-	<ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+	<ThingDef ParentName="OG_Tau_Apparel_Armor">
 		<defName>OGT_Apparel_CombatArmour</defName>
 		<label>tau combat armour</label>
 		<description>Combat Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
@@ -218,57 +188,46 @@
 			</layers>
 			<tags>
 				<li>TauMilitary</li>
+				<li>TauFirewarrior</li>
 				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<thingCategories>
-			<li>OGTArmour</li>
-		</thingCategories>
 		<tradeTags>
 			<li>Apparel</li>
 		</tradeTags>
-    <comps>
-      <li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
-        <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
-			<PauldronEntries>
-				<li>
-					<shoulderPadType>Both</shoulderPadType>
-					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Tau/CombatSuit/Pauldrons/Pauldron</padTexPath>
-					<commonality>10</commonality>
-					<northtop>PostHead</northtop>
-					<!--southtop>Utility_South</southtop-->
-					<easttop>PostHead</easttop>
-					<westtop>PostHead</westtop>
-				</li>
-			</PauldronEntries>
-      </li>
-    </comps>
-	<!--
-	
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-		<li>
-			<weight>10</weight>
-			<max>(0.967,0.727,0.484)</max>
-			<min>(0.767,0.527,0.284)</min>
-		</li>
-      </options>
-    </colorGenerator>
-	
-	-->
+		<comps>
+			<li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
+				<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+				<PauldronEntries>
+					<li>
+						<shoulderPadType>Both</shoulderPadType>
+						<shaderType>CutoutComplex</shaderType>
+						<padTexPath>Things/Item/Apparel/Tau/CombatSuit/Pauldrons/Pauldron</padTexPath>
+						<commonality>10</commonality>
+						<northtop>PostHead</northtop>
+						<!--southtop>Utility_South</southtop-->
+						<easttop>PostHead</easttop>
+						<westtop>PostHead</westtop>
+					</li>
+				</PauldronEntries>
+				<NorthOffset>0,0.2,0.00</NorthOffset>
+				<SouthOffset>0,0.1,0.00</SouthOffset>
+				<EastOffset>0,0.15,0.00</EastOffset>
+				<WestOffset>0,0.15,0.00</WestOffset>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!--========================= Tau - Combat Helmet ==========================-->
-    <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+    <ThingDef ParentName="OG_Tau_Apparel_Armor_Headgear">
 		<defName>OGT_Apparel_CombatHelmet</defName>
 		<label>tau combat Helmet</label>
 		<description>Combat Armour is a form of Tau standard-issue infantry armour worn by all Fire Warriors in battle, and is similar in design and construction to Imperial Carapace Armour. Combat Armour is constructed in two layers. The outer face is a hard, ultra-dense nano-crystalline metal veneer bonded to an inner layer of high performance, thermo-set, molecular polyethene. The outer layer material is known as Fio'tak in the Tau Lexicon, and is commonly used as a form of armour across nearly all types of Tau units due to its lightweight nature and impact-resistant structure. The inner layer of Combat Armour acts as an energy-absorbent padding for energy dispersal, and helps prevent blunt trauma effects from high velocity impacts. The highly advanced materials used in Combat Armour's construction are very resilient to penetration and lightweight compared to more conventional Imperial materials such as plasteel.</description>
 		<graphicData>
-		<texPath>Things/Item/Apparel/Tau/CombatSuitHelmet/CombatHelmet</texPath>
+		<texPath>Things/Item/Apparel/Tau/CombatHelmet/_Icon</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>199,132,1</color>
@@ -303,50 +262,35 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Item/Apparel/Tau/CombatSuitHelmet/CombatHelmet</wornGraphicPath>
+			<wornGraphicPath>Things/Item/Apparel/Tau/CombatHelmet/Base</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
 			</layers>
 			<tags>
 				<li>TauMilitary</li>
+				<li>TauFirewarrior</li>
 				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<thingCategories>
-			<li>OGTHeadgear</li>
-		</thingCategories>
 		<tradeTags>
 			<li>Headgear</li>
 		</tradeTags>
-    <tickerType>Normal</tickerType>
-	<comps>     
-	      <li Class="AdeptusMechanicus.CompProperties_EyeProtectionApparel">
-		  <Chance>1</Chance>
-		</li>
-	      <li Class="AdeptusMechanicus.CompProperties_LungProtectionApparel">
-		  <Chance>1</Chance>
-		</li>
-	</comps>
-	<!--
-	
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-		<li>
-			<weight>10</weight>
-			<max>(0.967,0.727,0.484)</max>
-			<min>(0.767,0.527,0.284)</min>
-		</li>
-      </options>
-    </colorGenerator>
-	
-	-->
+		<tickerType>Normal</tickerType>
+		<comps>     
+			<li Class="AdeptusMechanicus.CompProperties_EyeProtectionApparel">
+				<Chance>1</Chance>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_LungProtectionApparel">
+				<Chance>1</Chance>
+			</li>
+		</comps>
 	</ThingDef>
 		
 	<!--========================= Tau - XV25 Stealthsuit ==========================-->
-	<ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+	<ThingDef ParentName="OG_Tau_Apparel_Armor">
 		<defName>OGT_Apparel_XV25Battlesuit</defName>
 		<label>XV25 Stealthsuit</label>
 		<description>The XV25 Stealthsuit is one of the smallest of all the various Tau Battlesuits, and is designed for use in operations requiring a high degree of stealth. Fire Warriors serving in a Stealth Team specialise in covert operations such as infiltration, sabotage, reconnaissance and ambush. Stealth Teams are essentially the Fire Caste's special operations units. They are the "lone wolves" of the Tau military, typically operating independently of their Hunter Cadre. Suddenly appearing, as if stepping out from nowhere, a Stealth Team unleashes a hail of gunfire to cripple or eliminate their selected targets. Theirs is a secretive way of war, as they infiltrate enemy lines, seeking vulnerable targets to destroy. In order to pass unseen into enemy territory, Stealth Teams use light-bending disruption technology embedded in their sleek Battlesuits to camouflage themselves. Additional cloaking fields deaden sound and shield them from heat-detecting sensors, allowing them to penetrate deep into hostile regions before launching precisely timed ambushes.</description>
@@ -384,7 +328,7 @@
 		</recipeMaker>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			<shellCoversHead IgnoreIfNoMatchingField="True">true</shellCoversHead>
+			<shellCoversHead>true</shellCoversHead>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
@@ -394,21 +338,19 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</wornGraphicPath>
 			<layers>
-				<li>Middle</li>
 				<li>Overhead</li>
+				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>TauMilitary</li>
+				<li>TauStealthsuit</li>
 				<li>EVA</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<thingCategories>
-			<li>OGTArmour</li>
-		</thingCategories>
 		<tradeTags>
 			<li>Apparel</li>
 		</tradeTags>
@@ -418,12 +360,11 @@
 					<li>OGT_Ability_Stealthsuit_JumpPack</li>
 				</Abilities>
 			</li>
-			<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
+			<!--li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
 				<ExtrasEntries>
 					<li>
 						<graphicData>
 							<texPath>Things/Item/Apparel/Tau/XV25Stealthsuit/XV25</texPath>
-							<!--graphicClass>Graphic_Single</graphicClass-->
 							<shaderType>CutoutComplex</shaderType>
 							<colorTwo>(255,255,255)</colorTwo>
 							<color>255,255,209</color>
@@ -439,7 +380,7 @@
 						<WestOffset>0,-0.0,0</WestOffset>
 					</li>
 				</ExtrasEntries>
-			  </li>
+			  </li-->
 				<li Class="AdeptusMechanicus.CompProperties_ApparelExtraPartDrawer">
 					<ExtrasEntries>
 						<li>
@@ -450,6 +391,8 @@
 								<!--colorTwo>(255,255,255)</colorTwo>
 								<color>255,255,209</color-->
 							</graphicData>
+							<hidesHair>true</hidesHair>
+							<hidesHead>true</hidesHead>
 							<UseBodytypeTextures>false</UseBodytypeTextures>
 							<commonality>10</commonality>
 							<NorthOffset>0,0.5,0</NorthOffset>
@@ -486,7 +429,7 @@
 	</ThingDef>
 
 	<!--========================= Tau - XV8 Battlesuit ==========================-->
-	<!--ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+	<!--ThingDef ParentName="OG_Tau_Apparel_Armor">
 		<defName>OGT_Apparel_XV8Battlesuit</defName>
 		<label>XV8 Battlesuit</label>
 		<description>The XV8 Crisis Battlesuit is the mainstay general combat T'au Battlesuit utilised by the warriors of the Fire Caste of the T'au Empire. It mounts a vast array of fearsome ranged weaponry as well as a complement of technologically advanced support systems on a comparatively small and agile frame that offers the T'au pilot within exceptional protection. Of all the weapons systems employed by the T'au, the XV8 Crisis Battlesuit is easily the most distinctive and recognisable due to its reputation as an efficient and lethal weapon of war.</description>
@@ -546,9 +489,6 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
-		<thingCategories>
-			<li>OGTArmour</li>
-		</thingCategories>
 		<tradeTags>
 			<li>Apparel</li>
 		</tradeTags>
@@ -600,7 +540,7 @@
 
 
   <!-- ========================= Gue'Vesa Flak Armour ========================== -->
-  <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+  <ThingDef ParentName="OG_Tau_Apparel_Armor">
 	<defName>OGT_Apparel_GueVesaArmour</defName>
 	<label>gue'vesa flak armour</label>
 	<description>A tough fabric jacket with armor plates sewn in. While it's not as good as solid armor, it offers effective protection against all manner of attacks while remaining quite comfortable.</description>
@@ -661,7 +601,7 @@
   </ThingDef>
 
   <!-- ========================= Gue'Vesa Flak Greaves ========================== -->
-  <ThingDef ParentName="OG_Tau_Apparel_Armor_Makeable">
+  <ThingDef ParentName="OG_Tau_Apparel_Armor">
 	<defName>OGT_Apparel_GueVesaArmourGreaves</defName>
 	<label>gue'vesa flak greaves</label>
 	<description>A pair of pants with armor plates sewn in. While it's not as good as solid armor, it offers effective protection against all manner of attacks while remaining quite comfortable.</description>

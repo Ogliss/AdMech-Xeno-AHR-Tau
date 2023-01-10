@@ -171,7 +171,7 @@
 				</factionRelations>
 			</generalSettings>
 			<graphicPaths>
-				<!--body>Things/Pawn/Humanlike/Kroot/Bodies/</body-->
+				<!--body>Things/Pawn/Humanlike/Vespid/Bodies/</body-->
 				<head>Things/Pawn/Humanlike/Vespid/HeadsBase/</head>
 			</graphicPaths>
 			<thoughtSettings>
@@ -404,24 +404,25 @@
 			</relationSettings>
 			<raceRestriction>
 				<blackEndoCategories>
-				  <li>BodyType</li>
+					<li>BodyType</li>
+					<li>Headbone</li>
+					<li>Head</li>
 				</blackEndoCategories>
 				<researchList>
 					<li>
 						<projects>
-							<!--li>OG_Tau_Tech_Base_T1</li-->
+							<!--li>OG_Vespid_Tech_Base_T1</li-->
 						</projects>
 					</li>
 				</researchList>
 				<recipeList>
-					<!--li>Make_OGK_Apparel_Tribalwear</li>
-					<li>Make_OGK_Gun_KrootRifle</li-->
+				
 				</recipeList>
 				<apparelList>
-					<!--li>OGK_Apparel_Tribalwear</li-->
+				
 				</apparelList>
 				<buildingList>
-						<!--li>OGT_TableMachining</li-->
+				
 				</buildingList>
 			</raceRestriction>
 		</alienRace>
@@ -503,10 +504,10 @@
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>300</lifeExpectancy>
-			<leatherDef>Leather_Kroot</leatherDef>
+			<leatherDef>Leather_Vespid</leatherDef>
 			<nameGenerator>OG_Kroot_NamerPerson</nameGenerator>
 			<body>OG_Vespid_Body</body>
-			<bloodDef>OG_FilthBlood_Kroot</bloodDef>	
+			<bloodDef>OG_FilthBlood_Vespid</bloodDef>	
 			<meatColor>(35, 56, 0)</meatColor>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1.05</baseHealthScale>

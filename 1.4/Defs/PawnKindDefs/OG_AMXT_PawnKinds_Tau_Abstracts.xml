@@ -365,8 +365,32 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>TauPathfinder</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OGT_Apparel_PathfinderArmour</li>
+		</apparelRequired>
 		<weaponTags>
 			<li>TPathfinderGun</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Pathfinder (la) ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Tau_StealthsuitBase" ParentName="TauFireCasteLa">
+		<label>Tau Patherfinder Shas'La</label>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>Tau_PATHFINDER</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li>OGT_Apparel_XV25Battlesuit</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TBurstCannon</li>
 		</weaponTags>
 	</PawnKindDef>
 	
@@ -380,6 +404,12 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>TauFirewarrior</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OGT_Apparel_CombatArmour</li>
+		</apparelRequired>
 		<weaponTags>
 			<li>TBasicGun</li>
 		</weaponTags>
@@ -449,9 +479,34 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>TauPathfinder</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OGT_Apparel_PathfinderArmour</li>
+		</apparelRequired>
 		<weaponTags>
 			<li>TPathfinderGun</li>
-		<li>TIonRifle</li>
+			<li>TIonRifle</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<!-- ============================ Tau Pathfinder (Ui) ========================== -->
+	<PawnKindDef Abstract="True" Name="OG_Tau_Stealthsuit_SgtBase" ParentName="TauFireCasteUi">
+		<label>Tau Patherfinder Shas'Ui</label>
+		<backstoryFiltersOverride Inherit="false">
+			<li>
+				<categories>
+					<li>Tau_PATHFINDERSGT</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li>OGT_Apparel_XV25Battlesuit</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>TBurstCannon</li>
+			<li>TIonRifle</li>
 		</weaponTags>
 	</PawnKindDef>
 	
@@ -465,9 +520,15 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>TauFirewarrior</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>OGT_Apparel_CombatArmour</li>
+		</apparelRequired>
 		<weaponTags>
-		<li>TBasicGun</li>
-		<li>THeavyGun</li>
+			<li>TBasicGun</li>
+			<li>THeavyGun</li>
 		</weaponTags>
 	</PawnKindDef>
 	

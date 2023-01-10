@@ -46,6 +46,9 @@
     <Compile Include="Utils\MoreTraitSlotsUtil.cs" />
     <Compile Include="Utils\TauExtensions.cs" />
     <Compile Include="AMTMain.cs" />
+    <Compile Include="Utils\VespidExtensions.cs" />
+    <Compile Include="_Harmony\Patches\AlienRaceUtility_RaceAgeSkillFactor_Tau_Patch.cs" />
+    <Compile Include="_Harmony\Patches\AlienRaceUtility_RaceAgeSkillMaxFactorCurve_Tau_Patch.cs" />
     <Compile Include="_Harmony\Patches\StatPart_Age_AgeMultiplier_Kroot_Patch.cs" />
     <Compile Include="_Harmony\Patches\FoodUtility_BestFoodSourceOnMap_Kroot_Patch.cs" />
     <Compile Include="_Harmony\Patches\Thing_Ingested_KrootTraitAbsorbtion_Patch.cs" />
@@ -71,7 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3542" GeneratePathProperty="true" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.4.3563" GeneratePathProperty="true" />
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.2</Version>
     </PackageReference>

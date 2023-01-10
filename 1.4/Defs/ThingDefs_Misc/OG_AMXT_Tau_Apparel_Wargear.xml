@@ -64,7 +64,7 @@
 		<comps> 
 			<li Class="AdeptusMechanicus.CompProperties_Wargear"/>
 			<li Class="AdeptusMechanicus.CompProperties_Shield">
-				<allowRanged>true</allowRanged>
+				<allowRangedAttacks>true</allowRangedAttacks>
 				<drawX>1.1</drawX>
 				<drawY>1.1</drawY>
 			</li>

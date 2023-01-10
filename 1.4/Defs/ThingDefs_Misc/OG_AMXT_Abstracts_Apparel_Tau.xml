@@ -14,6 +14,9 @@
 		<thingCategories>
 			<li>OGTSub</li>
 		</thingCategories>
+		<colorGenerator Class="ColorGenerator_Single"> 
+			<color>199,132,1</color>
+		</colorGenerator>
 	</ThingDef>
 	
     <!-- ========================= Tau - Clothes Base - Apparel Makable Base ========================== -->
@@ -35,7 +38,7 @@
 	</ThingDef>
 		
     <!-- ========================= Tau - Clothes - Apparel Makable ========================== -->
-	<ThingDef Name="OGTApparelMakeable" ParentName="OG_Tau_Apparel_Makeable" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel" ParentName="OG_Tau_Apparel_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauClothing</li>
@@ -47,7 +50,7 @@
 	</ThingDef>
 	
 	<!-- ========================= Tau - Headgear - Hat Makable ========================== -->
-	<ThingDef Name="OG_Tau_Apparel" ParentName="OG_Tau_Apparel_Makeable" Abstract="True">
+	<ThingDef Name="OG_Tau_Apparel_Headgear" ParentName="OG_Tau_Apparel_Makeable" Abstract="True">
 		<apparel>
 			<tags>
 				<li>TauHat</li>
@@ -64,7 +67,7 @@
     <!-- ========================= Tau - Clothes Base - Apparel Base ========================== -->
 	<ThingDef Name="OG_Tau_Apparel_Armor_Base" ParentName="OG_Apparel_Base" Abstract="True">
 		<apparel>
-			<ideoDesireAllowedFactionCategoryTags IgnoreIfNoMatchingField="True">
+			<ideoDesireAllowedFactionCategoryTags>
 				<li>OG_Outlander_Tau</li>
 			</ideoDesireAllowedFactionCategoryTags>
 			<tags>
@@ -95,9 +98,15 @@
 	
     <!-- ========================= Tau - Apparel Armor Makable Base ========================== -->
 	<ThingDef Name="OG_Tau_Apparel_Armor" ParentName="OG_Tau_Apparel_Armor_Makeable" Abstract="True">
-				<apparel>
-			<tags>
+		<recipeMaker>
+			<researchPrerequisites>
 				<li>OG_Tau_Tech_Apparel_Armour_T1</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<apparel>
+			<tags>
+				<li>TauArmour</li>
+				<li>TauArmor</li>
 			</tags>
 		</apparel>
 		<thingCategories>
@@ -115,9 +124,9 @@
 		<thingCategories>
 			<li>OGTHeadgear</li>
 		</thingCategories>
-    <statBases>
-      <Mass>0.35</Mass>
-    </statBases>
+		<statBases>
+		  <Mass>0.35</Mass>
+		</statBases>
 	</ThingDef>
 			
 	<!-- ========================= Tau - Apparel Wargear Base ========================== -->

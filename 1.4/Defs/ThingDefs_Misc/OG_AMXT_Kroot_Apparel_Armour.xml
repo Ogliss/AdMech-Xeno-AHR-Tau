@@ -56,9 +56,9 @@
 		<thingCategories>
 			<li>OGKHeadgear</li>
 		</thingCategories>
-    <statBases>
-      <Mass>0.15</Mass>
-    </statBases>
+		<statBases>
+		  <Mass>0.15</Mass>
+		</statBases>
 	</ThingDef>
 	
 	<!--========================= Kroot -  Tribalwear ==========================-->
@@ -83,10 +83,10 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToMake>1800</WorkToMake>
 			<Mass>0.4</Mass>
-      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<thingCategories>
 			<li>OGTApparel</li>
@@ -115,35 +115,35 @@
 				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
-    <comps>
-      <li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
-        <compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
-			<PauldronEntries>
-				<li>
-					<shoulderPadType>Both</shoulderPadType>
-					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/Pauldron</padTexPath>
-					<commonality>10</commonality>
-				</li>
-				<li>
-					<shoulderPadType>Right</shoulderPadType>
-					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/PauldronR</padTexPath>
-					<commonality>10</commonality>
-				</li>
-				<li>
-					<shoulderPadType>Left</shoulderPadType>
-					<shaderType>CutoutComplex</shaderType>
-					<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/PauldronL</padTexPath>
-					<commonality>10</commonality>
-				</li>
-			</PauldronEntries>
-			<NorthOffset>0,0.5,0</NorthOffset>
-			<SouthOffset>0,-0.001,0</SouthOffset>
-			<EastOffset>0,0.35,0</EastOffset>
-			<WestOffset>0,0.35,0</WestOffset>
-      </li>
-    </comps>
+		<comps>
+		  <li Class="AdeptusMechanicus.CompProperties_PauldronDrawer">
+			<compClass>AdeptusMechanicus.CompPauldronDrawer</compClass>
+				<PauldronEntries>
+					<li>
+						<shoulderPadType>Both</shoulderPadType>
+						<shaderType>CutoutComplex</shaderType>
+						<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/Pauldron</padTexPath>
+						<commonality>10</commonality>
+					</li>
+					<li>
+						<shoulderPadType>Right</shoulderPadType>
+						<shaderType>CutoutComplex</shaderType>
+						<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/PauldronR</padTexPath>
+						<commonality>10</commonality>
+					</li>
+					<li>
+						<shoulderPadType>Left</shoulderPadType>
+						<shaderType>CutoutComplex</shaderType>
+						<padTexPath>Things/Item/Apparel/Kroot/KrootCloth/Pauldrons/PauldronL</padTexPath>
+						<commonality>10</commonality>
+					</li>
+				</PauldronEntries>
+				<NorthOffset>0,0.5,0</NorthOffset>
+				<SouthOffset>0,-0.001,0</SouthOffset>
+				<EastOffset>0,0.35,0</EastOffset>
+				<WestOffset>0,0.35,0</WestOffset>
+		  </li>
+		</comps>
 	</ThingDef>
 	
 	
