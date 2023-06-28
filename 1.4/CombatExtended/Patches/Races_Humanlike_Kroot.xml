@@ -4,7 +4,7 @@
   <!--success>Always</success-->
   <operations>
 		<li Class="PatchOperationReplace">
-			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Kroot_RaceBase"]/tools</xpath>
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Kroot_Race"]/tools</xpath>
 			<value>
 				<tools>
 					<li Class="CombatExtended.ToolCE">
@@ -42,7 +42,7 @@
 			</value>
 		</li>
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Kroot_RaceBase"]/statBases</xpath>
+			<xpath>Defs/AlienRace.ThingDef_AlienRace[@Name="OG_Kroot_Race"]/statBases</xpath>
 			<value>
 			  <MeleeCritChance>1.25</MeleeCritChance>
 			  <MeleeParryChance>1.25</MeleeParryChance>

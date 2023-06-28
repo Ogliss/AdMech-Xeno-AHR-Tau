@@ -140,6 +140,8 @@
 		<disallowedPrecepts IgnoreIfNoMatchingField="True">
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_EatingAliens_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_EatingAliens_Disapproved</li>
 		</disallowedPrecepts>
 		<hairTags IgnoreIfNoMatchingField="True">
 			<li>Outlander</li>

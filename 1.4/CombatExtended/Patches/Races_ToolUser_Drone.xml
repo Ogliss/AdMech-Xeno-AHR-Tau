@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="CombatExtended.PatchOperationMakeWeaponCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<Name>OG_Tau_Drone</Name>
 				<statBases>
 					<ArmorRating_Blunt>50</ArmorRating_Blunt>
@@ -30,7 +30,7 @@
 			</li>
 			
 			<!--==================== Tau - Twin linked Pulse Carbine (Drones only) =========================-->
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGT_Gun_PulseCarbineTwinLinked</defName>
 				<statBases>
 				  <Mass>4</Mass>

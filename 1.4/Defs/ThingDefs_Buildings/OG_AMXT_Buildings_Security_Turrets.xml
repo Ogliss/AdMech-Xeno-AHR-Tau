@@ -374,17 +374,15 @@
 			<texPath>Things/Building/Tau/Security/TurretMount_MissilePodDual_Top</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-	<comps>		 
-		<li Class="OgsCompOversizedWeapon.CompProperties_OversizedWeapon">
-		</li>	
-		<li Class="AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules">
-		<VerbEntries>
-			<li>
-				<TwinLinked>true</TwinLinked>
-			</li>
-		</VerbEntries>
-		</li>	 
-	</comps>
+		<comps>		
+			<li Class="AdeptusMechanicus.CompProperties_Weapon_GunSpecialRules">
+			<VerbEntries>
+				<li>
+					<TwinLinked>true</TwinLinked>
+				</li>
+			</VerbEntries>
+			</li>	 
+		</comps>
 		<statBases>
 			<AccuracyTouch>0.25</AccuracyTouch>
 			<AccuracyShort>0.65</AccuracyShort>

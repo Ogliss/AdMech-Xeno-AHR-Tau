@@ -4,7 +4,7 @@ using Verse;
 
 namespace AdeptusMechanicus
 {
-    static class MoreTraitSlotsUtil
+    static class MoreTraitSlotsUtil2
     {
         private static bool initialized = false;
         private static FieldInfo settingsFieldInfo = null;

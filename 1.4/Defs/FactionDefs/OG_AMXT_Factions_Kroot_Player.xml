@@ -14,12 +14,11 @@
 		<disallowedPrecepts IgnoreIfNoMatchingField="True">
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_EatingAliens_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_EatingAliens_Disapproved</li>
 		</disallowedPrecepts>
 		<structureMemeWeights IgnoreIfNoMatchingField="True">
-			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
-			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">100</Structure_TheistAbstract>
 		</structureMemeWeights>
 		<hairTags IgnoreIfNoMatchingField="True">
 		  <li>Tribal</li>

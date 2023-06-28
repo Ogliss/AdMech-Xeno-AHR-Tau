@@ -35,7 +35,7 @@
 					<AimingAccuracy>0.25</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGT_GunTurret_BurstCannonDual</defName>
 				<statBases>
 				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
@@ -124,7 +124,7 @@
 					<AimingAccuracy>0.5</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGT_GunTurret_PlasmaRifleDual</defName>
 				<statBases>
 				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
@@ -217,7 +217,7 @@
 					<AimingAccuracy>0.5</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGT_GunTurret_Missile</defName>
 				<statBases>
 				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
@@ -305,7 +305,7 @@
 					<AimingAccuracy>0.75</AimingAccuracy>
 				</value>
 			</li>
-			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<defName>OGT_GunTurret_FusionBlasterDual</defName>
 				<statBases>
 				  <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>

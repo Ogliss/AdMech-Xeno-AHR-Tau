@@ -19,17 +19,20 @@ namespace AdeptusMechanicus.HarmonyInstance
     public static class Thing_Ingested_KrootTraitAbsorbtion_Patch
     {
         [HarmonyPostfix]
-        public static void Postfix(Thing __instance, Pawn ingester)
+        public static void Postfix(Thing __instance, Pawn ingester, float nutritionWanted)
         {
             if (__instance is Corpse corpse)
             {
                 if (ingester.def == AdeptusThingDefOf.OG_Alien_Kroot)
                 {
+                    int num;
+                    float result;
+                    __instance.IngestedCalculateAmounts(ingester, nutritionWanted, out num, out result);
                     Rand.PushState();
-                    if (Rand.Value < 0.25f)
+                    if (Rand.Value < result)
                     {
-                        if (!ModsConfig.BiotechActive || corpse.InnerPawn.genes == null) DoIngestionOutcomeSpecial(ingester, corpse);
-                        else DoIngestionOutcomeSpecialBiotech(ingester, corpse);
+                        if (ModsConfig.BiotechActive && corpse.InnerPawn.genes != null) DoIngestionOutcomeSpecialBiotech(ingester, corpse);
+                        DoIngestionOutcomeSpecial(ingester, corpse);
                     }
                     Rand.PopState();
                 }

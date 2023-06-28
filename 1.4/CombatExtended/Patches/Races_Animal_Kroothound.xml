@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
-			<li Class="CombatExtended.PatchOperationMakeWeaponCECompatible">
+			<li Class="AdeptusMechanicus.PatchOperationMakeWeaponCECompatible">
 				<Name>OG_KrootHound_Base</Name>
 				<statBases>
 					<ArmorRating_Blunt>4</ArmorRating_Blunt>

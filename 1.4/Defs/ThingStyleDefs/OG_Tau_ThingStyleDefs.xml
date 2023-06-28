@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--ThingStyleDef>
+		<defName>PrestigeMarineHelmet_Samurai</defName>
+		<overrideLabel>samurai helmet</overrideLabel>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SamuraiHelmet/SamuraiHelmet</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/SamuraiHelmet/SamuraiHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef-->
+
+	<!--EW.EngravingStyleDef>
+		<defName>TauStyle</defName>
+		<styleCategory>OG_Tau</styleCategory>
+		<texPath>Things/Building/Tau/WallsEngraved</texPath>
+	</EW.EngravingStyleDef-->
+
+	<!--ThingStyleDef>
+		<defName>OGAM_Apparel_SkitariiRangerHelmet_Hooded</defName>
+		<overrideLabel>skitarii ranger helmet hooded</overrideLabel>
+		<wornGraphicPath>Things/Item/Apparel/Tau/AM/SkitariiLegionnaireHelmet/RangerHooded</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Item/Apparel/Tau/AM/SkitariiLegionnaireHelmet/_Icon_RangerHooded</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingStyleDef-->
+
+	<ThingStyleDef Name="OG_Tau_TableStyleBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+	</ThingStyleDef>
+
+	<!--ThingStyleDef ParentName="OG_Tau_TableStyleBase">
+		<defName>OGT_Table1x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/Tau/Furniture/Table1x2</texPath>
+			<drawSize>(3,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef-->
+
+	<!--ThingStyleDef ParentName="OG_Tau_TableStyleBase">
+		<defName>OGT_Table2x2c</defName>
+		<graphicData>
+			<texPath>Things/Building/Tau/Furniture/MorbidTable2x2</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+	</ThingStyleDef-->
+
+	<!--ThingStyleDef ParentName="OG_Tau_TableStyleBase">
+		<defName>OGT_Table2x4c</defName>
+		<graphicData>
+			<texPath>Things/Building/Tau/Furniture/TableReinforced2x4</texPath>
+			<drawSize>(4,6)</drawSize>
+		</graphicData>
+	</ThingStyleDef-->
+
+	<!--ThingStyleDef ParentName="OG_Tau_TableStyleBase">
+		<defName>OGT_Table3x3c</defName>
+		<graphicData>
+			<texPath>Things/Building/Tau/Furniture/MorbidTable3x3</texPath>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+	</ThingStyleDef-->
+
+
+	<Things Name="OG_Tau_ColumnStyleBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1.25)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</Things>
+
+	<Things Name="OG_Tau_EngravedWallStyleBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Rock</li>
+				<li>MapEdge</li>
+			</linkFlags>
+			<texPath>Things/Building/Tau/WallsEngraved</texPath>
+		</graphicData>
+	</Things>
+
+  <ThingStyleDef>
+    <defName>OGT_IdeogramA</defName>
+    <graphicData>
+      <texPath>Things/Building/Tau/Misc/Ideogram/IconTau/IconTauA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>OGT_IdeogramB</defName>
+    <graphicData>
+      <texPath>Things/Building/Tau/Misc/Ideogram/IconTau/IconTauB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <StyleCategoryDef Name="OG_Tau_BaseStyle">
+    <defName>OG_Tau</defName>
+    <label>tau</label>
+    <iconPath>Icons/Tau/Icon_Tau</iconPath>
+    <soundOngoingRitual MayRequire="Ludeon.RimWorld.Ideology">RitualSustainer_Morbid</soundOngoingRitual>
+    <ritualVisualEffectDef MayRequire="Ludeon.RimWorld.Ideology">Morbid</ritualVisualEffectDef>
+    <thingDefStyles>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>SculptureSmall</thingDef>
+        <styleDef>Morbid_SculptureSmall</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>SculptureLarge</thingDef>
+        <styleDef>Morbid_SculptureLarge</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>SculptureGrand</thingDef>
+        <styleDef>Morbid_SculptureGrand</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Altar_Small</thingDef>
+        <styleDef>Morbid_AltarSmall</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Altar_Medium</thingDef>
+        <styleDef>Morbid_AltarMedium</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Altar_Large</thingDef>
+        <styleDef>Morbid_AltarLarge</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Altar_Grand</thingDef>
+        <styleDef>Morbid_AltarGrand</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Stool</thingDef>
+        <styleDef>Morbid_Stool</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Table1x2c</thingDef>
+        <styleDef>Morbid_Table1x2c</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Table2x2c</thingDef>
+        <styleDef>Morbid_Table2x2c</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Table2x4c</thingDef>
+        <styleDef>Morbid_Table2x4c</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Table3x3c</thingDef>
+        <styleDef>Morbid_Table3x3c</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>StandingLamp</thingDef>
+        <styleDef>Morbid_StandingLamp</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>TorchLamp</thingDef>
+        <styleDef>Morbid_TorchLamp</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Column</thingDef>
+        <styleDef>Morbid_Column</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Apparel_ArmorHelmetRecon</thingDef>
+        <styleDef>Morbid_ReconHelmet</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Apparel_PowerArmorHelmet</thingDef>
+        <styleDef>Morbid_MarineHelmet</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">
+        <thingDef>Apparel_ArmorHelmetCataphract</thingDef>
+        <styleDef>Morbid_CataphractHelmet</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Ideogram</thingDef>
+        <styleDef>OGT_IdeogramA</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Ideogram</thingDef>
+        <styleDef>OGT_IdeogramB</styleDef>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <thingDef>Ideogram</thingDef>
+        <styleDef>Morbid_IdeogramB</styleDef>
+      </li>
+    </thingDefStyles>
+    <addDesignators>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MorbidSlab_Medium</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MorbidSlab_Broad</li>
+    </addDesignators>
+    <addDesignatorGroups>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Floor_Morbid_Stone</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Floor_Morbid_Carpet</li>
+    </addDesignatorGroups>
+  </StyleCategoryDef>
+
+</Defs>
