@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Abstract="True" Name="OG_Kroot_BasePlayer_PawnKind">
+    <label>colonist (Kroot)</label>
+    <race>OG_Alien_Kroot</race>
+    <combatPower>40</combatPower>
+    <!--baseRecruitDifficulty>0.55</baseRecruitDifficulty-->
+    <defaultFactionType>OG_Kroot_PlayerTribe</defaultFactionType>
+    <isFighter>true</isFighter>
+    <apparelAllowHeadgearChance>0.0</apparelAllowHeadgearChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <drawSize>0.75</drawSize>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

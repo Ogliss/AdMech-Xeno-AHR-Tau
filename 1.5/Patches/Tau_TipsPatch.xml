@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/TipSetDef[defName = "GameplayTips"]</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/TipSetDef[defName = "GameplayTips"]/tips</xpath>
+				<value>			
+					<li>Tau weapons and technology can only be produced/researched by Tau</li>
+					<li>Kroot weapons and technology can only be produced/researched by Kroot</li>
+					<li>Kroot have a unique ability to absorb genetic material from their food, they can gain traits by consuming humanlike corpses</li>
+				</value>
+			</li>
+		</operations>	
+	</Operation>
+	
+</Patch>

@@ -74,7 +74,7 @@
 				<ExtrasEntries>
 					<li>
 						<graphicData>
-							<texPath>Things/Item/Equipment/Wargear/Tau/Drones/ShieldDrone</texPath>
+							<texPath>Things/Pawn/ToolUser/Tau_Drones/ShieldDrone</texPath>
 							<shaderType>CutoutComplex</shaderType>
 							<color>(221,160,99)</color>
 							<colorTwo>(139,139,176)</colorTwo>
@@ -157,7 +157,7 @@
 				<ExtrasEntries>
 					<li>
 						<graphicData>
-							<texPath>Things/Item/Equipment/Wargear/Tau/Drones/MarkerlightDrone</texPath>
+							<texPath>Things/Pawn/ToolUser/Tau_Drones/GunDrone</texPath>
 							<shaderType>CutoutComplex</shaderType>
 							<color>(221,160,99)</color>
 							<colorTwo>(139,139,176)</colorTwo>

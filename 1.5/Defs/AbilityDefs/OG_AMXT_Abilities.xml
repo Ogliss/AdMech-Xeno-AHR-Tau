@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <AbilityDef>
+    <defName>OGT_Ability_Stealthsuit_Invisibility</defName>
+    <label>stealth system</label>
+    <description>Use the XV25 stealth system to temporarily turn invisible. The suit's integrated holographic disruption field achieves its effects through a number of disruptor emitter nodes arrayed all over the Battlesuit's armour, letting the user pass unnoticed.</description>
+    <iconPath>UI/Abilities/XV25StealthSuit_Icon</iconPath>
+    <cooldownTicksRange>6000</cooldownTicksRange> <!-- 6 hours -->
+    <writeCombatLog>True</writeCombatLog>
+    <hotKey>Misc12</hotKey>
+    <targetRequired>false</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>60</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+      <warmupTime>0.5</warmupTime>
+      <range>19.9</range>
+      <targetable>false</targetable>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OGT_Stealthsuit_Invisibility</hediffDef>
+        <psychic>false</psychic>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OGT_Stealthsuit_Invisibility</defName>
+    <label>invisibility</label>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>The suit's integrated holographic disruption field achieves its effects through a number of disruptor emitter nodes arrayed all over the Battlesuit's armour.</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Invisibility">
+        <visibleToPlayer>false</visibleToPlayer>
+        <fadeDurationTicks>120</fadeDurationTicks>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+
+</Defs>

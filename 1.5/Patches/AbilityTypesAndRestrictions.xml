@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- Restrict Tau, Kroot & Vespid Abilities: TheForce -->
+<!-- Tau -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationTest">
+      <xpath>/Defs/TraitDef[defName = "PJ_ForceSensitive"]</xpath>
+    </li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace [defName = "Alien_Tau" or defName = "Alien_Vespid"]/alienRace/generalSettings/disallowedTraits</xpath>
+		<value>
+		<li>PJ_ForceSensitive</li>
+		<li>PJ_JediTrait</li>
+		<li>PJ_SithTrait</li>
+		<li>PJ_GrayTrait</li>
+		</value>
+	</li>
+  </operations>
+</Operation>
+
+<!-- Restrict Tau, Kroot & Vespid Abilities: RimWolrd of Magic -->
+<!-- Tau Abilities: RimWolrd of Magic -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationTest">
+      <xpath>/Defs/TraitDef[defName = "Gifted"]</xpath>
+    </li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Base_Backstory"]/disallowedTraits</xpath>
+		<value>
+			<li>
+				<defName>TM_Gifted</defName>
+			</li>
+			<li>
+				<defName>InnerFire</defName>
+			</li>
+			<li>
+				<defName>HeartOfFrost</defName>
+			</li>
+			<li>
+				<defName>StormBorn</defName>
+			</li>
+			<li>
+				<defName>Arcanist</defName>
+			</li>
+			<li>
+				<defName>Druid</defName>
+			</li>
+			<li>
+				<defName>Paladin</defName>
+			</li>
+			<li>
+				<defName>Summoner</defName>
+			</li>
+			<li>
+				<defName>Necromancer</defName>
+			</li>
+			<li>
+				<defName>Lich</defName>
+			</li>
+			<li>
+				<defName>Priest</defName>
+			</li>
+			<li>
+				<defName>Geomancer</defName>
+			</li>
+			<li>
+				<defName>Technomancer</defName>
+			</li>
+			<li>
+				<defName>Succubus</defName>
+			</li>
+			<li>
+				<defName>Warlock</defName>
+			</li>
+			<li>
+				<defName>TM_Psionic</defName>
+			</li>
+			<li>
+				<defName>DeathKnight</defName>
+			</li>
+			<li>
+				<defName>Enchanter</defName>
+			</li>
+			<li>
+				<defName>BloodMage</defName>
+			</li>
+			<li>
+				<defName>PhysicalProdigy</defName>
+			</li>
+			<li>
+				<defName>Faceless</defName>
+			</li>
+			<li>
+				<defName>Ranger</defName>
+			</li>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Kor_Base_Backstory" or defName = "Tau_Fio_Base_Backstory" or defName = "Tau_Por_Base_Backstory"]/disallowedTraits</xpath>
+		<value>
+			<li>
+				<defName>Gladiator</defName>
+			</li>
+			<li>
+				<defName>Bladedancer</defName>
+			</li>
+			<li>
+				<defName>TM_Sniper</defName>
+			</li>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Shas_Base_Backstory"]/disallowedTraits</xpath>
+		<value>
+			<li>
+				<defName>Gladiator</defName>
+			</li>
+			<li>
+				<defName>Bladedancer</defName>
+			</li>
+			<li>
+				<defName>TM_Bard</defName>
+			</li>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Shas_Ui_"]/forcedTraits</xpath>
+		<value>
+			<li>
+				<defName>TM_Sniper</defName>
+				<degree>4</degree>
+				<chance>25</chance>
+			</li>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Aun_Base_Backstory"]/disallowedTraits</xpath>
+		<value>
+			<li>
+				<defName>TM_Sniper</defName>
+			</li>
+			<li>
+				<defName>TM_Bard</defName>
+			</li>
+		</value>
+	</li>
+	<li Class="PatchOperationAdd">
+		<xpath>/Defs/AlienRace.BackstoryDef[defName = "Tau_Aun_Adult"]/forcedTraits</xpath>
+		<value>
+			<li>
+				<defName>Gladiator</defName>
+				<degree>4</degree>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>Bladedancer</defName>
+				<degree>4</degree>
+				<chance>25</chance>
+			</li>
+		</value>
+	</li>
+  </operations>
+  
+</Operation>
+
+<!-- Kroot Abilities: RimWolrd of Magic -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationTest">
+      <xpath>/Defs/TraitDef[defName = "Gifted"]</xpath>
+    </li>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Kroot_Psyker_Shaman"]/forcedTraits</xpath>
+		<value>	
+			<li>
+				<defName>InnerFire</defName>
+				<degree>4</degree>
+				<chance>30</chance>
+			</li>
+			<li>
+				<defName>HeartOfFrost</defName>
+				<degree>4</degree>
+				<chance>30</chance>
+			</li>
+			<li>
+				<defName>StormBorn</defName>
+				<degree>4</degree>
+				<chance>30</chance>
+			</li>
+			<li>
+				<defName>Arcanist</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Druid</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Paladin</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Summoner</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Necromancer</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Lich</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Priest</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Geomancer</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Technomancer</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Succubus</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Warlock</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>TM_Psionic</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>DeathKnight</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>Enchanter</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+			<li>
+				<defName>BloodMage</defName>
+				<degree>4</degree>
+				<chance>5</chance>
+			</li>
+		</value>
+    </li>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Kroot_Psyker_Child"]/forcedTraits</xpath>
+		<value>	
+			<li>
+				<defName>TM_Gifted</defName>
+				<degree>2</degree>
+				<chance>75</chance>
+			</li>
+		</value>
+    </li>
+    <li Class="PatchOperationAdd">
+      <xpath>/Defs/AlienRace.BackstoryDef[defName = "Kroot_Psyker_Child"]/disallowedTraits</xpath>
+		<value>	
+			<li>
+				<defName>Paladin</defName>
+			</li>
+			<li>
+				<defName>PhysicalProdigy</defName>
+			</li>
+			<li>
+				<defName>Gladiator</defName>
+			</li>
+			<li>
+				<defName>TM_Sniper</defName>
+			</li>
+			<li>
+				<defName>Bladedancer</defName>
+			</li>
+			<li>
+				<defName>Ranger</defName>
+			</li>
+			<li>
+				<defName>TM_Bard</defName>
+			</li>
+			<li>
+				<defName>Faceless</defName>
+			</li>
+		</value>
+    </li>
+  </operations>
+</Operation>
+</Patch>

@@ -8,11 +8,11 @@
 				<xpath>/Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
 				<value>
 					<li>
-						<categoryName>Kroot_Psyker</categoryName>
+						<categoryName>Kroot_Standard</categoryName>
 						<slot>Childhood</slot>
 					</li>
 					<li>
-						<categoryName>Kroot_Psyker</categoryName>
+						<categoryName>Kroot_Standard</categoryName>
 						<slot>Adulthood</slot>
 					</li>
 				</value>

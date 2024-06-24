@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="OG_Kroot_PlayerColonist_PawnKind" ParentName="OG_Kroot_BasePlayer_PawnKind">
+	<defName>Colonist_OG_Kroot</defName>
+	<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
+	<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+	<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Kroot_Standard</li>
+        </categories>
+		<commonality>1</commonality>
+      </li>
+      <li>
+        <categories>
+			<li>Kroot_Psyker</li>
+        </categories>
+		<commonality>0.05</commonality>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<li>KrootClothBody</li>
+		<li>TribalCloak</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+  <PawnKindDef Name="OG_Kroot_PlayerColonist_PawnKindPsyker" ParentName="OG_Kroot_BasePlayer_PawnKind">
+	<defName>Colonist_OG_KrootPsyker</defName>
+	<!--baseRecruitDifficulty>0.90</baseRecruitDifficulty-->
+	<initialWillRange IgnoreIfNoMatchingField="True">3~5</initialWillRange>
+	<initialResistanceRange IgnoreIfNoMatchingField="True">17~27</initialResistanceRange>
+    <backstoryFiltersOverride Inherit="false">
+      <li>
+        <categories>
+			<li>Kroot_Psyker</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <apparelTags>
+		<li>KrootClothBody</li>
+		<li>TribalCloak</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>1000</min>
+      <max>1200</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+	
+</Defs>
