@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========================= Adeptus Mechanicus - Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Tau Gear Catagories ========================== -->
+	<!-- ========================= Adeptus Mechanicus - Tau Armour Catagories ========================== -->
+	<ThingCategoryDef>
+		<defName>OG_Apparel_Tau</defName>
+		<label>tau</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGTArmour</defName>
+		<label>armour</label>
+		<parent>OG_Apparel_Tau</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>OGTArmorHeadgear</defName>
+		<label>head armor</label>
+        <parent>OGTArmour</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>OGTApparel</defName>
+		<label>apparel</label>
+		<parent>OG_Apparel_Tau</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGTHeadgear</defName>
+		<label>headgear</label>
+		<parent>OG_Apparel_Tau</parent>
+	</ThingCategoryDef>
+	  	
+	<ThingCategoryDef>
+		<defName>OGTApparelUtility</defName>
+		<label>utility</label>
+		<parent>OG_Apparel_Tau</parent>
+	</ThingCategoryDef>
+		
+	<ThingCategoryDef>
+		<defName>OGTWargear</defName>
+		<label>wargear</label>
+		<parent>OG_Apparel_Tau</parent>
+	</ThingCategoryDef>
+
+
+	<ThingCategoryDef>
+		<defName>OG_Apparel_Kroot</defName>
+		<label>kroot</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKArmour</defName>
+		<label>armour</label>
+		<parent>OG_Apparel_Kroot</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>OGKArmorHeadgear</defName>
+		<label>head armor</label>
+        <parent>OGKArmour</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>OGKApparel</defName>
+		<label>clothing</label>
+		<parent>OG_Apparel_Kroot</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKHeadgear</defName>
+		<label>headgear</label>
+		<parent>OG_Apparel_Kroot</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGKApparelUtility</defName>
+		<label>utility</label>
+		<parent>OG_Apparel_Kroot</parent>
+	</ThingCategoryDef>
+		
+	<ThingCategoryDef>
+		<defName>OGKWargear</defName>
+		<label>wargear</label>
+		<parent>OG_Apparel_Kroot</parent>
+	</ThingCategoryDef>
+	
+	
+	<ThingCategoryDef>
+		<defName>OG_Apparel_Vespid</defName>
+		<label>vespid</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGVArmour</defName>
+		<label>armour</label>
+		<parent>OG_Apparel_Vespid</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+        <defName>OGVArmorHeadgear</defName>
+		<label>head armor</label>
+        <parent>OGVArmour</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>OGVApparel</defName>
+		<label>clothing</label>
+		<parent>OG_Apparel_Vespid</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGVHeadgear</defName>
+		<label>headgear</label>
+		<parent>OG_Apparel_Vespid</parent>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>OGVApparelUtility</defName>
+		<label>utility</label>
+		<parent>OG_Apparel_Vespid</parent>
+	</ThingCategoryDef>
+		
+	<ThingCategoryDef>
+		<defName>OGVWargear</defName>
+		<label>Tau wargear</label>
+		<parent>OG_Apparel_Vespid</parent>
+	</ThingCategoryDef>
+	
+	<!-- ========================= Adeptus Mechanicus - Tau Corpse Catagories ========================== -->
+
+	<!-- Tau Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Tau</defName>
+      <label>tau corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+	
+<!-- Tau Construct Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Tau_Construct</defName>
+      <label>tau construct remains</label>
+      <parent>CorpsesMechanoid</parent>
+    </ThingCategoryDef>
+	
+<!-- Kroot Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Kroot</defName>
+      <label>kroot corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+	
+<!-- Vespid Corpse -->
+    <ThingCategoryDef>
+      <defName>OG_Corpses_Vespid</defName>
+      <label>vespid corpses</label>
+      <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+	
+</Defs>

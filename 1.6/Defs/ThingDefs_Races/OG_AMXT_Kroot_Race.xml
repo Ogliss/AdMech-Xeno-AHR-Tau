@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BasePawn" Name="OG_Kroot_Pawn_Base" Abstract="True">
+	<!--
+		<thingClass>Pawn</thingClass>
+		<category>Pawn</category>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Pawn</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<hasTooltip>true</hasTooltip>
+		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+		<inspectorTabs>
+				<li>ITab_Pawn_Health</li>
+				<li>ITab_Pawn_Needs</li>
+				<li>ITab_Pawn_Character</li>
+				<li>ITab_Pawn_Training</li>
+				<li>ITab_Pawn_Gear</li>
+				<li>ITab_Pawn_Guest</li>
+				<li>ITab_Pawn_Prisoner</li>
+				<li>ITab_Pawn_Social</li>
+				<li>ITab_Pawn_Log</li>
+				<li>ITab_Pawn_FormingCaravan</li>
+		</inspectorTabs>
+		<drawGUIOverlay>true</drawGUIOverlay>
+	-->    
+		<race>
+			<renderTree>Humanlike</renderTree>
+		</race>
+		<inspectorTabs>
+			<li MayRequire="Corruption.Core">Corruption.Core.Soul.ITab_Pawn_Soul</li>
+		</inspectorTabs>
+		<comps>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Inventory" />
+			<li MayRequire="CETeam.CombatExtended">
+				<compClass>CombatExtended.CompPawnGizmo</compClass>
+			</li>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.CompProperties_Suppressable" />
+			<li MayRequire="Corruption.Psykers">
+				<compClass>Corruption.Psykers.CompPsyker</compClass>
+			</li>
+			<li MayRequire="Corruption.Core">
+				<compClass>Corruption.Core.Soul.CompSoul</compClass>
+			</li>
+			<li Class="AdeptusMechanicus.CompProperties_FoodPoisonProtection">
+				<Poisonable>true</Poisonable>
+				<FoodTypeFlags>
+					<!--li>Meat</li>
+					<li>Corpse</li-->
+				</FoodTypeFlags>
+				<FoodPoisonCause>
+					<li>DangerousFoodType</li>
+					<!--
+					<li>FilthyKitchen</li>
+					<li>IncompetentCook</li>
+					<li>Rotten</li>
+					<li>Unknown</li>
+					-->
+				</FoodPoisonCause>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<AlienRace.ThingDef_AlienRace ParentName="OG_Kroot_Pawn_Base" Name="OG_Kroot_Race" Abstract="True">
+		<label>Kroot</label>
+		<description>The Kroot originated on the world of Pech and, though their physiology is humanoid, there is evidence to suggest that the roots of their evolution may be avian in origin. They retain vestigial beaks and have a light, almost hollow bone structure, with four digits on each hand and foot. Their skin is rough with small, barbed spines, similar to the elongated quills on their heads, protruding from various locations on their flesh. Skin pigmentation ranges from earthy brown colours and dappled greens to vibrant oranges and everything in between. Depending on the feeding directions of the Kroot Shapers, the colouration of each kindred can vary quite considerably. It is also common for Kroot from each kindred to have particular tribal markings painted onto their skin. Kroot mature quickly, with their most rapid period of growth occurring in the first ten years of their lives. By the age of twelve they are considered adults and it is not unknown for Kroot to live to over a hundred years old, their skin becoming increasingly pitted and leathery in their last few years of life</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.5</maleGenderProbability>
+				<immuneToAge>false</immuneToAge>
+				<forcedRaceTraitEntries>
+					<li>
+						<defName Degree="0">Tough</defName>
+						<chance>50</chance>
+					</li>
+				</forcedRaceTraitEntries>
+				<disallowedTraits>
+				   <li MayRequire="QX.AstraMilitarum">
+						<defName>IGTraitMechanicus</defName>
+				   </li>
+				   <li MayRequire="QX.AstraMilitarum">
+						<defName>IGTraitAstraMilitarum</defName>
+				   </li>
+				   <li MayRequire="QX.AstraMilitarum">
+						<defName>IGTraitAssassinorum</defName>
+				   </li>
+				   <li MayRequire="QX.AstraMilitarum">
+						<defName>IGTraitInquisition</defName>
+				   </li>
+				   <li MayRequire="QX.AstraMilitarum">
+						<defName>IGTraitImperialMedic</defName>
+				   </li>
+				   <li MayRequire="QX.AstraMilitarum">
+						<defName>IG_TraitAstarte</defName>
+				   </li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Emperor_Hope</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Ynnead_Hope</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Cegorach_Laughter</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Khaine_Fervor</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Khorne_Fervor</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Nurgle_Fervor</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Slaanesh_Fervor</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Tzeentch_Fervor</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>Undivided_Fervor</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>DE_Depravity</defName>
+					</li>
+					<li MayRequire="CptOhu.CorruptionCore">
+						<defName>ELDAR_mastery</defName>
+					</li>
+					<li>
+						<defName>Gay</defName>
+					</li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<customDrawSize>(0.750, 1.0)</customDrawSize>
+					<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.750, 1.0)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(0.75, 0.75)</customPortraitHeadDrawSize>
+					<headTypes>
+						<li>Male_Kroot_AverageNormal</li>
+						<li>Female_Kroot_AverageNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Thin</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(0.173,0.208,0,1)</only>
+									</li>
+									<li>
+										<weight>9</weight>
+										<only>RGBA(0.216,0.431,0.392,1)</only>
+									</li>
+									<li>
+										<weight>8</weight>
+										<only>RGBA(0.271,0.306,0,1)</only>
+									</li>
+									<li>
+										<weight>7</weight>
+										<only>RGBA(0.314,0.267,0,1)</only>
+									</li>
+									<li>
+										<weight>6</weight>
+										<only>RGBA(0.227,0.333,0.392,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(0.275,0.51,0.706,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.6,0.525,0.459,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.651,0.486,0.322,1)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(166,117,27,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(139,70,25,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(155,155,155,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(44,44,44,1)</only>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.51,0.77,0.86,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.70,0.65,0.82,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.61,0.75,0.91,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.79,0.86,0.96,1)</only>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<bodyAddons>
+						<li>
+							<path>Things/Addons/Blank</path>
+							<debug>false</debug>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>False</inFrontOfBody>
+							<defaultOffset>Center</defaultOffset>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Spine</bodyPart>
+								</BodyPart>
+								<Posture>
+									<drawnInBed>true</drawnInBed>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<!--hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor-->
+								</Apparel>
+							</conditions>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.42,0.6)</Male>
+										<Female>(-0.42,0.6)</Female>
+										<Fat>(-0.42,0.6)</Fat>
+										<Thin>(-0.42,0.6)</Thin>
+										<Hulk>(-0.42,0.6)</Hulk>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Male>(0,0.9)</Male>
+										<Female>(0,0.9)</Female>
+										<Fat>(0,0.9)</Fat>
+										<Thin>(0,0.9)</Thin>
+										<Hulk>(0,0.9)</Hulk>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Male>(-0.48,0.6)</Male>
+										<Female>(-0.48,0.6)</Female>
+										<Fat>(-0.48,0.6)</Fat>
+										<Thin>(-0.48,0.6)</Thin>
+										<Hulk>(-0.48,0.6)</Hulk>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hediffGraphics>
+							<OG_Kroot_Mutation_Wings>Things/Addons/Mutations/Kroot_Wings</OG_Kroot_Mutation_Wings>
+							</hediffGraphics>
+						</li>
+						<li>
+							<path>Things/Addons/Blank</path>
+							<debug>false</debug>
+							<colorChannel>skin</colorChannel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<defaultOffset>Center</defaultOffset>
+							<conditions>
+								<BodyPart>
+									<bodyPart>Waist</bodyPart>
+								</BodyPart>
+								<Posture>
+									<drawnInBed>true</drawnInBed>
+									<drawnStanding>true</drawnStanding>
+									<drawnLaying>true</drawnLaying>
+								</Posture>
+								<RotStage>Fresh,Rotting</RotStage>
+								<Apparel>
+									<!--hiddenUnderApparelFor>
+										<li>FullHead</li>
+										<li>UpperHead</li>
+									</hiddenUnderApparelFor-->
+								</Apparel>
+							</conditions>
+							<offsets>
+								<south>
+									<bodyTypes>
+										<Male>(-0.450,-0.0)</Male>
+										<Female>(-0.450,-0.0)</Female>
+										<Fat>(-0.450,-0.0)</Fat>
+										<Thin>(-0.450,-0.0)</Thin>
+										<Hulk>(-0.450,-0.0)</Hulk>
+									</bodyTypes>
+								</south>
+								<north>
+									<bodyTypes>
+										<Male>(0,-0.25)</Male>
+										<Female>(0,-0.25)</Female>
+										<Fat>(0,-0.25)</Fat>
+										<Thin>(0,-0.25)</Thin>
+										<Hulk>(0,-0.25)</Hulk>
+									</bodyTypes>
+								</north>
+								<east>
+									<bodyTypes>
+										<Male>(-0.22,-0.22)</Male>
+										<Female>(-0.22,-0.22)</Female>
+										<Fat>(-0.22,-0.22)</Fat>
+										<Thin>(-0.22,-0.22)</Thin>
+										<Hulk>(-0.22,-0.22)</Hulk>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hediffGraphics>
+							
+							</hediffGraphics>
+						</li>
+					</bodyAddons>
+				</alienPartGenerator>
+				<chemicalSettings>	
+				</chemicalSettings>
+				<humanRecipeImport>true</humanRecipeImport>
+				<notXenophobistTowards>
+					<li>OG_Alien_Tau</li>
+					<li>OG_Alien_Vespid</li>
+				</notXenophobistTowards>
+				<factionRelations>
+					<li>
+						<factions>
+							<li>PlayerColony</li>
+							<li>PlayerTribe</li>
+							<li>OutlanderCivil</li>
+							<li>OutlanderRough</li>
+							<li>TribeCivil</li>
+							<li>TribeRough</li>
+						</factions>
+						<goodwill>
+							<min>-100</min>
+							<max>50</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+							<li>OG_Tau_Faction</li>
+							<li>OG_Tau_PlayerColony</li>
+							<li>OG_Kroot_Faction</li>
+							<!--li>OG_Kroot_PlayerColony</li>
+							<li>OG_Kroot_PlayerTribe</li-->
+							<li>OG_Vespid_Faction</li>
+							<!--li>OG_Vespid_PlayerColony</li-->
+							<!--li>OG_Vespid_PlayerTribe</li-->
+						</factions>
+						<goodwill>
+							<min>10</min>
+							<max>100</max>
+						</goodwill>
+					</li>	
+					<li>
+						<factions>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Eldar">OG_Eldar_Craftworld_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Exodite_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.EldarExodite">OG_Eldar_Player_Exodite</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Harlequin_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.EldarHarlequin">OG_Eldar_Player_Harlequin</li>
+						</factions>
+						<goodwill>
+							<min>-100</min>
+							<max>50</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Mechanicus_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_Cadian_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Militarum_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Astartes">OG_Astartes_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Astartes">OG_AstartesNeophyte_PlayerColony</li>
+							<li MayRequire="CptOhu.CorruptionCore">PlayerColony_IoM</li>
+						</factions>
+						<goodwill>
+							<min>-100</min>
+							<max>50</max>
+						</goodwill>
+					</li>
+					<li>
+						<factions>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Tek_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Feral_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_PlayerTribe</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis,Ogliss.AdMech.Xenobiologis.Orkz">OG_Ork_Waaagh</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Kabal_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.DarkEldar">OG_DarkEldar_Kabal_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Necrons">OG_Necron_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Necrons">OG_Necron_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Tyranids">OG_Tyranid_PlayerColony</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis.Tyranids">OG_Tyranid_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Necron_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Tyranid_Faction</li>
+							<li MayRequire="Ogliss.AdMech.Xenobiologis">OG_Chaos_Deamon_Faction</li>
+							<li MayRequire="CptOhu.CorruptionCore">PlayerColony_Chaos</li>
+							<li MayRequire="QX.AstraMilitarum.Factions">QX_ChaosMarineFaction</li>
+							<li MayRequire="QX.AstraMilitarum.Factions">QX_TraitorGuardFaction</li>
+							<li MayRequire="QX.AstraMilitarum.Factions">QX_TyranidFaction</li>
+						</factions>
+						<goodwill>
+							<min>-100</min>
+							<max>-100</max>
+						</goodwill>
+					</li>
+				</factionRelations>
+			</generalSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<!--getsGreyAt>100</getsGreyAt--> 
+						<styleTagsOverride>
+							<li>OG_Kroot_Hair</li>
+						</styleTagsOverride>
+					</value>
+				</li>
+					<li>
+						<key>TattooDef</key>
+						<value>
+							<hasStyle>false</hasStyle>
+						</value>
+					</li>
+					<li>
+						<key>BeardDef</key>
+						<value>
+							<hasStyle>false</hasStyle>
+						</value>
+					</li>
+			</styleSettings>
+			<graphicPaths>
+				<body>Things/Pawn/Humanlike/Kroot/Bodies/</body>
+				<head>Things/Pawn/Humanlike/Kroot/HeadsBase/</head>
+			</graphicPaths>
+			<thoughtSettings>
+				<butcherThoughtGeneral>
+					<thought>ButcheredHumanlikeCorpse_OGKroot</thought>
+					<knowThought>KnowButcheredHumanlikeCorpse_OGKroot</knowThought>
+				</butcherThoughtGeneral>
+				<ateThoughtGeneral>
+					<thought>AteHumanlikeMeatDirect_OGKroot</thought>
+					<ingredientThought>AteHumanlikeMeatAsIngredient_OGKroot</ingredientThought>
+					<thoughtCannibal>AteHumanlikeMeatDirectCannibal_OGKroot</thoughtCannibal> 
+					<ingredientThoughtCannibal>AteHumanlikeMeatAsIngredientCannibal_OGKroot</ingredientThoughtCannibal> 
+				</ateThoughtGeneral>
+				<butcherThoughtSpecific>
+					<li>
+						<raceList>
+							<li>OG_Alien_Tau</li>
+						</raceList>
+						<thought>ButcheredHumanlikeCorpse_OGKrootTau</thought>
+						<knowThought>KnowButcheredHumanlikeCorpse_OGKrootTau</knowThought>
+					</li>
+				</butcherThoughtSpecific>
+				<ateThoughtSpecific>
+					<li>
+						<raceList>
+								<li>OG_Alien_Tau</li>
+						</raceList>
+						<thought>AteHumanlikeMeatDirect_OGKrootTau</thought>
+						<ingredientThought>AteHumanlikeMeatAsIngredient_OGKrootTau</ingredientThought>
+						<thoughtCannibal>AteHumanlikeMeatDirect_OGKrootTau</thoughtCannibal> 
+						<ingredientThoughtCannibal>AteHumanlikeMeatAsIngredient_OGKrootTau</ingredientThoughtCannibal> 
+					</li>
+				</ateThoughtSpecific>
+				<replacerList>
+					<!-- 
+					<li>
+						<original>EnvironmentDark</original>
+						<replacer>EnvironmentDark_OGKroot</replacer> 
+					</li>
+					-->
+					<li>
+						<original>Greedy</original>
+						<replacer>Greedy_OGKroot</replacer> 
+					</li>
+					<!--li>
+						<original>ApparelDamaged</original>
+						<replacer>ApparelDamaged_OGKroot</replacer> 
+					</li-->
+					<li>
+						<original>DeadMansApparel</original>
+						<replacer>DeadMansApparel_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>HumanLeatherApparelSad</original>
+						<replacer>HumanLeatherApparelSad_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>HumanLeatherApparelHappy</original>
+						<replacer>HumanLeatherApparelHappy_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>ButcheredHumanlikeCorpseOpinion</original>
+						<replacer>ButcheredHumanlikeCorpseOpinion_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>AteRawHumanlikeMeat</original>
+						<replacer>AteRawHumanlikeMeat_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>BrawlerUnhappy</original>
+						<replacer>BrawlerUnhappy_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>ColonistLeftUnburied</original>
+						<replacer>ColonistLeftUnburied_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>AteWithoutTable</original>
+						<replacer>AteWithoutTable_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>SleptOutside</original>
+						<replacer>SleptOutside_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>SleptOnGround</original>
+						<replacer>SleptOnGround_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>SleptInCold</original>
+						<replacer>SleptInCold_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>SleptInHeat</original>
+						<replacer>SleptInHeat_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>KnowPrisonerSold</original>
+						<replacer>KnowPrisonerSold_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>KnowBuriedInSarcophagus</original>
+						<replacer>KnowBuriedInSarcophagus_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>SoakingWet</original>
+						<replacer>SoakingWet_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>ObservedLayingCorpse</original>
+						<replacer>ObservedLayingCorpse_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>ObservedLayingRottingCorpse</original>
+						<replacer>ObservedLayingRottingCorpse_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>WitnessedDeathNonAlly</original>
+						<replacer>WitnessedDeathNonAlly_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>WitnessedDeathFamily</original>
+						<replacer>WitnessedDeathFamily_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>WitnessedDeathBloodlust</original>
+						<replacer>WitnessedDeathBloodlust_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>KilledHumanlikeBloodlust</original>
+						<replacer>KilledHumanlikeBloodlust_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>DefeatedHostileFactionLeader</original>
+						<replacer>DefeatedHostileFactionLeader_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>DefeatedHostileFactionLeaderOpinion</original>
+						<replacer>DefeatedHostileFactionLeaderOpinion_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>AteInsectMeatDirect</original>
+						<replacer>AteInsectMeatDirect_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>AteInsectMeatAsIngredient</original>
+						<replacer>AteInsectMeatAsIngredient_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>AteCorpse</original>
+						<replacer>AteCorpse_OGKroot</replacer> 
+					</li>
+					<li>
+						<original>AteKibble</original>
+						<replacer>AteKibble_OGKroot</replacer> 
+					</li>
+				</replacerList>
+				<restrictedThoughts>
+					<li>Greedy_OGKroot</li>
+					<li>DeadMansApparel_OGKroot</li>
+					<li>ApparelDamaged_OGKroot</li>
+					<li>EnvironmentDark_OGKroot</li>
+					<li>ObservedLayingCorpse_OGKroot</li>
+					<li>ObservedLayingRottingCorpse_OGKroot</li>
+					<li>WitnessedDeathAlly_OGKroot</li>
+					<li>WitnessedDeathNonAlly_OGKroot</li>
+					<li>WitnessedDeathFamily_OGKroot</li>
+					<li>WitnessedDeathBloodlust_OGKroot</li>
+					<li>KilledHumanlikeBloodlust_OGKroot</li>
+					<li>DefeatedHostileFactionLeader_OGKroot</li>
+					<li>DefeatedHostileFactionLeaderOpinion_OGKroot</li>
+				</restrictedThoughts>
+				<cannotReceiveThoughts>
+					<!--
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>AteRawHumanlikeMeat</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					
+					<li>ObservedLayingCorpse</li>
+					<li>AteWithoutTable</li>
+					<li>AteCorpse</li>
+					<li>ColonistLeftUnburied</li>
+					<li>DeadMansApparel</li>
+					
+					<li>AteRawFood</li>
+					<li>Naked</li>
+					-->
+					<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent_Opinion</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
+					
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+					<li>ApparelDamaged</li>
+					<li>EnvironmentDark</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>NeedRoomSize</li>
+					<li>NeedBeauty</li>
+					<li>Disfigured</li>
+					<li>Pretty</li>
+					<li>Ugly</li>
+					<li>SoldPrisoner</li>
+					<li>ExecutedPrisoner</li>
+					<li>SleepDisturbed</li>
+					<li>KnowPrisonerSold</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>SleptInBarracks</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<relationSettings>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierSibling>3</relationChanceModifierSibling>
+	
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+	
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<renamer>
+					<li>
+						<relation>Sibling</relation>
+						<label>Kinsmen</label>
+						<femaleLabel>Kinsmen</femaleLabel>
+					</li>
+					<li>
+						<relation>Parent</relation>
+						<label>Shaper</label>
+						<femaleLabel>Shaperess</femaleLabel>
+					</li>
+					<li>
+						<relation>Child</relation>
+						<label>Kindred</label>
+						<femaleLabel>Kindred</femaleLabel>
+					</li>
+				</renamer>
+			</relationSettings>
+			<raceRestriction>
+				<blackEndoCategories>
+					<li>BodyType</li>
+					<li>Headbone</li>
+					<li>Head</li>
+					<li>Melanin</li>
+				</blackEndoCategories>
+				<researchList>
+					<li>
+						<projects>
+						<!--li>OG_Tau_Tech_Base_T1</li-->
+						</projects>
+					</li>
+				</researchList>
+				<recipeList>
+					<!--li>Make_OGK_Apparel_Tribalwear</li>
+					<li>Make_OGK_Gun_KrootPistol</li>
+					<li>Make_OGK_Gun_KrootRifle</li>
+					<li>Make_OGK_Gun_KrootHunterRifle</li-->
+				</recipeList>
+				<apparelList>
+					<li>OGK_Apparel_Tribalwear</li>
+					<li>OGK_Apparel_TribalHeaddress</li>
+				</apparelList>
+				<buildingList>
+					<!--li>OGK_TableMachining</li-->
+				</buildingList>
+			</raceRestriction>
+		</alienRace>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>5</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<ComfyTemperatureMin>6</ComfyTemperatureMin>
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<LeatherAmount>65</LeatherAmount>
+			<CarryingCapacity>110</CarryingCapacity>
+			<MiningSpeed>1.0</MiningSpeed>
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingDelayFactor>0.95</AimingDelayFactor>
+			<PawnTrapSpringChance>0.85</PawnTrapSpringChance>
+			<MentalBreakThreshold>0.25</MentalBreakThreshold>
+			<ImmunityGainSpeed>1.05</ImmunityGainSpeed>
+			<PainShockThreshold>0.9</PainShockThreshold>
+			<ForagedNutritionPerDay>0.5</ForagedNutritionPerDay>
+			<GlobalLearningFactor>0.95</GlobalLearningFactor>
+			<MeleeDodgeChance>1.25</MeleeDodgeChance>
+			<MeleeHitChance>1.25</MeleeHitChance>
+			<GeneralLaborSpeed>1.05</GeneralLaborSpeed>
+			<ButcheryFleshSpeed>1.75</ButcheryFleshSpeed>
+			<ButcheryFleshEfficiency>1.75</ButcheryFleshEfficiency>
+			<SmeltingSpeed>0.85</SmeltingSpeed>
+			<NegotiationAbility>0.95</NegotiationAbility>
+			<SocialImpact>0.85</SocialImpact>
+			<PawnBeauty>-0.15</PawnBeauty>
+			<TradePriceImprovement>0.85</TradePriceImprovement>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>11</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.6</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>11</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>300</lifeExpectancy>
+			<leatherDef>Leather_Kroot</leatherDef>
+			<nameGenerator>OG_Kroot_NamerPerson</nameGenerator>
+			<body>OG_Kroot_Body</body>
+			<bloodDef>OG_FilthBlood_Kroot</bloodDef>	
+			<meatColor>(35, 56, 0)</meatColor>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1.05</baseHealthScale>
+			<foodType>Corpse, CarnivoreAnimal, OvivoreAnimal</foodType>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>4</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>7</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>12</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>4</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>6</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>1</BasicWorker>
+				<Warden>6</Warden>
+				<Handling>2</Handling>
+				<Cooking>4</Cooking>
+				<Hunting>3</Hunting>
+				<Construction>6</Construction>
+				<Growing>4</Growing>
+				<Mining>4</Mining>
+				<PlantCutting>4</PlantCutting>
+				<Smithing>7</Smithing>
+				<Tailoring>4</Tailoring>
+				<Art>6</Art>
+				<Crafting>4</Crafting>
+				<Hauling>1</Hauling>
+				<Cleaning>1</Cleaning>
+				<Research>7</Research>
+			</lifeStageWorkSettings>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(4,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(6.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(6.51,0)</li>  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(7,0)</li>      
+					<li MayRequire="Ludeon.RimWorld.Biotech">(7.001,122)</li><!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(7.999,130)</li>
+					<li>(8,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8.001,130)</li>
+					<li>(10,100)</li>
+					<li>(12,200)</li>
+					<li>(18,250)</li>
+					<li>(20,150)</li>
+					<li>(30,100)</li>
+					<li>(40,12)</li>
+					<li>(50,6)</li>
+					<li>(120,1)</li>
+					<li>(140,1)</li>
+					<li>(200,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>OG_Kroot_InstallHyperactiveNymuneOrgan</li>
+			<li>ExciseCarcinoma</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+		</recipes>
+		<modExtensions>
+			<li MayRequire="CETeam.CombatExtended" Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</AlienRace.ThingDef_AlienRace>
+
+	<!-- ============================ Kroot ========================== -->
+
+	<AlienRace.ThingDef_AlienRace ParentName="OG_Kroot_Race">
+		<defName>OG_Alien_Kroot</defName>
+	</AlienRace.ThingDef_AlienRace>
+	
+</Defs>

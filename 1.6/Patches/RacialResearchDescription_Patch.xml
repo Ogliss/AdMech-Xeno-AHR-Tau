@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+		<operations>		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName = "OG_Tau_Tech_Base_T1"]/description</xpath>
+				<value>
+					<description>The Greater Good, or Tau'va (literally the "Good Greater" in the T'au Lexicon), is the founding religio-philosophical principle of present T'au society which holds that all sentient beings should strive to ensure the greatest good for the greatest number of beings in the galaxy.\n\nTau Research and Technology can Only be researched/crafted by Tau.</description>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ResearchProjectDef[defName = "OG_Kroot_Tech_Base_T1"]/description</xpath>
+				<value>
+					<description>Basic understanding of Kroot Culture.\n\nKroot Research and Technology can Only be researched/crafted by Kroot.</description>
+				</value>
+			</li>
+			
+		</operations>	
+	</Operation>
+</Patch>
